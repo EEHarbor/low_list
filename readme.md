@@ -11,8 +11,8 @@ Low List lets you loop and search through a list of character-separated items. R
 
 ### Each tag
 
-Use the Each tag to loop through a list to charachter-separated items.
-    
+Use the Each tag to loop through a list to character-separated items.
+
 #### Parameters
 
 - `items=`: the items you want to loop through, separated by the character given in the `sep` parameter. Use a colon `:` to separate keys and values.
