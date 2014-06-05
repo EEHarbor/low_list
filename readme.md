@@ -75,7 +75,7 @@ Setting a `checked` or `selected` attribute:
 
 ### Has Not tag
 
-Use the Has Not tag ti see if a given value is *not* present in a given charachter-separated list. Works identically to the Has tag:
+Use the Has Not tag to see if a given value is *not* present in a given charachter-separated list. Works identically to the Has tag:
 
     {exp:low_list:has_not value="spork" items="knife|fork|spoon"}
         We don't have a spork!
