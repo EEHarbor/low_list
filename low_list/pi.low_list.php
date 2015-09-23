@@ -1,14 +1,5 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-$plugin_info = array(
-	'pi_name'        => 'Low List',
-	'pi_version'     => '0.0.1',
-	'pi_author'      => 'Lodewijk Schutte ~ Low',
-	'pi_author_url'  => 'http://gotolow.com/',
-	'pi_description' => 'Work with custom character-separated lists',
-	'pi_usage'       => ''
-);
-
 /**
  * Low List Plugin class
  *
