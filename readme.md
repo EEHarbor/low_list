@@ -1,11 +1,13 @@
 # Low List for ExpressionEngine
 
-Low List lets you loop and search through a list of character-separated items. Requires **EE 2.6+** and is especially useful in combination with [Low Search](http://gotolow/addons/low-search).
+Low List lets you loop and search through a list of character-separated items. Requires **EE 3.0.0+** and is especially useful in combination with [Low Search](http://gotolow/addons/low-search).
 
 ## Installation
 
 - [Download](https://github.com/low/low_list/archive/master.zip) and unzip;
-- Copy the `low_list` folder to your `system/expressionengine/third_party` directory.
+- Copy the `low_list` folder to your `system/user/addons` directory;
+- In your Control Panel, go to the Add-on Manager and install Low List;
+- All set!
 
 ## Tags
 
