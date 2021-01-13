@@ -1,20 +1,15 @@
 <?php
 
-/**
- * Low List config file
- *
- * @package        low_list
- * @author         Lodewijk Schutte <hi@gotolow.com>
- * @link           http://gotolow.com/
- * @copyright      Copyright (c) 2015, Low
- */
+require_once 'autoload.php';
+$addonJson = json_decode(file_get_contents(__DIR__ . '/addon.json'));
 
 return array(
-    'author'         => 'Low',
-    'author_url'     => 'http://gotolow.com/',
-    'docs_url'       => 'https://github.com/low/low_list',
-    'name'           => 'Low List',
-    'description'    => 'Create loops and lists',
-    'version'        => '1.0.0',
-    'namespace'      => 'Low\List'
+    'name'              => $addonJson->name,
+    'description'       => $addonJson->description,
+    'version'           => $addonJson->version,
+    'namespace'         => $addonJson->namespace,
+    'author'            => 'EEHarbor',
+    'author_url'        => 'http://eeharbor.com/low_list',
+    'docs_url'          => 'http://eeharbor.com/low_list/documentation',
+    'settings_exist'    => false,
 );
