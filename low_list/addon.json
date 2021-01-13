@@ -1,0 +1,14 @@
+{
+  "name": "Low List",
+  "shortname": "low_list",
+  "version": "1.0.0",
+  "foundation_version": "",
+  "description": "Create loops and lists",
+  "license": "EEHarbor",
+  "namespace": "Low\\List",
+  "require": {
+    "php": ">=5.6.*",
+    "expressionengine/core": ">=2"
+  },
+  "resources": {}
+}
