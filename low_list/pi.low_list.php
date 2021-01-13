@@ -2,6 +2,9 @@
     exit('No direct script access allowed');
 }
 
+include_once 'addon.setup.php';
+use Low\List\FluxCapacitor\Base\Pi;
+
 /**
  * Low List Plugin class
  *
@@ -9,7 +12,7 @@
  * @author         Lodewijk Schutte <hi@gotolow.com>
  * @link           http://gotolow.com/
  */
-class Low_list
+class Low_list extends Pi
 {
 
     // --------------------------------------------------------------------
