@@ -8,9 +8,9 @@
     "namespace": "Low\\List",
     "require": {
         "php": ">=5.6.*",
-        "expressionengine/core": ">=2"
+        "expressionengine/core": ">=3"
     },
     "resources": {
-        
+
     }
 }
