@@ -21,7 +21,7 @@ spl_autoload_register(
         $phar_stream_path = 'phar://' . $phar_path;
         $tmp_phar_path = sys_get_temp_dir() . '/pharextract/low_list';
 
-        $namespace = 'Low\List';
+        $namespace = 'LowList';
 
         // Add 'FluxCapacitor' when checking our namespace otherwise we could have
         // a false positive if the class file does not extend anything in FluxCapacitor

@@ -1,9 +1,12 @@
-<?php if (! defined('BASEPATH')) {
+<?php
+
+if (! defined('BASEPATH')) {
     exit('No direct script access allowed');
 }
 
 include_once 'addon.setup.php';
-use Low\List\FluxCapacitor\Base\Pi;
+// Note: List is a reserved PHP word, and cannot be used
+use LowList\FluxCapacitor\Base\Pi;
 
 /**
  * Low List Plugin class
@@ -14,7 +17,6 @@ use Low\List\FluxCapacitor\Base\Pi;
  */
 class Low_list extends Pi
 {
-
     // --------------------------------------------------------------------
     // PROPERTIES
     // --------------------------------------------------------------------
@@ -55,7 +57,6 @@ class Low_list extends Pi
         $this->_items = explode($this->_params['sep'], $this->_params['items']);
         $this->_items = array_map('trim', $this->_items);
     }
-
 
     /**
      * Each: loop through items and create the list for each item
