@@ -151,6 +151,7 @@ class Low_list extends Pi
         // Please
         return $it;
     }
-} // END CLASS
+}
+// END CLASS
 
 /* End of file pi.low_list.php */
