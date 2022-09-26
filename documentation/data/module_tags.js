@@ -36,9 +36,9 @@ window.doc_page = {
                             examples: [
                                 {
                                     tag_example: `
-                                    {exp:low_list:each items="north|east|south|west" as="direction"}
-                                        You can go {direction}.
-                                    {/exp:low_list:each}                
+{exp:low_list:each items="north|east|south|west" as="direction"}
+    You can go {direction}.
+{/exp:low_list:each}                
                                     `,
                                     outputs: ``
                                  }
@@ -55,12 +55,12 @@ window.doc_page = {
                             examples: [
                                 {
                                     tag_example: `
-                                    {exp:low_list:each items="asc:Ascending|desc:Descending" as="value:label"}
-                                    <label>
-                                        <input type="radio" name="sort" value="{value}">
-                                        {label}
-                                    </label>
-                                    {exp:low_list:each}`,
+{exp:low_list:each items="asc:Ascending|desc:Descending" as="value:label"}
+<label>
+    <input type="radio" name="sort" value="{value}">
+    {label}
+</label>
+{exp:low_list:each}`,
                                     outputs: ``
                                  }
                              ]
@@ -76,11 +76,11 @@ window.doc_page = {
                             examples: [
                                 {
                                     tag_example: `
-                                    <select name="orderby_sort">
-                                    {exp:low_list:each items=":Relevance;date|asc:Publish date;title|asc:Title" sep=";"}
-                                        <option value="{key}">{val}</option>
-                                    {/exp:low_list:each}
-                                    </select>`,
+<select name="orderby_sort">
+{exp:low_list:each items=":Relevance;date|asc:Publish date;title|asc:Title" sep=";"}
+    <option value="{key}">{val}</option>
+{/exp:low_list:each}
+</select>`,
                                     outputs: ``
                                  }
                              ]
@@ -96,9 +96,9 @@ window.doc_page = {
                             examples: [
                                 {
                                     tag_example: `
-                                    {exp:low_list:each items="99|0" range="yes"}
-                                        {val} bottle{if val != 1}s{/if} of beer on the wall.
-                                    {/exp:low_list:each}`,
+{exp:low_list:each items="99|0" range="yes"}
+    {val} bottle{if val != 1}s{/if} of beer on the wall.
+{/exp:low_list:each}`,
                                     outputs: ``
                                  }
                              ]
@@ -131,9 +131,9 @@ window.doc_page = {
                             examples: [
                                 {
                                     tag_example: `
-                                    {exp:low_list:has value="spork" items="knife|fork|spoon|spork"}
-                                        We have a spork!
-                                    {/exp:low_list:has}`,
+{exp:low_list:has value="spork" items="knife|fork|spoon|spork"}
+    We have a spork!
+{/exp:low_list:has}`,
                                     outputs: ``
                                  }
                              ]
@@ -149,11 +149,11 @@ window.doc_page = {
                             examples: [
                                 {
                                     tag_example: `
-                                    {exp:channel:categories style="linear"}
-                                        <option value="{category_id}"{exp:low_list:has value="{category_id}" items="1|2|3"} selected{/exp:low_list:has}>
-                                            {category_name}
-                                        </option>
-                                    {/exp:channel:categories}`,
+{exp:channel:categories style="linear"}
+    <option value="{category_id}"{exp:low_list:has value="{category_id}" items="1|2|3"} selected{/exp:low_list:has}>
+        {category_name}
+    </option>
+{/exp:channel:categories}`,
                                     outputs: ``
                                  }
                              ]
@@ -169,9 +169,9 @@ window.doc_page = {
                             examples: [
                                 {
                                     tag_example: `
-                                    {exp:low_list:has value="spork" sep="," items="knife,fork,spoon,spork"}
-                                        We have a spork!
-                                    {/exp:low_list:has}`,
+{exp:low_list:has value="spork" sep="," items="knife,fork,spoon,spork"}
+    We have a spork!
+{/exp:low_list:has}`,
                                     outputs: ``
                                  }
                              ]
@@ -204,9 +204,9 @@ window.doc_page = {
                             examples: [
                                 {
                                     tag_example: `
-                                    {exp:low_list:has_not value="spork" items="knife|fork|spoon"}
-                                        We don't have a spork!
-                                    {/exp:low_list:has_not}`,
+{exp:low_list:has_not value="spork" items="knife|fork|spoon"}
+    We don't have a spork!
+{/exp:low_list:has_not}`,
                                     outputs: ``
                                  }
                              ]
