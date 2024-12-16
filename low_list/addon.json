@@ -1,8 +1,8 @@
 {
     "name": "Low List",
     "shortname": "low_list",
-    "version": "2.1.1",
-    "foundation_version": "4.10.0",
+    "version": "2.2.0",
+    "foundation_version": "4.11.0",
     "description": "Create loops and lists",
     "license": "EEHarbor",
     "namespace": "LowList",
