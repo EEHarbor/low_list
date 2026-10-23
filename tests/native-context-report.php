@@ -11,6 +11,17 @@ $inventory = sourceInventory();
 $reportDirectory = $argv[1];
 $mode = isset($argv[2]) ? $argv[2] : 'navigation';
 $configurations = array(
+    'bootstrap' => array(
+        'source' => 'low_list/low_list.phar/FluxCapacitor/Bridge/EE.php',
+        'cases' => array('configured' => '2.5.5', 'defined-legacy' => '2.5.5', 'defined-modern' => '7.5.0'),
+        'request' => 'PAGE',
+    ),
+    'fieldtype-loading' => array(
+        'source' => 'low_list/low_list.phar/FluxCapacitor/Base/Ft.php',
+        'cases' => array('system' => '7.5.0', 'app' => '7.5.0', 'priority' => '7.5.0', 'installer' => '7.5.0', 'installer-ancestor' => '7.5.0', 'predeclared' => '7.5.0', 'defined-version' => '7.5.0'),
+        'request' => 'PAGE',
+        'line_only_cases' => array('installer-ancestor'),
+    ),
     'navigation' => array(
         'source' => 'low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php',
         'cases' => array('modern' => '7.5.0', 'legacy' => '2.5.5', 'http-route' => '7.5.0'),
@@ -70,7 +81,24 @@ if ($captureMode === 'control-panel') {
         }
     }
 }
-foreach (glob($reportDirectory . '/native-' . $captureMode . '-*.json') as $path) {
+// Prefer the longest family name so fieldtype-loading stays separate from fieldtype.
+$captureModes = array();
+foreach ($configurations as $name => $candidate) {
+    $captureModes[] = isset($candidate['capture_mode']) ? $candidate['capture_mode'] : $name;
+}
+$captureModes = array_unique($captureModes);
+usort($captureModes, static function ($left, $right) { return strlen($right) - strlen($left); });
+foreach (glob($reportDirectory . '/native-*.json') as $path) {
+    $fileMode = null;
+    foreach ($captureModes as $candidateMode) {
+        if (strpos(basename($path), 'native-' . $candidateMode . '-') === 0) {
+            $fileMode = $candidateMode;
+            break;
+        }
+    }
+    if ($fileMode !== $captureMode) {
+        continue;
+    }
     $capture = json_decode(file_get_contents($path), true);
     if (!is_array($capture) || !isset($capture['php'], $capture['xdebug'], $capture['context']['native_mode'], $capture['context']['native_case'], $capture['context']['REQ'], $capture['context']['APP_VER'], $capture['runtime_declarations']) || !is_array($capture['runtime_declarations'])) {
         throw new RuntimeException('Native source metadata is required.');
@@ -96,14 +124,16 @@ foreach (glob($reportDirectory . '/native-' . $captureMode . '-*.json') as $path
     $executable = array_filter($source['lines'], static function ($hit) { return $hit !== -2; });
     $methods = array();
     $observed = false;
+    $hasGraph = false;
     foreach ($source['functions'] as $name => $function) {
         $branches = $function['branches'];
+        $hasGraph = $hasGraph || (bool) $branches;
         foreach ($branches as $branch) {
             $observed = $observed || $branch['hit'] > 0;
         }
         $attribution = \LowListTests\Coverage::attribution($native, $name, $branches, $capture['runtime_declarations']);
         $declaration = $attribution['declaration'];
-        $lines = $declaration === null || $declaration['file'] !== $native ? null : array_filter($executable, static function ($line) use ($declaration) {
+        $lines = $attribution['status'] !== 'matched' || $declaration === null || $declaration['file'] !== $native ? null : array_filter($executable, static function ($line) use ($declaration) {
             return $line >= $declaration['line_start'] && $line <= $declaration['line_end'];
         }, ARRAY_FILTER_USE_KEY);
         $methods[$name] = array(
@@ -116,17 +146,26 @@ foreach (glob($reportDirectory . '/native-' . $captureMode . '-*.json') as $path
         // Full-path enumeration remains in the original capture, outside this summary.
         unset($source['functions'][$name]['paths']);
     }
-    if (!$observed || !$executable) {
+    $linesHit = count(array_filter($executable, static function ($hit) { return $hit > 0; }));
+    // The known predeclaration fatal executes source lines without hit procedural blocks.
+    $lineOnly = isset($configuration['line_only_cases'])
+        && in_array($case, $configuration['line_only_cases'], true)
+        && $hasGraph
+        && $linesHit > 0;
+    if ((!$observed && !$lineOnly) || !$executable) {
         throw new RuntimeException('Empty native source instrumentation cannot count as success.');
     }
     $contexts[$case] = array(
         'capture' => basename($path),
         'context' => $capture['context'],
-        'lines_hit' => count(array_filter($executable, static function ($hit) { return $hit > 0; })),
+        'lines_hit' => $linesHit,
         'lines' => count($executable),
         'methods' => $methods,
         'source_data' => $source,
     );
+    if (!$observed) {
+        $contexts[$case]['branch_observation'] = 'unknown_no_hit_native_graph';
+    }
 }
 if (count($contexts) !== count($configuration['cases'])) {
     throw new RuntimeException('All configured fresh native contexts are required.');

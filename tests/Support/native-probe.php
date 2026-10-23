@@ -23,6 +23,11 @@ if ($argv[1] === 'validation-abnormal-exit') {
 }
 
 $root = dirname(__DIR__, 2);
+if ($argv[1] === 'bootstrap' || $argv[1] === 'fieldtype-loading') {
+    require __DIR__ . '/loading-probe.php';
+    echo json_encode(\LowListTests\LoadingProbe::run($root, $argv[1], $argv[2]), JSON_UNESCAPED_SLASHES);
+    exit(0);
+}
 if ($argv[1] === 'control-panel') {
     require __DIR__ . '/control-panel-probe.php';
     echo json_encode(\LowListTests\ControlPanelProbe::run($root, $argv[2]), JSON_UNESCAPED_SLASHES);
