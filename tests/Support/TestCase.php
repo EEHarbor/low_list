@@ -19,6 +19,7 @@ abstract class TestCase extends \PHPUnit\Framework\TestCase
         $this->includePath = get_include_path();
         $this->workingDirectory = getcwd();
         $GLOBALS['low_list_ee'] = new Environment();
+        $GLOBALS['low_list_helpers'] = array();
         set_error_handler(static function ($severity, $message, $file, $line) {
             throw new \ErrorException($message, 0, $severity, $file, $line);
         }, E_ALL);
@@ -37,7 +38,7 @@ abstract class TestCase extends \PHPUnit\Framework\TestCase
         set_include_path($this->includePath);
         chdir($this->workingDirectory);
         $this->removeDirectory(PATH_CACHE);
-        unset($GLOBALS['low_list_ee']);
+        unset($GLOBALS['low_list_ee'], $GLOBALS['low_list_helpers']);
     }
 
     /**

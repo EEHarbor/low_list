@@ -149,6 +149,7 @@ class Database
     public $tables = array();
     public $count = 0;
     public $results = array();
+    public $resultQueues = array();
     private $recorder;
 
     /**
@@ -174,6 +175,9 @@ class Database
     {
         $this->calls[] = array($name, $arguments);
         if ($name === 'get' || $name === 'get_where' || $name === 'query') {
+            if (isset($arguments[0]) && !empty($this->resultQueues[$arguments[0]])) {
+                return new Result(array_shift($this->resultQueues[$arguments[0]]));
+            }
             if (isset($arguments[0]) && array_key_exists($arguments[0], $this->results)) {
                 return new Result($this->results[$arguments[0]]);
             }
@@ -212,7 +216,15 @@ class Environment
     public $session;
     public $cache;
     public $dbforge;
+    public $api;
+    public $legacy_api;
+    public $security;
+    public $addons_model;
+    public $pagination;
+    public $table;
     public $services = array();
+    public $serviceCalls = array();
+    private $loaded = array();
 
     /**
      * Create fresh collaborators for one test.
@@ -226,6 +238,99 @@ class Environment
         $this->config = new Config();
         $this->load = new Loader();
         $this->logger = new Logger();
+    }
+
+    /**
+     * Load a facade object without replacing an existing native object.
+     *
+     * @param string $name
+     * @param mixed $value
+     * @return void
+     * @throws \RuntimeException
+     */
+    public function set($name, $value)
+    {
+        if ($this->has($name)) {
+            throw new \RuntimeException('Cannot overwrite ' . $name . ' on the loader.');
+        }
+        $this->loaded[$name] = $value;
+        if (array_key_exists($name, get_object_vars($this))) {
+            unset($this->$name);
+        }
+        if ($name === 'session') {
+            $value->setSessionCookies();
+        }
+    }
+
+    /**
+     * Determine whether the facade already contains an object, including null.
+     *
+     * @param string $name
+     * @return bool
+     */
+    public function has($name)
+    {
+        $properties = get_object_vars($this);
+
+        return array_key_exists($name, $this->loaded)
+            || (array_key_exists($name, $properties) && $properties[$name] !== null);
+    }
+
+    /**
+     * Read a facade object independently of the named dependency factories.
+     *
+     * @param string $name
+     * @return mixed
+     * @throws \InvalidArgumentException
+     */
+    public function get($name)
+    {
+        if (array_key_exists($name, $this->loaded)) {
+            return $this->loaded[$name];
+        }
+        $properties = get_object_vars($this);
+        if (array_key_exists($name, $properties) && $properties[$name] !== null) {
+            return $properties[$name];
+        }
+
+        throw new \InvalidArgumentException("No such property: '" . $name . "' on " . get_called_class());
+    }
+
+    /**
+     * Expose installed objects through EE's native property-access boundary.
+     *
+     * @param string $name
+     * @return mixed
+     * @throws \InvalidArgumentException
+     */
+    public function __get($name)
+    {
+        return $this->get($name);
+    }
+
+    /**
+     * Preserve the facade's presence check for installed null values.
+     *
+     * @param string $name
+     * @return bool
+     */
+    public function __isset($name)
+    {
+        return $this->has($name);
+    }
+
+    /**
+     * Remove a named replacement through the facade boundary.
+     *
+     * @param string $name
+     * @return void
+     */
+    public function remove($name)
+    {
+        unset($this->loaded[$name]);
+        if (array_key_exists($name, get_object_vars($this))) {
+            unset($this->$name);
+        }
     }
 }
 
@@ -281,6 +386,21 @@ class Loader
     {
         $this->calls[] = array('library', $name);
     }
+
+    /**
+     * Record the legacy view name, variables and return-output flag.
+     *
+     * @param string $name
+     * @param array $variables
+     * @param bool $return
+     * @return string
+     */
+    public function view($name, $variables, $return)
+    {
+        $this->calls[] = array('view', $name, $variables, $return);
+
+        return 'rendered-legacy-view';
+    }
 }
 
 class Logger
@@ -314,8 +434,12 @@ namespace {
         if ($service === null) {
             return $GLOBALS['low_list_ee'];
         }
+        $GLOBALS['low_list_ee']->serviceCalls[] = func_get_args();
         if ($service === 'db') {
-            return $GLOBALS['low_list_ee']->db;
+            $query = clone $GLOBALS['low_list_ee']->db;
+            $query->data_cache = array();
+
+            return $query;
         }
         if (!isset($GLOBALS['low_list_ee']->services[$service])) {
             throw new \LogicException('Unexpected EE service: ' . $service);
@@ -404,5 +528,44 @@ namespace {
     function form_close()
     {
         return '</form>';
+    }
+
+    /**
+     * Record the legacy URL-title helper boundary without reimplementing EE.
+     *
+     * @param string $text
+     * @return string
+     */
+    function url_title($text)
+    {
+        $GLOBALS['low_list_helpers'][] = array('url_title', $text);
+
+        return 'slug-result';
+    }
+
+    /**
+     * Record the legacy URL preparation boundary.
+     *
+     * @param string $text
+     * @return string
+     */
+    function prep_url($text)
+    {
+        $GLOBALS['low_list_helpers'][] = array('prep_url', $text);
+
+        return 'prepared-result';
+    }
+
+    /**
+     * Record the string helper boundary used by each bridge.
+     *
+     * @param string $text
+     * @return string
+     */
+    function reduce_double_slashes($text)
+    {
+        $GLOBALS['low_list_helpers'][] = array('reduce_double_slashes', $text);
+
+        return 'reduced-result';
     }
 }

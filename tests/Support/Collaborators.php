@@ -5,6 +5,8 @@ namespace LowListTests;
 class Functions
 {
     public $cleared = array();
+    public $redirects = array();
+    public $databaseCallsAtRedirect = array();
 
     /**
      * Record invalidation before installing a module row.
@@ -16,6 +18,26 @@ class Functions
     {
         $this->cleared[] = $mode;
     }
+
+    /**
+     * Model EE's terminal redirect without terminating the PHPUnit process.
+     *
+     * @param string|object $url
+     * @return void
+     * @throws Redirected
+     */
+    public function redirect($url)
+    {
+        $target = is_object($url) ? $url->compile() : $url;
+        $this->redirects[] = $target;
+        $this->databaseCallsAtRedirect[] = ee()->db->calls;
+
+        throw new Redirected($target);
+    }
+}
+
+class Redirected extends \RuntimeException
+{
 }
 
 class Input
@@ -30,6 +52,18 @@ class Input
      * @return mixed
      */
     public function get($name, $xss = false)
+    {
+        return isset($this->values[$name]) ? $this->values[$name] : false;
+    }
+
+    /**
+     * Preserve legacy posted values, including zero and missing/null false values.
+     *
+     * @param string $name
+     * @param bool $xss
+     * @return mixed
+     */
+    public function post($name, $xss = false)
     {
         return isset($this->values[$name]) ? $this->values[$name] : false;
     }
@@ -107,6 +141,30 @@ class Session
 {
     public $values = array();
     public $cache = array();
+    public $flash = array();
+    public $cookiesSet = false;
+
+    /**
+     * Record the facade's native session-installation side effect.
+     *
+     * @return void
+     */
+    public function setSessionCookies()
+    {
+        $this->cookiesSet = true;
+    }
+
+    /**
+     * Store a legacy flash-message value using EE2's public API.
+     *
+     * @param string $type
+     * @param string $message
+     * @return void
+     */
+    public function set_flashdata($type, $message)
+    {
+        $this->flash[$type] = $message;
+    }
 
     /**
      * Return an existing EE2 session identifier or the caller's default.
@@ -419,6 +477,18 @@ class Header
 class ControlPanel
 {
     public $footer = array();
+    public $footer_item = array();
+    public $rightNav = array();
+
+    /**
+     * Preserve the legacy public footer alias for the same CP footer collection.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->footer_item = &$this->footer;
+    }
 
     /**
      * Read the current CP footer blocks.
@@ -450,6 +520,17 @@ class ControlPanel
      */
     public function set_breadcrumb($url, $title)
     {
+    }
+
+    /**
+     * Record legacy control-panel navigation labels and URLs.
+     *
+     * @param array $navigation
+     * @return void
+     */
+    public function set_right_nav($navigation)
+    {
+        $this->rightNav = $navigation;
     }
 }
 

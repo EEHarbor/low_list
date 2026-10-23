@@ -2,10 +2,10 @@
   {
     "runtime": "PHP 7.4.33 (cli) (built: Dec 13 2023 21:52:05) ( NTS )",
     "exit": 2,
-    "tests": 158,
-    "assertions": 706,
-    "errors": 5,
-    "failures": 15,
+    "tests": 222,
+    "assertions": 1039,
+    "errors": 9,
+    "failures": 17,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -31,6 +31,60 @@
           "--- Expected",
           "+++ Actual",
           "@@ @@"
+        ]
+      },
+      {
+        "test": "testExistingNativeClassCanBeReplaced with data set #0",
+        "kind": "error",
+        "message": "LowListTests\\BridgeAdapterTest::testExistingNativeClassCanBeReplaced with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
+        "details": [
+          "RuntimeException: Cannot overwrite logger on the loader.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:344"
+        ]
+      },
+      {
+        "test": "testExistingNativeClassCanBeReplaced with data set #1",
+        "kind": "error",
+        "message": "LowListTests\\BridgeAdapterTest::testExistingNativeClassCanBeReplaced with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
+        "details": [
+          "RuntimeException: Cannot overwrite logger on the loader.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:344"
+        ]
+      },
+      {
+        "test": "testExistingNativeClassCanBeReplaced with data set #2",
+        "kind": "error",
+        "message": "LowListTests\\BridgeAdapterTest::testExistingNativeClassCanBeReplaced with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
+        "details": [
+          "RuntimeException: Cannot overwrite logger on the loader.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
+        ]
+      },
+      {
+        "test": "testExistingNativeClassCanBeReplaced with data set #3",
+        "kind": "error",
+        "message": "LowListTests\\BridgeAdapterTest::testExistingNativeClassCanBeReplaced with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
+        "details": [
+          "RuntimeException: Cannot overwrite logger on the loader.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
+        ]
+      },
+      {
+        "test": "testLegacyPersistentCacheDeletion",
+        "kind": "failure",
+        "message": "LowListTests\\BridgeAdapterTest::testLegacyPersistentCacheDeletion",
+        "details": [
+          "Failed asserting that 'stored' is false.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeAdapterTest.php:192"
         ]
       },
       {
@@ -60,7 +114,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &0000000010de502a000000007bd2c05d () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &000000006b6c0613000000005db5a530 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -70,7 +124,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &0000000010de5021000000007bd2c05d () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &000000006b6c01bb000000005db5a530 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -80,7 +134,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &0000000010de5024000000007bd2c05d () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &000000006b6c01b1000000005db5a530 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -90,7 +144,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &0000000010de503b000000007bd2c05d () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &000000006b6c01ac000000005db5a530 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -115,6 +169,17 @@
           "",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/GlobalFieldSettings.php:33",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/GlobalFieldSettingsTest.php:64"
+        ]
+      },
+      {
+        "test": "testNegativePageDoesNotCreateNegativeOffset",
+        "kind": "failure",
+        "message": "LowListTests\\McpPaginationTest::testNegativePageDoesNotCreateNegativeOffset",
+        "details": [
+          "Failed asserting that two arrays are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
         ]
       },
       {
@@ -227,10 +292,10 @@
   {
     "runtime": "PHP 8.0.30 (cli) (built: Dec 21 2023 08:22:38) ( NTS )",
     "exit": 2,
-    "tests": 158,
-    "assertions": 700,
-    "errors": 6,
-    "failures": 15,
+    "tests": 222,
+    "assertions": 1033,
+    "errors": 10,
+    "failures": 17,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -256,6 +321,60 @@
           "--- Expected",
           "+++ Actual",
           "@@ @@"
+        ]
+      },
+      {
+        "test": "testExistingNativeClassCanBeReplaced with data set #0",
+        "kind": "error",
+        "message": "LowListTests\\BridgeAdapterTest::testExistingNativeClassCanBeReplaced with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
+        "details": [
+          "RuntimeException: Cannot overwrite logger on the loader.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:344"
+        ]
+      },
+      {
+        "test": "testExistingNativeClassCanBeReplaced with data set #1",
+        "kind": "error",
+        "message": "LowListTests\\BridgeAdapterTest::testExistingNativeClassCanBeReplaced with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
+        "details": [
+          "RuntimeException: Cannot overwrite logger on the loader.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:344"
+        ]
+      },
+      {
+        "test": "testExistingNativeClassCanBeReplaced with data set #2",
+        "kind": "error",
+        "message": "LowListTests\\BridgeAdapterTest::testExistingNativeClassCanBeReplaced with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
+        "details": [
+          "RuntimeException: Cannot overwrite logger on the loader.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
+        ]
+      },
+      {
+        "test": "testExistingNativeClassCanBeReplaced with data set #3",
+        "kind": "error",
+        "message": "LowListTests\\BridgeAdapterTest::testExistingNativeClassCanBeReplaced with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
+        "details": [
+          "RuntimeException: Cannot overwrite logger on the loader.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
+        ]
+      },
+      {
+        "test": "testLegacyPersistentCacheDeletion",
+        "kind": "failure",
+        "message": "LowListTests\\BridgeAdapterTest::testLegacyPersistentCacheDeletion",
+        "details": [
+          "Failed asserting that 'stored' is false.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeAdapterTest.php:192"
         ]
       },
       {
@@ -285,7 +404,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000004f3d5f3e0000000018359821 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &000000000173b6630000000058cc2858 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -295,7 +414,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000004f3d5f3b0000000018359821 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &000000000173b1890000000058cc2858 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -305,7 +424,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000004f3d5f300000000018359821 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &000000000173b1870000000058cc2858 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -315,7 +434,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000004f3d5f2d0000000018359821 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &000000000173b1820000000058cc2858 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -351,6 +470,17 @@
           "",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:47",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/LegacyBridgeTest.php:57"
+        ]
+      },
+      {
+        "test": "testNegativePageDoesNotCreateNegativeOffset",
+        "kind": "failure",
+        "message": "LowListTests\\McpPaginationTest::testNegativePageDoesNotCreateNegativeOffset",
+        "details": [
+          "Failed asserting that two arrays are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
         ]
       },
       {
@@ -463,10 +593,10 @@
   {
     "runtime": "PHP 8.1.33 (cli) (built: Jul  4 2025 00:24:36) (NTS)",
     "exit": 2,
-    "tests": 158,
-    "assertions": 699,
-    "errors": 7,
-    "failures": 15,
+    "tests": 222,
+    "assertions": 1032,
+    "errors": 11,
+    "failures": 17,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -492,6 +622,60 @@
           "--- Expected",
           "+++ Actual",
           "@@ @@"
+        ]
+      },
+      {
+        "test": "testExistingNativeClassCanBeReplaced with data set #0",
+        "kind": "error",
+        "message": "LowListTests\\BridgeAdapterTest::testExistingNativeClassCanBeReplaced with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
+        "details": [
+          "RuntimeException: Cannot overwrite logger on the loader.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:344"
+        ]
+      },
+      {
+        "test": "testExistingNativeClassCanBeReplaced with data set #1",
+        "kind": "error",
+        "message": "LowListTests\\BridgeAdapterTest::testExistingNativeClassCanBeReplaced with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
+        "details": [
+          "RuntimeException: Cannot overwrite logger on the loader.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:344"
+        ]
+      },
+      {
+        "test": "testExistingNativeClassCanBeReplaced with data set #2",
+        "kind": "error",
+        "message": "LowListTests\\BridgeAdapterTest::testExistingNativeClassCanBeReplaced with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
+        "details": [
+          "RuntimeException: Cannot overwrite logger on the loader.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
+        ]
+      },
+      {
+        "test": "testExistingNativeClassCanBeReplaced with data set #3",
+        "kind": "error",
+        "message": "LowListTests\\BridgeAdapterTest::testExistingNativeClassCanBeReplaced with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
+        "details": [
+          "RuntimeException: Cannot overwrite logger on the loader.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
+        ]
+      },
+      {
+        "test": "testLegacyPersistentCacheDeletion",
+        "kind": "failure",
+        "message": "LowListTests\\BridgeAdapterTest::testLegacyPersistentCacheDeletion",
+        "details": [
+          "Failed asserting that 'stored' is false.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeAdapterTest.php:192"
         ]
       },
       {
@@ -521,7 +705,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000035d0000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004310000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -531,7 +715,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000003580000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000003db0000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -541,7 +725,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000003530000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000003d50000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -551,7 +735,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000034e0000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000003d00000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -587,6 +771,17 @@
           "",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:47",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/LegacyBridgeTest.php:57"
+        ]
+      },
+      {
+        "test": "testNegativePageDoesNotCreateNegativeOffset",
+        "kind": "failure",
+        "message": "LowListTests\\McpPaginationTest::testNegativePageDoesNotCreateNegativeOffset",
+        "details": [
+          "Failed asserting that two arrays are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
         ]
       },
       {
@@ -710,10 +905,10 @@
   {
     "runtime": "PHP 8.2.30 (cli) (built: Dec 19 2025 07:42:41) (NTS clang 15.0.0)",
     "exit": 2,
-    "tests": 158,
-    "assertions": 699,
-    "errors": 7,
-    "failures": 15,
+    "tests": 222,
+    "assertions": 1031,
+    "errors": 12,
+    "failures": 17,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -739,6 +934,60 @@
           "--- Expected",
           "+++ Actual",
           "@@ @@"
+        ]
+      },
+      {
+        "test": "testExistingNativeClassCanBeReplaced with data set #0",
+        "kind": "error",
+        "message": "LowListTests\\BridgeAdapterTest::testExistingNativeClassCanBeReplaced with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
+        "details": [
+          "RuntimeException: Cannot overwrite logger on the loader.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:344"
+        ]
+      },
+      {
+        "test": "testExistingNativeClassCanBeReplaced with data set #1",
+        "kind": "error",
+        "message": "LowListTests\\BridgeAdapterTest::testExistingNativeClassCanBeReplaced with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
+        "details": [
+          "RuntimeException: Cannot overwrite logger on the loader.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:344"
+        ]
+      },
+      {
+        "test": "testExistingNativeClassCanBeReplaced with data set #2",
+        "kind": "error",
+        "message": "LowListTests\\BridgeAdapterTest::testExistingNativeClassCanBeReplaced with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
+        "details": [
+          "RuntimeException: Cannot overwrite logger on the loader.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
+        ]
+      },
+      {
+        "test": "testExistingNativeClassCanBeReplaced with data set #3",
+        "kind": "error",
+        "message": "LowListTests\\BridgeAdapterTest::testExistingNativeClassCanBeReplaced with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
+        "details": [
+          "RuntimeException: Cannot overwrite logger on the loader.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
+        ]
+      },
+      {
+        "test": "testLegacyPersistentCacheDeletion",
+        "kind": "failure",
+        "message": "LowListTests\\BridgeAdapterTest::testLegacyPersistentCacheDeletion",
+        "details": [
+          "Failed asserting that 'stored' is false.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeAdapterTest.php:192"
         ]
       },
       {
@@ -768,7 +1017,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000035d0000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004310000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -778,7 +1027,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000003580000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000003db0000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -788,7 +1037,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000003530000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000003d50000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -798,7 +1047,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000034e0000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000003d00000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -834,6 +1083,28 @@
           "",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:47",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/LegacyBridgeTest.php:57"
+        ]
+      },
+      {
+        "test": "testNegativePageDoesNotCreateNegativeOffset",
+        "kind": "failure",
+        "message": "LowListTests\\McpPaginationTest::testNegativePageDoesNotCreateNegativeOffset",
+        "details": [
+          "Failed asserting that two arrays are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
+        ]
+      },
+      {
+        "test": "testBaseControllerPaginationHasNoDeprecations",
+        "kind": "error",
+        "message": "LowListTests\\McpPaginationTest::testBaseControllerPaginationHasNoDeprecations",
+        "details": [
+          "ErrorException: Creation of dynamic property LowList\\FluxCapacitor\\Base\\Mcp::$data is deprecated",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Mcp.php:165",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/McpPaginationTest.php:89"
         ]
       },
       {
@@ -957,10 +1228,10 @@
   {
     "runtime": "PHP 8.3.28 (cli) (built: Nov 20 2025 11:21:23) (NTS clang 15.0.0)",
     "exit": 2,
-    "tests": 158,
-    "assertions": 699,
-    "errors": 7,
-    "failures": 15,
+    "tests": 222,
+    "assertions": 1031,
+    "errors": 12,
+    "failures": 17,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -986,6 +1257,60 @@
           "--- Expected",
           "+++ Actual",
           "@@ @@"
+        ]
+      },
+      {
+        "test": "testExistingNativeClassCanBeReplaced with data set #0",
+        "kind": "error",
+        "message": "LowListTests\\BridgeAdapterTest::testExistingNativeClassCanBeReplaced with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
+        "details": [
+          "RuntimeException: Cannot overwrite logger on the loader.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:344"
+        ]
+      },
+      {
+        "test": "testExistingNativeClassCanBeReplaced with data set #1",
+        "kind": "error",
+        "message": "LowListTests\\BridgeAdapterTest::testExistingNativeClassCanBeReplaced with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
+        "details": [
+          "RuntimeException: Cannot overwrite logger on the loader.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:344"
+        ]
+      },
+      {
+        "test": "testExistingNativeClassCanBeReplaced with data set #2",
+        "kind": "error",
+        "message": "LowListTests\\BridgeAdapterTest::testExistingNativeClassCanBeReplaced with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
+        "details": [
+          "RuntimeException: Cannot overwrite logger on the loader.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
+        ]
+      },
+      {
+        "test": "testExistingNativeClassCanBeReplaced with data set #3",
+        "kind": "error",
+        "message": "LowListTests\\BridgeAdapterTest::testExistingNativeClassCanBeReplaced with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
+        "details": [
+          "RuntimeException: Cannot overwrite logger on the loader.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
+        ]
+      },
+      {
+        "test": "testLegacyPersistentCacheDeletion",
+        "kind": "failure",
+        "message": "LowListTests\\BridgeAdapterTest::testLegacyPersistentCacheDeletion",
+        "details": [
+          "Failed asserting that 'stored' is false.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeAdapterTest.php:192"
         ]
       },
       {
@@ -1015,7 +1340,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000035d0000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004310000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -1025,7 +1350,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000003580000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000003db0000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -1035,7 +1360,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000003530000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000003d50000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -1045,7 +1370,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000034e0000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000003d00000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -1081,6 +1406,28 @@
           "",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:47",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/LegacyBridgeTest.php:57"
+        ]
+      },
+      {
+        "test": "testNegativePageDoesNotCreateNegativeOffset",
+        "kind": "failure",
+        "message": "LowListTests\\McpPaginationTest::testNegativePageDoesNotCreateNegativeOffset",
+        "details": [
+          "Failed asserting that two arrays are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
+        ]
+      },
+      {
+        "test": "testBaseControllerPaginationHasNoDeprecations",
+        "kind": "error",
+        "message": "LowListTests\\McpPaginationTest::testBaseControllerPaginationHasNoDeprecations",
+        "details": [
+          "ErrorException: Creation of dynamic property LowList\\FluxCapacitor\\Base\\Mcp::$data is deprecated",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Mcp.php:165",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/McpPaginationTest.php:89"
         ]
       },
       {
@@ -1204,10 +1551,10 @@
   {
     "runtime": "PHP 8.4.15 (cli) (built: Nov 20 2025 14:28:49) (NTS clang 15.0.0)",
     "exit": 2,
-    "tests": 158,
-    "assertions": 699,
-    "errors": 7,
-    "failures": 15,
+    "tests": 222,
+    "assertions": 1031,
+    "errors": 12,
+    "failures": 17,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -1233,6 +1580,60 @@
           "--- Expected",
           "+++ Actual",
           "@@ @@"
+        ]
+      },
+      {
+        "test": "testExistingNativeClassCanBeReplaced with data set #0",
+        "kind": "error",
+        "message": "LowListTests\\BridgeAdapterTest::testExistingNativeClassCanBeReplaced with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
+        "details": [
+          "RuntimeException: Cannot overwrite logger on the loader.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:344"
+        ]
+      },
+      {
+        "test": "testExistingNativeClassCanBeReplaced with data set #1",
+        "kind": "error",
+        "message": "LowListTests\\BridgeAdapterTest::testExistingNativeClassCanBeReplaced with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
+        "details": [
+          "RuntimeException: Cannot overwrite logger on the loader.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:344"
+        ]
+      },
+      {
+        "test": "testExistingNativeClassCanBeReplaced with data set #2",
+        "kind": "error",
+        "message": "LowListTests\\BridgeAdapterTest::testExistingNativeClassCanBeReplaced with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
+        "details": [
+          "RuntimeException: Cannot overwrite logger on the loader.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
+        ]
+      },
+      {
+        "test": "testExistingNativeClassCanBeReplaced with data set #3",
+        "kind": "error",
+        "message": "LowListTests\\BridgeAdapterTest::testExistingNativeClassCanBeReplaced with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
+        "details": [
+          "RuntimeException: Cannot overwrite logger on the loader.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
+        ]
+      },
+      {
+        "test": "testLegacyPersistentCacheDeletion",
+        "kind": "failure",
+        "message": "LowListTests\\BridgeAdapterTest::testLegacyPersistentCacheDeletion",
+        "details": [
+          "Failed asserting that 'stored' is false.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeAdapterTest.php:192"
         ]
       },
       {
@@ -1262,7 +1663,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000035d0000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004310000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -1272,7 +1673,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000003580000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000003db0000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -1282,7 +1683,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000003530000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000003d50000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -1292,7 +1693,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000034e0000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000003d00000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -1328,6 +1729,28 @@
           "",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:47",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/LegacyBridgeTest.php:57"
+        ]
+      },
+      {
+        "test": "testNegativePageDoesNotCreateNegativeOffset",
+        "kind": "failure",
+        "message": "LowListTests\\McpPaginationTest::testNegativePageDoesNotCreateNegativeOffset",
+        "details": [
+          "Failed asserting that two arrays are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
+        ]
+      },
+      {
+        "test": "testBaseControllerPaginationHasNoDeprecations",
+        "kind": "error",
+        "message": "LowListTests\\McpPaginationTest::testBaseControllerPaginationHasNoDeprecations",
+        "details": [
+          "ErrorException: Creation of dynamic property LowList\\FluxCapacitor\\Base\\Mcp::$data is deprecated",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Mcp.php:165",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/McpPaginationTest.php:89"
         ]
       },
       {
@@ -1451,10 +1874,10 @@
   {
     "runtime": "PHP 8.5.0 (cli) (built: Nov 20 2025 09:30:23) (NTS clang 15.0.0)",
     "exit": 2,
-    "tests": 158,
-    "assertions": 699,
-    "errors": 7,
-    "failures": 15,
+    "tests": 222,
+    "assertions": 1031,
+    "errors": 12,
+    "failures": 17,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -1480,6 +1903,60 @@
           "--- Expected",
           "+++ Actual",
           "@@ @@"
+        ]
+      },
+      {
+        "test": "testExistingNativeClassCanBeReplaced with data set #0",
+        "kind": "error",
+        "message": "LowListTests\\BridgeAdapterTest::testExistingNativeClassCanBeReplaced with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
+        "details": [
+          "RuntimeException: Cannot overwrite logger on the loader.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:344"
+        ]
+      },
+      {
+        "test": "testExistingNativeClassCanBeReplaced with data set #1",
+        "kind": "error",
+        "message": "LowListTests\\BridgeAdapterTest::testExistingNativeClassCanBeReplaced with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
+        "details": [
+          "RuntimeException: Cannot overwrite logger on the loader.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:344"
+        ]
+      },
+      {
+        "test": "testExistingNativeClassCanBeReplaced with data set #2",
+        "kind": "error",
+        "message": "LowListTests\\BridgeAdapterTest::testExistingNativeClassCanBeReplaced with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
+        "details": [
+          "RuntimeException: Cannot overwrite logger on the loader.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
+        ]
+      },
+      {
+        "test": "testExistingNativeClassCanBeReplaced with data set #3",
+        "kind": "error",
+        "message": "LowListTests\\BridgeAdapterTest::testExistingNativeClassCanBeReplaced with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
+        "details": [
+          "RuntimeException: Cannot overwrite logger on the loader.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
+        ]
+      },
+      {
+        "test": "testLegacyPersistentCacheDeletion",
+        "kind": "failure",
+        "message": "LowListTests\\BridgeAdapterTest::testLegacyPersistentCacheDeletion",
+        "details": [
+          "Failed asserting that 'stored' is false.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeAdapterTest.php:192"
         ]
       },
       {
@@ -1509,7 +1986,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000035d0000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004310000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -1519,7 +1996,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000003580000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000003db0000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -1529,7 +2006,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000003530000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000003d50000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -1539,7 +2016,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000034e0000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000003d00000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -1575,6 +2052,28 @@
           "",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:47",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/LegacyBridgeTest.php:57"
+        ]
+      },
+      {
+        "test": "testNegativePageDoesNotCreateNegativeOffset",
+        "kind": "failure",
+        "message": "LowListTests\\McpPaginationTest::testNegativePageDoesNotCreateNegativeOffset",
+        "details": [
+          "Failed asserting that two arrays are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
+        ]
+      },
+      {
+        "test": "testBaseControllerPaginationHasNoDeprecations",
+        "kind": "error",
+        "message": "LowListTests\\McpPaginationTest::testBaseControllerPaginationHasNoDeprecations",
+        "details": [
+          "ErrorException: Creation of dynamic property LowList\\FluxCapacitor\\Base\\Mcp::$data is deprecated",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Mcp.php:165",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/McpPaginationTest.php:89"
         ]
       },
       {
