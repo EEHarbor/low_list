@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="tests/bootstrap.php" colors="true" failOnRisky="true" failOnWarning="true" cacheResult="false" beStrictAboutTestsThatDoNotTestAnything="true">
+  <php><ini name="error_reporting" value="-1"/></php>
+  <testsuites>
+    <testsuite name="Addon Unit">
+      <directory suffix="Test.php">tests/tests/Unit</directory>
+    </testsuite>
+  </testsuites>
+  <coverage processUncoveredFiles="true">
+    <include>
+      <directory suffix=".php">low_list</directory>
+    </include>
+  </coverage>
+</phpunit>

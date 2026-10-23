@@ -1,0 +1,4 @@
+/tests/.phpunit/*.phar
+/tests/.reports/
+/tests/.coverage-source/
+/.phpunit.result.cache
