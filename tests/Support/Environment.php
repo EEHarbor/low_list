@@ -428,6 +428,7 @@ class Config
 class Loader
 {
     public $calls = array();
+    public $viewOutput = '';
 
     /**
      * Record the helper request; test helpers are already loaded.
@@ -467,18 +468,24 @@ class Loader
     }
 
     /**
-     * Record the legacy view name, variables and return-output flag.
+     * Record the legacy view boundary and preserve its strict return-output flag.
      *
      * @param string $name
      * @param array $variables
      * @param bool $return
-     * @return string
+     * @return string|null
      */
     public function view($name, $variables, $return)
     {
         $this->calls[] = array('view', $name, $variables, $return);
 
-        return 'rendered-legacy-view';
+        if ($return === true) {
+            return 'rendered-legacy-view';
+        }
+
+        $this->viewOutput .= 'rendered-legacy-view';
+
+        return null;
     }
 }
 

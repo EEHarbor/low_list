@@ -4,31 +4,46 @@ require __DIR__ . '/inventory.php';
 require_once __DIR__ . '/Support/Coverage.php';
 $inventory = sourceInventory();
 $reportDirectory = $argv[1];
+$mode = isset($argv[2]) ? $argv[2] : 'navigation';
+$configurations = array(
+    'navigation' => array(
+        'source' => 'low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php',
+        'cases' => array('modern' => '7.5.0', 'legacy' => '2.5.5', 'http-route' => '7.5.0'),
+    ),
+    'legacy-bridge' => array(
+        'source' => 'low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php',
+        'cases' => array('urls' => '2.5.5', 'view-writable' => '2.5.5', 'view-readonly' => '2.5.5'),
+    ),
+);
+if (!isset($configurations[$mode])) {
+    throw new RuntimeException('Unknown native source context.');
+}
+$configuration = $configurations[$mode];
 $parent = json_decode(file_get_contents($reportDirectory . '/xdebug.json'), true);
 if (!is_array($parent) || !isset($parent['php'], $parent['xdebug'])) {
     throw new RuntimeException('Fresh parent instrumentation metadata is required.');
 }
-$relative = 'low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php';
+$relative = $configuration['source'];
 $native = 'phar://' . dirname(__DIR__) . '/' . $relative;
 $entry = $inventory['files'][$relative];
 if (hash_file('sha256', $native) !== $entry['sha256']) {
-    throw new RuntimeException('Navigation source provenance mismatch.');
+    throw new RuntimeException('Native source provenance mismatch.');
 }
 $contexts = array();
-foreach (glob($reportDirectory . '/native-navigation-*.json') as $path) {
+foreach (glob($reportDirectory . '/native-' . $mode . '-*.json') as $path) {
     $capture = json_decode(file_get_contents($path), true);
-    if (!is_array($capture) || !isset($capture['context']['native_mode'], $capture['context']['native_case'], $capture['runtime_declarations']) || !is_array($capture['runtime_declarations'])) {
-        throw new RuntimeException('Native navigation metadata is required.');
+    if (!is_array($capture) || !isset($capture['php'], $capture['xdebug'], $capture['context']['native_mode'], $capture['context']['native_case'], $capture['context']['REQ'], $capture['context']['APP_VER'], $capture['runtime_declarations']) || !is_array($capture['runtime_declarations'])) {
+        throw new RuntimeException('Native source metadata is required.');
     }
     $case = $capture['context']['native_case'];
-    if ($capture['context']['native_mode'] !== 'navigation' || isset($contexts[$case]) || !in_array($case, array('modern', 'legacy', 'http-route'), true)) {
-        throw new RuntimeException('Unexpected or duplicate native navigation context.');
+    if ($capture['context']['native_mode'] !== $mode || isset($contexts[$case]) || !isset($configuration['cases'][$case])) {
+        throw new RuntimeException('Unexpected or duplicate native source context.');
     }
     if ($capture['php'] !== $parent['php'] || $capture['xdebug'] !== $parent['xdebug'] || !isset($capture['coverage'][$native])) {
-        throw new RuntimeException('Missing or incompatible native navigation instrumentation.');
+        throw new RuntimeException('Missing or incompatible native source instrumentation.');
     }
-    if ($capture['context']['REQ'] !== 'CP' || $capture['context']['APP_VER'] !== ($case === 'legacy' ? '2.5.5' : '7.5.0')) {
-        throw new RuntimeException('Unexpected native navigation request context.');
+    if ($capture['context']['REQ'] !== 'CP' || $capture['context']['APP_VER'] !== $configuration['cases'][$case]) {
+        throw new RuntimeException('Unexpected native source request context.');
     }
     $source = $capture['coverage'][$native];
     $executable = array_filter($source['lines'], static function ($hit) { return $hit !== -2; });
@@ -51,9 +66,11 @@ foreach (glob($reportDirectory . '/native-navigation-*.json') as $path) {
             'basic_blocks_hit' => count(array_filter($branches, static function ($branch) { return $branch['hit'] > 0; })),
             'basic_blocks' => count($branches),
         );
+        // Full-path enumeration remains in the original capture, outside this summary.
+        unset($source['functions'][$name]['paths']);
     }
     if (!$observed || !$executable) {
-        throw new RuntimeException('Empty navigation instrumentation cannot count as success.');
+        throw new RuntimeException('Empty native source instrumentation cannot count as success.');
     }
     $contexts[$case] = array(
         'capture' => basename($path),
@@ -64,8 +81,8 @@ foreach (glob($reportDirectory . '/native-navigation-*.json') as $path) {
         'source_data' => $source,
     );
 }
-if (count($contexts) !== 3) {
-    throw new RuntimeException('All three fresh navigation contexts are required.');
+if (count($contexts) !== count($configuration['cases'])) {
+    throw new RuntimeException('All configured fresh native contexts are required.');
 }
 ksort($contexts);
 $report = array(
@@ -78,4 +95,4 @@ $report = array(
     'metrics' => 'Independent native contexts; raw basic blocks and out/out_hit exits are preserved without graph merging.',
     'contexts' => $contexts,
 );
-file_put_contents($reportDirectory . '/native-navigation.json', json_encode($report, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
+file_put_contents($reportDirectory . '/native-' . $mode . '.json', json_encode($report, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
