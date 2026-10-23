@@ -1,6 +1,7 @@
 <?php
 
 require __DIR__ . '/inventory.php';
+require_once __DIR__ . '/Support/Coverage.php';
 $inventory = sourceInventory();
 $reportDirectory = $argv[1];
 $instrumentation = json_decode(file_get_contents($reportDirectory . '/xdebug.json'), true);
@@ -58,7 +59,8 @@ foreach ($inventory['files'] as $relative => $entry) {
                 $edges[] = array('branch' => $id, 'destination' => $destination, 'hit' => $branch['out_hit'][$edge]);
             }
         }
-        $functions[$name] = array('basic_blocks_hit' => $hit, 'basic_blocks' => count($branches), 'uncovered' => $uncovered, 'edges' => $edges, 'graph' => $branches);
+        $attribution = \LowListTests\Coverage::attribution($native, $name, $branches, isset($instrumentation['runtime_declarations']) ? $instrumentation['runtime_declarations'] : array());
+        $functions[$name] = array('basic_blocks_hit' => $hit, 'basic_blocks' => count($branches), 'attribution' => $attribution, 'declared_basic_blocks_hit' => $attribution['status'] === 'matched' ? $hit : null, 'declared_basic_blocks' => $attribution['status'] === 'matched' ? count($branches) : null, 'uncovered' => $uncovered, 'edges' => $edges, 'graph' => $branches);
         $fileBranches += count($branches);
         $fileBranchesHit += $hit;
     }
@@ -77,7 +79,7 @@ foreach ($inventory['files'] as $relative => $entry) {
     }
 }
 $xml->asXML($reportDirectory . '/clover.xml');
-file_put_contents($reportDirectory . '/branch-report.json', json_encode(array('baseline' => $inventory['baseline'], 'archive_sha256' => $inventory['archive_sha256'], 'runtime' => $instrumentation['php'], 'xdebug' => $instrumentation['xdebug'], 'totals_compiled_only' => $totals, 'files' => $summary), JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
+file_put_contents($reportDirectory . '/branch-report.json', json_encode(array('baseline' => $inventory['baseline'], 'archive_sha256' => $inventory['archive_sha256'], 'runtime' => $instrumentation['php'], 'xdebug' => $instrumentation['xdebug'], 'context' => isset($instrumentation['context']) ? $instrumentation['context'] : null, 'totals_compiled_only' => $totals, 'files' => $summary), JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
 $uncompiled = array_keys(array_filter($summary, static function ($file) { return !$file['compiled_in_main_process']; }));
 $text = sprintf("Main-process native Xdebug: %d/%d lines, %d/%d basic blocks.\nUncompiled shipped files: %d. These are unmeasured, never 100%%.\nDecision exits are retained separately; basic-block percentages do not establish branch closure.\n", $totals['lines_hit'], $totals['lines'], $totals['basic_blocks_hit'], $totals['basic_blocks'], count($uncompiled));
 file_put_contents($reportDirectory . '/summary.txt', $text);

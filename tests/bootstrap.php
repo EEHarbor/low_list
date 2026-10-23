@@ -6,6 +6,7 @@ require_once __DIR__ . '/Support/Collaborators.php';
 require_once __DIR__ . '/Support/AdapterCollaborators.php';
 require_once __DIR__ . '/Support/SchemaForge.php';
 require_once __DIR__ . '/Support/Encryption.php';
+require_once __DIR__ . '/Support/NativeProbe.php';
 
 define('BASEPATH', __DIR__);
 define('PATH_THIRD', dirname(__DIR__) . '/');

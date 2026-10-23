@@ -3,6 +3,12 @@
     "archive_sha256": "32a3538131e73a067d439d9d078f7b6a6abb5d576a01cbbd60c0deb7ec48144c",
     "runtime": "8.3.28",
     "xdebug": "3.5.3",
+    "context": {
+        "APP_VER": "7.5.0",
+        "REQ": "PAGE",
+        "native_mode": null,
+        "native_case": null
+    },
     "totals_compiled_only": {
         "lines_hit": 1336,
         "lines": 1565,
@@ -22,6 +28,13 @@
                 "{main}": {
                     "basic_blocks_hit": 0,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "unknown",
+                        "reason": "no_matching_runtime_declaration",
+                        "declaration": null
+                    },
+                    "declared_basic_blocks_hit": null,
+                    "declared_basic_blocks": null,
                     "uncovered": [
                         {
                             "id": 0,
@@ -62,6 +75,13 @@
                 "{main}": {
                     "basic_blocks_hit": 0,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "unknown",
+                        "reason": "no_matching_runtime_declaration",
+                        "declaration": null
+                    },
+                    "declared_basic_blocks_hit": null,
+                    "declared_basic_blocks": null,
                     "uncovered": [
                         {
                             "id": 0,
@@ -95,6 +115,17 @@
                 "{closure:/Users/tomjaeger/Sites/add-ons/low_list/low_list/autoload.php:19-92}": {
                     "basic_blocks_hit": 24,
                     "basic_blocks": 31,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "/Users/tomjaeger/Sites/add-ons/low_list/low_list/autoload.php",
+                            "line_start": 19,
+                            "line_end": 92
+                        }
+                    },
+                    "declared_basic_blocks_hit": 24,
+                    "declared_basic_blocks": 31,
                     "uncovered": [
                         {
                             "id": 73,
@@ -900,6 +931,17 @@
                 "Extract_low_list->extractFile": {
                     "basic_blocks_hit": 12,
                     "basic_blocks": 14,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "/Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar",
+                            "line_start": 239,
+                            "line_end": 270
+                        }
+                    },
+                    "declared_basic_blocks_hit": 12,
+                    "declared_basic_blocks": 14,
                     "uncovered": [
                         {
                             "id": 59,
@@ -1205,6 +1247,17 @@
                 "Extract_low_list->_removeTmpFiles": {
                     "basic_blocks_hit": 10,
                     "basic_blocks": 12,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "/Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar",
+                            "line_start": 272,
+                            "line_end": 288
+                        }
+                    },
+                    "declared_basic_blocks_hit": 10,
+                    "declared_basic_blocks": 12,
                     "uncovered": [
                         {
                             "id": 41,
@@ -1483,6 +1536,13 @@
                 "{main}": {
                     "basic_blocks_hit": 0,
                     "basic_blocks": 30,
+                    "attribution": {
+                        "status": "unknown",
+                        "reason": "no_matching_runtime_declaration",
+                        "declaration": null
+                    },
+                    "declared_basic_blocks_hit": null,
+                    "declared_basic_blocks": null,
                     "uncovered": [
                         {
                             "id": 0,
@@ -2288,6 +2348,17 @@
                 "Extract_low_list->go": {
                     "basic_blocks_hit": 0,
                     "basic_blocks": 35,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "/Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar",
+                            "line_start": 113,
+                            "line_end": 194
+                        }
+                    },
+                    "declared_basic_blocks_hit": 0,
+                    "declared_basic_blocks": 35,
                     "uncovered": [
                         {
                             "id": 0,
@@ -3229,6 +3300,17 @@
                 "Extract_low_list->_unpack": {
                     "basic_blocks_hit": 4,
                     "basic_blocks": 4,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "/Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar",
+                            "line_start": 213,
+                            "line_end": 237
+                        }
+                    },
+                    "declared_basic_blocks_hit": 4,
+                    "declared_basic_blocks": 4,
                     "uncovered": [],
                     "edges": [
                         {
@@ -3308,6 +3390,17 @@
                 "Extract_low_list->tmpdir": {
                     "basic_blocks_hit": 4,
                     "basic_blocks": 14,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "/Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar",
+                            "line_start": 196,
+                            "line_end": 211
+                        }
+                    },
+                    "declared_basic_blocks_hit": 4,
+                    "declared_basic_blocks": 14,
                     "uncovered": [
                         {
                             "id": 7,
@@ -3667,6 +3760,17 @@
                 "LowList\\FluxCapacitor\\Base\\Ext->update_extension": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Ext.php",
+                            "line_start": 177,
+                            "line_end": 180
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -3684,6 +3788,17 @@
                 "LowList\\FluxCapacitor\\Base\\Ext->__construct": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Ext.php",
+                            "line_start": 29,
+                            "line_end": 36
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [
                         {
@@ -3711,6 +3826,17 @@
                 "LowList\\FluxCapacitor\\Base\\Ext->activateExtension": {
                     "basic_blocks_hit": 4,
                     "basic_blocks": 4,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Ext.php",
+                            "line_start": 38,
+                            "line_end": 46
+                        }
+                    },
+                    "declared_basic_blocks_hit": 4,
+                    "declared_basic_blocks": 4,
                     "uncovered": [],
                     "edges": [
                         {
@@ -3797,6 +3923,17 @@
                 "LowList\\FluxCapacitor\\Base\\Ext->register_extension": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Ext.php",
+                            "line_start": 187,
+                            "line_end": 190
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -3814,6 +3951,17 @@
                 "LowList\\FluxCapacitor\\Base\\Ext->updateVersion": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Ext.php",
+                            "line_start": 74,
+                            "line_end": 87
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -3831,6 +3979,17 @@
                 "LowList\\FluxCapacitor\\Base\\Ext->cpCustomMenu": {
                     "basic_blocks_hit": 2,
                     "basic_blocks": 3,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Ext.php",
+                            "line_start": 149,
+                            "line_end": 157
+                        }
+                    },
+                    "declared_basic_blocks_hit": 2,
+                    "declared_basic_blocks": 3,
                     "uncovered": [
                         {
                             "id": 7,
@@ -3907,6 +4066,17 @@
                 "LowList\\FluxCapacitor\\Base\\Ext->disable_extension": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Ext.php",
+                            "line_start": 167,
+                            "line_end": 170
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -3924,6 +4094,17 @@
                 "LowList\\FluxCapacitor\\Base\\Ext->update_version": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Ext.php",
+                            "line_start": 182,
+                            "line_end": 185
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -3941,6 +4122,17 @@
                 "LowList\\FluxCapacitor\\Base\\Ext->registerExtension": {
                     "basic_blocks_hit": 9,
                     "basic_blocks": 9,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Ext.php",
+                            "line_start": 89,
+                            "line_end": 124
+                        }
+                    },
+                    "declared_basic_blocks_hit": 9,
+                    "declared_basic_blocks": 9,
                     "uncovered": [],
                     "edges": [
                         {
@@ -4131,6 +4323,13 @@
                 "{main}": {
                     "basic_blocks_hit": 0,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "unknown",
+                        "reason": "no_matching_runtime_declaration",
+                        "declaration": null
+                    },
+                    "declared_basic_blocks_hit": null,
+                    "declared_basic_blocks": null,
                     "uncovered": [
                         {
                             "id": 0,
@@ -4164,6 +4363,17 @@
                 "LowList\\FluxCapacitor\\Base\\Ext->activate_extension": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Ext.php",
+                            "line_start": 172,
+                            "line_end": 175
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -4181,6 +4391,17 @@
                 "LowList\\FluxCapacitor\\Base\\Ext->disableExtension": {
                     "basic_blocks_hit": 3,
                     "basic_blocks": 3,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Ext.php",
+                            "line_start": 59,
+                            "line_end": 72
+                        }
+                    },
+                    "declared_basic_blocks_hit": 3,
+                    "declared_basic_blocks": 3,
                     "uncovered": [],
                     "edges": [
                         {
@@ -4242,6 +4463,17 @@
                 "LowList\\FluxCapacitor\\Base\\Ext->unregisterExtension": {
                     "basic_blocks_hit": 3,
                     "basic_blocks": 3,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Ext.php",
+                            "line_start": 126,
+                            "line_end": 140
+                        }
+                    },
+                    "declared_basic_blocks_hit": 3,
+                    "declared_basic_blocks": 3,
                     "uncovered": [],
                     "edges": [
                         {
@@ -4303,6 +4535,17 @@
                 "LowList\\FluxCapacitor\\Base\\Ext->updateExtension": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Ext.php",
+                            "line_start": 48,
+                            "line_end": 53
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -4320,6 +4563,17 @@
                 "LowList\\FluxCapacitor\\Base\\Ext->unregister_extension": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Ext.php",
+                            "line_start": 192,
+                            "line_end": 195
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -4337,6 +4591,17 @@
                 "LowList\\FluxCapacitor\\Base\\Ext->cp_custom_menu": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Ext.php",
+                            "line_start": 197,
+                            "line_end": 200
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -4385,6 +4650,17 @@
                 "LowList\\FluxCapacitor\\Base\\Ft->_package_display_settings": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Ft.php",
+                            "line_start": 153,
+                            "line_end": 156
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -4402,6 +4678,17 @@
                 "LowList\\FluxCapacitor\\Base\\Ft->accepts_content_type": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Ft.php",
+                            "line_start": 64,
+                            "line_end": 67
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -4419,6 +4706,17 @@
                 "LowList\\FluxCapacitor\\Base\\Ft->getChannelId": {
                     "basic_blocks_hit": 8,
                     "basic_blocks": 13,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Ft.php",
+                            "line_start": 69,
+                            "line_end": 99
+                        }
+                    },
+                    "declared_basic_blocks_hit": 8,
+                    "declared_basic_blocks": 13,
                     "uncovered": [
                         {
                             "id": 5,
@@ -4721,6 +5019,17 @@
                 "LowList\\FluxCapacitor\\Base\\Ft->_display_settings_add_row": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Ft.php",
+                            "line_start": 147,
+                            "line_end": 150
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -4738,6 +5047,17 @@
                 "LowList\\FluxCapacitor\\Base\\Ft->__construct": {
                     "basic_blocks_hit": 4,
                     "basic_blocks": 5,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Ft.php",
+                            "line_start": 47,
+                            "line_end": 57
+                        }
+                    },
+                    "declared_basic_blocks_hit": 4,
+                    "declared_basic_blocks": 5,
                     "uncovered": [
                         {
                             "id": 26,
@@ -4857,6 +5177,17 @@
                 "LowList\\FluxCapacitor\\Base\\Ft->displaySettingsRow": {
                     "basic_blocks_hit": 3,
                     "basic_blocks": 7,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Ft.php",
+                            "line_start": 101,
+                            "line_end": 126
+                        }
+                    },
+                    "declared_basic_blocks_hit": 3,
+                    "declared_basic_blocks": 7,
                     "uncovered": [
                         {
                             "id": 9,
@@ -5027,6 +5358,17 @@
                 "LowList\\FluxCapacitor\\Base\\Ft->update": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Ft.php",
+                            "line_start": 59,
+                            "line_end": 62
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -5044,6 +5386,13 @@
                 "{main}": {
                     "basic_blocks_hit": 0,
                     "basic_blocks": 12,
+                    "attribution": {
+                        "status": "unknown",
+                        "reason": "no_matching_runtime_declaration",
+                        "declaration": null
+                    },
+                    "declared_basic_blocks_hit": null,
+                    "declared_basic_blocks": null,
                     "uncovered": [
                         {
                             "id": 0,
@@ -5372,6 +5721,17 @@
                 "LowList\\FluxCapacitor\\Base\\Ft->displaySettingsReturn": {
                     "basic_blocks_hit": 2,
                     "basic_blocks": 3,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Ft.php",
+                            "line_start": 128,
+                            "line_end": 144
+                        }
+                    },
+                    "declared_basic_blocks_hit": 2,
+                    "declared_basic_blocks": 3,
                     "uncovered": [
                         {
                             "id": 21,
@@ -5460,6 +5820,17 @@
                 "LowList\\FluxCapacitor\\Base\\Mcp->canIncludeNav": {
                     "basic_blocks_hit": 4,
                     "basic_blocks": 8,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Mcp.php",
+                            "line_start": 183,
+                            "line_end": 196
+                        }
+                    },
+                    "declared_basic_blocks_hit": 4,
+                    "declared_basic_blocks": 8,
                     "uncovered": [
                         {
                             "id": 11,
@@ -5653,6 +6024,17 @@
                 "LowList\\FluxCapacitor\\Base\\Mcp->index": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Mcp.php",
+                            "line_start": 38,
+                            "line_end": 41
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -5670,6 +6052,13 @@
                 "{main}": {
                     "basic_blocks_hit": 0,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "unknown",
+                        "reason": "no_matching_runtime_declaration",
+                        "declaration": null
+                    },
+                    "declared_basic_blocks_hit": null,
+                    "declared_basic_blocks": null,
                     "uncovered": [
                         {
                             "id": 0,
@@ -5703,6 +6092,17 @@
                 "LowList\\FluxCapacitor\\Base\\Mcp->__construct": {
                     "basic_blocks_hit": 2,
                     "basic_blocks": 3,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Mcp.php",
+                            "line_start": 27,
+                            "line_end": 36
+                        }
+                    },
+                    "declared_basic_blocks_hit": 2,
+                    "declared_basic_blocks": 3,
                     "uncovered": [
                         {
                             "id": 16,
@@ -5779,6 +6179,17 @@
                 "LowList\\FluxCapacitor\\Base\\Mcp->save_license": {
                     "basic_blocks_hit": 19,
                     "basic_blocks": 19,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Mcp.php",
+                            "line_start": 68,
+                            "line_end": 138
+                        }
+                    },
+                    "declared_basic_blocks_hit": 19,
+                    "declared_basic_blocks": 19,
                     "uncovered": [],
                     "edges": [
                         {
@@ -6191,6 +6602,17 @@
                 "LowList\\FluxCapacitor\\Base\\Mcp->paginateModel": {
                     "basic_blocks_hit": 11,
                     "basic_blocks": 12,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Mcp.php",
+                            "line_start": 140,
+                            "line_end": 175
+                        }
+                    },
+                    "declared_basic_blocks_hit": 11,
+                    "declared_basic_blocks": 12,
                     "uncovered": [
                         {
                             "id": 20,
@@ -6448,6 +6870,17 @@
                 "LowList\\FluxCapacitor\\Base\\Mcp->license": {
                     "basic_blocks_hit": 6,
                     "basic_blocks": 6,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Mcp.php",
+                            "line_start": 43,
+                            "line_end": 66
+                        }
+                    },
+                    "declared_basic_blocks_hit": 6,
+                    "declared_basic_blocks": 6,
                     "uncovered": [],
                     "edges": [
                         {
@@ -6581,6 +7014,13 @@
                 "{main}": {
                     "basic_blocks_hit": 0,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "unknown",
+                        "reason": "no_matching_runtime_declaration",
+                        "declaration": null
+                    },
+                    "declared_basic_blocks_hit": null,
+                    "declared_basic_blocks": null,
                     "uncovered": [
                         {
                             "id": 0,
@@ -6614,6 +7054,17 @@
                 "LowList\\FluxCapacitor\\Base\\Mod->__construct": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Mod.php",
+                            "line_start": 21,
+                            "line_end": 25
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [
                         {
@@ -6641,6 +7092,17 @@
                 "LowList\\FluxCapacitor\\Base\\Mod->getParameter": {
                     "basic_blocks_hit": 5,
                     "basic_blocks": 5,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Mod.php",
+                            "line_start": 35,
+                            "line_end": 49
+                        }
+                    },
+                    "declared_basic_blocks_hit": 5,
+                    "declared_basic_blocks": 5,
                     "uncovered": [],
                     "edges": [
                         {
@@ -6762,6 +7224,17 @@
                 "LowList\\FluxCapacitor\\Base\\Pi->__construct": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Pi.php",
+                            "line_start": 21,
+                            "line_end": 25
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [
                         {
@@ -6789,6 +7262,17 @@
                 "LowList\\FluxCapacitor\\Base\\Pi->info": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Pi.php",
+                            "line_start": 27,
+                            "line_end": 36
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [
                         {
@@ -6816,6 +7300,13 @@
                 "{main}": {
                     "basic_blocks_hit": 0,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "unknown",
+                        "reason": "no_matching_runtime_declaration",
+                        "declaration": null
+                    },
+                    "declared_basic_blocks_hit": null,
+                    "declared_basic_blocks": null,
                     "uncovered": [
                         {
                             "id": 0,
@@ -6863,6 +7354,17 @@
                 "LowList\\FluxCapacitor\\Base\\Tab->save": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Tab.php",
+                            "line_start": 46,
+                            "line_end": 49
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -6880,6 +7382,17 @@
                 "LowList\\FluxCapacitor\\Base\\Tab->display": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Tab.php",
+                            "line_start": 34,
+                            "line_end": 37
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -6897,6 +7410,17 @@
                 "LowList\\FluxCapacitor\\Base\\Tab->__construct": {
                     "basic_blocks_hit": 4,
                     "basic_blocks": 5,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Tab.php",
+                            "line_start": 22,
+                            "line_end": 31
+                        }
+                    },
+                    "declared_basic_blocks_hit": 4,
+                    "declared_basic_blocks": 5,
                     "uncovered": [
                         {
                             "id": 21,
@@ -7016,6 +7540,17 @@
                 "LowList\\FluxCapacitor\\Base\\Tab->getEntryVariables": {
                     "basic_blocks_hit": 6,
                     "basic_blocks": 6,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Tab.php",
+                            "line_start": 57,
+                            "line_end": 76
+                        }
+                    },
+                    "declared_basic_blocks_hit": 6,
+                    "declared_basic_blocks": 6,
                     "uncovered": [],
                     "edges": [
                         {
@@ -7138,6 +7673,17 @@
                 "LowList\\FluxCapacitor\\Base\\Tab->publish_data_db": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Tab.php",
+                            "line_start": 52,
+                            "line_end": 55
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -7155,6 +7701,13 @@
                 "{main}": {
                     "basic_blocks_hit": 0,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "unknown",
+                        "reason": "no_matching_runtime_declaration",
+                        "declaration": null
+                    },
+                    "declared_basic_blocks_hit": null,
+                    "declared_basic_blocks": null,
                     "uncovered": [
                         {
                             "id": 0,
@@ -7188,6 +7741,17 @@
                 "LowList\\FluxCapacitor\\Base\\Tab->publish_tabs": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Tab.php",
+                            "line_start": 40,
+                            "line_end": 43
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -7224,6 +7788,17 @@
                 "LowList\\FluxCapacitor\\Base\\Upd->__construct": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php",
+                            "line_start": 26,
+                            "line_end": 34
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [
                         {
@@ -7251,6 +7826,17 @@
                 "LowList\\FluxCapacitor\\Base\\Upd->install": {
                     "basic_blocks_hit": 3,
                     "basic_blocks": 3,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php",
+                            "line_start": 36,
+                            "line_end": 54
+                        }
+                    },
+                    "declared_basic_blocks_hit": 3,
+                    "declared_basic_blocks": 3,
                     "uncovered": [],
                     "edges": [
                         {
@@ -7312,6 +7898,17 @@
                 "LowList\\FluxCapacitor\\Base\\Upd->uninstall": {
                     "basic_blocks_hit": 5,
                     "basic_blocks": 6,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php",
+                            "line_start": 78,
+                            "line_end": 127
+                        }
+                    },
+                    "declared_basic_blocks_hit": 5,
+                    "declared_basic_blocks": 6,
                     "uncovered": [
                         {
                             "id": 44,
@@ -7440,6 +8037,13 @@
                 "{main}": {
                     "basic_blocks_hit": 0,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "unknown",
+                        "reason": "no_matching_runtime_declaration",
+                        "declaration": null
+                    },
+                    "declared_basic_blocks_hit": null,
+                    "declared_basic_blocks": null,
                     "uncovered": [
                         {
                             "id": 0,
@@ -7473,6 +8077,17 @@
                 "LowList\\FluxCapacitor\\Base\\Upd->update": {
                     "basic_blocks_hit": 4,
                     "basic_blocks": 9,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php",
+                            "line_start": 56,
+                            "line_end": 76
+                        }
+                    },
+                    "declared_basic_blocks_hit": 4,
+                    "declared_basic_blocks": 9,
                     "uncovered": [
                         {
                             "id": 15,
@@ -7700,6 +8315,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\AbstractBridge->ver_gte": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/AbstractBridge.php",
+                            "line_start": 49,
+                            "line_end": 52
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -7717,6 +8343,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\AbstractBridge->ver_lte": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/AbstractBridge.php",
+                            "line_start": 44,
+                            "line_end": 47
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -7734,6 +8371,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\AbstractBridge->ver_gt": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/AbstractBridge.php",
+                            "line_start": 39,
+                            "line_end": 42
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -7751,6 +8399,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\AbstractBridge->is_ee4": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/AbstractBridge.php",
+                            "line_start": 64,
+                            "line_end": 67
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -7768,6 +8427,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\AbstractBridge->is_ee5": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/AbstractBridge.php",
+                            "line_start": 69,
+                            "line_end": 72
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -7785,6 +8455,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\AbstractBridge->is_ee2": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/AbstractBridge.php",
+                            "line_start": 54,
+                            "line_end": 57
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -7802,6 +8483,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\AbstractBridge->is_ee3": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/AbstractBridge.php",
+                            "line_start": 59,
+                            "line_end": 62
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -7819,6 +8511,13 @@
                 "{main}": {
                     "basic_blocks_hit": 0,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "unknown",
+                        "reason": "no_matching_runtime_declaration",
+                        "declaration": null
+                    },
+                    "declared_basic_blocks_hit": null,
+                    "declared_basic_blocks": null,
                     "uncovered": [
                         {
                             "id": 0,
@@ -7852,6 +8551,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\AbstractBridge->ver_lt": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/AbstractBridge.php",
+                            "line_start": 34,
+                            "line_end": 37
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -7869,6 +8579,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\AbstractBridge->getEEVersion": {
                     "basic_blocks_hit": 3,
                     "basic_blocks": 3,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/AbstractBridge.php",
+                            "line_start": 22,
+                            "line_end": 31
+                        }
+                    },
+                    "declared_basic_blocks_hit": 3,
+                    "declared_basic_blocks": 3,
                     "uncovered": [],
                     "edges": [
                         {
@@ -7960,6 +8681,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE->__construct": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "mismatched",
+                        "reason": "graph_outside_runtime_range",
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE.php",
+                            "line_start": 82,
+                            "line_end": 85
+                        }
+                    },
+                    "declared_basic_blocks_hit": null,
+                    "declared_basic_blocks": null,
                     "uncovered": [],
                     "edges": [
                         {
@@ -7987,6 +8719,13 @@
                 "ee": {
                     "basic_blocks_hit": 0,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "unknown",
+                        "reason": "no_matching_runtime_declaration",
+                        "declaration": null
+                    },
+                    "declared_basic_blocks_hit": null,
+                    "declared_basic_blocks": null,
                     "uncovered": [
                         {
                             "id": 0,
@@ -8010,6 +8749,13 @@
                 "{main}": {
                     "basic_blocks_hit": 0,
                     "basic_blocks": 16,
+                    "attribution": {
+                        "status": "unknown",
+                        "reason": "no_matching_runtime_declaration",
+                        "declaration": null
+                    },
+                    "declared_basic_blocks_hit": null,
+                    "declared_basic_blocks": null,
                     "uncovered": [
                         {
                             "id": 0,
@@ -8480,6 +9226,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE2->initiateSettings": {
                     "basic_blocks_hit": 12,
                     "basic_blocks": 17,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php",
+                            "line_start": 420,
+                            "line_end": 475
+                        }
+                    },
+                    "declared_basic_blocks_hit": 12,
+                    "declared_basic_blocks": 17,
                     "uncovered": [
                         {
                             "id": 55,
@@ -8868,6 +9625,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE2->getCurrentPage": {
                     "basic_blocks_hit": 5,
                     "basic_blocks": 5,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php",
+                            "line_start": 173,
+                            "line_end": 184
+                        }
+                    },
+                    "declared_basic_blocks_hit": 5,
+                    "declared_basic_blocks": 5,
                     "uncovered": [],
                     "edges": [
                         {
@@ -8972,6 +9740,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE2->view": {
                     "basic_blocks_hit": 3,
                     "basic_blocks": 5,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php",
+                            "line_start": 157,
+                            "line_end": 171
+                        }
+                    },
+                    "declared_basic_blocks_hit": 3,
+                    "declared_basic_blocks": 5,
                     "uncovered": [
                         {
                             "id": 11,
@@ -9087,6 +9866,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE2->getAddonThemesDir": {
                     "basic_blocks_hit": 3,
                     "basic_blocks": 4,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php",
+                            "line_start": 311,
+                            "line_end": 315
+                        }
+                    },
+                    "declared_basic_blocks_hit": 3,
+                    "declared_basic_blocks": 4,
                     "uncovered": [
                         {
                             "id": 5,
@@ -9172,6 +9962,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE2->__construct": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php",
+                            "line_start": 26,
+                            "line_end": 30
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [
                         {
@@ -9199,6 +10000,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE2->getFooter": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php",
+                            "line_start": 397,
+                            "line_end": 400
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -9216,6 +10028,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE2->reduce_double_slashes": {
                     "basic_blocks_hit": 2,
                     "basic_blocks": 3,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php",
+                            "line_start": 406,
+                            "line_end": 414
+                        }
+                    },
+                    "declared_basic_blocks_hit": 2,
+                    "declared_basic_blocks": 3,
                     "uncovered": [
                         {
                             "id": 9,
@@ -9283,6 +10106,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE2->instantiate": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php",
+                            "line_start": 32,
+                            "line_end": 35
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [
                         {
@@ -9310,6 +10144,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE2->pagination": {
                     "basic_blocks_hit": 3,
                     "basic_blocks": 3,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php",
+                            "line_start": 191,
+                            "line_end": 201
+                        }
+                    },
+                    "declared_basic_blocks_hit": 3,
+                    "declared_basic_blocks": 3,
                     "uncovered": [],
                     "edges": [
                         {
@@ -9371,6 +10216,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE2->cache": {
                     "basic_blocks_hit": 26,
                     "basic_blocks": 26,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php",
+                            "line_start": 255,
+                            "line_end": 293
+                        }
+                    },
+                    "declared_basic_blocks_hit": 26,
+                    "declared_basic_blocks": 26,
                     "uncovered": [],
                     "edges": [
                         {
@@ -9960,6 +10816,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE2->getCachePath": {
                     "basic_blocks_hit": 3,
                     "basic_blocks": 3,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php",
+                            "line_start": 386,
+                            "line_end": 395
+                        }
+                    },
+                    "declared_basic_blocks_hit": 3,
+                    "declared_basic_blocks": 3,
                     "uncovered": [],
                     "edges": [
                         {
@@ -10021,6 +10888,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE2->overwriteEEClass": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php",
+                            "line_start": 324,
+                            "line_end": 327
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [
                         {
@@ -10048,6 +10926,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE2->getCurrentUrlInfo": {
                     "basic_blocks_hit": 8,
                     "basic_blocks": 8,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php",
+                            "line_start": 365,
+                            "line_end": 380
+                        }
+                    },
+                    "declared_basic_blocks_hit": 8,
+                    "declared_basic_blocks": 8,
                     "uncovered": [],
                     "edges": [
                         {
@@ -10213,6 +11102,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE2->javascript_to_page": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php",
+                            "line_start": 480,
+                            "line_end": 483
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [
                         {
@@ -10240,6 +11140,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE2->assign_parameters": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php",
+                            "line_start": 497,
+                            "line_end": 500
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -10257,6 +11168,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE2->xss_clean": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php",
+                            "line_start": 345,
+                            "line_end": 348
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -10274,6 +11196,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE2->getStartNum": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php",
+                            "line_start": 186,
+                            "line_end": 189
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -10291,6 +11224,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE2->flashData": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php",
+                            "line_start": 302,
+                            "line_end": 305
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [
                         {
@@ -10318,6 +11262,13 @@
                 "{main}": {
                     "basic_blocks_hit": 0,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "unknown",
+                        "reason": "no_matching_runtime_declaration",
+                        "declaration": null
+                    },
+                    "declared_basic_blocks_hit": null,
+                    "declared_basic_blocks": null,
                     "uncovered": [
                         {
                             "id": 0,
@@ -10351,6 +11302,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE2->getNav": {
                     "basic_blocks_hit": 5,
                     "basic_blocks": 6,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php",
+                            "line_start": 78,
+                            "line_end": 90
+                        }
+                    },
+                    "declared_basic_blocks_hit": 5,
+                    "declared_basic_blocks": 6,
                     "uncovered": [
                         {
                             "id": 16,
@@ -10495,6 +11457,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE2->getBaseURL": {
                     "basic_blocks_hit": 4,
                     "basic_blocks": 26,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php",
+                            "line_start": 37,
+                            "line_end": 76
+                        }
+                    },
+                    "declared_basic_blocks_hit": 4,
+                    "declared_basic_blocks": 26,
                     "uncovered": [
                         {
                             "id": 8,
@@ -11172,6 +12145,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE2->setConfig": {
                     "basic_blocks_hit": 7,
                     "basic_blocks": 7,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php",
+                            "line_start": 221,
+                            "line_end": 253
+                        }
+                    },
+                    "declared_basic_blocks_hit": 7,
+                    "declared_basic_blocks": 7,
                     "uncovered": [],
                     "edges": [
                         {
@@ -11328,6 +12312,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE2->removeEEClass": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php",
+                            "line_start": 335,
+                            "line_end": 338
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [
                         {
@@ -11355,6 +12350,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE2->moduleURL": {
                     "basic_blocks_hit": 0,
                     "basic_blocks": 6,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php",
+                            "line_start": 142,
+                            "line_end": 155
+                        }
+                    },
+                    "declared_basic_blocks_hit": 0,
+                    "declared_basic_blocks": 6,
                     "uncovered": [
                         {
                             "id": 0,
@@ -11515,6 +12521,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE2->getConfig": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php",
+                            "line_start": 214,
+                            "line_end": 219
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -11532,6 +12549,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE2->module_installed": {
                     "basic_blocks_hit": 3,
                     "basic_blocks": 3,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php",
+                            "line_start": 485,
+                            "line_end": 495
+                        }
+                    },
+                    "declared_basic_blocks_hit": 3,
+                    "declared_basic_blocks": 3,
                     "uncovered": [],
                     "edges": [
                         {
@@ -11593,6 +12621,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE2->assign_variables": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php",
+                            "line_start": 507,
+                            "line_end": 510
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -11610,6 +12649,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE2->url_title": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php",
+                            "line_start": 355,
+                            "line_end": 358
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -11627,6 +12677,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE2->getSettings": {
                     "basic_blocks_hit": 3,
                     "basic_blocks": 3,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php",
+                            "line_start": 203,
+                            "line_end": 212
+                        }
+                    },
+                    "declared_basic_blocks_hit": 3,
+                    "declared_basic_blocks": 3,
                     "uncovered": [],
                     "edges": [
                         {
@@ -11688,6 +12749,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE2->cpURL": {
                     "basic_blocks_hit": 28,
                     "basic_blocks": 28,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php",
+                            "line_start": 92,
+                            "line_end": 140
+                        }
+                    },
+                    "declared_basic_blocks_hit": 28,
+                    "declared_basic_blocks": 28,
                     "uncovered": [],
                     "edges": [
                         {
@@ -12344,6 +13416,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE3->initiateSettings": {
                     "basic_blocks_hit": 11,
                     "basic_blocks": 17,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php",
+                            "line_start": 456,
+                            "line_end": 512
+                        }
+                    },
+                    "declared_basic_blocks_hit": 11,
+                    "declared_basic_blocks": 17,
                     "uncovered": [
                         {
                             "id": 21,
@@ -12737,6 +13820,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE3->prep_url": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php",
+                            "line_start": 393,
+                            "line_end": 396
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -12754,6 +13848,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE3->instantiate": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php",
+                            "line_start": 40,
+                            "line_end": 43
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [
                         {
@@ -12781,6 +13886,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE3->getNav": {
                     "basic_blocks_hit": 25,
                     "basic_blocks": 26,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php",
+                            "line_start": 62,
+                            "line_end": 104
+                        }
+                    },
+                    "declared_basic_blocks_hit": 25,
+                    "declared_basic_blocks": 26,
                     "uncovered": [
                         {
                             "id": 87,
@@ -13355,6 +14471,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE3->view": {
                     "basic_blocks_hit": 8,
                     "basic_blocks": 8,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php",
+                            "line_start": 138,
+                            "line_end": 164
+                        }
+                    },
+                    "declared_basic_blocks_hit": 8,
+                    "declared_basic_blocks": 8,
                     "uncovered": [],
                     "edges": [
                         {
@@ -13520,6 +14647,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE3->cache": {
                     "basic_blocks_hit": 14,
                     "basic_blocks": 14,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php",
+                            "line_start": 256,
+                            "line_end": 284
+                        }
+                    },
+                    "declared_basic_blocks_hit": 14,
+                    "declared_basic_blocks": 14,
                     "uncovered": [],
                     "edges": [
                         {
@@ -13849,6 +14987,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE3->getBaseURL": {
                     "basic_blocks_hit": 5,
                     "basic_blocks": 5,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php",
+                            "line_start": 45,
+                            "line_end": 54
+                        }
+                    },
+                    "declared_basic_blocks_hit": 5,
+                    "declared_basic_blocks": 5,
                     "uncovered": [],
                     "edges": [
                         {
@@ -13953,6 +15102,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE3->url_title": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php",
+                            "line_start": 373,
+                            "line_end": 376
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -13970,6 +15130,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE3->getSettings": {
                     "basic_blocks_hit": 3,
                     "basic_blocks": 3,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php",
+                            "line_start": 203,
+                            "line_end": 212
+                        }
+                    },
+                    "declared_basic_blocks_hit": 3,
+                    "declared_basic_blocks": 3,
                     "uncovered": [],
                     "edges": [
                         {
@@ -14031,6 +15202,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE3->getCurrentUrlInfo": {
                     "basic_blocks_hit": 7,
                     "basic_blocks": 8,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php",
+                            "line_start": 403,
+                            "line_end": 420
+                        }
+                    },
+                    "declared_basic_blocks_hit": 7,
+                    "declared_basic_blocks": 8,
                     "uncovered": [
                         {
                             "id": 44,
@@ -14202,6 +15384,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE3->cpURL": {
                     "basic_blocks_hit": 14,
                     "basic_blocks": 14,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php",
+                            "line_start": 106,
+                            "line_end": 129
+                        }
+                    },
+                    "declared_basic_blocks_hit": 14,
+                    "declared_basic_blocks": 14,
                     "uncovered": [],
                     "edges": [
                         {
@@ -14503,6 +15696,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE3->module_installed": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php",
+                            "line_start": 522,
+                            "line_end": 525
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -14520,6 +15724,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE3->xss_clean": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php",
+                            "line_start": 363,
+                            "line_end": 366
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -14537,6 +15752,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE3->getStartNum": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php",
+                            "line_start": 178,
+                            "line_end": 181
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -14554,6 +15780,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE3->flashData": {
                     "basic_blocks_hit": 13,
                     "basic_blocks": 13,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php",
+                            "line_start": 293,
+                            "line_end": 323
+                        }
+                    },
+                    "declared_basic_blocks_hit": 13,
+                    "declared_basic_blocks": 13,
                     "uncovered": [],
                     "edges": [
                         {
@@ -14839,6 +16076,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE3->assign_variables": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php",
+                            "line_start": 383,
+                            "line_end": 386
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -14856,6 +16104,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE3->setConfig": {
                     "basic_blocks_hit": 6,
                     "basic_blocks": 7,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php",
+                            "line_start": 221,
+                            "line_end": 254
+                        }
+                    },
+                    "declared_basic_blocks_hit": 6,
+                    "declared_basic_blocks": 7,
                     "uncovered": [
                         {
                             "id": 14,
@@ -15018,6 +16277,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE3->removeEEClass": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php",
+                            "line_start": 353,
+                            "line_end": 356
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [
                         {
@@ -15045,6 +16315,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE3->getCachePath": {
                     "basic_blocks_hit": 3,
                     "basic_blocks": 3,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php",
+                            "line_start": 426,
+                            "line_end": 435
+                        }
+                    },
+                    "declared_basic_blocks_hit": 3,
+                    "declared_basic_blocks": 3,
                     "uncovered": [],
                     "edges": [
                         {
@@ -15106,6 +16387,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE3->moduleURL": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php",
+                            "line_start": 131,
+                            "line_end": 136
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -15123,6 +16415,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE3->getConfig": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php",
+                            "line_start": 214,
+                            "line_end": 219
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -15140,6 +16443,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE3->javascript_to_page": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php",
+                            "line_start": 517,
+                            "line_end": 520
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [
                         {
@@ -15167,6 +16481,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE3->reduce_double_slashes": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php",
+                            "line_start": 446,
+                            "line_end": 450
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -15184,6 +16509,13 @@
                 "{main}": {
                     "basic_blocks_hit": 0,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "unknown",
+                        "reason": "no_matching_runtime_declaration",
+                        "declaration": null
+                    },
+                    "declared_basic_blocks_hit": null,
+                    "declared_basic_blocks": null,
                     "uncovered": [
                         {
                             "id": 0,
@@ -15217,6 +16549,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE3->getCurrentPage": {
                     "basic_blocks_hit": 5,
                     "basic_blocks": 5,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php",
+                            "line_start": 166,
+                            "line_end": 176
+                        }
+                    },
+                    "declared_basic_blocks_hit": 5,
+                    "declared_basic_blocks": 5,
                     "uncovered": [],
                     "edges": [
                         {
@@ -15321,6 +16664,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE3->assign_parameters": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php",
+                            "line_start": 527,
+                            "line_end": 530
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -15338,6 +16692,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE3->pagination": {
                     "basic_blocks_hit": 5,
                     "basic_blocks": 5,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php",
+                            "line_start": 183,
+                            "line_end": 201
+                        }
+                    },
+                    "declared_basic_blocks_hit": 5,
+                    "declared_basic_blocks": 5,
                     "uncovered": [],
                     "edges": [
                         {
@@ -15442,6 +16807,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE3->getAddonThemesDir": {
                     "basic_blocks_hit": 3,
                     "basic_blocks": 4,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php",
+                            "line_start": 329,
+                            "line_end": 333
+                        }
+                    },
+                    "declared_basic_blocks_hit": 3,
+                    "declared_basic_blocks": 4,
                     "uncovered": [
                         {
                             "id": 5,
@@ -15527,6 +16903,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE3->__construct": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php",
+                            "line_start": 34,
+                            "line_end": 38
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [
                         {
@@ -15554,6 +16941,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE3->getFooter": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php",
+                            "line_start": 437,
+                            "line_end": 440
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -15571,6 +16969,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE3->overwriteEEClass": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php",
+                            "line_start": 342,
+                            "line_end": 345
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [
                         {
@@ -15617,6 +17026,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE4->getStartNum": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php",
+                            "line_start": 178,
+                            "line_end": 181
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -15634,6 +17054,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE4->flashData": {
                     "basic_blocks_hit": 13,
                     "basic_blocks": 13,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php",
+                            "line_start": 293,
+                            "line_end": 323
+                        }
+                    },
+                    "declared_basic_blocks_hit": 13,
+                    "declared_basic_blocks": 13,
                     "uncovered": [],
                     "edges": [
                         {
@@ -15919,6 +17350,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE4->xss_clean": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php",
+                            "line_start": 363,
+                            "line_end": 366
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -15936,6 +17378,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE4->prep_url": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php",
+                            "line_start": 393,
+                            "line_end": 396
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -15953,6 +17406,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE4->assign_parameters": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php",
+                            "line_start": 527,
+                            "line_end": 530
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -15970,6 +17434,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE4->initiateSettings": {
                     "basic_blocks_hit": 11,
                     "basic_blocks": 17,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php",
+                            "line_start": 456,
+                            "line_end": 512
+                        }
+                    },
+                    "declared_basic_blocks_hit": 11,
+                    "declared_basic_blocks": 17,
                     "uncovered": [
                         {
                             "id": 21,
@@ -16363,6 +17838,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE4->setConfig": {
                     "basic_blocks_hit": 6,
                     "basic_blocks": 7,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php",
+                            "line_start": 221,
+                            "line_end": 254
+                        }
+                    },
+                    "declared_basic_blocks_hit": 6,
+                    "declared_basic_blocks": 7,
                     "uncovered": [
                         {
                             "id": 14,
@@ -16525,6 +18011,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE4->removeEEClass": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php",
+                            "line_start": 353,
+                            "line_end": 356
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [
                         {
@@ -16552,6 +18049,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE4->getCurrentPage": {
                     "basic_blocks_hit": 5,
                     "basic_blocks": 5,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php",
+                            "line_start": 166,
+                            "line_end": 176
+                        }
+                    },
+                    "declared_basic_blocks_hit": 5,
+                    "declared_basic_blocks": 5,
                     "uncovered": [],
                     "edges": [
                         {
@@ -16656,6 +18164,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE4->view": {
                     "basic_blocks_hit": 8,
                     "basic_blocks": 8,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php",
+                            "line_start": 138,
+                            "line_end": 164
+                        }
+                    },
+                    "declared_basic_blocks_hit": 8,
+                    "declared_basic_blocks": 8,
                     "uncovered": [],
                     "edges": [
                         {
@@ -16821,6 +18340,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE4->moduleURL": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php",
+                            "line_start": 131,
+                            "line_end": 136
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -16838,6 +18368,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE4->getConfig": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php",
+                            "line_start": 214,
+                            "line_end": 219
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -16855,6 +18396,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE4->pagination": {
                     "basic_blocks_hit": 5,
                     "basic_blocks": 5,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php",
+                            "line_start": 183,
+                            "line_end": 201
+                        }
+                    },
+                    "declared_basic_blocks_hit": 5,
+                    "declared_basic_blocks": 5,
                     "uncovered": [],
                     "edges": [
                         {
@@ -16959,6 +18511,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE4->getSettings": {
                     "basic_blocks_hit": 3,
                     "basic_blocks": 3,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php",
+                            "line_start": 203,
+                            "line_end": 212
+                        }
+                    },
+                    "declared_basic_blocks_hit": 3,
+                    "declared_basic_blocks": 3,
                     "uncovered": [],
                     "edges": [
                         {
@@ -17020,6 +18583,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE4->url_title": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php",
+                            "line_start": 373,
+                            "line_end": 376
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -17037,6 +18611,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE4->getCachePath": {
                     "basic_blocks_hit": 3,
                     "basic_blocks": 3,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php",
+                            "line_start": 426,
+                            "line_end": 435
+                        }
+                    },
+                    "declared_basic_blocks_hit": 3,
+                    "declared_basic_blocks": 3,
                     "uncovered": [],
                     "edges": [
                         {
@@ -17098,6 +18683,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE4->cpURL": {
                     "basic_blocks_hit": 14,
                     "basic_blocks": 14,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php",
+                            "line_start": 106,
+                            "line_end": 129
+                        }
+                    },
+                    "declared_basic_blocks_hit": 14,
+                    "declared_basic_blocks": 14,
                     "uncovered": [],
                     "edges": [
                         {
@@ -17399,6 +18995,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE4->javascript_to_page": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php",
+                            "line_start": 517,
+                            "line_end": 520
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [
                         {
@@ -17426,6 +19033,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE4->overwriteEEClass": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php",
+                            "line_start": 342,
+                            "line_end": 345
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [
                         {
@@ -17453,6 +19071,13 @@
                 "{main}": {
                     "basic_blocks_hit": 0,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "unknown",
+                        "reason": "no_matching_runtime_declaration",
+                        "declaration": null
+                    },
+                    "declared_basic_blocks_hit": null,
+                    "declared_basic_blocks": null,
                     "uncovered": [
                         {
                             "id": 0,
@@ -17486,6 +19111,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE4->getBaseURL": {
                     "basic_blocks_hit": 5,
                     "basic_blocks": 5,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php",
+                            "line_start": 45,
+                            "line_end": 54
+                        }
+                    },
+                    "declared_basic_blocks_hit": 5,
+                    "declared_basic_blocks": 5,
                     "uncovered": [],
                     "edges": [
                         {
@@ -17590,6 +19226,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE4->getAddonThemesDir": {
                     "basic_blocks_hit": 3,
                     "basic_blocks": 4,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php",
+                            "line_start": 329,
+                            "line_end": 333
+                        }
+                    },
+                    "declared_basic_blocks_hit": 3,
+                    "declared_basic_blocks": 4,
                     "uncovered": [
                         {
                             "id": 5,
@@ -17675,6 +19322,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE4->getNav": {
                     "basic_blocks_hit": 25,
                     "basic_blocks": 26,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php",
+                            "line_start": 62,
+                            "line_end": 104
+                        }
+                    },
+                    "declared_basic_blocks_hit": 25,
+                    "declared_basic_blocks": 26,
                     "uncovered": [
                         {
                             "id": 87,
@@ -18249,6 +19907,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE4->getFooter": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php",
+                            "line_start": 437,
+                            "line_end": 440
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -18266,6 +19935,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE4->__construct": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php",
+                            "line_start": 34,
+                            "line_end": 38
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [
                         {
@@ -18293,6 +19973,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE4->instantiate": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php",
+                            "line_start": 40,
+                            "line_end": 43
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [
                         {
@@ -18320,6 +20011,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE4->module_installed": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php",
+                            "line_start": 522,
+                            "line_end": 525
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -18337,6 +20039,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE4->reduce_double_slashes": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php",
+                            "line_start": 446,
+                            "line_end": 450
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -18354,6 +20067,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE4->assign_variables": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php",
+                            "line_start": 383,
+                            "line_end": 386
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -18371,6 +20095,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE4->cache": {
                     "basic_blocks_hit": 14,
                     "basic_blocks": 14,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php",
+                            "line_start": 256,
+                            "line_end": 284
+                        }
+                    },
+                    "declared_basic_blocks_hit": 14,
+                    "declared_basic_blocks": 14,
                     "uncovered": [],
                     "edges": [
                         {
@@ -18700,6 +20435,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE4->getCurrentUrlInfo": {
                     "basic_blocks_hit": 7,
                     "basic_blocks": 8,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php",
+                            "line_start": 403,
+                            "line_end": 420
+                        }
+                    },
+                    "declared_basic_blocks_hit": 7,
+                    "declared_basic_blocks": 8,
                     "uncovered": [
                         {
                             "id": 44,
@@ -18890,6 +20636,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE5->prep_url": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php",
+                            "line_start": 393,
+                            "line_end": 396
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -18907,6 +20664,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE5->reduce_double_slashes": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php",
+                            "line_start": 455,
+                            "line_end": 459
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -18924,6 +20692,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE5->initiateSettings": {
                     "basic_blocks_hit": 11,
                     "basic_blocks": 17,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php",
+                            "line_start": 465,
+                            "line_end": 521
+                        }
+                    },
+                    "declared_basic_blocks_hit": 11,
+                    "declared_basic_blocks": 17,
                     "uncovered": [
                         {
                             "id": 21,
@@ -19317,6 +21096,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE5->getBaseURL": {
                     "basic_blocks_hit": 5,
                     "basic_blocks": 5,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php",
+                            "line_start": 45,
+                            "line_end": 54
+                        }
+                    },
+                    "declared_basic_blocks_hit": 5,
+                    "declared_basic_blocks": 5,
                     "uncovered": [],
                     "edges": [
                         {
@@ -19421,6 +21211,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE5->view": {
                     "basic_blocks_hit": 8,
                     "basic_blocks": 8,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php",
+                            "line_start": 138,
+                            "line_end": 164
+                        }
+                    },
+                    "declared_basic_blocks_hit": 8,
+                    "declared_basic_blocks": 8,
                     "uncovered": [],
                     "edges": [
                         {
@@ -19586,6 +21387,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE5->getNav": {
                     "basic_blocks_hit": 25,
                     "basic_blocks": 26,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php",
+                            "line_start": 62,
+                            "line_end": 104
+                        }
+                    },
+                    "declared_basic_blocks_hit": 25,
+                    "declared_basic_blocks": 26,
                     "uncovered": [
                         {
                             "id": 87,
@@ -20160,6 +21972,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE5->module_installed": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php",
+                            "line_start": 531,
+                            "line_end": 534
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -20177,6 +22000,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE5->assign_parameters": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php",
+                            "line_start": 536,
+                            "line_end": 539
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -20194,6 +22028,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE5->getAddonThemesDir": {
                     "basic_blocks_hit": 3,
                     "basic_blocks": 4,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php",
+                            "line_start": 329,
+                            "line_end": 333
+                        }
+                    },
+                    "declared_basic_blocks_hit": 3,
+                    "declared_basic_blocks": 4,
                     "uncovered": [
                         {
                             "id": 5,
@@ -20279,6 +22124,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE5->assign_variables": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php",
+                            "line_start": 383,
+                            "line_end": 386
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -20296,6 +22152,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE5->getFooter": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php",
+                            "line_start": 446,
+                            "line_end": 449
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -20313,6 +22180,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE5->__construct": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php",
+                            "line_start": 34,
+                            "line_end": 38
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [
                         {
@@ -20340,6 +22218,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE5->getCachePath": {
                     "basic_blocks_hit": 3,
                     "basic_blocks": 3,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php",
+                            "line_start": 435,
+                            "line_end": 444
+                        }
+                    },
+                    "declared_basic_blocks_hit": 3,
+                    "declared_basic_blocks": 3,
                     "uncovered": [],
                     "edges": [
                         {
@@ -20401,6 +22290,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE5->javascript_to_page": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php",
+                            "line_start": 526,
+                            "line_end": 529
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [
                         {
@@ -20428,6 +22328,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE5->instantiate": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php",
+                            "line_start": 40,
+                            "line_end": 43
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [
                         {
@@ -20455,6 +22366,13 @@
                 "{main}": {
                     "basic_blocks_hit": 0,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "unknown",
+                        "reason": "no_matching_runtime_declaration",
+                        "declaration": null
+                    },
+                    "declared_basic_blocks_hit": null,
+                    "declared_basic_blocks": null,
                     "uncovered": [
                         {
                             "id": 0,
@@ -20488,6 +22406,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE5->getCurrentPage": {
                     "basic_blocks_hit": 5,
                     "basic_blocks": 5,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php",
+                            "line_start": 166,
+                            "line_end": 176
+                        }
+                    },
+                    "declared_basic_blocks_hit": 5,
+                    "declared_basic_blocks": 5,
                     "uncovered": [],
                     "edges": [
                         {
@@ -20592,6 +22521,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE5->cache": {
                     "basic_blocks_hit": 14,
                     "basic_blocks": 14,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php",
+                            "line_start": 256,
+                            "line_end": 284
+                        }
+                    },
+                    "declared_basic_blocks_hit": 14,
+                    "declared_basic_blocks": 14,
                     "uncovered": [],
                     "edges": [
                         {
@@ -20921,6 +22861,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE5->getSettings": {
                     "basic_blocks_hit": 3,
                     "basic_blocks": 3,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php",
+                            "line_start": 203,
+                            "line_end": 212
+                        }
+                    },
+                    "declared_basic_blocks_hit": 3,
+                    "declared_basic_blocks": 3,
                     "uncovered": [],
                     "edges": [
                         {
@@ -20982,6 +22933,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE5->url_title": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php",
+                            "line_start": 373,
+                            "line_end": 376
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -20999,6 +22961,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE5->cpURL": {
                     "basic_blocks_hit": 14,
                     "basic_blocks": 14,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php",
+                            "line_start": 106,
+                            "line_end": 129
+                        }
+                    },
+                    "declared_basic_blocks_hit": 14,
+                    "declared_basic_blocks": 14,
                     "uncovered": [],
                     "edges": [
                         {
@@ -21300,6 +23273,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE5->getCurrentUrlInfo": {
                     "basic_blocks_hit": 16,
                     "basic_blocks": 18,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php",
+                            "line_start": 403,
+                            "line_end": 429
+                        }
+                    },
+                    "declared_basic_blocks_hit": 16,
+                    "declared_basic_blocks": 18,
                     "uncovered": [
                         {
                             "id": 53,
@@ -21684,6 +23668,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE5->getStartNum": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php",
+                            "line_start": 178,
+                            "line_end": 181
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -21701,6 +23696,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE5->flashData": {
                     "basic_blocks_hit": 13,
                     "basic_blocks": 13,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php",
+                            "line_start": 293,
+                            "line_end": 323
+                        }
+                    },
+                    "declared_basic_blocks_hit": 13,
+                    "declared_basic_blocks": 13,
                     "uncovered": [],
                     "edges": [
                         {
@@ -21986,6 +23992,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE5->xss_clean": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php",
+                            "line_start": 363,
+                            "line_end": 366
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -22003,6 +24020,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE5->setConfig": {
                     "basic_blocks_hit": 6,
                     "basic_blocks": 7,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php",
+                            "line_start": 221,
+                            "line_end": 254
+                        }
+                    },
+                    "declared_basic_blocks_hit": 6,
+                    "declared_basic_blocks": 7,
                     "uncovered": [
                         {
                             "id": 14,
@@ -22165,6 +24193,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE5->removeEEClass": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php",
+                            "line_start": 353,
+                            "line_end": 356
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [
                         {
@@ -22192,6 +24231,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE5->pagination": {
                     "basic_blocks_hit": 5,
                     "basic_blocks": 5,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php",
+                            "line_start": 183,
+                            "line_end": 201
+                        }
+                    },
+                    "declared_basic_blocks_hit": 5,
+                    "declared_basic_blocks": 5,
                     "uncovered": [],
                     "edges": [
                         {
@@ -22296,6 +24346,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE5->moduleURL": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php",
+                            "line_start": 131,
+                            "line_end": 136
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -22313,6 +24374,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE5->overwriteEEClass": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php",
+                            "line_start": 342,
+                            "line_end": 345
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [
                         {
@@ -22340,6 +24412,17 @@
                 "LowList\\FluxCapacitor\\Bridge\\EE5->getConfig": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php",
+                            "line_start": 214,
+                            "line_end": 219
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -22368,6 +24451,13 @@
                 "{main}": {
                     "basic_blocks_hit": 0,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "unknown",
+                        "reason": "no_matching_runtime_declaration",
+                        "declaration": null
+                    },
+                    "declared_basic_blocks_hit": null,
+                    "declared_basic_blocks": null,
                     "uncovered": [
                         {
                             "id": 0,
@@ -22412,6 +24502,17 @@
                 "LowList\\FluxCapacitor\\Conduit\\GlobalFieldSettings->updateSetting": {
                     "basic_blocks_hit": 4,
                     "basic_blocks": 4,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/GlobalFieldSettings.php",
+                            "line_start": 41,
+                            "line_end": 56
+                        }
+                    },
+                    "declared_basic_blocks_hit": 4,
+                    "declared_basic_blocks": 4,
                     "uncovered": [],
                     "edges": [
                         {
@@ -22491,6 +24592,17 @@
                 "LowList\\FluxCapacitor\\Conduit\\GlobalFieldSettings->getSetting": {
                     "basic_blocks_hit": 3,
                     "basic_blocks": 3,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/GlobalFieldSettings.php",
+                            "line_start": 17,
+                            "line_end": 24
+                        }
+                    },
+                    "declared_basic_blocks_hit": 3,
+                    "declared_basic_blocks": 3,
                     "uncovered": [],
                     "edges": [
                         {
@@ -22552,6 +24664,17 @@
                 "LowList\\FluxCapacitor\\Conduit\\GlobalFieldSettings->getSettings": {
                     "basic_blocks_hit": 4,
                     "basic_blocks": 4,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/GlobalFieldSettings.php",
+                            "line_start": 26,
+                            "line_end": 39
+                        }
+                    },
+                    "declared_basic_blocks_hit": 4,
+                    "declared_basic_blocks": 4,
                     "uncovered": [],
                     "edges": [
                         {
@@ -22631,6 +24754,13 @@
                 "{main}": {
                     "basic_blocks_hit": 0,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "unknown",
+                        "reason": "no_matching_runtime_declaration",
+                        "declaration": null
+                    },
+                    "declared_basic_blocks_hit": null,
+                    "declared_basic_blocks": null,
                     "uncovered": [
                         {
                             "id": 0,
@@ -22664,6 +24794,17 @@
                 "LowList\\FluxCapacitor\\Conduit\\GlobalFieldSettings->__construct": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/GlobalFieldSettings.php",
+                            "line_start": 11,
+                            "line_end": 15
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [
                         {
@@ -22722,6 +24863,17 @@
                 "LowList\\FluxCapacitor\\Conduit\\PersistentCache->clear": {
                     "basic_blocks_hit": 8,
                     "basic_blocks": 8,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php",
+                            "line_start": 122,
+                            "line_end": 141
+                        }
+                    },
+                    "declared_basic_blocks_hit": 8,
+                    "declared_basic_blocks": 8,
                     "uncovered": [],
                     "edges": [
                         {
@@ -22894,6 +25046,17 @@
                 "LowList\\FluxCapacitor\\Conduit\\PersistentCache->has": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php",
+                            "line_start": 112,
+                            "line_end": 116
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -22911,6 +25074,17 @@
                 "LowList\\FluxCapacitor\\Conduit\\PersistentCache->prepCacheData": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php",
+                            "line_start": 169,
+                            "line_end": 172
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -22928,6 +25102,13 @@
                 "{main}": {
                     "basic_blocks_hit": 0,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "unknown",
+                        "reason": "no_matching_runtime_declaration",
+                        "declaration": null
+                    },
+                    "declared_basic_blocks_hit": null,
+                    "declared_basic_blocks": null,
                     "uncovered": [
                         {
                             "id": 0,
@@ -22961,6 +25142,17 @@
                 "LowList\\FluxCapacitor\\Conduit\\PersistentCache->set": {
                     "basic_blocks_hit": 4,
                     "basic_blocks": 5,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php",
+                            "line_start": 55,
+                            "line_end": 82
+                        }
+                    },
+                    "declared_basic_blocks_hit": 4,
+                    "declared_basic_blocks": 5,
                     "uncovered": [
                         {
                             "id": 35,
@@ -23071,6 +25263,17 @@
                 "LowList\\FluxCapacitor\\Conduit\\PersistentCache->delete": {
                     "basic_blocks_hit": 5,
                     "basic_blocks": 5,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php",
+                            "line_start": 88,
+                            "line_end": 104
+                        }
+                    },
+                    "declared_basic_blocks_hit": 5,
+                    "declared_basic_blocks": 5,
                     "uncovered": [],
                     "edges": [
                         {
@@ -23175,6 +25378,17 @@
                 "LowList\\FluxCapacitor\\Conduit\\PersistentCache->get": {
                     "basic_blocks_hit": 7,
                     "basic_blocks": 7,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php",
+                            "line_start": 18,
+                            "line_end": 48
+                        }
+                    },
+                    "declared_basic_blocks_hit": 7,
+                    "declared_basic_blocks": 7,
                     "uncovered": [],
                     "edges": [
                         {
@@ -23322,6 +25536,17 @@
                 "LowList\\FluxCapacitor\\Conduit\\PersistentCache->serveCacheData": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php",
+                            "line_start": 179,
+                            "line_end": 182
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -23339,6 +25564,17 @@
                 "LowList\\FluxCapacitor\\Conduit\\PersistentCache->checkPath": {
                     "basic_blocks_hit": 11,
                     "basic_blocks": 13,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php",
+                            "line_start": 189,
+                            "line_end": 234
+                        }
+                    },
+                    "declared_basic_blocks_hit": 11,
+                    "declared_basic_blocks": 13,
                     "uncovered": [
                         {
                             "id": 32,
@@ -23626,6 +25862,17 @@
                 "LowList\\FluxCapacitor\\Conduit\\PersistentCache->createKey": {
                     "basic_blocks_hit": 3,
                     "basic_blocks": 3,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php",
+                            "line_start": 154,
+                            "line_end": 161
+                        }
+                    },
+                    "declared_basic_blocks_hit": 3,
+                    "declared_basic_blocks": 3,
                     "uncovered": [],
                     "edges": [
                         {
@@ -23698,6 +25945,17 @@
                 "LowList\\FluxCapacitor\\Conduit\\StaticCache->put": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/StaticCache.php",
+                            "line_start": 40,
+                            "line_end": 43
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [
                         {
@@ -23725,6 +25983,17 @@
                 "LowList\\FluxCapacitor\\Conduit\\StaticCache->clear": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/StaticCache.php",
+                            "line_start": 82,
+                            "line_end": 87
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -23742,6 +26011,17 @@
                 "LowList\\FluxCapacitor\\Conduit\\StaticCache->has": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/StaticCache.php",
+                            "line_start": 64,
+                            "line_end": 67
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -23759,6 +26039,17 @@
                 "LowList\\FluxCapacitor\\Conduit\\StaticCache->get": {
                     "basic_blocks_hit": 4,
                     "basic_blocks": 4,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/StaticCache.php",
+                            "line_start": 14,
+                            "line_end": 19
+                        }
+                    },
+                    "declared_basic_blocks_hit": 4,
+                    "declared_basic_blocks": 4,
                     "uncovered": [],
                     "edges": [
                         {
@@ -23838,6 +26129,13 @@
                 "{main}": {
                     "basic_blocks_hit": 0,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "unknown",
+                        "reason": "no_matching_runtime_declaration",
+                        "declaration": null
+                    },
+                    "declared_basic_blocks_hit": null,
+                    "declared_basic_blocks": null,
                     "uncovered": [
                         {
                             "id": 0,
@@ -23871,6 +26169,17 @@
                 "LowList\\FluxCapacitor\\Conduit\\StaticCache->set": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/StaticCache.php",
+                            "line_start": 28,
+                            "line_end": 31
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [
                         {
@@ -23898,6 +26207,17 @@
                 "LowList\\FluxCapacitor\\Conduit\\StaticCache->createKey": {
                     "basic_blocks_hit": 5,
                     "basic_blocks": 5,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/StaticCache.php",
+                            "line_start": 96,
+                            "line_end": 107
+                        }
+                    },
+                    "declared_basic_blocks_hit": 5,
+                    "declared_basic_blocks": 5,
                     "uncovered": [],
                     "edges": [
                         {
@@ -24002,6 +26322,17 @@
                 "LowList\\FluxCapacitor\\Conduit\\StaticCache->delete": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/StaticCache.php",
+                            "line_start": 51,
+                            "line_end": 56
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -24019,6 +26350,17 @@
                 "LowList\\FluxCapacitor\\Conduit\\StaticCache->all": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/StaticCache.php",
+                            "line_start": 73,
+                            "line_end": 76
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -24049,6 +26391,17 @@
                 "LowList\\FluxCapacitor\\Conduit\\Version->getOpenSSLPublicKey": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/Version.php",
+                            "line_start": 220,
+                            "line_end": 223
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -24066,6 +26419,17 @@
                 "LowList\\FluxCapacitor\\Conduit\\Version->check": {
                     "basic_blocks_hit": 16,
                     "basic_blocks": 19,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/Version.php",
+                            "line_start": 130,
+                            "line_end": 189
+                        }
+                    },
+                    "declared_basic_blocks_hit": 16,
+                    "declared_basic_blocks": 19,
                     "uncovered": [
                         {
                             "id": 94,
@@ -24489,6 +26853,13 @@
                 "{main}": {
                     "basic_blocks_hit": 0,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "unknown",
+                        "reason": "no_matching_runtime_declaration",
+                        "declaration": null
+                    },
+                    "declared_basic_blocks_hit": null,
+                    "declared_basic_blocks": null,
                     "uncovered": [
                         {
                             "id": 0,
@@ -24522,6 +26893,17 @@
                 "LowList\\FluxCapacitor\\Conduit\\Version->deleteLicenseKey": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/Version.php",
+                            "line_start": 67,
+                            "line_end": 72
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [
                         {
@@ -24549,6 +26931,17 @@
                 "LowList\\FluxCapacitor\\Conduit\\Version->verifyLicenseTable": {
                     "basic_blocks_hit": 14,
                     "basic_blocks": 14,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/Version.php",
+                            "line_start": 74,
+                            "line_end": 128
+                        }
+                    },
+                    "declared_basic_blocks_hit": 14,
+                    "declared_basic_blocks": 14,
                     "uncovered": [],
                     "edges": [
                         {
@@ -24850,6 +27243,17 @@
                 "LowList\\FluxCapacitor\\Conduit\\Version->keyExistsForAddon": {
                     "basic_blocks_hit": 3,
                     "basic_blocks": 3,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/Version.php",
+                            "line_start": 31,
+                            "line_end": 46
+                        }
+                    },
+                    "declared_basic_blocks_hit": 3,
+                    "declared_basic_blocks": 3,
                     "uncovered": [],
                     "edges": [
                         {
@@ -24911,6 +27315,17 @@
                 "LowList\\FluxCapacitor\\Conduit\\Version->spiderSafe": {
                     "basic_blocks_hit": 4,
                     "basic_blocks": 4,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/Version.php",
+                            "line_start": 225,
+                            "line_end": 233
+                        }
+                    },
+                    "declared_basic_blocks_hit": 4,
+                    "declared_basic_blocks": 4,
                     "uncovered": [],
                     "edges": [
                         {
@@ -24990,6 +27405,17 @@
                 "LowList\\FluxCapacitor\\Conduit\\Version->getIgnoreSite": {
                     "basic_blocks_hit": 3,
                     "basic_blocks": 3,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/Version.php",
+                            "line_start": 206,
+                            "line_end": 218
+                        }
+                    },
+                    "declared_basic_blocks_hit": 3,
+                    "declared_basic_blocks": 3,
                     "uncovered": [],
                     "edges": [
                         {
@@ -25051,6 +27477,17 @@
                 "LowList\\FluxCapacitor\\Conduit\\Version->getLicenseKey": {
                     "basic_blocks_hit": 3,
                     "basic_blocks": 3,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/Version.php",
+                            "line_start": 191,
+                            "line_end": 204
+                        }
+                    },
+                    "declared_basic_blocks_hit": 3,
+                    "declared_basic_blocks": 3,
                     "uncovered": [],
                     "edges": [
                         {
@@ -25112,6 +27549,17 @@
                 "LowList\\FluxCapacitor\\Conduit\\Version->__construct": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/Version.php",
+                            "line_start": 25,
+                            "line_end": 29
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [
                         {
@@ -25139,6 +27587,17 @@
                 "LowList\\FluxCapacitor\\Conduit\\Version->saveLicenseKey": {
                     "basic_blocks_hit": 10,
                     "basic_blocks": 10,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/Version.php",
+                            "line_start": 48,
+                            "line_end": 65
+                        }
+                    },
+                    "declared_basic_blocks_hit": 10,
+                    "declared_basic_blocks": 10,
                     "uncovered": [],
                     "edges": [
                         {
@@ -25360,6 +27819,13 @@
                 "{main}": {
                     "basic_blocks_hit": 0,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "unknown",
+                        "reason": "no_matching_runtime_declaration",
+                        "declaration": null
+                    },
+                    "declared_basic_blocks_hit": null,
+                    "declared_basic_blocks": null,
                     "uncovered": [
                         {
                             "id": 0,
@@ -25393,6 +27859,17 @@
                 "LowList\\FluxCapacitor\\FluxCapacitor->__construct": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/FluxCapacitor.php",
+                            "line_start": 20,
+                            "line_end": 24
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [
                         {
@@ -25431,6 +27908,13 @@
                 "{main}": {
                     "basic_blocks_hit": 0,
                     "basic_blocks": 6,
+                    "attribution": {
+                        "status": "unknown",
+                        "reason": "no_matching_runtime_declaration",
+                        "declaration": null
+                    },
+                    "declared_basic_blocks_hit": null,
+                    "declared_basic_blocks": null,
                     "uncovered": [
                         {
                             "id": 0,
@@ -25604,6 +28088,13 @@
                 "{main}": {
                     "basic_blocks_hit": 0,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "unknown",
+                        "reason": "no_matching_runtime_declaration",
+                        "declaration": null
+                    },
+                    "declared_basic_blocks_hit": null,
+                    "declared_basic_blocks": null,
                     "uncovered": [
                         {
                             "id": 0,
@@ -25637,6 +28128,17 @@
                 "{closure:phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/index.php:3-28}": {
                     "basic_blocks_hit": 5,
                     "basic_blocks": 5,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/index.php",
+                            "line_start": 3,
+                            "line_end": 28
+                        }
+                    },
+                    "declared_basic_blocks_hit": 5,
+                    "declared_basic_blocks": 5,
                     "uncovered": [],
                     "edges": [
                         {
@@ -25763,6 +28265,17 @@
                 "Low_list->has_not": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "/Users/tomjaeger/Sites/add-ons/low_list/low_list/pi.low_list.php",
+                            "line_start": 118,
+                            "line_end": 121
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -25780,6 +28293,17 @@
                 "Low_list->has": {
                     "basic_blocks_hit": 1,
                     "basic_blocks": 1,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "/Users/tomjaeger/Sites/add-ons/low_list/low_list/pi.low_list.php",
+                            "line_start": 110,
+                            "line_end": 113
+                        }
+                    },
+                    "declared_basic_blocks_hit": 1,
+                    "declared_basic_blocks": 1,
                     "uncovered": [],
                     "edges": [],
                     "graph": [
@@ -25797,6 +28321,13 @@
                 "{main}": {
                     "basic_blocks_hit": 0,
                     "basic_blocks": 3,
+                    "attribution": {
+                        "status": "unknown",
+                        "reason": "no_matching_runtime_declaration",
+                        "declaration": null
+                    },
+                    "declared_basic_blocks_hit": null,
+                    "declared_basic_blocks": null,
                     "uncovered": [
                         {
                             "id": 0,
@@ -25883,6 +28414,17 @@
                 "Low_list->_equate": {
                     "basic_blocks_hit": 14,
                     "basic_blocks": 14,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "/Users/tomjaeger/Sites/add-ons/low_list/low_list/pi.low_list.php",
+                            "line_start": 126,
+                            "line_end": 153
+                        }
+                    },
+                    "declared_basic_blocks_hit": 14,
+                    "declared_basic_blocks": 14,
                     "uncovered": [],
                     "edges": [
                         {
@@ -26170,6 +28712,17 @@
                 "Low_list->__construct": {
                     "basic_blocks_hit": 4,
                     "basic_blocks": 4,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "/Users/tomjaeger/Sites/add-ons/low_list/low_list/pi.low_list.php",
+                            "line_start": 49,
+                            "line_end": 59
+                        }
+                    },
+                    "declared_basic_blocks_hit": 4,
+                    "declared_basic_blocks": 4,
                     "uncovered": [],
                     "edges": [
                         {
@@ -26265,6 +28818,17 @@
                 "Low_list->each": {
                     "basic_blocks_hit": 13,
                     "basic_blocks": 13,
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "/Users/tomjaeger/Sites/add-ons/low_list/low_list/pi.low_list.php",
+                            "line_start": 67,
+                            "line_end": 105
+                        }
+                    },
+                    "declared_basic_blocks_hit": 13,
+                    "declared_basic_blocks": 13,
                     "uncovered": [],
                     "edges": [
                         {
@@ -26552,6 +29116,13 @@
                 "{main}": {
                     "basic_blocks_hit": 0,
                     "basic_blocks": 6,
+                    "attribution": {
+                        "status": "unknown",
+                        "reason": "no_matching_runtime_declaration",
+                        "declaration": null
+                    },
+                    "declared_basic_blocks_hit": null,
+                    "declared_basic_blocks": null,
                     "uncovered": [
                         {
                             "id": 0,

@@ -16,6 +16,7 @@ result=$?
 set -e
 [[ -s "$reports/xdebug.json" && -s "$reports/junit.xml" ]] || { cat "$reports/phpunit.txt"; exit 1; }
 "$php_bin" tests/coverage-report.php "$reports"
+"$php_bin" tests/navigation-report.php "$reports"
 python3 /Users/tomjaeger/.codex/skills/ee-addon-phpunit-coverage-writer/scripts/addon_method_coverage_report.py \
   --repo-root "$repo_root" --source-root low_list --include-magic --coverage-clover "$reports/clover.xml" --reuse-clover --json > "$reports/loose-methods.json"
 python3 /Users/tomjaeger/.codex/skills/ee-addon-phpunit-coverage-writer/scripts/addon_method_coverage_report.py \

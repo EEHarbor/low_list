@@ -23,6 +23,11 @@ if ($argv[1] === 'validation-abnormal-exit') {
 }
 
 $root = dirname(__DIR__, 2);
+if ($argv[1] === 'navigation') {
+    require __DIR__ . '/navigation-probe.php';
+    echo json_encode(\LowListTests\NavigationProbe::run($root, $argv[2]), JSON_UNESCAPED_SLASHES);
+    exit(0);
+}
 if ($argv[1] === 'direct') {
     require $root . '/low_list/pi.low_list.php';
     exit(1);

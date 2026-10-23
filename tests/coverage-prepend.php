@@ -1,5 +1,7 @@
 <?php
 
+require_once __DIR__ . '/Support/Coverage.php';
+
 if (!extension_loaded('xdebug') || !defined('XDEBUG_CC_BRANCH_CHECK')) {
     throw new RuntimeException('Genuine Xdebug branch instrumentation is required.');
 }
@@ -11,12 +13,23 @@ register_shutdown_function(static function () {
         throw new RuntimeException('A unique coverage destination is required.');
     }
     $root = dirname(__DIR__) . '/low_list/';
-    $archive = 'phar://' . $root . 'low_list.phar/';
     $coverage = array();
     foreach (xdebug_get_code_coverage() as $path => $data) {
-        if (strpos($path, $root) === 0 || strpos($path, $archive) === 0) {
+        if (\LowListTests\Coverage::belongsToSource($path, $root)) {
             $coverage[$path] = $data;
         }
     }
-    file_put_contents($destination, json_encode(array('php' => PHP_VERSION, 'xdebug' => phpversion('xdebug'), 'coverage' => $coverage), JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
+    $metadata = array(
+        'php' => PHP_VERSION,
+        'xdebug' => phpversion('xdebug'),
+        'context' => array(
+            'APP_VER' => defined('APP_VER') ? APP_VER : null,
+            'REQ' => defined('REQ') ? REQ : null,
+            'native_mode' => getenv('LOW_LIST_NATIVE_MODE') ?: null,
+            'native_case' => getenv('LOW_LIST_NATIVE_CASE') ?: null,
+        ),
+        'runtime_declarations' => \LowListTests\Coverage::declarations($root),
+        'coverage' => $coverage,
+    );
+    file_put_contents($destination, json_encode($metadata, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
 });

@@ -429,6 +429,8 @@ class AlertRecorder
 
 class Sidebar
 {
+    public $headers = array();
+
     /**
      * Return the sidebar builder.
      *
@@ -443,16 +445,40 @@ class Sidebar
      * Add a named navigation header.
      *
      * @param string $title
+     * @param mixed $url
      * @return Header
      */
-    public function addHeader($title)
+    public function addHeader($title, $url = null)
     {
-        return new Header();
+        $header = new Header($title, $url);
+        $this->headers[] = $header;
+
+        return $header;
     }
 }
 
 class Header
 {
+    public $text;
+    public $url;
+    public $button;
+    public $class = '';
+
+    /**
+     * Preserve the native header's title and optional URL.
+     *
+     * @param string $title
+     * @param mixed $url
+     * @return void
+     */
+    public function __construct($title, $url = null)
+    {
+        $this->text = $title;
+        if ($url) {
+            $this->withUrl($url);
+        }
+    }
+
     /**
      * Set the navigation URL.
      *
@@ -461,6 +487,11 @@ class Header
      */
     public function withUrl($url)
     {
+        $this->url = $url;
+        if ($url instanceof Url && $url->isTheRequestedURI()) {
+            $this->isActive();
+        }
+
         return $this;
     }
 
@@ -473,6 +504,8 @@ class Header
      */
     public function withButton($text, $url)
     {
+        $this->button = array('text' => $text, 'url' => $url);
+
         return $this;
     }
 
@@ -483,6 +516,8 @@ class Header
      */
     public function isActive()
     {
+        $this->class .= 'active ';
+
         return $this;
     }
 }
@@ -492,6 +527,8 @@ class ControlPanel
     public $footer = array();
     public $footer_item = array();
     public $rightNav = array();
+    public $breadcrumbs = array();
+    private $breadcrumbValues = array();
 
     /**
      * Preserve the legacy public footer alias for the same CP footer collection.
@@ -533,6 +570,10 @@ class ControlPanel
      */
     public function set_breadcrumb($url, $title)
     {
+        $this->breadcrumbs[] = array($url, $title);
+        $link = is_object($url) ? $url->compile() : $url;
+        $this->breadcrumbValues[$link] = $title;
+        ee()->view->cp_breadcrumbs = $this->breadcrumbValues;
     }
 
     /**
