@@ -63,7 +63,10 @@ class SchemaForge
                 return $prefix . $name;
             }, $this->db->tables);
         }
-        $this->db->data_cache['table_names'][] = $prefix . $table;
+        // Preserve the native forge's falsey zero-index lookup.
+        if (!array_search($prefix . $table, $this->db->data_cache['table_names'])) {
+            $this->db->data_cache['table_names'][] = $prefix . $table;
+        }
         $this->db->tables[] = $table;
         $this->db->fields[$table] = array_keys($this->fields);
         $rows = array();

@@ -7,6 +7,52 @@ use LowList\FluxCapacitor\Conduit\Version;
 class LicenseSchemaTest extends TestCase
 {
     /**
+     * Return native forge cache outcomes, including its first-index append quirk.
+     *
+     * @return array
+     */
+    public static function configuredForgeCaches(): array
+    {
+        return array(
+            'unset' => array(null, array('exp_other', 'exp_records')),
+            'empty' => array(array(), array('exp_records')),
+            'missing' => array(array('exp_other'), array('exp_other', 'exp_records')),
+            'first' => array(array('exp_records', 'exp_other'), array('exp_records', 'exp_other', 'exp_records')),
+            'later' => array(array('exp_other', 'exp_records'), array('exp_other', 'exp_records')),
+        );
+    }
+
+    /**
+     * Preserve native configured-cache semantics while publishing a successful table.
+     *
+     * @dataProvider configuredForgeCaches
+     * @param array|null $cache
+     * @param array $expected
+     * @return void
+     */
+    public function testForgeConfiguredTableCache($cache, array $expected): void
+    {
+        $metadata = array('unrelated' => array('keep'));
+        if ($cache !== null) {
+            $metadata['table_names'] = $cache;
+        }
+        $GLOBALS['low_list_ee'] = new Environment($metadata);
+        ee()->db->tables = array('other');
+        ee()->load->dbforge();
+        $forge = ee()->dbforge;
+        $forge->add_field(array('id' => array('type' => 'int(11)')));
+        $forge->add_key('id', true);
+
+        $this->assertTrue($forge->create_table('records'));
+        $this->assertSame($expected, $forge->db->data_cache['table_names']);
+        $this->assertSame(array('keep'), $forge->db->data_cache['unrelated']);
+        $this->assertSame($metadata, ee()->db->data_cache);
+        $this->assertSame(array('other', 'records'), ee()->db->tables);
+        $this->assertTrue(ee('db')->field_exists('id', 'records'));
+        $this->assertNotSame(ee()->db, $forge->db);
+    }
+
+    /**
      * Create every required license column and index before verifying its metadata.
      *
      * @return void
