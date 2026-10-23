@@ -11,6 +11,11 @@ $inventory = sourceInventory();
 $reportDirectory = $argv[1];
 $mode = isset($argv[2]) ? $argv[2] : 'navigation';
 $configurations = array(
+    'phar-session' => array(
+        'source' => 'low_list/low_list.phar#stub',
+        'cases' => array('writable' => '7.5.0', 'depth' => '7.5.0', 'mode' => '7.5.0', 'empty' => '7.5.0', 'readonly' => '7.5.0', 'file-temp' => '7.5.0', 'missing-session' => '7.5.0', 'file-session' => '7.5.0'),
+        'request' => 'PAGE',
+    ),
     'controller-loading' => array(
         'source' => 'low_list/low_list.phar/FluxCapacitor/Base/Mcp.php',
         'cases' => array('modern-present' => '7.5.0', 'legacy-present' => '2.5.5', 'modern-empty' => '7.5.0', 'legacy-empty' => '2.5.5', 'modern-missing' => '7.5.0', 'legacy-missing' => '2.5.5', 'modern-predeclared' => '7.5.0', 'legacy-predeclared' => '2.5.5'),
@@ -69,9 +74,11 @@ if (!is_array($parent) || !isset($parent['php'], $parent['xdebug'])) {
     throw new RuntimeException('Fresh parent instrumentation metadata is required.');
 }
 $relative = $configuration['source'];
-$native = 'phar://' . dirname(__DIR__) . '/' . $relative;
+$physicalStub = substr($relative, -5) === '#stub';
+$native = $physicalStub ? dirname(__DIR__) . '/' . substr($relative, 0, -5) : 'phar://' . dirname(__DIR__) . '/' . $relative;
 $entry = $inventory['files'][$relative];
-if (hash_file('sha256', $native) !== $entry['sha256']) {
+$sourceHash = $physicalStub ? hash('sha256', (new Phar($native))->getStub()) : hash_file('sha256', $native);
+if ($sourceHash !== $entry['sha256']) {
     throw new RuntimeException('Native source provenance mismatch.');
 }
 $contexts = array();

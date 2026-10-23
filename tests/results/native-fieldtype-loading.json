@@ -8,7 +8,7 @@
     "metrics": "Independent native contexts; raw basic blocks and out/out_hit exits are preserved without graph merging.",
     "contexts": {
         "app": {
-            "capture": "native-fieldtype-loading-9792d6a2b1e1f7ac.json",
+            "capture": "native-fieldtype-loading-f866ed57e4f4ca75.json",
             "context": {
                 "APP_VER": "7.5.0",
                 "REQ": "PAGE",
@@ -839,7 +839,7 @@
             }
         },
         "defined-version": {
-            "capture": "native-fieldtype-loading-5e157117442f568c.json",
+            "capture": "native-fieldtype-loading-bb6e5bec8be9f90d.json",
             "context": {
                 "APP_VER": "7.5.0",
                 "REQ": "PAGE",
@@ -1670,7 +1670,7 @@
             }
         },
         "installer": {
-            "capture": "native-fieldtype-loading-fcfd92d3834bcc36.json",
+            "capture": "native-fieldtype-loading-a84cfaccfdf0d9b4.json",
             "context": {
                 "APP_VER": "7.5.0",
                 "REQ": "PAGE",
@@ -2501,7 +2501,7 @@
             }
         },
         "installer-ancestor": {
-            "capture": "native-fieldtype-loading-187d52a4ca14106e.json",
+            "capture": "native-fieldtype-loading-da0aa54c43e9cca7.json",
             "context": {
                 "APP_VER": "7.5.0",
                 "REQ": "PAGE",
@@ -3301,7 +3301,7 @@
             "branch_observation": "unknown_no_hit_native_graph"
         },
         "predeclared": {
-            "capture": "native-fieldtype-loading-c52a550cfb045298.json",
+            "capture": "native-fieldtype-loading-7e52bc081c6e25da.json",
             "context": {
                 "APP_VER": "7.5.0",
                 "REQ": "PAGE",
@@ -4131,7 +4131,7 @@
             }
         },
         "priority": {
-            "capture": "native-fieldtype-loading-ed50e9d1e53757b3.json",
+            "capture": "native-fieldtype-loading-0d0a4cdb44d767b2.json",
             "context": {
                 "APP_VER": "7.5.0",
                 "REQ": "PAGE",
@@ -4962,7 +4962,7 @@
             }
         },
         "system": {
-            "capture": "native-fieldtype-loading-b153a090e955d3d0.json",
+            "capture": "native-fieldtype-loading-dfc618f7d2fe7aff.json",
             "context": {
                 "APP_VER": "7.5.0",
                 "REQ": "PAGE",

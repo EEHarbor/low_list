@@ -2,10 +2,10 @@
   {
     "runtime": "PHP 7.4.33 (cli) (built: Dec 13 2023 21:52:05) ( NTS )",
     "exit": 2,
-    "tests": 532,
-    "assertions": 2782,
-    "errors": 29,
-    "failures": 37,
+    "tests": 542,
+    "assertions": 2924,
+    "errors": 31,
+    "failures": 43,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -114,9 +114,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000005ac70cf000000000192b368c (",
+          "Failed asserting that LowListTests\\Header Object &000000007a4aab5d0000000079757c53 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &000000005ac70c3700000000192b368c (",
+          "    'url' => LowListTests\\Url Object &000000007a4aab980000000079757c53 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -125,9 +125,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000005ac70cf500000000192b368c (",
+          "Failed asserting that LowListTests\\Header Object &000000007a4aab5a0000000079757c53 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &000000005ac70cd700000000192b368c (",
+          "    'url' => LowListTests\\Url Object &000000007a4aab380000000079757c53 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -136,9 +136,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000005ac70ce800000000192b368c (",
+          "Failed asserting that LowListTests\\Header Object &000000007a4aab450000000079757c53 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &000000005ac70cd100000000192b368c (",
+          "    'url' => LowListTests\\Url Object &000000007a4aab3e0000000079757c53 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -147,9 +147,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000005ac70ce600000000192b368c (",
+          "Failed asserting that LowListTests\\Header Object &000000007a4aab4f0000000079757c53 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &000000005ac70cd500000000192b368c (",
+          "    'url' => LowListTests\\Url Object &000000007a4aab3a0000000079757c53 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -178,7 +178,7 @@
         "kind": "failure",
         "message": "LowListTests\\ControlPanelRuntimeTest::testUpdaterLoadsOptionalProvider with data set #2 ('updater-missing')",
         "details": [
-          "Fatal error: Uncaught ErrorException: include_once(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-m3jNC9/low-list-updater-45971c9124e9d15d/low_list/ext.low_list.php): failed to open stream: No such file or directory in phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php:64",
+          "Fatal error: Uncaught ErrorException: include_once(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-vVoyJW/low-list-updater-bdf40bce281c299c/low_list/ext.low_list.php): failed to open stream: No such file or directory in phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php:64",
           "Stack trace:",
           "#0 phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php(64): {closure}(2, 'include_once(/p...', 'phar:///Users/t...', 64, Array)",
           "#1 phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php(64): include_once()"
@@ -302,7 +302,7 @@
           "Fatal error: Uncaught ErrorException: Undefined variable: stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
           "Stack trace:",
           "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure}(8, 'Undefined varia...', '/Users/tomjaege...', 262, Array)",
-          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(145): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(150): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
         ]
       },
       {
@@ -324,7 +324,7 @@
           "Fatal error: Uncaught ErrorException: Undefined variable: stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
           "Stack trace:",
           "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure}(8, 'Undefined varia...', '/Users/tomjaege...', 262, Array)",
-          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(145): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(150): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
         ]
       },
       {
@@ -483,10 +483,76 @@
         "kind": "error",
         "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1 ('set')",
         "details": [
-          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-m3jNC9/low_list/df88b84d816d3358b3793a61b73d80e93913e627): failed to open stream: Is a directory",
+          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-vVoyJW/low_list/df88b84d816d3358b3793a61b73d80e93913e627): failed to open stream: Is a directory",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:561",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:66"
+        ]
+      },
+      {
+        "test": "testNativeSessionFallback with data set #0",
+        "kind": "failure",
+        "message": "LowListTests\\PharSessionTest::testNativeSessionFallback with data set #0 ('writable')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: mkdir(): File exists in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:177",
+          "Stack trace:",
+          "#0 [internal function]: {closure}(2, 'mkdir(): File e...', '/Users/tomjaege...', 177, Array)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(177): mkdir('/private/var/fo...', 511, true)"
+        ]
+      },
+      {
+        "test": "testNativeSessionFallback with data set #1",
+        "kind": "failure",
+        "message": "LowListTests\\PharSessionTest::testNativeSessionFallback with data set #1 ('depth')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: mkdir(): File exists in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:177",
+          "Stack trace:",
+          "#0 [internal function]: {closure}(2, 'mkdir(): File e...', '/Users/tomjaege...', 177, Array)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(177): mkdir('/private/var/fo...', 511, true)"
+        ]
+      },
+      {
+        "test": "testNativeSessionFallback with data set #2",
+        "kind": "failure",
+        "message": "LowListTests\\PharSessionTest::testNativeSessionFallback with data set #2 ('mode')",
+        "details": [
+          "Failed asserting that two strings are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
+        ]
+      },
+      {
+        "test": "testNativeSessionFallback with data set #3",
+        "kind": "failure",
+        "message": "LowListTests\\PharSessionTest::testNativeSessionFallback with data set #3 ('empty')",
+        "details": [
+          "Failed asserting that two strings are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
+        ]
+      },
+      {
+        "test": "testNativeSessionFallback with data set #4",
+        "kind": "failure",
+        "message": "LowListTests\\PharSessionTest::testNativeSessionFallback with data set #4 ('readonly')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: mkdir(): File exists in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:177",
+          "Stack trace:",
+          "#0 [internal function]: {closure}(2, 'mkdir(): File e...', '/Users/tomjaege...', 177, Array)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(177): mkdir('/private/var/fo...', 511, true)"
+        ]
+      },
+      {
+        "test": "testNativeSessionFallback with data set #5",
+        "kind": "failure",
+        "message": "LowListTests\\PharSessionTest::testNativeSessionFallback with data set #5 ('file-temp')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: mkdir(): Not a directory in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:167",
+          "Stack trace:",
+          "#0 [internal function]: {closure}(2, 'mkdir(): Not a ...', '/Users/tomjaege...', 167, Array)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(167): mkdir('/private/var/fo...', 511, true)"
         ]
       },
       {
@@ -497,7 +563,29 @@
           "ErrorException: rmdir(nested): Directory not empty",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:278",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:189"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:197"
+        ]
+      },
+      {
+        "test": "testTemporaryTreeCleanup with data set #3",
+        "kind": "error",
+        "message": "LowListTests\\PharStubTest::testTemporaryTreeCleanup with data set #3 ('hidden')",
+        "details": [
+          "ErrorException: rmdir(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-vVoyJW/extraction): Directory not empty",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:285",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:197"
+        ]
+      },
+      {
+        "test": "testTemporaryTreeCleanup with data set #4",
+        "kind": "error",
+        "message": "LowListTests\\PharStubTest::testTemporaryTreeCleanup with data set #4 ('dangling-link')",
+        "details": [
+          "ErrorException: rmdir(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-vVoyJW/extraction): Directory not empty",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:285",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:197"
         ]
       },
       {
@@ -508,7 +596,7 @@
           "ErrorException: rmdir(linked-directory): Not a directory",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:278",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:225"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:233"
         ]
       },
       {
@@ -519,7 +607,7 @@
           "Exception: Class at location phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitorOther/Missing.php not found.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/low_list/autoload.php:87",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:297"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:305"
         ]
       },
       {
@@ -729,10 +817,10 @@
   {
     "runtime": "PHP 8.0.30 (cli) (built: Dec 21 2023 08:22:38) ( NTS )",
     "exit": 2,
-    "tests": 532,
-    "assertions": 2776,
-    "errors": 30,
-    "failures": 37,
+    "tests": 542,
+    "assertions": 2918,
+    "errors": 32,
+    "failures": 43,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -841,9 +929,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000f8f8527000000003953ec52 (",
+          "Failed asserting that LowListTests\\Header Object &000000002eeb41890000000070809851 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &000000000f8f8517000000003953ec52 (",
+          "    'url' => LowListTests\\Url Object &000000002eeb41790000000070809851 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -852,9 +940,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000f8f852c000000003953ec52 (",
+          "Failed asserting that LowListTests\\Header Object &000000002eeb418c0000000070809851 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &000000000f8f85c0000000003953ec52 (",
+          "    'url' => LowListTests\\Url Object &000000002eeb41a80000000070809851 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -863,9 +951,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000f8f853f000000003953ec52 (",
+          "Failed asserting that LowListTests\\Header Object &000000002eeb41910000000070809851 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &000000000f8f86a4000000003953ec52 (",
+          "    'url' => LowListTests\\Url Object &000000002eeb47340000000070809851 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -874,9 +962,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000f8f8531000000003953ec52 (",
+          "Failed asserting that LowListTests\\Header Object &000000002eeb419f0000000070809851 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &000000000f8f85c2000000003953ec52 (",
+          "    'url' => LowListTests\\Url Object &000000002eeb41ae0000000070809851 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -905,7 +993,7 @@
         "kind": "failure",
         "message": "LowListTests\\ControlPanelRuntimeTest::testUpdaterLoadsOptionalProvider with data set #2 ('updater-missing')",
         "details": [
-          "Fatal error: Uncaught ErrorException: include_once(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-d8sW58/low-list-updater-72e994f70c2d0b25/low_list/ext.low_list.php): Failed to open stream: No such file or directory in phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php:64",
+          "Fatal error: Uncaught ErrorException: include_once(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-sErFNk/low-list-updater-fb34fb729be688f7/low_list/ext.low_list.php): Failed to open stream: No such file or directory in phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php:64",
           "Stack trace:",
           "#0 phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php(64): {closure}(2, 'include_once(/p...', 'phar:///Users/t...', 64)",
           "#1 phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php(64): include_once()"
@@ -1040,7 +1128,7 @@
           "Fatal error: Uncaught ErrorException: Undefined variable $stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
           "Stack trace:",
           "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
-          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(145): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(150): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
         ]
       },
       {
@@ -1062,7 +1150,7 @@
           "Fatal error: Uncaught ErrorException: Undefined variable $stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
           "Stack trace:",
           "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
-          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(145): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(150): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
         ]
       },
       {
@@ -1221,10 +1309,76 @@
         "kind": "error",
         "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1 ('set')",
         "details": [
-          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-d8sW58/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
+          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-sErFNk/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:561",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:66"
+        ]
+      },
+      {
+        "test": "testNativeSessionFallback with data set #0",
+        "kind": "failure",
+        "message": "LowListTests\\PharSessionTest::testNativeSessionFallback with data set #0 ('writable')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: mkdir(): File exists in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:177",
+          "Stack trace:",
+          "#0 [internal function]: {closure}(2, 'mkdir(): File e...', '/Users/tomjaege...', 177)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(177): mkdir('/private/var/fo...', 511, true)"
+        ]
+      },
+      {
+        "test": "testNativeSessionFallback with data set #1",
+        "kind": "failure",
+        "message": "LowListTests\\PharSessionTest::testNativeSessionFallback with data set #1 ('depth')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: mkdir(): File exists in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:177",
+          "Stack trace:",
+          "#0 [internal function]: {closure}(2, 'mkdir(): File e...', '/Users/tomjaege...', 177)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(177): mkdir('/private/var/fo...', 511, true)"
+        ]
+      },
+      {
+        "test": "testNativeSessionFallback with data set #2",
+        "kind": "failure",
+        "message": "LowListTests\\PharSessionTest::testNativeSessionFallback with data set #2 ('mode')",
+        "details": [
+          "Failed asserting that two strings are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
+        ]
+      },
+      {
+        "test": "testNativeSessionFallback with data set #3",
+        "kind": "failure",
+        "message": "LowListTests\\PharSessionTest::testNativeSessionFallback with data set #3 ('empty')",
+        "details": [
+          "Failed asserting that two strings are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
+        ]
+      },
+      {
+        "test": "testNativeSessionFallback with data set #4",
+        "kind": "failure",
+        "message": "LowListTests\\PharSessionTest::testNativeSessionFallback with data set #4 ('readonly')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: mkdir(): File exists in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:177",
+          "Stack trace:",
+          "#0 [internal function]: {closure}(2, 'mkdir(): File e...', '/Users/tomjaege...', 177)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(177): mkdir('/private/var/fo...', 511, true)"
+        ]
+      },
+      {
+        "test": "testNativeSessionFallback with data set #5",
+        "kind": "failure",
+        "message": "LowListTests\\PharSessionTest::testNativeSessionFallback with data set #5 ('file-temp')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: mkdir(): Not a directory in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:167",
+          "Stack trace:",
+          "#0 [internal function]: {closure}(2, 'mkdir(): Not a ...', '/Users/tomjaege...', 167)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(167): mkdir('/private/var/fo...', 511, true)"
         ]
       },
       {
@@ -1235,7 +1389,29 @@
           "ErrorException: rmdir(nested): Directory not empty",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:278",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:189"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:197"
+        ]
+      },
+      {
+        "test": "testTemporaryTreeCleanup with data set #3",
+        "kind": "error",
+        "message": "LowListTests\\PharStubTest::testTemporaryTreeCleanup with data set #3 ('hidden')",
+        "details": [
+          "ErrorException: rmdir(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-sErFNk/extraction): Directory not empty",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:285",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:197"
+        ]
+      },
+      {
+        "test": "testTemporaryTreeCleanup with data set #4",
+        "kind": "error",
+        "message": "LowListTests\\PharStubTest::testTemporaryTreeCleanup with data set #4 ('dangling-link')",
+        "details": [
+          "ErrorException: rmdir(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-sErFNk/extraction): Directory not empty",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:285",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:197"
         ]
       },
       {
@@ -1246,7 +1422,7 @@
           "ErrorException: rmdir(linked-directory): Not a directory",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:278",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:225"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:233"
         ]
       },
       {
@@ -1257,7 +1433,7 @@
           "Exception: Class at location phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitorOther/Missing.php not found.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/low_list/autoload.php:87",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:297"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:305"
         ]
       },
       {
@@ -1467,10 +1643,10 @@
   {
     "runtime": "PHP 8.1.33 (cli) (built: Jul  4 2025 00:24:36) (NTS)",
     "exit": 2,
-    "tests": 532,
-    "assertions": 2762,
-    "errors": 37,
-    "failures": 36,
+    "tests": 542,
+    "assertions": 2904,
+    "errors": 39,
+    "failures": 42,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -1579,9 +1755,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000007730000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000007920000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000007430000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000007620000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -1590,9 +1766,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000007780000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000007970000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000007940000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000007b30000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -1601,9 +1777,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000076b0000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &000000000000078a0000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000004f00000000000000000 (",
+          "    'url' => LowListTests\\Url Object &000000000000012f0000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -1612,9 +1788,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000007650000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000007840000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000007960000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000007b50000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -1643,7 +1819,7 @@
         "kind": "failure",
         "message": "LowListTests\\ControlPanelRuntimeTest::testUpdaterLoadsOptionalProvider with data set #2 ('updater-missing')",
         "details": [
-          "Fatal error: Uncaught ErrorException: include_once(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-9w9YQC/low-list-updater-56c2a914519eeddb/low_list/ext.low_list.php): Failed to open stream: No such file or directory in phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php:64",
+          "Fatal error: Uncaught ErrorException: include_once(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-fYtPyS/low-list-updater-d4cc0b3bd75042f2/low_list/ext.low_list.php): Failed to open stream: No such file or directory in phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php:64",
           "Stack trace:",
           "#0 phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php(64): {closure}(2, 'include_once(/p...', 'phar:///Users/t...', 64)",
           "#1 phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php(64): include_once()"
@@ -1778,7 +1954,7 @@
           "Fatal error: Uncaught ErrorException: Undefined variable $stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
           "Stack trace:",
           "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
-          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(145): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(150): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
         ]
       },
       {
@@ -1800,7 +1976,7 @@
           "Fatal error: Uncaught ErrorException: Undefined variable $stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
           "Stack trace:",
           "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
-          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(145): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(150): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
         ]
       },
       {
@@ -1959,10 +2135,76 @@
         "kind": "error",
         "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1 ('set')",
         "details": [
-          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-9w9YQC/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
+          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-fYtPyS/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:561",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:66"
+        ]
+      },
+      {
+        "test": "testNativeSessionFallback with data set #0",
+        "kind": "failure",
+        "message": "LowListTests\\PharSessionTest::testNativeSessionFallback with data set #0 ('writable')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: mkdir(): File exists in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:177",
+          "Stack trace:",
+          "#0 [internal function]: {closure}(2, 'mkdir(): File e...', '/Users/tomjaege...', 177)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(177): mkdir('/private/var/fo...', 511, true)"
+        ]
+      },
+      {
+        "test": "testNativeSessionFallback with data set #1",
+        "kind": "failure",
+        "message": "LowListTests\\PharSessionTest::testNativeSessionFallback with data set #1 ('depth')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: mkdir(): File exists in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:177",
+          "Stack trace:",
+          "#0 [internal function]: {closure}(2, 'mkdir(): File e...', '/Users/tomjaege...', 177)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(177): mkdir('/private/var/fo...', 511, true)"
+        ]
+      },
+      {
+        "test": "testNativeSessionFallback with data set #2",
+        "kind": "failure",
+        "message": "LowListTests\\PharSessionTest::testNativeSessionFallback with data set #2 ('mode')",
+        "details": [
+          "Failed asserting that two strings are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
+        ]
+      },
+      {
+        "test": "testNativeSessionFallback with data set #3",
+        "kind": "failure",
+        "message": "LowListTests\\PharSessionTest::testNativeSessionFallback with data set #3 ('empty')",
+        "details": [
+          "Failed asserting that two strings are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
+        ]
+      },
+      {
+        "test": "testNativeSessionFallback with data set #4",
+        "kind": "failure",
+        "message": "LowListTests\\PharSessionTest::testNativeSessionFallback with data set #4 ('readonly')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: mkdir(): File exists in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:177",
+          "Stack trace:",
+          "#0 [internal function]: {closure}(2, 'mkdir(): File e...', '/Users/tomjaege...', 177)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(177): mkdir('/private/var/fo...', 511, true)"
+        ]
+      },
+      {
+        "test": "testNativeSessionFallback with data set #5",
+        "kind": "failure",
+        "message": "LowListTests\\PharSessionTest::testNativeSessionFallback with data set #5 ('file-temp')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: mkdir(): Not a directory in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:167",
+          "Stack trace:",
+          "#0 [internal function]: {closure}(2, 'mkdir(): Not a ...', '/Users/tomjaege...', 167)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(167): mkdir('/private/var/fo...', 511, true)"
         ]
       },
       {
@@ -1973,7 +2215,29 @@
           "ErrorException: rmdir(nested): Directory not empty",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:278",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:189"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:197"
+        ]
+      },
+      {
+        "test": "testTemporaryTreeCleanup with data set #3",
+        "kind": "error",
+        "message": "LowListTests\\PharStubTest::testTemporaryTreeCleanup with data set #3 ('hidden')",
+        "details": [
+          "ErrorException: rmdir(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-fYtPyS/extraction): Directory not empty",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:285",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:197"
+        ]
+      },
+      {
+        "test": "testTemporaryTreeCleanup with data set #4",
+        "kind": "error",
+        "message": "LowListTests\\PharStubTest::testTemporaryTreeCleanup with data set #4 ('dangling-link')",
+        "details": [
+          "ErrorException: rmdir(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-fYtPyS/extraction): Directory not empty",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:285",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:197"
         ]
       },
       {
@@ -1984,7 +2248,7 @@
           "ErrorException: rmdir(linked-directory): Not a directory",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:278",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:225"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:233"
         ]
       },
       {
@@ -1995,7 +2259,7 @@
           "Exception: Class at location phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitorOther/Missing.php not found.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/low_list/autoload.php:87",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:297"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:305"
         ]
       },
       {
@@ -2271,10 +2535,10 @@
   {
     "runtime": "PHP 8.2.30 (cli) (built: Dec 19 2025 07:42:41) (NTS clang 15.0.0)",
     "exit": 2,
-    "tests": 532,
-    "assertions": 2761,
-    "errors": 38,
-    "failures": 36,
+    "tests": 542,
+    "assertions": 2903,
+    "errors": 40,
+    "failures": 42,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -2383,9 +2647,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000007730000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000007920000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000007430000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000007620000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -2394,9 +2658,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000007780000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000007970000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000007940000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000007b30000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -2405,9 +2669,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000076b0000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &000000000000078a0000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000004f00000000000000000 (",
+          "    'url' => LowListTests\\Url Object &000000000000012f0000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -2416,9 +2680,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000007650000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000007840000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000007960000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000007b50000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -2447,7 +2711,7 @@
         "kind": "failure",
         "message": "LowListTests\\ControlPanelRuntimeTest::testUpdaterLoadsOptionalProvider with data set #2 ('updater-missing')",
         "details": [
-          "Fatal error: Uncaught ErrorException: include_once(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-yEJUeN/low-list-updater-b6b6f13539b20bbb/low_list/ext.low_list.php): Failed to open stream: No such file or directory in phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php:64",
+          "Fatal error: Uncaught ErrorException: include_once(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-7GKnCg/low-list-updater-cab0b2259a67ffb1/low_list/ext.low_list.php): Failed to open stream: No such file or directory in phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php:64",
           "Stack trace:",
           "#0 phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php(64): {closure}(2, 'include_once(/p...', 'phar:///Users/t...', 64)",
           "#1 phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php(64): include_once()"
@@ -2593,7 +2857,7 @@
           "Fatal error: Uncaught ErrorException: Undefined variable $stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
           "Stack trace:",
           "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
-          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(145): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(150): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
         ]
       },
       {
@@ -2615,7 +2879,7 @@
           "Fatal error: Uncaught ErrorException: Undefined variable $stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
           "Stack trace:",
           "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
-          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(145): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(150): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
         ]
       },
       {
@@ -2774,10 +3038,76 @@
         "kind": "error",
         "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1 ('set')",
         "details": [
-          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-yEJUeN/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
+          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-7GKnCg/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:561",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:66"
+        ]
+      },
+      {
+        "test": "testNativeSessionFallback with data set #0",
+        "kind": "failure",
+        "message": "LowListTests\\PharSessionTest::testNativeSessionFallback with data set #0 ('writable')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: mkdir(): File exists in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:177",
+          "Stack trace:",
+          "#0 [internal function]: {closure}(2, 'mkdir(): File e...', '/Users/tomjaege...', 177)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(177): mkdir('/private/var/fo...', 511, true)"
+        ]
+      },
+      {
+        "test": "testNativeSessionFallback with data set #1",
+        "kind": "failure",
+        "message": "LowListTests\\PharSessionTest::testNativeSessionFallback with data set #1 ('depth')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: mkdir(): File exists in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:177",
+          "Stack trace:",
+          "#0 [internal function]: {closure}(2, 'mkdir(): File e...', '/Users/tomjaege...', 177)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(177): mkdir('/private/var/fo...', 511, true)"
+        ]
+      },
+      {
+        "test": "testNativeSessionFallback with data set #2",
+        "kind": "failure",
+        "message": "LowListTests\\PharSessionTest::testNativeSessionFallback with data set #2 ('mode')",
+        "details": [
+          "Failed asserting that two strings are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
+        ]
+      },
+      {
+        "test": "testNativeSessionFallback with data set #3",
+        "kind": "failure",
+        "message": "LowListTests\\PharSessionTest::testNativeSessionFallback with data set #3 ('empty')",
+        "details": [
+          "Failed asserting that two strings are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
+        ]
+      },
+      {
+        "test": "testNativeSessionFallback with data set #4",
+        "kind": "failure",
+        "message": "LowListTests\\PharSessionTest::testNativeSessionFallback with data set #4 ('readonly')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: mkdir(): File exists in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:177",
+          "Stack trace:",
+          "#0 [internal function]: {closure}(2, 'mkdir(): File e...', '/Users/tomjaege...', 177)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(177): mkdir('/private/var/fo...', 511, true)"
+        ]
+      },
+      {
+        "test": "testNativeSessionFallback with data set #5",
+        "kind": "failure",
+        "message": "LowListTests\\PharSessionTest::testNativeSessionFallback with data set #5 ('file-temp')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: mkdir(): Not a directory in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:167",
+          "Stack trace:",
+          "#0 [internal function]: {closure}(2, 'mkdir(): Not a ...', '/Users/tomjaege...', 167)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(167): mkdir('/private/var/fo...', 511, true)"
         ]
       },
       {
@@ -2788,7 +3118,29 @@
           "ErrorException: rmdir(nested): Directory not empty",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:278",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:189"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:197"
+        ]
+      },
+      {
+        "test": "testTemporaryTreeCleanup with data set #3",
+        "kind": "error",
+        "message": "LowListTests\\PharStubTest::testTemporaryTreeCleanup with data set #3 ('hidden')",
+        "details": [
+          "ErrorException: rmdir(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-7GKnCg/extraction): Directory not empty",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:285",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:197"
+        ]
+      },
+      {
+        "test": "testTemporaryTreeCleanup with data set #4",
+        "kind": "error",
+        "message": "LowListTests\\PharStubTest::testTemporaryTreeCleanup with data set #4 ('dangling-link')",
+        "details": [
+          "ErrorException: rmdir(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-7GKnCg/extraction): Directory not empty",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:285",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:197"
         ]
       },
       {
@@ -2799,7 +3151,7 @@
           "ErrorException: rmdir(linked-directory): Not a directory",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:278",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:225"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:233"
         ]
       },
       {
@@ -2810,7 +3162,7 @@
           "Exception: Class at location phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitorOther/Missing.php not found.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/low_list/autoload.php:87",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:297"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:305"
         ]
       },
       {
@@ -3086,10 +3438,10 @@
   {
     "runtime": "PHP 8.3.28 (cli) (built: Nov 20 2025 11:21:23) (NTS clang 15.0.0)",
     "exit": 2,
-    "tests": 532,
-    "assertions": 2761,
-    "errors": 38,
-    "failures": 36,
+    "tests": 542,
+    "assertions": 2903,
+    "errors": 40,
+    "failures": 42,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -3198,9 +3550,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000007730000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000007920000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000007430000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000007620000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -3209,9 +3561,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000007780000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000007970000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000007940000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000007b30000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -3220,9 +3572,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000076b0000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &000000000000078a0000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000004f00000000000000000 (",
+          "    'url' => LowListTests\\Url Object &000000000000012f0000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -3231,9 +3583,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000007650000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000007840000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000007960000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000007b50000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -3262,7 +3614,7 @@
         "kind": "failure",
         "message": "LowListTests\\ControlPanelRuntimeTest::testUpdaterLoadsOptionalProvider with data set #2 ('updater-missing')",
         "details": [
-          "Fatal error: Uncaught ErrorException: include_once(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-YsvMhF/low-list-updater-c8e3ee6dceb636f8/low_list/ext.low_list.php): Failed to open stream: No such file or directory in phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php:64",
+          "Fatal error: Uncaught ErrorException: include_once(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-NKVStZ/low-list-updater-4b07c3295dec1b42/low_list/ext.low_list.php): Failed to open stream: No such file or directory in phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php:64",
           "Stack trace:",
           "#0 phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php(64): {closure}(2, 'include_once(/p...', 'phar:///Users/t...', 64)",
           "#1 phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php(64): include_once()"
@@ -3408,7 +3760,7 @@
           "Fatal error: Uncaught ErrorException: Undefined variable $stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
           "Stack trace:",
           "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
-          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(145): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(150): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
         ]
       },
       {
@@ -3430,7 +3782,7 @@
           "Fatal error: Uncaught ErrorException: Undefined variable $stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
           "Stack trace:",
           "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
-          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(145): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(150): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
         ]
       },
       {
@@ -3589,10 +3941,76 @@
         "kind": "error",
         "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1 ('set')",
         "details": [
-          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-YsvMhF/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
+          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-NKVStZ/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:561",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:66"
+        ]
+      },
+      {
+        "test": "testNativeSessionFallback with data set #0",
+        "kind": "failure",
+        "message": "LowListTests\\PharSessionTest::testNativeSessionFallback with data set #0 ('writable')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: mkdir(): File exists in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:177",
+          "Stack trace:",
+          "#0 [internal function]: {closure}(2, 'mkdir(): File e...', '/Users/tomjaege...', 177)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(177): mkdir('/private/var/fo...', 511, true)"
+        ]
+      },
+      {
+        "test": "testNativeSessionFallback with data set #1",
+        "kind": "failure",
+        "message": "LowListTests\\PharSessionTest::testNativeSessionFallback with data set #1 ('depth')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: mkdir(): File exists in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:177",
+          "Stack trace:",
+          "#0 [internal function]: {closure}(2, 'mkdir(): File e...', '/Users/tomjaege...', 177)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(177): mkdir('/private/var/fo...', 511, true)"
+        ]
+      },
+      {
+        "test": "testNativeSessionFallback with data set #2",
+        "kind": "failure",
+        "message": "LowListTests\\PharSessionTest::testNativeSessionFallback with data set #2 ('mode')",
+        "details": [
+          "Failed asserting that two strings are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
+        ]
+      },
+      {
+        "test": "testNativeSessionFallback with data set #3",
+        "kind": "failure",
+        "message": "LowListTests\\PharSessionTest::testNativeSessionFallback with data set #3 ('empty')",
+        "details": [
+          "Failed asserting that two strings are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
+        ]
+      },
+      {
+        "test": "testNativeSessionFallback with data set #4",
+        "kind": "failure",
+        "message": "LowListTests\\PharSessionTest::testNativeSessionFallback with data set #4 ('readonly')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: mkdir(): File exists in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:177",
+          "Stack trace:",
+          "#0 [internal function]: {closure}(2, 'mkdir(): File e...', '/Users/tomjaege...', 177)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(177): mkdir('/private/var/fo...', 511, true)"
+        ]
+      },
+      {
+        "test": "testNativeSessionFallback with data set #5",
+        "kind": "failure",
+        "message": "LowListTests\\PharSessionTest::testNativeSessionFallback with data set #5 ('file-temp')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: mkdir(): Not a directory in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:167",
+          "Stack trace:",
+          "#0 [internal function]: {closure}(2, 'mkdir(): Not a ...', '/Users/tomjaege...', 167)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(167): mkdir('/private/var/fo...', 511, true)"
         ]
       },
       {
@@ -3603,7 +4021,29 @@
           "ErrorException: rmdir(nested): Directory not empty",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:278",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:189"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:197"
+        ]
+      },
+      {
+        "test": "testTemporaryTreeCleanup with data set #3",
+        "kind": "error",
+        "message": "LowListTests\\PharStubTest::testTemporaryTreeCleanup with data set #3 ('hidden')",
+        "details": [
+          "ErrorException: rmdir(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-NKVStZ/extraction): Directory not empty",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:285",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:197"
+        ]
+      },
+      {
+        "test": "testTemporaryTreeCleanup with data set #4",
+        "kind": "error",
+        "message": "LowListTests\\PharStubTest::testTemporaryTreeCleanup with data set #4 ('dangling-link')",
+        "details": [
+          "ErrorException: rmdir(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-NKVStZ/extraction): Directory not empty",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:285",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:197"
         ]
       },
       {
@@ -3614,7 +4054,7 @@
           "ErrorException: rmdir(linked-directory): Not a directory",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:278",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:225"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:233"
         ]
       },
       {
@@ -3625,7 +4065,7 @@
           "Exception: Class at location phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitorOther/Missing.php not found.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/low_list/autoload.php:87",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:297"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:305"
         ]
       },
       {
@@ -3901,10 +4341,10 @@
   {
     "runtime": "PHP 8.4.15 (cli) (built: Nov 20 2025 14:28:49) (NTS clang 15.0.0)",
     "exit": 2,
-    "tests": 532,
-    "assertions": 2761,
-    "errors": 38,
-    "failures": 36,
+    "tests": 542,
+    "assertions": 2903,
+    "errors": 40,
+    "failures": 42,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -4013,9 +4453,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000007730000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000007920000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000007430000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000007620000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -4024,9 +4464,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000007780000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000007970000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000007940000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000007b30000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -4035,9 +4475,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000076b0000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &000000000000078a0000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000004f00000000000000000 (",
+          "    'url' => LowListTests\\Url Object &000000000000012f0000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -4046,9 +4486,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000007650000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000007840000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000007960000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000007b50000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -4077,7 +4517,7 @@
         "kind": "failure",
         "message": "LowListTests\\ControlPanelRuntimeTest::testUpdaterLoadsOptionalProvider with data set #2 ('updater-missing')",
         "details": [
-          "Fatal error: Uncaught ErrorException: include_once(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-hgl5r1bap7132kvqNui/low-list-updater-fcb40e0546b77143/low_list/ext.low_list.php): Failed to open stream: No such file or directory in phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php:64",
+          "Fatal error: Uncaught ErrorException: include_once(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-51nfqvbh4v7mdFx7IbJ/low-list-updater-c066c4d26c63bc0d/low_list/ext.low_list.php): Failed to open stream: No such file or directory in phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php:64",
           "Stack trace:",
           "#0 phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php(64): {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:4}(2, 'include_once(/p...', 'phar:///Users/t...', 64)",
           "#1 phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php(64): include_once()"
@@ -4223,7 +4663,7 @@
           "Fatal error: Uncaught ErrorException: Undefined variable $stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
           "Stack trace:",
           "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:4}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
-          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(145): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(150): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
         ]
       },
       {
@@ -4245,7 +4685,7 @@
           "Fatal error: Uncaught ErrorException: Undefined variable $stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
           "Stack trace:",
           "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:4}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
-          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(145): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(150): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
         ]
       },
       {
@@ -4404,10 +4844,76 @@
         "kind": "error",
         "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1 ('set')",
         "details": [
-          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-hgl5r1bap7132kvqNui/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
+          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-51nfqvbh4v7mdFx7IbJ/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:561",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:66"
+        ]
+      },
+      {
+        "test": "testNativeSessionFallback with data set #0",
+        "kind": "failure",
+        "message": "LowListTests\\PharSessionTest::testNativeSessionFallback with data set #0 ('writable')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: mkdir(): File exists in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:177",
+          "Stack trace:",
+          "#0 [internal function]: {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:4}(2, 'mkdir(): File e...', '/Users/tomjaege...', 177)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(177): mkdir('/private/var/fo...', 511, true)"
+        ]
+      },
+      {
+        "test": "testNativeSessionFallback with data set #1",
+        "kind": "failure",
+        "message": "LowListTests\\PharSessionTest::testNativeSessionFallback with data set #1 ('depth')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: mkdir(): File exists in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:177",
+          "Stack trace:",
+          "#0 [internal function]: {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:4}(2, 'mkdir(): File e...', '/Users/tomjaege...', 177)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(177): mkdir('/private/var/fo...', 511, true)"
+        ]
+      },
+      {
+        "test": "testNativeSessionFallback with data set #2",
+        "kind": "failure",
+        "message": "LowListTests\\PharSessionTest::testNativeSessionFallback with data set #2 ('mode')",
+        "details": [
+          "Failed asserting that two strings are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
+        ]
+      },
+      {
+        "test": "testNativeSessionFallback with data set #3",
+        "kind": "failure",
+        "message": "LowListTests\\PharSessionTest::testNativeSessionFallback with data set #3 ('empty')",
+        "details": [
+          "Failed asserting that two strings are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
+        ]
+      },
+      {
+        "test": "testNativeSessionFallback with data set #4",
+        "kind": "failure",
+        "message": "LowListTests\\PharSessionTest::testNativeSessionFallback with data set #4 ('readonly')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: mkdir(): File exists in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:177",
+          "Stack trace:",
+          "#0 [internal function]: {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:4}(2, 'mkdir(): File e...', '/Users/tomjaege...', 177)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(177): mkdir('/private/var/fo...', 511, true)"
+        ]
+      },
+      {
+        "test": "testNativeSessionFallback with data set #5",
+        "kind": "failure",
+        "message": "LowListTests\\PharSessionTest::testNativeSessionFallback with data set #5 ('file-temp')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: mkdir(): Not a directory in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:167",
+          "Stack trace:",
+          "#0 [internal function]: {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:4}(2, 'mkdir(): Not a ...', '/Users/tomjaege...', 167)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(167): mkdir('/private/var/fo...', 511, true)"
         ]
       },
       {
@@ -4418,7 +4924,29 @@
           "ErrorException: rmdir(nested): Directory not empty",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:278",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:189"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:197"
+        ]
+      },
+      {
+        "test": "testTemporaryTreeCleanup with data set #3",
+        "kind": "error",
+        "message": "LowListTests\\PharStubTest::testTemporaryTreeCleanup with data set #3 ('hidden')",
+        "details": [
+          "ErrorException: rmdir(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-51nfqvbh4v7mdFx7IbJ/extraction): Directory not empty",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:285",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:197"
+        ]
+      },
+      {
+        "test": "testTemporaryTreeCleanup with data set #4",
+        "kind": "error",
+        "message": "LowListTests\\PharStubTest::testTemporaryTreeCleanup with data set #4 ('dangling-link')",
+        "details": [
+          "ErrorException: rmdir(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-51nfqvbh4v7mdFx7IbJ/extraction): Directory not empty",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:285",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:197"
         ]
       },
       {
@@ -4429,7 +4957,7 @@
           "ErrorException: rmdir(linked-directory): Not a directory",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:278",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:225"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:233"
         ]
       },
       {
@@ -4440,7 +4968,7 @@
           "Exception: Class at location phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitorOther/Missing.php not found.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/low_list/autoload.php:87",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:297"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:305"
         ]
       },
       {
@@ -4716,10 +5244,10 @@
   {
     "runtime": "PHP 8.5.0 (cli) (built: Nov 20 2025 09:30:23) (NTS clang 15.0.0)",
     "exit": 2,
-    "tests": 532,
-    "assertions": 2762,
-    "errors": 38,
-    "failures": 36,
+    "tests": 542,
+    "assertions": 2904,
+    "errors": 40,
+    "failures": 42,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -4828,9 +5356,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000007730000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000007920000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000007430000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000007620000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -4839,9 +5367,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000007780000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000007970000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000007940000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000007b30000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -4850,9 +5378,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000076b0000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &000000000000078a0000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000004f00000000000000000 (",
+          "    'url' => LowListTests\\Url Object &000000000000012f0000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -4861,9 +5389,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000007650000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000007840000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000007960000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000007b50000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -4892,7 +5420,7 @@
         "kind": "failure",
         "message": "LowListTests\\ControlPanelRuntimeTest::testUpdaterLoadsOptionalProvider with data set #2 ('updater-missing')",
         "details": [
-          "Fatal error: Uncaught ErrorException: include_once(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-bqhbmktjr1sofybzzjz/low-list-updater-0c7796ffbe540ba5/low_list/ext.low_list.php): Failed to open stream: No such file or directory in phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php:64",
+          "Fatal error: Uncaught ErrorException: include_once(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-658m4fngegpp6PSNzoX/low-list-updater-7dd73348ed6bec62/low_list/ext.low_list.php): Failed to open stream: No such file or directory in phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php:64",
           "Stack trace:",
           "#0 phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php(64): {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:4}(2, 'include_once(/p...', 'phar:///Users/t...', 64)",
           "#1 phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php(64): include_once()"
@@ -5038,7 +5566,7 @@
           "Fatal error: Uncaught ErrorException: Undefined variable $stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
           "Stack trace:",
           "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:4}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
-          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(145): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(150): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
         ]
       },
       {
@@ -5060,7 +5588,7 @@
           "Fatal error: Uncaught ErrorException: Undefined variable $stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
           "Stack trace:",
           "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:4}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
-          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(145): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(150): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
         ]
       },
       {
@@ -5219,10 +5747,76 @@
         "kind": "error",
         "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1 ('set')",
         "details": [
-          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-bqhbmktjr1sofybzzjz/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
+          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-658m4fngegpp6PSNzoX/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:561",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:66"
+        ]
+      },
+      {
+        "test": "testNativeSessionFallback with data set #0",
+        "kind": "failure",
+        "message": "LowListTests\\PharSessionTest::testNativeSessionFallback with data set #0 ('writable')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: mkdir(): File exists in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:177",
+          "Stack trace:",
+          "#0 [internal function]: {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:4}(2, 'mkdir(): File e...', '/Users/tomjaege...', 177)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(177): mkdir('/private/var/fo...', 511, true)"
+        ]
+      },
+      {
+        "test": "testNativeSessionFallback with data set #1",
+        "kind": "failure",
+        "message": "LowListTests\\PharSessionTest::testNativeSessionFallback with data set #1 ('depth')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: mkdir(): File exists in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:177",
+          "Stack trace:",
+          "#0 [internal function]: {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:4}(2, 'mkdir(): File e...', '/Users/tomjaege...', 177)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(177): mkdir('/private/var/fo...', 511, true)"
+        ]
+      },
+      {
+        "test": "testNativeSessionFallback with data set #2",
+        "kind": "failure",
+        "message": "LowListTests\\PharSessionTest::testNativeSessionFallback with data set #2 ('mode')",
+        "details": [
+          "Failed asserting that two strings are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
+        ]
+      },
+      {
+        "test": "testNativeSessionFallback with data set #3",
+        "kind": "failure",
+        "message": "LowListTests\\PharSessionTest::testNativeSessionFallback with data set #3 ('empty')",
+        "details": [
+          "Failed asserting that two strings are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
+        ]
+      },
+      {
+        "test": "testNativeSessionFallback with data set #4",
+        "kind": "failure",
+        "message": "LowListTests\\PharSessionTest::testNativeSessionFallback with data set #4 ('readonly')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: mkdir(): File exists in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:177",
+          "Stack trace:",
+          "#0 [internal function]: {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:4}(2, 'mkdir(): File e...', '/Users/tomjaege...', 177)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(177): mkdir('/private/var/fo...', 511, true)"
+        ]
+      },
+      {
+        "test": "testNativeSessionFallback with data set #5",
+        "kind": "failure",
+        "message": "LowListTests\\PharSessionTest::testNativeSessionFallback with data set #5 ('file-temp')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: mkdir(): Not a directory in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:167",
+          "Stack trace:",
+          "#0 [internal function]: {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:4}(2, 'mkdir(): Not a ...', '/Users/tomjaege...', 167)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(167): mkdir('/private/var/fo...', 511, true)"
         ]
       },
       {
@@ -5233,7 +5827,29 @@
           "ErrorException: rmdir(nested): Directory not empty",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:278",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:189"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:197"
+        ]
+      },
+      {
+        "test": "testTemporaryTreeCleanup with data set #3",
+        "kind": "error",
+        "message": "LowListTests\\PharStubTest::testTemporaryTreeCleanup with data set #3 ('hidden')",
+        "details": [
+          "ErrorException: rmdir(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-658m4fngegpp6PSNzoX/extraction): Directory not empty",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:285",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:197"
+        ]
+      },
+      {
+        "test": "testTemporaryTreeCleanup with data set #4",
+        "kind": "error",
+        "message": "LowListTests\\PharStubTest::testTemporaryTreeCleanup with data set #4 ('dangling-link')",
+        "details": [
+          "ErrorException: rmdir(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-658m4fngegpp6PSNzoX/extraction): Directory not empty",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:285",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:197"
         ]
       },
       {
@@ -5244,7 +5860,7 @@
           "ErrorException: rmdir(linked-directory): Not a directory",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:278",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:225"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:233"
         ]
       },
       {
@@ -5255,7 +5871,7 @@
           "Exception: Class at location phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitorOther/Missing.php not found.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/low_list/autoload.php:87",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:297"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:305"
         ]
       },
       {

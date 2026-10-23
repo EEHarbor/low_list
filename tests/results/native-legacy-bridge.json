@@ -8,7 +8,7 @@
     "metrics": "Independent native contexts; raw basic blocks and out/out_hit exits are preserved without graph merging.",
     "contexts": {
         "slashes": {
-            "capture": "native-legacy-bridge-3aab196c05500b6d.json",
+            "capture": "native-legacy-bridge-3ddc741c901cc91c.json",
             "context": {
                 "APP_VER": "2.5.4",
                 "REQ": "CP",
@@ -3060,7 +3060,7 @@
             }
         },
         "slashes-helper": {
-            "capture": "native-legacy-bridge-ee1fc2b219c9a7bd.json",
+            "capture": "native-legacy-bridge-32b67cbea80907a2.json",
             "context": {
                 "APP_VER": "2.10.1",
                 "REQ": "CP",
@@ -6112,7 +6112,7 @@
             }
         },
         "urls": {
-            "capture": "native-legacy-bridge-42f518e65076def4.json",
+            "capture": "native-legacy-bridge-302b7e7f9a0f21b0.json",
             "context": {
                 "APP_VER": "2.5.5",
                 "REQ": "CP",
@@ -9164,7 +9164,7 @@
             }
         },
         "view-readonly": {
-            "capture": "native-legacy-bridge-eb352e656f18843a.json",
+            "capture": "native-legacy-bridge-2e009a0b5ded8a77.json",
             "context": {
                 "APP_VER": "2.5.5",
                 "REQ": "CP",
@@ -12216,7 +12216,7 @@
             }
         },
         "view-writable": {
-            "capture": "native-legacy-bridge-576bd76cb9125f0e.json",
+            "capture": "native-legacy-bridge-ef988ec9a8916d99.json",
             "context": {
                 "APP_VER": "2.5.5",
                 "REQ": "CP",

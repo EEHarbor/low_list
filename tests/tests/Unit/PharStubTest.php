@@ -184,6 +184,14 @@ class PharStubTest extends TestCase
             mkdir($directory . '/nested');
             file_put_contents($directory . '/nested/child.txt', 'child');
         }
+        if ($shape === 'hidden') {
+            file_put_contents($directory . '/.metadata', 'owned-hidden-file');
+        }
+        if ($shape === 'dangling-link') {
+            symlink(PATH_CACHE . 'absent-target', $directory . '/dangling-link');
+            $this->assertTrue(is_link($directory . '/dangling-link'));
+            $this->assertFileDoesNotExist(PATH_CACHE . 'absent-target');
+        }
         $original = getcwd();
         try {
             \Extract_low_list::_removeTmpFiles($directory, $original);
@@ -198,13 +206,13 @@ class PharStubTest extends TestCase
     }
 
     /**
-     * Supply empty and populated extraction directories.
+     * Supply empty, populated, hidden-file and dangling-link extraction directories.
      *
      * @return array
      */
     public static function cleanupTrees(): array
     {
-        return array(array('empty'), array('files'), array('nested'));
+        return array(array('empty'), array('files'), array('nested'), array('hidden'), array('dangling-link'));
     }
 
     /**

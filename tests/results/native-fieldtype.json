@@ -8,7 +8,7 @@
     "metrics": "Independent native contexts; raw basic blocks and out/out_hit exits are preserved without graph merging.",
     "contexts": {
         "legacy": {
-            "capture": "native-fieldtype-a7ef82f3c7d7feb0.json",
+            "capture": "native-fieldtype-be4b090c4762e6ac.json",
             "context": {
                 "APP_VER": "2.5.5",
                 "REQ": "PAGE",
@@ -839,7 +839,7 @@
             }
         },
         "legacy-structured": {
-            "capture": "native-fieldtype-4b65dcba5248767d.json",
+            "capture": "native-fieldtype-803426ec593a071b.json",
             "context": {
                 "APP_VER": "2.5.5",
                 "REQ": "PAGE",
