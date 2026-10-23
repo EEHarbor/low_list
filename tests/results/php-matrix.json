@@ -2,10 +2,10 @@
   {
     "runtime": "PHP 7.4.33 (cli) (built: Dec 13 2023 21:52:05) ( NTS )",
     "exit": 2,
-    "tests": 440,
-    "assertions": 2152,
+    "tests": 459,
+    "assertions": 2360,
     "errors": 29,
-    "failures": 33,
+    "failures": 36,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -114,9 +114,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000006098c0a700000000472a2b30 (",
+          "Failed asserting that LowListTests\\Header Object &000000004c49b8100000000035020076 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &000000006098c0b500000000472a2b30 (",
+          "    'url' => LowListTests\\Url Object &000000004c49b8020000000035020076 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -125,9 +125,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000006098c07d00000000472a2b30 (",
+          "Failed asserting that LowListTests\\Header Object &000000004c49b87a0000000035020076 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &000000006098c0da00000000472a2b30 (",
+          "    'url' => LowListTests\\Url Object &000000004c49b8170000000035020076 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -136,9 +136,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000006098c04700000000472a2b30 (",
+          "Failed asserting that LowListTests\\Header Object &000000004c49b8700000000035020076 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &000000006098c0a400000000472a2b30 (",
+          "    'url' => LowListTests\\Url Object &000000004c49b8150000000035020076 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -147,10 +147,41 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000006098c04d00000000472a2b30 (",
+          "Failed asserting that LowListTests\\Header Object &000000004c49b86a0000000035020076 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &000000006098c0d800000000472a2b30 (",
+          "    'url' => LowListTests\\Url Object &000000004c49b8190000000035020076 (",
           "        'last' => Array &0 ("
+        ]
+      },
+      {
+        "test": "testConstructorsKeepValidSchemaAndOnePixel with data set #4",
+        "kind": "failure",
+        "message": "LowListTests\\ControlPanelRuntimeTest::testConstructorsKeepValidSchemaAndOnePixel with data set #4 ('shared-modern')",
+        "details": [
+          "Failed asserting that true is false.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/ControlPanelRuntimeTest.php:42"
+        ]
+      },
+      {
+        "test": "testConstructorsKeepValidSchemaAndOnePixel with data set #5",
+        "kind": "failure",
+        "message": "LowListTests\\ControlPanelRuntimeTest::testConstructorsKeepValidSchemaAndOnePixel with data set #5 ('shared-legacy')",
+        "details": [
+          "Failed asserting that true is false.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/ControlPanelRuntimeTest.php:42"
+        ]
+      },
+      {
+        "test": "testUpdaterLoadsOptionalProvider with data set #2",
+        "kind": "failure",
+        "message": "LowListTests\\ControlPanelRuntimeTest::testUpdaterLoadsOptionalProvider with data set #2 ('updater-missing')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: include_once(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-eLTjOh/low-list-updater-8253842fde18932b/low_list/ext.low_list.php): failed to open stream: No such file or directory in phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php:64",
+          "Stack trace:",
+          "#0 phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php(64): {closure}(2, 'include_once(/p...', 'phar:///Users/t...', 64, Array)",
+          "#1 phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php(64): include_once()"
         ]
       },
       {
@@ -260,7 +291,7 @@
           "Fatal error: Uncaught ErrorException: Undefined variable: stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
           "Stack trace:",
           "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure}(8, 'Undefined varia...', '/Users/tomjaege...', 262, Array)",
-          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(130): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(135): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
         ]
       },
       {
@@ -282,7 +313,7 @@
           "Fatal error: Uncaught ErrorException: Undefined variable: stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
           "Stack trace:",
           "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure}(8, 'Undefined varia...', '/Users/tomjaege...', 262, Array)",
-          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(130): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(135): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
         ]
       },
       {
@@ -441,7 +472,7 @@
         "kind": "error",
         "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1 ('set')",
         "details": [
-          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-RF43g4/low_list/df88b84d816d3358b3793a61b73d80e93913e627): failed to open stream: Is a directory",
+          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-eLTjOh/low_list/df88b84d816d3358b3793a61b73d80e93913e627): failed to open stream: Is a directory",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:561",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:66"
@@ -687,10 +718,10 @@
   {
     "runtime": "PHP 8.0.30 (cli) (built: Dec 21 2023 08:22:38) ( NTS )",
     "exit": 2,
-    "tests": 440,
-    "assertions": 2146,
+    "tests": 459,
+    "assertions": 2354,
     "errors": 30,
-    "failures": 33,
+    "failures": 36,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -799,9 +830,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000ae2bff800000000052bcba5 (",
+          "Failed asserting that LowListTests\\Header Object &0000000040ac1b5400000000474397ac (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &000000000ae2bfed00000000052bcba5 (",
+          "    'url' => LowListTests\\Url Object &0000000040ac1b3b00000000474397ac (",
           "        'last' => Array &0 ("
         ]
       },
@@ -810,9 +841,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000ae2bf2c00000000052bcba5 (",
+          "Failed asserting that LowListTests\\Header Object &0000000040ac1bf800000000474397ac (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &000000000ae2bfc500000000052bcba5 (",
+          "    'url' => LowListTests\\Url Object &0000000040ac1b5300000000474397ac (",
           "        'last' => Array &0 ("
         ]
       },
@@ -821,9 +852,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000ae2bf5a00000000052bcba5 (",
+          "Failed asserting that LowListTests\\Header Object &0000000040ac1bf600000000474397ac (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &000000000ae2bffb00000000052bcba5 (",
+          "    'url' => LowListTests\\Url Object &0000000040ac1b5100000000474397ac (",
           "        'last' => Array &0 ("
         ]
       },
@@ -832,10 +863,41 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000ae2bf5c00000000052bcba5 (",
+          "Failed asserting that LowListTests\\Header Object &0000000040ac1be800000000474397ac (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &000000000ae2bfc700000000052bcba5 (",
+          "    'url' => LowListTests\\Url Object &0000000040ac1b5d00000000474397ac (",
           "        'last' => Array &0 ("
+        ]
+      },
+      {
+        "test": "testConstructorsKeepValidSchemaAndOnePixel with data set #4",
+        "kind": "failure",
+        "message": "LowListTests\\ControlPanelRuntimeTest::testConstructorsKeepValidSchemaAndOnePixel with data set #4 ('shared-modern')",
+        "details": [
+          "Failed asserting that true is false.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/ControlPanelRuntimeTest.php:42"
+        ]
+      },
+      {
+        "test": "testConstructorsKeepValidSchemaAndOnePixel with data set #5",
+        "kind": "failure",
+        "message": "LowListTests\\ControlPanelRuntimeTest::testConstructorsKeepValidSchemaAndOnePixel with data set #5 ('shared-legacy')",
+        "details": [
+          "Failed asserting that true is false.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/ControlPanelRuntimeTest.php:42"
+        ]
+      },
+      {
+        "test": "testUpdaterLoadsOptionalProvider with data set #2",
+        "kind": "failure",
+        "message": "LowListTests\\ControlPanelRuntimeTest::testUpdaterLoadsOptionalProvider with data set #2 ('updater-missing')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: include_once(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-7iUWKr/low-list-updater-7c5e1b8b61043ff2/low_list/ext.low_list.php): Failed to open stream: No such file or directory in phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php:64",
+          "Stack trace:",
+          "#0 phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php(64): {closure}(2, 'include_once(/p...', 'phar:///Users/t...', 64)",
+          "#1 phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php(64): include_once()"
         ]
       },
       {
@@ -956,7 +1018,7 @@
           "Fatal error: Uncaught ErrorException: Undefined variable $stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
           "Stack trace:",
           "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
-          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(130): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(135): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
         ]
       },
       {
@@ -978,7 +1040,7 @@
           "Fatal error: Uncaught ErrorException: Undefined variable $stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
           "Stack trace:",
           "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
-          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(130): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(135): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
         ]
       },
       {
@@ -1137,7 +1199,7 @@
         "kind": "error",
         "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1 ('set')",
         "details": [
-          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-ZT1HTy/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
+          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-7iUWKr/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:561",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:66"
@@ -1383,10 +1445,10 @@
   {
     "runtime": "PHP 8.1.33 (cli) (built: Jul  4 2025 00:24:36) (NTS)",
     "exit": 2,
-    "tests": 440,
-    "assertions": 2132,
+    "tests": 459,
+    "assertions": 2340,
     "errors": 37,
-    "failures": 32,
+    "failures": 35,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -1495,9 +1557,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000069c0000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000006d10000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000006890000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000006be0000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -1506,9 +1568,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000006480000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &000000000000067d0000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000006a10000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000006d60000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -1517,9 +1579,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000063e0000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000006730000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &000000000000069f0000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000006d40000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -1528,10 +1590,41 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000006380000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &000000000000066d0000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000006a30000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000006d80000000000000000 (",
           "        'last' => Array &0 ("
+        ]
+      },
+      {
+        "test": "testConstructorsKeepValidSchemaAndOnePixel with data set #4",
+        "kind": "failure",
+        "message": "LowListTests\\ControlPanelRuntimeTest::testConstructorsKeepValidSchemaAndOnePixel with data set #4 ('shared-modern')",
+        "details": [
+          "Failed asserting that true is false.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/ControlPanelRuntimeTest.php:42"
+        ]
+      },
+      {
+        "test": "testConstructorsKeepValidSchemaAndOnePixel with data set #5",
+        "kind": "failure",
+        "message": "LowListTests\\ControlPanelRuntimeTest::testConstructorsKeepValidSchemaAndOnePixel with data set #5 ('shared-legacy')",
+        "details": [
+          "Failed asserting that true is false.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/ControlPanelRuntimeTest.php:42"
+        ]
+      },
+      {
+        "test": "testUpdaterLoadsOptionalProvider with data set #2",
+        "kind": "failure",
+        "message": "LowListTests\\ControlPanelRuntimeTest::testUpdaterLoadsOptionalProvider with data set #2 ('updater-missing')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: include_once(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-O5ksta/low-list-updater-0d381ed1d88c95ae/low_list/ext.low_list.php): Failed to open stream: No such file or directory in phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php:64",
+          "Stack trace:",
+          "#0 phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php(64): {closure}(2, 'include_once(/p...', 'phar:///Users/t...', 64)",
+          "#1 phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php(64): include_once()"
         ]
       },
       {
@@ -1652,7 +1745,7 @@
           "Fatal error: Uncaught ErrorException: Undefined variable $stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
           "Stack trace:",
           "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
-          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(130): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(135): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
         ]
       },
       {
@@ -1674,7 +1767,7 @@
           "Fatal error: Uncaught ErrorException: Undefined variable $stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
           "Stack trace:",
           "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
-          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(130): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(135): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
         ]
       },
       {
@@ -1833,7 +1926,7 @@
         "kind": "error",
         "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1 ('set')",
         "details": [
-          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-bxacOY/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
+          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-O5ksta/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:561",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:66"
@@ -2145,10 +2238,10 @@
   {
     "runtime": "PHP 8.2.30 (cli) (built: Dec 19 2025 07:42:41) (NTS clang 15.0.0)",
     "exit": 2,
-    "tests": 440,
-    "assertions": 2131,
+    "tests": 459,
+    "assertions": 2339,
     "errors": 38,
-    "failures": 32,
+    "failures": 35,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -2257,9 +2350,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000069c0000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000006d10000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000006890000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000006be0000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -2268,9 +2361,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000006480000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &000000000000067d0000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000006a10000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000006d60000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -2279,9 +2372,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000063e0000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000006730000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &000000000000069f0000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000006d40000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -2290,10 +2383,41 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000006380000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &000000000000066d0000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000006a30000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000006d80000000000000000 (",
           "        'last' => Array &0 ("
+        ]
+      },
+      {
+        "test": "testConstructorsKeepValidSchemaAndOnePixel with data set #4",
+        "kind": "failure",
+        "message": "LowListTests\\ControlPanelRuntimeTest::testConstructorsKeepValidSchemaAndOnePixel with data set #4 ('shared-modern')",
+        "details": [
+          "Failed asserting that true is false.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/ControlPanelRuntimeTest.php:42"
+        ]
+      },
+      {
+        "test": "testConstructorsKeepValidSchemaAndOnePixel with data set #5",
+        "kind": "failure",
+        "message": "LowListTests\\ControlPanelRuntimeTest::testConstructorsKeepValidSchemaAndOnePixel with data set #5 ('shared-legacy')",
+        "details": [
+          "Failed asserting that true is false.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/ControlPanelRuntimeTest.php:42"
+        ]
+      },
+      {
+        "test": "testUpdaterLoadsOptionalProvider with data set #2",
+        "kind": "failure",
+        "message": "LowListTests\\ControlPanelRuntimeTest::testUpdaterLoadsOptionalProvider with data set #2 ('updater-missing')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: include_once(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-p82jLA/low-list-updater-3c62bd410daad7c9/low_list/ext.low_list.php): Failed to open stream: No such file or directory in phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php:64",
+          "Stack trace:",
+          "#0 phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php(64): {closure}(2, 'include_once(/p...', 'phar:///Users/t...', 64)",
+          "#1 phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php(64): include_once()"
         ]
       },
       {
@@ -2425,7 +2549,7 @@
           "Fatal error: Uncaught ErrorException: Undefined variable $stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
           "Stack trace:",
           "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
-          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(130): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(135): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
         ]
       },
       {
@@ -2447,7 +2571,7 @@
           "Fatal error: Uncaught ErrorException: Undefined variable $stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
           "Stack trace:",
           "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
-          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(130): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(135): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
         ]
       },
       {
@@ -2606,7 +2730,7 @@
         "kind": "error",
         "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1 ('set')",
         "details": [
-          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-JrLTwR/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
+          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-p82jLA/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:561",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:66"
@@ -2918,10 +3042,10 @@
   {
     "runtime": "PHP 8.3.28 (cli) (built: Nov 20 2025 11:21:23) (NTS clang 15.0.0)",
     "exit": 2,
-    "tests": 440,
-    "assertions": 2131,
+    "tests": 459,
+    "assertions": 2339,
     "errors": 38,
-    "failures": 32,
+    "failures": 35,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -3030,9 +3154,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000069c0000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000006d10000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000006890000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000006be0000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -3041,9 +3165,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000006480000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &000000000000067d0000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000006a10000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000006d60000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -3052,9 +3176,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000063e0000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000006730000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &000000000000069f0000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000006d40000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -3063,10 +3187,41 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000006380000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &000000000000066d0000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000006a30000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000006d80000000000000000 (",
           "        'last' => Array &0 ("
+        ]
+      },
+      {
+        "test": "testConstructorsKeepValidSchemaAndOnePixel with data set #4",
+        "kind": "failure",
+        "message": "LowListTests\\ControlPanelRuntimeTest::testConstructorsKeepValidSchemaAndOnePixel with data set #4 ('shared-modern')",
+        "details": [
+          "Failed asserting that true is false.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/ControlPanelRuntimeTest.php:42"
+        ]
+      },
+      {
+        "test": "testConstructorsKeepValidSchemaAndOnePixel with data set #5",
+        "kind": "failure",
+        "message": "LowListTests\\ControlPanelRuntimeTest::testConstructorsKeepValidSchemaAndOnePixel with data set #5 ('shared-legacy')",
+        "details": [
+          "Failed asserting that true is false.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/ControlPanelRuntimeTest.php:42"
+        ]
+      },
+      {
+        "test": "testUpdaterLoadsOptionalProvider with data set #2",
+        "kind": "failure",
+        "message": "LowListTests\\ControlPanelRuntimeTest::testUpdaterLoadsOptionalProvider with data set #2 ('updater-missing')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: include_once(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-AAuzSZ/low-list-updater-d5ba100f9cdf28b0/low_list/ext.low_list.php): Failed to open stream: No such file or directory in phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php:64",
+          "Stack trace:",
+          "#0 phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php(64): {closure}(2, 'include_once(/p...', 'phar:///Users/t...', 64)",
+          "#1 phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php(64): include_once()"
         ]
       },
       {
@@ -3198,7 +3353,7 @@
           "Fatal error: Uncaught ErrorException: Undefined variable $stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
           "Stack trace:",
           "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
-          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(130): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(135): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
         ]
       },
       {
@@ -3220,7 +3375,7 @@
           "Fatal error: Uncaught ErrorException: Undefined variable $stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
           "Stack trace:",
           "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
-          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(130): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(135): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
         ]
       },
       {
@@ -3379,7 +3534,7 @@
         "kind": "error",
         "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1 ('set')",
         "details": [
-          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-QxT9NP/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
+          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-AAuzSZ/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:561",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:66"
@@ -3691,10 +3846,10 @@
   {
     "runtime": "PHP 8.4.15 (cli) (built: Nov 20 2025 14:28:49) (NTS clang 15.0.0)",
     "exit": 2,
-    "tests": 440,
-    "assertions": 2131,
+    "tests": 459,
+    "assertions": 2339,
     "errors": 38,
-    "failures": 32,
+    "failures": 35,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -3803,9 +3958,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000069c0000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000006d10000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000006890000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000006be0000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -3814,9 +3969,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000006480000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &000000000000067d0000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000006a10000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000006d60000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -3825,9 +3980,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000063e0000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000006730000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &000000000000069f0000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000006d40000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -3836,10 +3991,41 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000006380000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &000000000000066d0000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000006a30000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000006d80000000000000000 (",
           "        'last' => Array &0 ("
+        ]
+      },
+      {
+        "test": "testConstructorsKeepValidSchemaAndOnePixel with data set #4",
+        "kind": "failure",
+        "message": "LowListTests\\ControlPanelRuntimeTest::testConstructorsKeepValidSchemaAndOnePixel with data set #4 ('shared-modern')",
+        "details": [
+          "Failed asserting that true is false.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/ControlPanelRuntimeTest.php:42"
+        ]
+      },
+      {
+        "test": "testConstructorsKeepValidSchemaAndOnePixel with data set #5",
+        "kind": "failure",
+        "message": "LowListTests\\ControlPanelRuntimeTest::testConstructorsKeepValidSchemaAndOnePixel with data set #5 ('shared-legacy')",
+        "details": [
+          "Failed asserting that true is false.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/ControlPanelRuntimeTest.php:42"
+        ]
+      },
+      {
+        "test": "testUpdaterLoadsOptionalProvider with data set #2",
+        "kind": "failure",
+        "message": "LowListTests\\ControlPanelRuntimeTest::testUpdaterLoadsOptionalProvider with data set #2 ('updater-missing')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: include_once(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-ubebrpq1l2gb61YU2Os/low-list-updater-7bbe5640e16b93ad/low_list/ext.low_list.php): Failed to open stream: No such file or directory in phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php:64",
+          "Stack trace:",
+          "#0 phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php(64): {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:4}(2, 'include_once(/p...', 'phar:///Users/t...', 64)",
+          "#1 phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php(64): include_once()"
         ]
       },
       {
@@ -3948,7 +4134,7 @@
         "details": [
           "Fatal error: Uncaught ErrorException: include_once(/Users/tomjaeger/Sites/add-ons/low_list/low_list/Conduit/McpNav.php): Failed to open stream: No such file or directory in phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php:7",
           "Stack trace:",
-          "#0 phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php(7): {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:5}(2, 'include_once(/U...', 'phar:///Users/t...', 7)",
+          "#0 phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php(7): {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:4}(2, 'include_once(/U...', 'phar:///Users/t...', 7)",
           "#1 phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php(7): include_once()"
         ]
       },
@@ -3959,7 +4145,7 @@
         "details": [
           "Fatal error: Uncaught ErrorException: mkdir(): File exists in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:177",
           "Stack trace:",
-          "#0 [internal function]: {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:5}(2, 'mkdir(): File e...', '/Users/tomjaege...', 177)",
+          "#0 [internal function]: {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:4}(2, 'mkdir(): File e...', '/Users/tomjaege...', 177)",
           "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(177): mkdir('/private/var/fo...', 511, true)"
         ]
       },
@@ -3970,8 +4156,8 @@
         "details": [
           "Fatal error: Uncaught ErrorException: Undefined variable $stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
           "Stack trace:",
-          "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:5}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
-          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(130): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+          "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:4}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(135): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
         ]
       },
       {
@@ -3981,7 +4167,7 @@
         "details": [
           "Fatal error: Uncaught ErrorException: gzinflate(): data error in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:255",
           "Stack trace:",
-          "#0 [internal function]: {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:5}(2, 'gzinflate(): da...', '/Users/tomjaege...', 255)",
+          "#0 [internal function]: {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:4}(2, 'gzinflate(): da...', '/Users/tomjaege...', 255)",
           "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(255): gzinflate('invalid-gzip-pa...')"
         ]
       },
@@ -3992,8 +4178,8 @@
         "details": [
           "Fatal error: Uncaught ErrorException: Undefined variable $stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
           "Stack trace:",
-          "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:5}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
-          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(130): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+          "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:4}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(135): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
         ]
       },
       {
@@ -4003,7 +4189,7 @@
         "details": [
           "Fatal error: Uncaught ErrorException: unpack(): Type V: not enough input values, need 4 values but only 0 were provided in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:215",
           "Stack trace:",
-          "#0 [internal function]: {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:5}(2, 'unpack(): Type ...', '/Users/tomjaege...', 215)",
+          "#0 [internal function]: {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:4}(2, 'unpack(): Type ...', '/Users/tomjaege...', 215)",
           "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(215): unpack('V', '')"
         ]
       },
@@ -4014,7 +4200,7 @@
         "details": [
           "Fatal error: Uncaught ErrorException: unpack(): Type V: not enough input values, need 4 values but only 0 were provided in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:218",
           "Stack trace:",
-          "#0 [internal function]: {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:5}(2, 'unpack(): Type ...', '/Users/tomjaege...', 218)",
+          "#0 [internal function]: {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:4}(2, 'unpack(): Type ...', '/Users/tomjaege...', 218)",
           "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(218): unpack('V', '')"
         ]
       },
@@ -4152,7 +4338,7 @@
         "kind": "error",
         "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1 ('set')",
         "details": [
-          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-t9c3gfpgg7p43eHbbEi/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
+          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-ubebrpq1l2gb61YU2Os/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:561",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:66"
@@ -4464,10 +4650,10 @@
   {
     "runtime": "PHP 8.5.0 (cli) (built: Nov 20 2025 09:30:23) (NTS clang 15.0.0)",
     "exit": 2,
-    "tests": 440,
-    "assertions": 2132,
+    "tests": 459,
+    "assertions": 2340,
     "errors": 38,
-    "failures": 32,
+    "failures": 35,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -4576,9 +4762,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000069c0000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000006d10000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000006890000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000006be0000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -4587,9 +4773,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000006480000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &000000000000067d0000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000006a10000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000006d60000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -4598,9 +4784,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000063e0000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000006730000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &000000000000069f0000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000006d40000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -4609,10 +4795,41 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000006380000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &000000000000066d0000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000006a30000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000006d80000000000000000 (",
           "        'last' => Array &0 ("
+        ]
+      },
+      {
+        "test": "testConstructorsKeepValidSchemaAndOnePixel with data set #4",
+        "kind": "failure",
+        "message": "LowListTests\\ControlPanelRuntimeTest::testConstructorsKeepValidSchemaAndOnePixel with data set #4 ('shared-modern')",
+        "details": [
+          "Failed asserting that true is false.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/ControlPanelRuntimeTest.php:42"
+        ]
+      },
+      {
+        "test": "testConstructorsKeepValidSchemaAndOnePixel with data set #5",
+        "kind": "failure",
+        "message": "LowListTests\\ControlPanelRuntimeTest::testConstructorsKeepValidSchemaAndOnePixel with data set #5 ('shared-legacy')",
+        "details": [
+          "Failed asserting that true is false.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/ControlPanelRuntimeTest.php:42"
+        ]
+      },
+      {
+        "test": "testUpdaterLoadsOptionalProvider with data set #2",
+        "kind": "failure",
+        "message": "LowListTests\\ControlPanelRuntimeTest::testUpdaterLoadsOptionalProvider with data set #2 ('updater-missing')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: include_once(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-vet8sghf4ojccY4WHDE/low-list-updater-af43fbc06efacf76/low_list/ext.low_list.php): Failed to open stream: No such file or directory in phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php:64",
+          "Stack trace:",
+          "#0 phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php(64): {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:4}(2, 'include_once(/p...', 'phar:///Users/t...', 64)",
+          "#1 phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php(64): include_once()"
         ]
       },
       {
@@ -4721,7 +4938,7 @@
         "details": [
           "Fatal error: Uncaught ErrorException: include_once(/Users/tomjaeger/Sites/add-ons/low_list/low_list/Conduit/McpNav.php): Failed to open stream: No such file or directory in phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php:7",
           "Stack trace:",
-          "#0 phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php(7): {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:5}(2, 'include_once(/U...', 'phar:///Users/t...', 7)",
+          "#0 phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php(7): {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:4}(2, 'include_once(/U...', 'phar:///Users/t...', 7)",
           "#1 phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php(7): include_once()"
         ]
       },
@@ -4732,7 +4949,7 @@
         "details": [
           "Fatal error: Uncaught ErrorException: mkdir(): File exists in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:177",
           "Stack trace:",
-          "#0 [internal function]: {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:5}(2, 'mkdir(): File e...', '/Users/tomjaege...', 177)",
+          "#0 [internal function]: {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:4}(2, 'mkdir(): File e...', '/Users/tomjaege...', 177)",
           "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(177): mkdir('/private/var/fo...', 511, true)"
         ]
       },
@@ -4743,8 +4960,8 @@
         "details": [
           "Fatal error: Uncaught ErrorException: Undefined variable $stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
           "Stack trace:",
-          "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:5}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
-          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(130): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+          "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:4}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(135): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
         ]
       },
       {
@@ -4754,7 +4971,7 @@
         "details": [
           "Fatal error: Uncaught ErrorException: gzinflate(): data error in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:255",
           "Stack trace:",
-          "#0 [internal function]: {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:5}(2, 'gzinflate(): da...', '/Users/tomjaege...', 255)",
+          "#0 [internal function]: {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:4}(2, 'gzinflate(): da...', '/Users/tomjaege...', 255)",
           "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(255): gzinflate('invalid-gzip-pa...')"
         ]
       },
@@ -4765,8 +4982,8 @@
         "details": [
           "Fatal error: Uncaught ErrorException: Undefined variable $stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
           "Stack trace:",
-          "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:5}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
-          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(130): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+          "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:4}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(135): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
         ]
       },
       {
@@ -4776,7 +4993,7 @@
         "details": [
           "Fatal error: Uncaught ErrorException: unpack(): Type V: not enough input values, need 4 values but only 0 were provided in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:215",
           "Stack trace:",
-          "#0 [internal function]: {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:5}(2, 'unpack(): Type ...', '/Users/tomjaege...', 215)",
+          "#0 [internal function]: {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:4}(2, 'unpack(): Type ...', '/Users/tomjaege...', 215)",
           "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(215): unpack('V', '')"
         ]
       },
@@ -4787,7 +5004,7 @@
         "details": [
           "Fatal error: Uncaught ErrorException: unpack(): Type V: not enough input values, need 4 values but only 0 were provided in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:218",
           "Stack trace:",
-          "#0 [internal function]: {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:5}(2, 'unpack(): Type ...', '/Users/tomjaege...', 218)",
+          "#0 [internal function]: {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:4}(2, 'unpack(): Type ...', '/Users/tomjaege...', 218)",
           "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(218): unpack('V', '')"
         ]
       },
@@ -4925,7 +5142,7 @@
         "kind": "error",
         "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1 ('set')",
         "details": [
-          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-pfj1eheg7vm10rxyDrr/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
+          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-vet8sghf4ojccY4WHDE/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:561",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:66"

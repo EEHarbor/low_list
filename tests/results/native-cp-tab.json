@@ -1,0 +1,1503 @@
+{
+    "baseline": "86e4da6b2e585467b9c068e55f0190e69107fe4f",
+    "archive_sha256": "32a3538131e73a067d439d9d078f7b6a6abb5d576a01cbbd60c0deb7ec48144c",
+    "source": "low_list/low_list.phar/FluxCapacitor/Base/Tab.php",
+    "source_sha256": "b474ba2df42d833e55abae8981b4751e88c01a83b15a8fc2f97b14894125833e",
+    "runtime": "8.3.28",
+    "xdebug": "3.5.3",
+    "metrics": "Independent native contexts; raw basic blocks and out/out_hit exits are preserved without graph merging.",
+    "contexts": {
+        "shared-legacy": {
+            "capture": "native-control-panel-9a3f8691a622d7a3.json",
+            "context": {
+                "APP_VER": "2.5.5",
+                "REQ": "CP",
+                "native_mode": "control-panel",
+                "native_case": "shared-legacy"
+            },
+            "lines_hit": 7,
+            "lines": 24,
+            "methods": {
+                "LowList\\FluxCapacitor\\Base\\Tab->save": {
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Tab.php",
+                            "line_start": 46,
+                            "line_end": 49
+                        }
+                    },
+                    "lines_hit": 0,
+                    "lines": 1,
+                    "basic_blocks_hit": 0,
+                    "basic_blocks": 1
+                },
+                "LowList\\FluxCapacitor\\Base\\Tab->display": {
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Tab.php",
+                            "line_start": 34,
+                            "line_end": 37
+                        }
+                    },
+                    "lines_hit": 0,
+                    "lines": 1,
+                    "basic_blocks_hit": 0,
+                    "basic_blocks": 1
+                },
+                "LowList\\FluxCapacitor\\Base\\Tab->__construct": {
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Tab.php",
+                            "line_start": 22,
+                            "line_end": 31
+                        }
+                    },
+                    "lines_hit": 6,
+                    "lines": 6,
+                    "basic_blocks_hit": 5,
+                    "basic_blocks": 5
+                },
+                "LowList\\FluxCapacitor\\Base\\Tab->getEntryVariables": {
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Tab.php",
+                            "line_start": 57,
+                            "line_end": 76
+                        }
+                    },
+                    "lines_hit": 0,
+                    "lines": 13,
+                    "basic_blocks_hit": 0,
+                    "basic_blocks": 6
+                },
+                "LowList\\FluxCapacitor\\Base\\Tab->publish_data_db": {
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Tab.php",
+                            "line_start": 52,
+                            "line_end": 55
+                        }
+                    },
+                    "lines_hit": 0,
+                    "lines": 1,
+                    "basic_blocks_hit": 0,
+                    "basic_blocks": 1
+                },
+                "{main}": {
+                    "attribution": {
+                        "status": "unknown",
+                        "reason": "no_matching_runtime_declaration",
+                        "declaration": null
+                    },
+                    "lines_hit": null,
+                    "lines": null,
+                    "basic_blocks_hit": 0,
+                    "basic_blocks": 1
+                },
+                "LowList\\FluxCapacitor\\Base\\Tab->publish_tabs": {
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Tab.php",
+                            "line_start": 40,
+                            "line_end": 43
+                        }
+                    },
+                    "lines_hit": 0,
+                    "lines": 1,
+                    "basic_blocks_hit": 0,
+                    "basic_blocks": 1
+                }
+            },
+            "source_data": {
+                "lines": {
+                    "24": 1,
+                    "25": 1,
+                    "27": 1,
+                    "28": 1,
+                    "29": 1,
+                    "31": 1,
+                    "36": -1,
+                    "37": -2,
+                    "42": -1,
+                    "43": -2,
+                    "48": -1,
+                    "49": -2,
+                    "54": -1,
+                    "55": -2,
+                    "59": -1,
+                    "61": -1,
+                    "62": -1,
+                    "63": -1,
+                    "64": -1,
+                    "65": -1,
+                    "66": -1,
+                    "67": -1,
+                    "68": -1,
+                    "70": -1,
+                    "71": -1,
+                    "72": -1,
+                    "75": -1,
+                    "76": -2,
+                    "78": 1
+                },
+                "functions": {
+                    "LowList\\FluxCapacitor\\Base\\Tab->save": {
+                        "branches": [
+                            {
+                                "op_start": 0,
+                                "op_end": 9,
+                                "line_start": 46,
+                                "line_end": 49,
+                                "hit": 0,
+                                "out": [],
+                                "out_hit": []
+                            }
+                        ]
+                    },
+                    "LowList\\FluxCapacitor\\Base\\Tab->display": {
+                        "branches": [
+                            {
+                                "op_start": 0,
+                                "op_end": 9,
+                                "line_start": 34,
+                                "line_end": 37,
+                                "hit": 0,
+                                "out": [],
+                                "out_hit": []
+                            }
+                        ]
+                    },
+                    "LowList\\FluxCapacitor\\Base\\Tab->__construct": {
+                        "branches": {
+                            "0": {
+                                "op_start": 0,
+                                "op_end": 16,
+                                "line_start": 24,
+                                "line_end": 27,
+                                "hit": 1,
+                                "out": [
+                                    17,
+                                    20
+                                ],
+                                "out_hit": [
+                                    1,
+                                    0
+                                ]
+                            },
+                            "17": {
+                                "op_start": 17,
+                                "op_end": 19,
+                                "line_start": 27,
+                                "line_end": 27,
+                                "hit": 1,
+                                "out": [
+                                    20
+                                ],
+                                "out_hit": [
+                                    1
+                                ]
+                            },
+                            "20": {
+                                "op_start": 20,
+                                "op_end": 20,
+                                "line_start": 27,
+                                "line_end": 27,
+                                "hit": 1,
+                                "out": [
+                                    21,
+                                    28
+                                ],
+                                "out_hit": [
+                                    1,
+                                    0
+                                ]
+                            },
+                            "21": {
+                                "op_start": 21,
+                                "op_end": 27,
+                                "line_start": 28,
+                                "line_end": 31,
+                                "hit": 1,
+                                "out": [
+                                    28
+                                ],
+                                "out_hit": [
+                                    1
+                                ]
+                            },
+                            "28": {
+                                "op_start": 28,
+                                "op_end": 29,
+                                "line_start": 31,
+                                "line_end": 31,
+                                "hit": 1,
+                                "out": [
+                                    2147483645
+                                ],
+                                "out_hit": [
+                                    0
+                                ]
+                            }
+                        }
+                    },
+                    "LowList\\FluxCapacitor\\Base\\Tab->getEntryVariables": {
+                        "branches": {
+                            "0": {
+                                "op_start": 0,
+                                "op_end": 6,
+                                "line_start": 57,
+                                "line_end": 61,
+                                "hit": 0,
+                                "out": [
+                                    7,
+                                    20
+                                ],
+                                "out_hit": [
+                                    0,
+                                    0
+                                ]
+                            },
+                            "7": {
+                                "op_start": 7,
+                                "op_end": 19,
+                                "line_start": 62,
+                                "line_end": 61,
+                                "hit": 0,
+                                "out": [
+                                    47
+                                ],
+                                "out_hit": [
+                                    0
+                                ]
+                            },
+                            "20": {
+                                "op_start": 20,
+                                "op_end": 22,
+                                "line_start": 65,
+                                "line_end": 65,
+                                "hit": 0,
+                                "out": [
+                                    23,
+                                    38
+                                ],
+                                "out_hit": [
+                                    0,
+                                    0
+                                ]
+                            },
+                            "23": {
+                                "op_start": 23,
+                                "op_end": 37,
+                                "line_start": 66,
+                                "line_end": 65,
+                                "hit": 0,
+                                "out": [
+                                    47
+                                ],
+                                "out_hit": [
+                                    0
+                                ]
+                            },
+                            "38": {
+                                "op_start": 38,
+                                "op_end": 46,
+                                "line_start": 70,
+                                "line_end": 75,
+                                "hit": 0,
+                                "out": [
+                                    47
+                                ],
+                                "out_hit": [
+                                    0
+                                ]
+                            },
+                            "47": {
+                                "op_start": 47,
+                                "op_end": 50,
+                                "line_start": 75,
+                                "line_end": 76,
+                                "hit": 0,
+                                "out": [],
+                                "out_hit": []
+                            }
+                        }
+                    },
+                    "LowList\\FluxCapacitor\\Base\\Tab->publish_data_db": {
+                        "branches": [
+                            {
+                                "op_start": 0,
+                                "op_end": 5,
+                                "line_start": 52,
+                                "line_end": 55,
+                                "hit": 0,
+                                "out": [],
+                                "out_hit": []
+                            }
+                        ]
+                    },
+                    "{main}": {
+                        "branches": [
+                            {
+                                "op_start": 0,
+                                "op_end": 5,
+                                "line_start": 2,
+                                "line_end": 78,
+                                "hit": 0,
+                                "out": [
+                                    2147483645
+                                ],
+                                "out_hit": [
+                                    0
+                                ]
+                            }
+                        ]
+                    },
+                    "LowList\\FluxCapacitor\\Base\\Tab->publish_tabs": {
+                        "branches": [
+                            {
+                                "op_start": 0,
+                                "op_end": 5,
+                                "line_start": 40,
+                                "line_end": 43,
+                                "hit": 0,
+                                "out": [],
+                                "out_hit": []
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "shared-modern": {
+            "capture": "native-control-panel-5adaced2ae2793b5.json",
+            "context": {
+                "APP_VER": "7.5.0",
+                "REQ": "CP",
+                "native_mode": "control-panel",
+                "native_case": "shared-modern"
+            },
+            "lines_hit": 7,
+            "lines": 24,
+            "methods": {
+                "LowList\\FluxCapacitor\\Base\\Tab->save": {
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Tab.php",
+                            "line_start": 46,
+                            "line_end": 49
+                        }
+                    },
+                    "lines_hit": 0,
+                    "lines": 1,
+                    "basic_blocks_hit": 0,
+                    "basic_blocks": 1
+                },
+                "LowList\\FluxCapacitor\\Base\\Tab->display": {
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Tab.php",
+                            "line_start": 34,
+                            "line_end": 37
+                        }
+                    },
+                    "lines_hit": 0,
+                    "lines": 1,
+                    "basic_blocks_hit": 0,
+                    "basic_blocks": 1
+                },
+                "LowList\\FluxCapacitor\\Base\\Tab->__construct": {
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Tab.php",
+                            "line_start": 22,
+                            "line_end": 31
+                        }
+                    },
+                    "lines_hit": 6,
+                    "lines": 6,
+                    "basic_blocks_hit": 5,
+                    "basic_blocks": 5
+                },
+                "LowList\\FluxCapacitor\\Base\\Tab->getEntryVariables": {
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Tab.php",
+                            "line_start": 57,
+                            "line_end": 76
+                        }
+                    },
+                    "lines_hit": 0,
+                    "lines": 13,
+                    "basic_blocks_hit": 0,
+                    "basic_blocks": 6
+                },
+                "LowList\\FluxCapacitor\\Base\\Tab->publish_data_db": {
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Tab.php",
+                            "line_start": 52,
+                            "line_end": 55
+                        }
+                    },
+                    "lines_hit": 0,
+                    "lines": 1,
+                    "basic_blocks_hit": 0,
+                    "basic_blocks": 1
+                },
+                "{main}": {
+                    "attribution": {
+                        "status": "unknown",
+                        "reason": "no_matching_runtime_declaration",
+                        "declaration": null
+                    },
+                    "lines_hit": null,
+                    "lines": null,
+                    "basic_blocks_hit": 0,
+                    "basic_blocks": 1
+                },
+                "LowList\\FluxCapacitor\\Base\\Tab->publish_tabs": {
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Tab.php",
+                            "line_start": 40,
+                            "line_end": 43
+                        }
+                    },
+                    "lines_hit": 0,
+                    "lines": 1,
+                    "basic_blocks_hit": 0,
+                    "basic_blocks": 1
+                }
+            },
+            "source_data": {
+                "lines": {
+                    "24": 1,
+                    "25": 1,
+                    "27": 1,
+                    "28": 1,
+                    "29": 1,
+                    "31": 1,
+                    "36": -1,
+                    "37": -2,
+                    "42": -1,
+                    "43": -2,
+                    "48": -1,
+                    "49": -2,
+                    "54": -1,
+                    "55": -2,
+                    "59": -1,
+                    "61": -1,
+                    "62": -1,
+                    "63": -1,
+                    "64": -1,
+                    "65": -1,
+                    "66": -1,
+                    "67": -1,
+                    "68": -1,
+                    "70": -1,
+                    "71": -1,
+                    "72": -1,
+                    "75": -1,
+                    "76": -2,
+                    "78": 1
+                },
+                "functions": {
+                    "LowList\\FluxCapacitor\\Base\\Tab->save": {
+                        "branches": [
+                            {
+                                "op_start": 0,
+                                "op_end": 9,
+                                "line_start": 46,
+                                "line_end": 49,
+                                "hit": 0,
+                                "out": [],
+                                "out_hit": []
+                            }
+                        ]
+                    },
+                    "LowList\\FluxCapacitor\\Base\\Tab->display": {
+                        "branches": [
+                            {
+                                "op_start": 0,
+                                "op_end": 9,
+                                "line_start": 34,
+                                "line_end": 37,
+                                "hit": 0,
+                                "out": [],
+                                "out_hit": []
+                            }
+                        ]
+                    },
+                    "LowList\\FluxCapacitor\\Base\\Tab->__construct": {
+                        "branches": {
+                            "0": {
+                                "op_start": 0,
+                                "op_end": 16,
+                                "line_start": 24,
+                                "line_end": 27,
+                                "hit": 1,
+                                "out": [
+                                    17,
+                                    20
+                                ],
+                                "out_hit": [
+                                    1,
+                                    0
+                                ]
+                            },
+                            "17": {
+                                "op_start": 17,
+                                "op_end": 19,
+                                "line_start": 27,
+                                "line_end": 27,
+                                "hit": 1,
+                                "out": [
+                                    20
+                                ],
+                                "out_hit": [
+                                    1
+                                ]
+                            },
+                            "20": {
+                                "op_start": 20,
+                                "op_end": 20,
+                                "line_start": 27,
+                                "line_end": 27,
+                                "hit": 1,
+                                "out": [
+                                    21,
+                                    28
+                                ],
+                                "out_hit": [
+                                    1,
+                                    0
+                                ]
+                            },
+                            "21": {
+                                "op_start": 21,
+                                "op_end": 27,
+                                "line_start": 28,
+                                "line_end": 31,
+                                "hit": 1,
+                                "out": [
+                                    28
+                                ],
+                                "out_hit": [
+                                    1
+                                ]
+                            },
+                            "28": {
+                                "op_start": 28,
+                                "op_end": 29,
+                                "line_start": 31,
+                                "line_end": 31,
+                                "hit": 1,
+                                "out": [
+                                    2147483645
+                                ],
+                                "out_hit": [
+                                    0
+                                ]
+                            }
+                        }
+                    },
+                    "LowList\\FluxCapacitor\\Base\\Tab->getEntryVariables": {
+                        "branches": {
+                            "0": {
+                                "op_start": 0,
+                                "op_end": 6,
+                                "line_start": 57,
+                                "line_end": 61,
+                                "hit": 0,
+                                "out": [
+                                    7,
+                                    20
+                                ],
+                                "out_hit": [
+                                    0,
+                                    0
+                                ]
+                            },
+                            "7": {
+                                "op_start": 7,
+                                "op_end": 19,
+                                "line_start": 62,
+                                "line_end": 61,
+                                "hit": 0,
+                                "out": [
+                                    47
+                                ],
+                                "out_hit": [
+                                    0
+                                ]
+                            },
+                            "20": {
+                                "op_start": 20,
+                                "op_end": 22,
+                                "line_start": 65,
+                                "line_end": 65,
+                                "hit": 0,
+                                "out": [
+                                    23,
+                                    38
+                                ],
+                                "out_hit": [
+                                    0,
+                                    0
+                                ]
+                            },
+                            "23": {
+                                "op_start": 23,
+                                "op_end": 37,
+                                "line_start": 66,
+                                "line_end": 65,
+                                "hit": 0,
+                                "out": [
+                                    47
+                                ],
+                                "out_hit": [
+                                    0
+                                ]
+                            },
+                            "38": {
+                                "op_start": 38,
+                                "op_end": 46,
+                                "line_start": 70,
+                                "line_end": 75,
+                                "hit": 0,
+                                "out": [
+                                    47
+                                ],
+                                "out_hit": [
+                                    0
+                                ]
+                            },
+                            "47": {
+                                "op_start": 47,
+                                "op_end": 50,
+                                "line_start": 75,
+                                "line_end": 76,
+                                "hit": 0,
+                                "out": [],
+                                "out_hit": []
+                            }
+                        }
+                    },
+                    "LowList\\FluxCapacitor\\Base\\Tab->publish_data_db": {
+                        "branches": [
+                            {
+                                "op_start": 0,
+                                "op_end": 5,
+                                "line_start": 52,
+                                "line_end": 55,
+                                "hit": 0,
+                                "out": [],
+                                "out_hit": []
+                            }
+                        ]
+                    },
+                    "{main}": {
+                        "branches": [
+                            {
+                                "op_start": 0,
+                                "op_end": 5,
+                                "line_start": 2,
+                                "line_end": 78,
+                                "hit": 0,
+                                "out": [
+                                    2147483645
+                                ],
+                                "out_hit": [
+                                    0
+                                ]
+                            }
+                        ]
+                    },
+                    "LowList\\FluxCapacitor\\Base\\Tab->publish_tabs": {
+                        "branches": [
+                            {
+                                "op_start": 0,
+                                "op_end": 5,
+                                "line_start": 40,
+                                "line_end": 43,
+                                "hit": 0,
+                                "out": [],
+                                "out_hit": []
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "tab-legacy": {
+            "capture": "native-control-panel-14559d243ed47e8b.json",
+            "context": {
+                "APP_VER": "2.5.5",
+                "REQ": "CP",
+                "native_mode": "control-panel",
+                "native_case": "tab-legacy"
+            },
+            "lines_hit": 7,
+            "lines": 24,
+            "methods": {
+                "LowList\\FluxCapacitor\\Base\\Tab->save": {
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Tab.php",
+                            "line_start": 46,
+                            "line_end": 49
+                        }
+                    },
+                    "lines_hit": 0,
+                    "lines": 1,
+                    "basic_blocks_hit": 0,
+                    "basic_blocks": 1
+                },
+                "LowList\\FluxCapacitor\\Base\\Tab->display": {
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Tab.php",
+                            "line_start": 34,
+                            "line_end": 37
+                        }
+                    },
+                    "lines_hit": 0,
+                    "lines": 1,
+                    "basic_blocks_hit": 0,
+                    "basic_blocks": 1
+                },
+                "LowList\\FluxCapacitor\\Base\\Tab->__construct": {
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Tab.php",
+                            "line_start": 22,
+                            "line_end": 31
+                        }
+                    },
+                    "lines_hit": 6,
+                    "lines": 6,
+                    "basic_blocks_hit": 5,
+                    "basic_blocks": 5
+                },
+                "LowList\\FluxCapacitor\\Base\\Tab->getEntryVariables": {
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Tab.php",
+                            "line_start": 57,
+                            "line_end": 76
+                        }
+                    },
+                    "lines_hit": 0,
+                    "lines": 13,
+                    "basic_blocks_hit": 0,
+                    "basic_blocks": 6
+                },
+                "LowList\\FluxCapacitor\\Base\\Tab->publish_data_db": {
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Tab.php",
+                            "line_start": 52,
+                            "line_end": 55
+                        }
+                    },
+                    "lines_hit": 0,
+                    "lines": 1,
+                    "basic_blocks_hit": 0,
+                    "basic_blocks": 1
+                },
+                "{main}": {
+                    "attribution": {
+                        "status": "unknown",
+                        "reason": "no_matching_runtime_declaration",
+                        "declaration": null
+                    },
+                    "lines_hit": null,
+                    "lines": null,
+                    "basic_blocks_hit": 0,
+                    "basic_blocks": 1
+                },
+                "LowList\\FluxCapacitor\\Base\\Tab->publish_tabs": {
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Tab.php",
+                            "line_start": 40,
+                            "line_end": 43
+                        }
+                    },
+                    "lines_hit": 0,
+                    "lines": 1,
+                    "basic_blocks_hit": 0,
+                    "basic_blocks": 1
+                }
+            },
+            "source_data": {
+                "lines": {
+                    "24": 1,
+                    "25": 1,
+                    "27": 1,
+                    "28": 1,
+                    "29": 1,
+                    "31": 1,
+                    "36": -1,
+                    "37": -2,
+                    "42": -1,
+                    "43": -2,
+                    "48": -1,
+                    "49": -2,
+                    "54": -1,
+                    "55": -2,
+                    "59": -1,
+                    "61": -1,
+                    "62": -1,
+                    "63": -1,
+                    "64": -1,
+                    "65": -1,
+                    "66": -1,
+                    "67": -1,
+                    "68": -1,
+                    "70": -1,
+                    "71": -1,
+                    "72": -1,
+                    "75": -1,
+                    "76": -2,
+                    "78": 1
+                },
+                "functions": {
+                    "LowList\\FluxCapacitor\\Base\\Tab->save": {
+                        "branches": [
+                            {
+                                "op_start": 0,
+                                "op_end": 9,
+                                "line_start": 46,
+                                "line_end": 49,
+                                "hit": 0,
+                                "out": [],
+                                "out_hit": []
+                            }
+                        ]
+                    },
+                    "LowList\\FluxCapacitor\\Base\\Tab->display": {
+                        "branches": [
+                            {
+                                "op_start": 0,
+                                "op_end": 9,
+                                "line_start": 34,
+                                "line_end": 37,
+                                "hit": 0,
+                                "out": [],
+                                "out_hit": []
+                            }
+                        ]
+                    },
+                    "LowList\\FluxCapacitor\\Base\\Tab->__construct": {
+                        "branches": {
+                            "0": {
+                                "op_start": 0,
+                                "op_end": 16,
+                                "line_start": 24,
+                                "line_end": 27,
+                                "hit": 1,
+                                "out": [
+                                    17,
+                                    20
+                                ],
+                                "out_hit": [
+                                    1,
+                                    0
+                                ]
+                            },
+                            "17": {
+                                "op_start": 17,
+                                "op_end": 19,
+                                "line_start": 27,
+                                "line_end": 27,
+                                "hit": 1,
+                                "out": [
+                                    20
+                                ],
+                                "out_hit": [
+                                    1
+                                ]
+                            },
+                            "20": {
+                                "op_start": 20,
+                                "op_end": 20,
+                                "line_start": 27,
+                                "line_end": 27,
+                                "hit": 1,
+                                "out": [
+                                    21,
+                                    28
+                                ],
+                                "out_hit": [
+                                    1,
+                                    0
+                                ]
+                            },
+                            "21": {
+                                "op_start": 21,
+                                "op_end": 27,
+                                "line_start": 28,
+                                "line_end": 31,
+                                "hit": 1,
+                                "out": [
+                                    28
+                                ],
+                                "out_hit": [
+                                    1
+                                ]
+                            },
+                            "28": {
+                                "op_start": 28,
+                                "op_end": 29,
+                                "line_start": 31,
+                                "line_end": 31,
+                                "hit": 1,
+                                "out": [
+                                    2147483645
+                                ],
+                                "out_hit": [
+                                    0
+                                ]
+                            }
+                        }
+                    },
+                    "LowList\\FluxCapacitor\\Base\\Tab->getEntryVariables": {
+                        "branches": {
+                            "0": {
+                                "op_start": 0,
+                                "op_end": 6,
+                                "line_start": 57,
+                                "line_end": 61,
+                                "hit": 0,
+                                "out": [
+                                    7,
+                                    20
+                                ],
+                                "out_hit": [
+                                    0,
+                                    0
+                                ]
+                            },
+                            "7": {
+                                "op_start": 7,
+                                "op_end": 19,
+                                "line_start": 62,
+                                "line_end": 61,
+                                "hit": 0,
+                                "out": [
+                                    47
+                                ],
+                                "out_hit": [
+                                    0
+                                ]
+                            },
+                            "20": {
+                                "op_start": 20,
+                                "op_end": 22,
+                                "line_start": 65,
+                                "line_end": 65,
+                                "hit": 0,
+                                "out": [
+                                    23,
+                                    38
+                                ],
+                                "out_hit": [
+                                    0,
+                                    0
+                                ]
+                            },
+                            "23": {
+                                "op_start": 23,
+                                "op_end": 37,
+                                "line_start": 66,
+                                "line_end": 65,
+                                "hit": 0,
+                                "out": [
+                                    47
+                                ],
+                                "out_hit": [
+                                    0
+                                ]
+                            },
+                            "38": {
+                                "op_start": 38,
+                                "op_end": 46,
+                                "line_start": 70,
+                                "line_end": 75,
+                                "hit": 0,
+                                "out": [
+                                    47
+                                ],
+                                "out_hit": [
+                                    0
+                                ]
+                            },
+                            "47": {
+                                "op_start": 47,
+                                "op_end": 50,
+                                "line_start": 75,
+                                "line_end": 76,
+                                "hit": 0,
+                                "out": [],
+                                "out_hit": []
+                            }
+                        }
+                    },
+                    "LowList\\FluxCapacitor\\Base\\Tab->publish_data_db": {
+                        "branches": [
+                            {
+                                "op_start": 0,
+                                "op_end": 5,
+                                "line_start": 52,
+                                "line_end": 55,
+                                "hit": 0,
+                                "out": [],
+                                "out_hit": []
+                            }
+                        ]
+                    },
+                    "{main}": {
+                        "branches": [
+                            {
+                                "op_start": 0,
+                                "op_end": 5,
+                                "line_start": 2,
+                                "line_end": 78,
+                                "hit": 0,
+                                "out": [
+                                    2147483645
+                                ],
+                                "out_hit": [
+                                    0
+                                ]
+                            }
+                        ]
+                    },
+                    "LowList\\FluxCapacitor\\Base\\Tab->publish_tabs": {
+                        "branches": [
+                            {
+                                "op_start": 0,
+                                "op_end": 5,
+                                "line_start": 40,
+                                "line_end": 43,
+                                "hit": 0,
+                                "out": [],
+                                "out_hit": []
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "tab-modern": {
+            "capture": "native-control-panel-bb59c66e6b3110b3.json",
+            "context": {
+                "APP_VER": "7.5.0",
+                "REQ": "CP",
+                "native_mode": "control-panel",
+                "native_case": "tab-modern"
+            },
+            "lines_hit": 7,
+            "lines": 24,
+            "methods": {
+                "LowList\\FluxCapacitor\\Base\\Tab->save": {
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Tab.php",
+                            "line_start": 46,
+                            "line_end": 49
+                        }
+                    },
+                    "lines_hit": 0,
+                    "lines": 1,
+                    "basic_blocks_hit": 0,
+                    "basic_blocks": 1
+                },
+                "LowList\\FluxCapacitor\\Base\\Tab->display": {
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Tab.php",
+                            "line_start": 34,
+                            "line_end": 37
+                        }
+                    },
+                    "lines_hit": 0,
+                    "lines": 1,
+                    "basic_blocks_hit": 0,
+                    "basic_blocks": 1
+                },
+                "LowList\\FluxCapacitor\\Base\\Tab->__construct": {
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Tab.php",
+                            "line_start": 22,
+                            "line_end": 31
+                        }
+                    },
+                    "lines_hit": 6,
+                    "lines": 6,
+                    "basic_blocks_hit": 5,
+                    "basic_blocks": 5
+                },
+                "LowList\\FluxCapacitor\\Base\\Tab->getEntryVariables": {
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Tab.php",
+                            "line_start": 57,
+                            "line_end": 76
+                        }
+                    },
+                    "lines_hit": 0,
+                    "lines": 13,
+                    "basic_blocks_hit": 0,
+                    "basic_blocks": 6
+                },
+                "LowList\\FluxCapacitor\\Base\\Tab->publish_data_db": {
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Tab.php",
+                            "line_start": 52,
+                            "line_end": 55
+                        }
+                    },
+                    "lines_hit": 0,
+                    "lines": 1,
+                    "basic_blocks_hit": 0,
+                    "basic_blocks": 1
+                },
+                "{main}": {
+                    "attribution": {
+                        "status": "unknown",
+                        "reason": "no_matching_runtime_declaration",
+                        "declaration": null
+                    },
+                    "lines_hit": null,
+                    "lines": null,
+                    "basic_blocks_hit": 0,
+                    "basic_blocks": 1
+                },
+                "LowList\\FluxCapacitor\\Base\\Tab->publish_tabs": {
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Tab.php",
+                            "line_start": 40,
+                            "line_end": 43
+                        }
+                    },
+                    "lines_hit": 0,
+                    "lines": 1,
+                    "basic_blocks_hit": 0,
+                    "basic_blocks": 1
+                }
+            },
+            "source_data": {
+                "lines": {
+                    "24": 1,
+                    "25": 1,
+                    "27": 1,
+                    "28": 1,
+                    "29": 1,
+                    "31": 1,
+                    "36": -1,
+                    "37": -2,
+                    "42": -1,
+                    "43": -2,
+                    "48": -1,
+                    "49": -2,
+                    "54": -1,
+                    "55": -2,
+                    "59": -1,
+                    "61": -1,
+                    "62": -1,
+                    "63": -1,
+                    "64": -1,
+                    "65": -1,
+                    "66": -1,
+                    "67": -1,
+                    "68": -1,
+                    "70": -1,
+                    "71": -1,
+                    "72": -1,
+                    "75": -1,
+                    "76": -2,
+                    "78": 1
+                },
+                "functions": {
+                    "LowList\\FluxCapacitor\\Base\\Tab->save": {
+                        "branches": [
+                            {
+                                "op_start": 0,
+                                "op_end": 9,
+                                "line_start": 46,
+                                "line_end": 49,
+                                "hit": 0,
+                                "out": [],
+                                "out_hit": []
+                            }
+                        ]
+                    },
+                    "LowList\\FluxCapacitor\\Base\\Tab->display": {
+                        "branches": [
+                            {
+                                "op_start": 0,
+                                "op_end": 9,
+                                "line_start": 34,
+                                "line_end": 37,
+                                "hit": 0,
+                                "out": [],
+                                "out_hit": []
+                            }
+                        ]
+                    },
+                    "LowList\\FluxCapacitor\\Base\\Tab->__construct": {
+                        "branches": {
+                            "0": {
+                                "op_start": 0,
+                                "op_end": 16,
+                                "line_start": 24,
+                                "line_end": 27,
+                                "hit": 1,
+                                "out": [
+                                    17,
+                                    20
+                                ],
+                                "out_hit": [
+                                    1,
+                                    0
+                                ]
+                            },
+                            "17": {
+                                "op_start": 17,
+                                "op_end": 19,
+                                "line_start": 27,
+                                "line_end": 27,
+                                "hit": 1,
+                                "out": [
+                                    20
+                                ],
+                                "out_hit": [
+                                    1
+                                ]
+                            },
+                            "20": {
+                                "op_start": 20,
+                                "op_end": 20,
+                                "line_start": 27,
+                                "line_end": 27,
+                                "hit": 1,
+                                "out": [
+                                    21,
+                                    28
+                                ],
+                                "out_hit": [
+                                    1,
+                                    0
+                                ]
+                            },
+                            "21": {
+                                "op_start": 21,
+                                "op_end": 27,
+                                "line_start": 28,
+                                "line_end": 31,
+                                "hit": 1,
+                                "out": [
+                                    28
+                                ],
+                                "out_hit": [
+                                    1
+                                ]
+                            },
+                            "28": {
+                                "op_start": 28,
+                                "op_end": 29,
+                                "line_start": 31,
+                                "line_end": 31,
+                                "hit": 1,
+                                "out": [
+                                    2147483645
+                                ],
+                                "out_hit": [
+                                    0
+                                ]
+                            }
+                        }
+                    },
+                    "LowList\\FluxCapacitor\\Base\\Tab->getEntryVariables": {
+                        "branches": {
+                            "0": {
+                                "op_start": 0,
+                                "op_end": 6,
+                                "line_start": 57,
+                                "line_end": 61,
+                                "hit": 0,
+                                "out": [
+                                    7,
+                                    20
+                                ],
+                                "out_hit": [
+                                    0,
+                                    0
+                                ]
+                            },
+                            "7": {
+                                "op_start": 7,
+                                "op_end": 19,
+                                "line_start": 62,
+                                "line_end": 61,
+                                "hit": 0,
+                                "out": [
+                                    47
+                                ],
+                                "out_hit": [
+                                    0
+                                ]
+                            },
+                            "20": {
+                                "op_start": 20,
+                                "op_end": 22,
+                                "line_start": 65,
+                                "line_end": 65,
+                                "hit": 0,
+                                "out": [
+                                    23,
+                                    38
+                                ],
+                                "out_hit": [
+                                    0,
+                                    0
+                                ]
+                            },
+                            "23": {
+                                "op_start": 23,
+                                "op_end": 37,
+                                "line_start": 66,
+                                "line_end": 65,
+                                "hit": 0,
+                                "out": [
+                                    47
+                                ],
+                                "out_hit": [
+                                    0
+                                ]
+                            },
+                            "38": {
+                                "op_start": 38,
+                                "op_end": 46,
+                                "line_start": 70,
+                                "line_end": 75,
+                                "hit": 0,
+                                "out": [
+                                    47
+                                ],
+                                "out_hit": [
+                                    0
+                                ]
+                            },
+                            "47": {
+                                "op_start": 47,
+                                "op_end": 50,
+                                "line_start": 75,
+                                "line_end": 76,
+                                "hit": 0,
+                                "out": [],
+                                "out_hit": []
+                            }
+                        }
+                    },
+                    "LowList\\FluxCapacitor\\Base\\Tab->publish_data_db": {
+                        "branches": [
+                            {
+                                "op_start": 0,
+                                "op_end": 5,
+                                "line_start": 52,
+                                "line_end": 55,
+                                "hit": 0,
+                                "out": [],
+                                "out_hit": []
+                            }
+                        ]
+                    },
+                    "{main}": {
+                        "branches": [
+                            {
+                                "op_start": 0,
+                                "op_end": 5,
+                                "line_start": 2,
+                                "line_end": 78,
+                                "hit": 0,
+                                "out": [
+                                    2147483645
+                                ],
+                                "out_hit": [
+                                    0
+                                ]
+                            }
+                        ]
+                    },
+                    "LowList\\FluxCapacitor\\Base\\Tab->publish_tabs": {
+                        "branches": [
+                            {
+                                "op_start": 0,
+                                "op_end": 5,
+                                "line_start": 40,
+                                "line_end": 43,
+                                "hit": 0,
+                                "out": [],
+                                "out_hit": []
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

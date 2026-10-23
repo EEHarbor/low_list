@@ -19,6 +19,9 @@ set -e
 "$php_bin" tests/native-context-report.php "$reports"
 "$php_bin" tests/native-context-report.php "$reports" legacy-bridge
 "$php_bin" tests/native-context-report.php "$reports" fieldtype
+for mode in cp-fieldtype cp-tab cp-menu cp-updater; do
+  "$php_bin" tests/native-context-report.php "$reports" "$mode"
+done
 python3 /Users/tomjaeger/.codex/skills/ee-addon-phpunit-coverage-writer/scripts/addon_method_coverage_report.py \
   --repo-root "$repo_root" --source-root low_list --include-magic --coverage-clover "$reports/clover.xml" --reuse-clover --json > "$reports/loose-methods.json"
 python3 /Users/tomjaeger/.codex/skills/ee-addon-phpunit-coverage-writer/scripts/addon_method_coverage_report.py \

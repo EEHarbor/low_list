@@ -12,12 +12,13 @@ class StartupDiagnosticTest extends TestCase
      * @dataProvider entryDiagnostics
      * @param string $entry
      * @param string $diagnostic
+     * @param string $boundary
      * @return void
      */
-    public function testEarlyEntryHandler($entry, $diagnostic): void
+    public function testEarlyEntryHandler($entry, $diagnostic, $boundary = 'require'): void
     {
         $contents = file_get_contents(dirname(__DIR__, 2) . '/' . $entry);
-        $firstDependency = strpos($contents, 'require');
+        $firstDependency = strpos($contents, $boundary);
         $this->assertNotFalse($firstDependency);
         $prefix = substr($contents, 0, $firstDependency);
         $owned = PATH_CACHE . 'startup-' . bin2hex(random_bytes(8));
@@ -58,7 +59,7 @@ class StartupDiagnosticTest extends TestCase
     }
 
     /**
-     * Check both actual entry prefixes against native warnings and deprecations.
+     * Check suite, native and reporting prefixes against warnings and deprecations.
      *
      * @return array
      */
@@ -69,6 +70,14 @@ class StartupDiagnosticTest extends TestCase
             'bootstrap deprecation' => array('bootstrap.php', 'deprecation'),
             'coverage native warning' => array('coverage-prepend.php', 'warning'),
             'coverage deprecation' => array('coverage-prepend.php', 'deprecation'),
+            'native warning' => array('Support/native-probe.php', 'warning', 'ini_set'),
+            'native deprecation' => array('Support/native-probe.php', 'deprecation', 'ini_set'),
+            'inventory warning' => array('inventory.php', 'warning', '/**'),
+            'inventory deprecation' => array('inventory.php', 'deprecation', '/**'),
+            'coverage reporter warning' => array('coverage-report.php', 'warning'),
+            'coverage reporter deprecation' => array('coverage-report.php', 'deprecation'),
+            'native reporter warning' => array('native-context-report.php', 'warning'),
+            'native reporter deprecation' => array('native-context-report.php', 'deprecation'),
         );
     }
 }

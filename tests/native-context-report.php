@@ -1,5 +1,10 @@
 <?php
 
+error_reporting(E_ALL);
+set_error_handler(static function ($severity, $message, $file, $line) {
+    throw new ErrorException($message, 0, $severity, $file, $line);
+}, E_ALL);
+
 require __DIR__ . '/inventory.php';
 require_once __DIR__ . '/Support/Coverage.php';
 $inventory = sourceInventory();
@@ -19,6 +24,26 @@ $configurations = array(
         'source' => 'low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php',
         'cases' => array('urls' => '2.5.5', 'view-writable' => '2.5.5', 'view-readonly' => '2.5.5'),
     ),
+    'cp-fieldtype' => array(
+        'source' => 'low_list/low_list.phar/FluxCapacitor/Base/Ft.php',
+        'capture_mode' => 'control-panel',
+        'cases' => array('fieldtype-modern' => '7.5.0', 'fieldtype-legacy' => '2.5.5', 'shared-modern' => '7.5.0', 'shared-legacy' => '2.5.5'),
+    ),
+    'cp-tab' => array(
+        'source' => 'low_list/low_list.phar/FluxCapacitor/Base/Tab.php',
+        'capture_mode' => 'control-panel',
+        'cases' => array('tab-modern' => '7.5.0', 'tab-legacy' => '2.5.5', 'shared-modern' => '7.5.0', 'shared-legacy' => '2.5.5'),
+    ),
+    'cp-menu' => array(
+        'source' => 'low_list/low_list.phar/FluxCapacitor/Base/Ext.php',
+        'capture_mode' => 'control-panel',
+        'cases' => array('menu-modern' => '7.5.0', 'menu-legacy' => '2.5.5'),
+    ),
+    'cp-updater' => array(
+        'source' => 'low_list/low_list.phar/FluxCapacitor/Base/Upd.php',
+        'capture_mode' => 'control-panel',
+        'cases' => array('updater-present' => '7.5.0', 'updater-empty' => '7.5.0', 'updater-missing' => '7.5.0'),
+    ),
 );
 if (!isset($configurations[$mode])) {
     throw new RuntimeException('Unknown native source context.');
@@ -35,20 +60,37 @@ if (hash_file('sha256', $native) !== $entry['sha256']) {
     throw new RuntimeException('Native source provenance mismatch.');
 }
 $contexts = array();
-foreach (glob($reportDirectory . '/native-' . $mode . '-*.json') as $path) {
+$seen = array();
+$captureMode = isset($configuration['capture_mode']) ? $configuration['capture_mode'] : $mode;
+$allowedCases = $configuration['cases'];
+if ($captureMode === 'control-panel') {
+    foreach ($configurations as $candidate) {
+        if (isset($candidate['capture_mode']) && $candidate['capture_mode'] === $captureMode) {
+            $allowedCases = array_merge($allowedCases, $candidate['cases']);
+        }
+    }
+}
+foreach (glob($reportDirectory . '/native-' . $captureMode . '-*.json') as $path) {
     $capture = json_decode(file_get_contents($path), true);
     if (!is_array($capture) || !isset($capture['php'], $capture['xdebug'], $capture['context']['native_mode'], $capture['context']['native_case'], $capture['context']['REQ'], $capture['context']['APP_VER'], $capture['runtime_declarations']) || !is_array($capture['runtime_declarations'])) {
         throw new RuntimeException('Native source metadata is required.');
     }
     $case = $capture['context']['native_case'];
-    if ($capture['context']['native_mode'] !== $mode || isset($contexts[$case]) || !isset($configuration['cases'][$case])) {
+    if ($capture['context']['native_mode'] !== $captureMode || isset($seen[$case]) || !isset($allowedCases[$case])) {
         throw new RuntimeException('Unexpected or duplicate native source context.');
     }
-    if ($capture['php'] !== $parent['php'] || $capture['xdebug'] !== $parent['xdebug'] || !isset($capture['coverage'][$native])) {
+    $seen[$case] = true;
+    if ($capture['php'] !== $parent['php'] || $capture['xdebug'] !== $parent['xdebug']) {
         throw new RuntimeException('Missing or incompatible native source instrumentation.');
     }
-    if ($capture['context']['REQ'] !== (isset($configuration['request']) ? $configuration['request'] : 'CP') || $capture['context']['APP_VER'] !== $configuration['cases'][$case]) {
+    if ($capture['context']['REQ'] !== (isset($configuration['request']) ? $configuration['request'] : 'CP') || $capture['context']['APP_VER'] !== $allowedCases[$case]) {
         throw new RuntimeException('Unexpected native source request context.');
+    }
+    if (!isset($configuration['cases'][$case])) {
+        continue;
+    }
+    if (!isset($capture['coverage'][$native])) {
+        throw new RuntimeException('Missing or incompatible native source instrumentation.');
     }
     $source = $capture['coverage'][$native];
     $executable = array_filter($source['lines'], static function ($hit) { return $hit !== -2; });

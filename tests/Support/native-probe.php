@@ -1,10 +1,10 @@
 <?php
 
 error_reporting(E_ALL);
-ini_set('display_errors', 'stderr');
 set_error_handler(static function ($severity, $message, $file, $line) {
     throw new ErrorException($message, 0, $severity, $file, $line);
 }, E_ALL);
+ini_set('display_errors', 'stderr');
 
 if ($argv[1] === 'diagnostic') {
     @trigger_error('suppressed diagnostic probe', E_USER_DEPRECATED);
@@ -23,6 +23,11 @@ if ($argv[1] === 'validation-abnormal-exit') {
 }
 
 $root = dirname(__DIR__, 2);
+if ($argv[1] === 'control-panel') {
+    require __DIR__ . '/control-panel-probe.php';
+    echo json_encode(\LowListTests\ControlPanelProbe::run($root, $argv[2]), JSON_UNESCAPED_SLASHES);
+    exit(0);
+}
 if ($argv[1] === 'fieldtype') {
     require __DIR__ . '/fieldtype-probe.php';
     echo json_encode(\LowListTests\FieldtypeProbe::run($root, $argv[2]), JSON_UNESCAPED_SLASHES);
