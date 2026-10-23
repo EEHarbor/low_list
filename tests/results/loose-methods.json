@@ -1,0 +1,80 @@
+{
+  "summary": {
+    "methods": 5,
+    "below_floor": 0,
+    "above_floor": 0,
+    "at_target": 5
+  },
+  "methods": [
+    {
+      "file": "low_list/pi.low_list.php",
+      "method": "__construct",
+      "start_line": 49,
+      "end_line": 59,
+      "line_percent": 100.0,
+      "branch_percent": null,
+      "effective_percent": 100.0,
+      "executable_lines": 5,
+      "covered_lines": 5,
+      "branch_total": 0,
+      "branch_covered": 0,
+      "status": "at_target"
+    },
+    {
+      "file": "low_list/pi.low_list.php",
+      "method": "each",
+      "start_line": 67,
+      "end_line": 105,
+      "line_percent": 100.0,
+      "branch_percent": null,
+      "effective_percent": 100.0,
+      "executable_lines": 16,
+      "covered_lines": 16,
+      "branch_total": 0,
+      "branch_covered": 0,
+      "status": "at_target"
+    },
+    {
+      "file": "low_list/pi.low_list.php",
+      "method": "has",
+      "start_line": 110,
+      "end_line": 113,
+      "line_percent": 100.0,
+      "branch_percent": null,
+      "effective_percent": 100.0,
+      "executable_lines": 1,
+      "covered_lines": 1,
+      "branch_total": 0,
+      "branch_covered": 0,
+      "status": "at_target"
+    },
+    {
+      "file": "low_list/pi.low_list.php",
+      "method": "has_not",
+      "start_line": 118,
+      "end_line": 121,
+      "line_percent": 100.0,
+      "branch_percent": null,
+      "effective_percent": 100.0,
+      "executable_lines": 1,
+      "covered_lines": 1,
+      "branch_total": 0,
+      "branch_covered": 0,
+      "status": "at_target"
+    },
+    {
+      "file": "low_list/pi.low_list.php",
+      "method": "_equate",
+      "start_line": 126,
+      "end_line": 153,
+      "line_percent": 100.0,
+      "branch_percent": null,
+      "effective_percent": 100.0,
+      "executable_lines": 10,
+      "covered_lines": 10,
+      "branch_total": 0,
+      "branch_covered": 0,
+      "status": "at_target"
+    }
+  ]
+}

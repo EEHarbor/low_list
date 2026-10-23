@@ -1,0 +1,1698 @@
+[
+  {
+    "runtime": "PHP 7.4.33 (cli) (built: Dec 13 2023 21:52:05) ( NTS )",
+    "exit": 2,
+    "tests": 158,
+    "assertions": 706,
+    "errors": 5,
+    "failures": 15,
+    "skipped": 0,
+    "warnings": 0,
+    "risky": 0,
+    "incomplete": 0,
+    "diagnostics": [
+      {
+        "test": "testPluginInfoCanBeRead",
+        "kind": "error",
+        "message": "LowListTests\\BaseTest::testPluginInfoCanBeRead",
+        "details": [
+          "Error: Using $this when not in object context",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Pi.php:30",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BaseTest.php:36"
+        ]
+      },
+      {
+        "test": "testExtensionAliasForwardsArguments",
+        "kind": "failure",
+        "message": "LowListTests\\BaseTest::testExtensionAliasForwardsArguments",
+        "details": [
+          "Failed asserting that two strings are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
+        ]
+      },
+      {
+        "test": "testEmptyModernRequestContextIsSafe with data set #0",
+        "kind": "error",
+        "message": "LowListTests\\BridgeTest::testEmptyModernRequestContextIsSafe with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
+        "details": [
+          "ErrorException: Undefined offset: 3",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:412",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:133"
+        ]
+      },
+      {
+        "test": "testEmptyModernRequestContextIsSafe with data set #1",
+        "kind": "error",
+        "message": "LowListTests\\BridgeTest::testEmptyModernRequestContextIsSafe with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
+        "details": [
+          "ErrorException: Undefined offset: 3",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:412",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:133"
+        ]
+      },
+      {
+        "test": "testModernNavigationActiveAlias with data set #0",
+        "kind": "failure",
+        "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
+        "details": [
+          "Failed asserting that LowListTests\\Header Object &0000000010de502a000000007bd2c05d () is identical to 'License'.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+        ]
+      },
+      {
+        "test": "testModernNavigationActiveAlias with data set #1",
+        "kind": "failure",
+        "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
+        "details": [
+          "Failed asserting that LowListTests\\Header Object &0000000010de5021000000007bd2c05d () is identical to 'License'.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+        ]
+      },
+      {
+        "test": "testModernNavigationActiveAlias with data set #2",
+        "kind": "failure",
+        "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
+        "details": [
+          "Failed asserting that LowListTests\\Header Object &0000000010de5024000000007bd2c05d () is identical to 'License'.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+        ]
+      },
+      {
+        "test": "testModernNavigationActiveAlias with data set #3",
+        "kind": "failure",
+        "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
+        "details": [
+          "Failed asserting that LowListTests\\Header Object &0000000010de503b000000007bd2c05d () is identical to 'License'.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+        ]
+      },
+      {
+        "test": "testMissingKeyIsSafe",
+        "kind": "error",
+        "message": "LowListTests\\GlobalFieldSettingsTest::testMissingKeyIsSafe",
+        "details": [
+          "ErrorException: Undefined index: missing",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/GlobalFieldSettings.php:21",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/GlobalFieldSettingsTest.php:52"
+        ]
+      },
+      {
+        "test": "testMalformedLegacySettingsAreSafe",
+        "kind": "error",
+        "message": "LowListTests\\GlobalFieldSettingsTest::testMalformedLegacySettingsAreSafe",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 25 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/GlobalFieldSettings.php:33",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/GlobalFieldSettingsTest.php:64"
+        ]
+      },
+      {
+        "test": "testNativeLoad with data set \"low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php\"",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testNativeLoad with data set \"low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php\" ('archive', 'FluxCapacitor/Conduit/McpNav.php')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: include_once(/Users/tomjaeger/Sites/add-ons/low_list/low_list/Conduit/McpNav.php): failed to open stream: No such file or directory in phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php:7",
+          "Stack trace:",
+          "#0 phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php(7): {closure}(2, 'include_once(/U...', 'phar:///Users/t...', 7, Array)",
+          "#1 phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php(7): include_once()"
+        ]
+      },
+      {
+        "test": "testArchiveFallbackHasNoSuppressedDiagnostics",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testArchiveFallbackHasNoSuppressedDiagnostics",
+        "details": [
+          "Fatal error: Uncaught ErrorException: mkdir(): File exists in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:177",
+          "Stack trace:",
+          "#0 [internal function]: {closure}(2, 'mkdir(): File e...', '/Users/tomjaege...', 177, Array)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(177): mkdir('/private/var/fo...', 511, true)"
+        ]
+      },
+      {
+        "test": "testStoredValueSurvivesDiskRemovalWithinRequest",
+        "kind": "failure",
+        "message": "LowListTests\\PersistentCacheTest::testStoredValueSurvivesDiskRemovalWithinRequest",
+        "details": [
+          "Failed asserting that false is identical to Array &0 (",
+          "    'id' => 1",
+          ").",
+          ""
+        ]
+      },
+      {
+        "test": "testDiskReadWarmsDecodedRequestCache",
+        "kind": "failure",
+        "message": "LowListTests\\PersistentCacheTest::testDiskReadWarmsDecodedRequestCache",
+        "details": [
+          "Failed asserting that false is identical to Array &0 (",
+          "    'id' => 1",
+          ").",
+          ""
+        ]
+      },
+      {
+        "test": "testFalseLikeValuesRoundTrip with data set #1",
+        "kind": "failure",
+        "message": "LowListTests\\StaticCacheTest::testFalseLikeValuesRoundTrip with data set #1 (0)",
+        "details": [
+          "Failed asserting that false is identical to 0.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/StaticCacheTest.php:58"
+        ]
+      },
+      {
+        "test": "testFalseLikeValuesRoundTrip with data set #2",
+        "kind": "failure",
+        "message": "LowListTests\\StaticCacheTest::testFalseLikeValuesRoundTrip with data set #2 ('0')",
+        "details": [
+          "Failed asserting that false is identical to '0'.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/StaticCacheTest.php:58"
+        ]
+      },
+      {
+        "test": "testFalseLikeValuesRoundTrip with data set #3",
+        "kind": "failure",
+        "message": "LowListTests\\StaticCacheTest::testFalseLikeValuesRoundTrip with data set #3 ('')",
+        "details": [
+          "Failed asserting that false is identical to ''.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/StaticCacheTest.php:58"
+        ]
+      },
+      {
+        "test": "testFalseLikeValuesRoundTrip with data set #4",
+        "kind": "failure",
+        "message": "LowListTests\\StaticCacheTest::testFalseLikeValuesRoundTrip with data set #4 (array())",
+        "details": [
+          "Failed asserting that false is identical to Array &0 ().",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/StaticCacheTest.php:58"
+        ]
+      },
+      {
+        "test": "testFalseLikeValuesRoundTrip with data set #5",
+        "kind": "failure",
+        "message": "LowListTests\\StaticCacheTest::testFalseLikeValuesRoundTrip with data set #5 (null)",
+        "details": [
+          "Failed asserting that false is identical to null.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/StaticCacheTest.php:58"
+        ]
+      },
+      {
+        "test": "testZeroComponentsDoNotCollide",
+        "kind": "failure",
+        "message": "LowListTests\\StaticCacheTest::testZeroComponentsDoNotCollide",
+        "details": [
+          "Failed asserting that two strings are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
+        ]
+      }
+    ]
+  },
+  {
+    "runtime": "PHP 8.0.30 (cli) (built: Dec 21 2023 08:22:38) ( NTS )",
+    "exit": 2,
+    "tests": 158,
+    "assertions": 700,
+    "errors": 6,
+    "failures": 15,
+    "skipped": 0,
+    "warnings": 0,
+    "risky": 0,
+    "incomplete": 0,
+    "diagnostics": [
+      {
+        "test": "testPluginInfoCanBeRead",
+        "kind": "error",
+        "message": "LowListTests\\BaseTest::testPluginInfoCanBeRead",
+        "details": [
+          "Error: Using $this when not in object context",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Pi.php:30",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BaseTest.php:36"
+        ]
+      },
+      {
+        "test": "testExtensionAliasForwardsArguments",
+        "kind": "failure",
+        "message": "LowListTests\\BaseTest::testExtensionAliasForwardsArguments",
+        "details": [
+          "Failed asserting that two strings are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
+        ]
+      },
+      {
+        "test": "testEmptyModernRequestContextIsSafe with data set #0",
+        "kind": "error",
+        "message": "LowListTests\\BridgeTest::testEmptyModernRequestContextIsSafe with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
+        "details": [
+          "ErrorException: Undefined array key 3",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:412",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:133"
+        ]
+      },
+      {
+        "test": "testEmptyModernRequestContextIsSafe with data set #1",
+        "kind": "error",
+        "message": "LowListTests\\BridgeTest::testEmptyModernRequestContextIsSafe with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
+        "details": [
+          "ErrorException: Undefined array key 3",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:412",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:133"
+        ]
+      },
+      {
+        "test": "testModernNavigationActiveAlias with data set #0",
+        "kind": "failure",
+        "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
+        "details": [
+          "Failed asserting that LowListTests\\Header Object &000000004f3d5f3e0000000018359821 () is identical to 'License'.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+        ]
+      },
+      {
+        "test": "testModernNavigationActiveAlias with data set #1",
+        "kind": "failure",
+        "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
+        "details": [
+          "Failed asserting that LowListTests\\Header Object &000000004f3d5f3b0000000018359821 () is identical to 'License'.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+        ]
+      },
+      {
+        "test": "testModernNavigationActiveAlias with data set #2",
+        "kind": "failure",
+        "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
+        "details": [
+          "Failed asserting that LowListTests\\Header Object &000000004f3d5f300000000018359821 () is identical to 'License'.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+        ]
+      },
+      {
+        "test": "testModernNavigationActiveAlias with data set #3",
+        "kind": "failure",
+        "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
+        "details": [
+          "Failed asserting that LowListTests\\Header Object &000000004f3d5f2d0000000018359821 () is identical to 'License'.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+        ]
+      },
+      {
+        "test": "testMissingKeyIsSafe",
+        "kind": "error",
+        "message": "LowListTests\\GlobalFieldSettingsTest::testMissingKeyIsSafe",
+        "details": [
+          "ErrorException: Undefined array key \"missing\"",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/GlobalFieldSettings.php:21",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/GlobalFieldSettingsTest.php:52"
+        ]
+      },
+      {
+        "test": "testMalformedLegacySettingsAreSafe",
+        "kind": "error",
+        "message": "LowListTests\\GlobalFieldSettingsTest::testMalformedLegacySettingsAreSafe",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 25 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/GlobalFieldSettings.php:33",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/GlobalFieldSettingsTest.php:64"
+        ]
+      },
+      {
+        "test": "testBaseUrlsAndSessionModes",
+        "kind": "error",
+        "message": "LowListTests\\LegacyBridgeTest::testBaseUrlsAndSessionModes",
+        "details": [
+          "ValueError: version_compare(): Argument #3 ($operator) must be a valid comparison operator",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:47",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/LegacyBridgeTest.php:57"
+        ]
+      },
+      {
+        "test": "testNativeLoad with data set \"low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php\"",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testNativeLoad with data set \"low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php\" ('archive', 'FluxCapacitor/Conduit/McpNav.php')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: include_once(/Users/tomjaeger/Sites/add-ons/low_list/low_list/Conduit/McpNav.php): Failed to open stream: No such file or directory in phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php:7",
+          "Stack trace:",
+          "#0 phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php(7): {closure}(2, 'include_once(/U...', 'phar:///Users/t...', 7)",
+          "#1 phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php(7): include_once()"
+        ]
+      },
+      {
+        "test": "testArchiveFallbackHasNoSuppressedDiagnostics",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testArchiveFallbackHasNoSuppressedDiagnostics",
+        "details": [
+          "Fatal error: Uncaught ErrorException: mkdir(): File exists in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:177",
+          "Stack trace:",
+          "#0 [internal function]: {closure}(2, 'mkdir(): File e...', '/Users/tomjaege...', 177)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(177): mkdir('/private/var/fo...', 511, true)"
+        ]
+      },
+      {
+        "test": "testStoredValueSurvivesDiskRemovalWithinRequest",
+        "kind": "failure",
+        "message": "LowListTests\\PersistentCacheTest::testStoredValueSurvivesDiskRemovalWithinRequest",
+        "details": [
+          "Failed asserting that false is identical to Array &0 (",
+          "    'id' => 1",
+          ").",
+          ""
+        ]
+      },
+      {
+        "test": "testDiskReadWarmsDecodedRequestCache",
+        "kind": "failure",
+        "message": "LowListTests\\PersistentCacheTest::testDiskReadWarmsDecodedRequestCache",
+        "details": [
+          "Failed asserting that false is identical to Array &0 (",
+          "    'id' => 1",
+          ").",
+          ""
+        ]
+      },
+      {
+        "test": "testFalseLikeValuesRoundTrip with data set #1",
+        "kind": "failure",
+        "message": "LowListTests\\StaticCacheTest::testFalseLikeValuesRoundTrip with data set #1 (0)",
+        "details": [
+          "Failed asserting that false is identical to 0.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/StaticCacheTest.php:58"
+        ]
+      },
+      {
+        "test": "testFalseLikeValuesRoundTrip with data set #2",
+        "kind": "failure",
+        "message": "LowListTests\\StaticCacheTest::testFalseLikeValuesRoundTrip with data set #2 ('0')",
+        "details": [
+          "Failed asserting that false is identical to '0'.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/StaticCacheTest.php:58"
+        ]
+      },
+      {
+        "test": "testFalseLikeValuesRoundTrip with data set #3",
+        "kind": "failure",
+        "message": "LowListTests\\StaticCacheTest::testFalseLikeValuesRoundTrip with data set #3 ('')",
+        "details": [
+          "Failed asserting that false is identical to ''.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/StaticCacheTest.php:58"
+        ]
+      },
+      {
+        "test": "testFalseLikeValuesRoundTrip with data set #4",
+        "kind": "failure",
+        "message": "LowListTests\\StaticCacheTest::testFalseLikeValuesRoundTrip with data set #4 (array())",
+        "details": [
+          "Failed asserting that false is identical to Array &0 ().",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/StaticCacheTest.php:58"
+        ]
+      },
+      {
+        "test": "testFalseLikeValuesRoundTrip with data set #5",
+        "kind": "failure",
+        "message": "LowListTests\\StaticCacheTest::testFalseLikeValuesRoundTrip with data set #5 (null)",
+        "details": [
+          "Failed asserting that false is identical to null.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/StaticCacheTest.php:58"
+        ]
+      },
+      {
+        "test": "testZeroComponentsDoNotCollide",
+        "kind": "failure",
+        "message": "LowListTests\\StaticCacheTest::testZeroComponentsDoNotCollide",
+        "details": [
+          "Failed asserting that two strings are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
+        ]
+      }
+    ]
+  },
+  {
+    "runtime": "PHP 8.1.33 (cli) (built: Jul  4 2025 00:24:36) (NTS)",
+    "exit": 2,
+    "tests": 158,
+    "assertions": 699,
+    "errors": 7,
+    "failures": 15,
+    "skipped": 0,
+    "warnings": 0,
+    "risky": 0,
+    "incomplete": 0,
+    "diagnostics": [
+      {
+        "test": "testPluginInfoCanBeRead",
+        "kind": "error",
+        "message": "LowListTests\\BaseTest::testPluginInfoCanBeRead",
+        "details": [
+          "Error: Using $this when not in object context",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Pi.php:30",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BaseTest.php:36"
+        ]
+      },
+      {
+        "test": "testExtensionAliasForwardsArguments",
+        "kind": "failure",
+        "message": "LowListTests\\BaseTest::testExtensionAliasForwardsArguments",
+        "details": [
+          "Failed asserting that two strings are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
+        ]
+      },
+      {
+        "test": "testEmptyModernRequestContextIsSafe with data set #0",
+        "kind": "error",
+        "message": "LowListTests\\BridgeTest::testEmptyModernRequestContextIsSafe with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
+        "details": [
+          "ErrorException: Undefined array key 3",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:412",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:133"
+        ]
+      },
+      {
+        "test": "testEmptyModernRequestContextIsSafe with data set #1",
+        "kind": "error",
+        "message": "LowListTests\\BridgeTest::testEmptyModernRequestContextIsSafe with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
+        "details": [
+          "ErrorException: Undefined array key 3",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:412",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:133"
+        ]
+      },
+      {
+        "test": "testModernNavigationActiveAlias with data set #0",
+        "kind": "failure",
+        "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
+        "details": [
+          "Failed asserting that LowListTests\\Header Object &000000000000035d0000000000000000 () is identical to 'License'.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+        ]
+      },
+      {
+        "test": "testModernNavigationActiveAlias with data set #1",
+        "kind": "failure",
+        "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
+        "details": [
+          "Failed asserting that LowListTests\\Header Object &00000000000003580000000000000000 () is identical to 'License'.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+        ]
+      },
+      {
+        "test": "testModernNavigationActiveAlias with data set #2",
+        "kind": "failure",
+        "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
+        "details": [
+          "Failed asserting that LowListTests\\Header Object &00000000000003530000000000000000 () is identical to 'License'.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+        ]
+      },
+      {
+        "test": "testModernNavigationActiveAlias with data set #3",
+        "kind": "failure",
+        "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
+        "details": [
+          "Failed asserting that LowListTests\\Header Object &000000000000034e0000000000000000 () is identical to 'License'.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+        ]
+      },
+      {
+        "test": "testMissingKeyIsSafe",
+        "kind": "error",
+        "message": "LowListTests\\GlobalFieldSettingsTest::testMissingKeyIsSafe",
+        "details": [
+          "ErrorException: Undefined array key \"missing\"",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/GlobalFieldSettings.php:21",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/GlobalFieldSettingsTest.php:52"
+        ]
+      },
+      {
+        "test": "testMalformedLegacySettingsAreSafe",
+        "kind": "error",
+        "message": "LowListTests\\GlobalFieldSettingsTest::testMalformedLegacySettingsAreSafe",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 25 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/GlobalFieldSettings.php:33",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/GlobalFieldSettingsTest.php:64"
+        ]
+      },
+      {
+        "test": "testBaseUrlsAndSessionModes",
+        "kind": "error",
+        "message": "LowListTests\\LegacyBridgeTest::testBaseUrlsAndSessionModes",
+        "details": [
+          "ValueError: version_compare(): Argument #3 ($operator) must be a valid comparison operator",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:47",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/LegacyBridgeTest.php:57"
+        ]
+      },
+      {
+        "test": "testNativeLoad with data set \"low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php\"",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testNativeLoad with data set \"low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php\" ('archive', 'FluxCapacitor/Conduit/McpNav.php')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: include_once(/Users/tomjaeger/Sites/add-ons/low_list/low_list/Conduit/McpNav.php): Failed to open stream: No such file or directory in phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php:7",
+          "Stack trace:",
+          "#0 phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php(7): {closure}(2, 'include_once(/U...', 'phar:///Users/t...', 7)",
+          "#1 phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php(7): include_once()"
+        ]
+      },
+      {
+        "test": "testArchiveFallbackHasNoSuppressedDiagnostics",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testArchiveFallbackHasNoSuppressedDiagnostics",
+        "details": [
+          "Fatal error: Uncaught ErrorException: mkdir(): File exists in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:177",
+          "Stack trace:",
+          "#0 [internal function]: {closure}(2, 'mkdir(): File e...', '/Users/tomjaege...', 177)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(177): mkdir('/private/var/fo...', 511, true)"
+        ]
+      },
+      {
+        "test": "testStoredValueSurvivesDiskRemovalWithinRequest",
+        "kind": "failure",
+        "message": "LowListTests\\PersistentCacheTest::testStoredValueSurvivesDiskRemovalWithinRequest",
+        "details": [
+          "Failed asserting that false is identical to Array &0 (",
+          "    'id' => 1",
+          ").",
+          ""
+        ]
+      },
+      {
+        "test": "testDiskReadWarmsDecodedRequestCache",
+        "kind": "failure",
+        "message": "LowListTests\\PersistentCacheTest::testDiskReadWarmsDecodedRequestCache",
+        "details": [
+          "Failed asserting that false is identical to Array &0 (",
+          "    'id' => 1",
+          ").",
+          ""
+        ]
+      },
+      {
+        "test": "testFalseLikeValuesRoundTrip with data set #1",
+        "kind": "failure",
+        "message": "LowListTests\\StaticCacheTest::testFalseLikeValuesRoundTrip with data set #1 (0)",
+        "details": [
+          "Failed asserting that false is identical to 0.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/StaticCacheTest.php:58"
+        ]
+      },
+      {
+        "test": "testFalseLikeValuesRoundTrip with data set #2",
+        "kind": "failure",
+        "message": "LowListTests\\StaticCacheTest::testFalseLikeValuesRoundTrip with data set #2 ('0')",
+        "details": [
+          "Failed asserting that false is identical to '0'.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/StaticCacheTest.php:58"
+        ]
+      },
+      {
+        "test": "testFalseLikeValuesRoundTrip with data set #3",
+        "kind": "failure",
+        "message": "LowListTests\\StaticCacheTest::testFalseLikeValuesRoundTrip with data set #3 ('')",
+        "details": [
+          "Failed asserting that false is identical to ''.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/StaticCacheTest.php:58"
+        ]
+      },
+      {
+        "test": "testFalseLikeValuesRoundTrip with data set #4",
+        "kind": "failure",
+        "message": "LowListTests\\StaticCacheTest::testFalseLikeValuesRoundTrip with data set #4 (array())",
+        "details": [
+          "Failed asserting that false is identical to Array &0 ().",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/StaticCacheTest.php:58"
+        ]
+      },
+      {
+        "test": "testFalseLikeValuesRoundTrip with data set #5",
+        "kind": "failure",
+        "message": "LowListTests\\StaticCacheTest::testFalseLikeValuesRoundTrip with data set #5 (null)",
+        "details": [
+          "Failed asserting that false is identical to null.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/StaticCacheTest.php:58"
+        ]
+      },
+      {
+        "test": "testZeroComponentsDoNotCollide",
+        "kind": "failure",
+        "message": "LowListTests\\StaticCacheTest::testZeroComponentsDoNotCollide",
+        "details": [
+          "Failed asserting that two strings are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
+        ]
+      },
+      {
+        "test": "testNullLicenseIsSafe",
+        "kind": "error",
+        "message": "LowListTests\\VersionTest::testNullLicenseIsSafe",
+        "details": [
+          "ErrorException: preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/Version.php:200",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/VersionTest.php:110"
+        ]
+      }
+    ]
+  },
+  {
+    "runtime": "PHP 8.2.30 (cli) (built: Dec 19 2025 07:42:41) (NTS clang 15.0.0)",
+    "exit": 2,
+    "tests": 158,
+    "assertions": 699,
+    "errors": 7,
+    "failures": 15,
+    "skipped": 0,
+    "warnings": 0,
+    "risky": 0,
+    "incomplete": 0,
+    "diagnostics": [
+      {
+        "test": "testPluginInfoCanBeRead",
+        "kind": "error",
+        "message": "LowListTests\\BaseTest::testPluginInfoCanBeRead",
+        "details": [
+          "Error: Using $this when not in object context",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Pi.php:30",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BaseTest.php:36"
+        ]
+      },
+      {
+        "test": "testExtensionAliasForwardsArguments",
+        "kind": "failure",
+        "message": "LowListTests\\BaseTest::testExtensionAliasForwardsArguments",
+        "details": [
+          "Failed asserting that two strings are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
+        ]
+      },
+      {
+        "test": "testEmptyModernRequestContextIsSafe with data set #0",
+        "kind": "error",
+        "message": "LowListTests\\BridgeTest::testEmptyModernRequestContextIsSafe with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
+        "details": [
+          "ErrorException: Undefined array key 3",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:412",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:133"
+        ]
+      },
+      {
+        "test": "testEmptyModernRequestContextIsSafe with data set #1",
+        "kind": "error",
+        "message": "LowListTests\\BridgeTest::testEmptyModernRequestContextIsSafe with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
+        "details": [
+          "ErrorException: Undefined array key 3",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:412",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:133"
+        ]
+      },
+      {
+        "test": "testModernNavigationActiveAlias with data set #0",
+        "kind": "failure",
+        "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
+        "details": [
+          "Failed asserting that LowListTests\\Header Object &000000000000035d0000000000000000 () is identical to 'License'.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+        ]
+      },
+      {
+        "test": "testModernNavigationActiveAlias with data set #1",
+        "kind": "failure",
+        "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
+        "details": [
+          "Failed asserting that LowListTests\\Header Object &00000000000003580000000000000000 () is identical to 'License'.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+        ]
+      },
+      {
+        "test": "testModernNavigationActiveAlias with data set #2",
+        "kind": "failure",
+        "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
+        "details": [
+          "Failed asserting that LowListTests\\Header Object &00000000000003530000000000000000 () is identical to 'License'.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+        ]
+      },
+      {
+        "test": "testModernNavigationActiveAlias with data set #3",
+        "kind": "failure",
+        "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
+        "details": [
+          "Failed asserting that LowListTests\\Header Object &000000000000034e0000000000000000 () is identical to 'License'.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+        ]
+      },
+      {
+        "test": "testMissingKeyIsSafe",
+        "kind": "error",
+        "message": "LowListTests\\GlobalFieldSettingsTest::testMissingKeyIsSafe",
+        "details": [
+          "ErrorException: Undefined array key \"missing\"",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/GlobalFieldSettings.php:21",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/GlobalFieldSettingsTest.php:52"
+        ]
+      },
+      {
+        "test": "testMalformedLegacySettingsAreSafe",
+        "kind": "error",
+        "message": "LowListTests\\GlobalFieldSettingsTest::testMalformedLegacySettingsAreSafe",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 25 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/GlobalFieldSettings.php:33",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/GlobalFieldSettingsTest.php:64"
+        ]
+      },
+      {
+        "test": "testBaseUrlsAndSessionModes",
+        "kind": "error",
+        "message": "LowListTests\\LegacyBridgeTest::testBaseUrlsAndSessionModes",
+        "details": [
+          "ValueError: version_compare(): Argument #3 ($operator) must be a valid comparison operator",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:47",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/LegacyBridgeTest.php:57"
+        ]
+      },
+      {
+        "test": "testNativeLoad with data set \"low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php\"",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testNativeLoad with data set \"low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php\" ('archive', 'FluxCapacitor/Conduit/McpNav.php')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: include_once(/Users/tomjaeger/Sites/add-ons/low_list/low_list/Conduit/McpNav.php): Failed to open stream: No such file or directory in phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php:7",
+          "Stack trace:",
+          "#0 phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php(7): {closure}(2, 'include_once(/U...', 'phar:///Users/t...', 7)",
+          "#1 phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php(7): include_once()"
+        ]
+      },
+      {
+        "test": "testArchiveFallbackHasNoSuppressedDiagnostics",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testArchiveFallbackHasNoSuppressedDiagnostics",
+        "details": [
+          "Fatal error: Uncaught ErrorException: mkdir(): File exists in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:177",
+          "Stack trace:",
+          "#0 [internal function]: {closure}(2, 'mkdir(): File e...', '/Users/tomjaege...', 177)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(177): mkdir('/private/var/fo...', 511, true)"
+        ]
+      },
+      {
+        "test": "testStoredValueSurvivesDiskRemovalWithinRequest",
+        "kind": "failure",
+        "message": "LowListTests\\PersistentCacheTest::testStoredValueSurvivesDiskRemovalWithinRequest",
+        "details": [
+          "Failed asserting that false is identical to Array &0 (",
+          "    'id' => 1",
+          ").",
+          ""
+        ]
+      },
+      {
+        "test": "testDiskReadWarmsDecodedRequestCache",
+        "kind": "failure",
+        "message": "LowListTests\\PersistentCacheTest::testDiskReadWarmsDecodedRequestCache",
+        "details": [
+          "Failed asserting that false is identical to Array &0 (",
+          "    'id' => 1",
+          ").",
+          ""
+        ]
+      },
+      {
+        "test": "testFalseLikeValuesRoundTrip with data set #1",
+        "kind": "failure",
+        "message": "LowListTests\\StaticCacheTest::testFalseLikeValuesRoundTrip with data set #1 (0)",
+        "details": [
+          "Failed asserting that false is identical to 0.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/StaticCacheTest.php:58"
+        ]
+      },
+      {
+        "test": "testFalseLikeValuesRoundTrip with data set #2",
+        "kind": "failure",
+        "message": "LowListTests\\StaticCacheTest::testFalseLikeValuesRoundTrip with data set #2 ('0')",
+        "details": [
+          "Failed asserting that false is identical to '0'.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/StaticCacheTest.php:58"
+        ]
+      },
+      {
+        "test": "testFalseLikeValuesRoundTrip with data set #3",
+        "kind": "failure",
+        "message": "LowListTests\\StaticCacheTest::testFalseLikeValuesRoundTrip with data set #3 ('')",
+        "details": [
+          "Failed asserting that false is identical to ''.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/StaticCacheTest.php:58"
+        ]
+      },
+      {
+        "test": "testFalseLikeValuesRoundTrip with data set #4",
+        "kind": "failure",
+        "message": "LowListTests\\StaticCacheTest::testFalseLikeValuesRoundTrip with data set #4 (array())",
+        "details": [
+          "Failed asserting that false is identical to Array &0 ().",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/StaticCacheTest.php:58"
+        ]
+      },
+      {
+        "test": "testFalseLikeValuesRoundTrip with data set #5",
+        "kind": "failure",
+        "message": "LowListTests\\StaticCacheTest::testFalseLikeValuesRoundTrip with data set #5 (null)",
+        "details": [
+          "Failed asserting that false is identical to null.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/StaticCacheTest.php:58"
+        ]
+      },
+      {
+        "test": "testZeroComponentsDoNotCollide",
+        "kind": "failure",
+        "message": "LowListTests\\StaticCacheTest::testZeroComponentsDoNotCollide",
+        "details": [
+          "Failed asserting that two strings are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
+        ]
+      },
+      {
+        "test": "testNullLicenseIsSafe",
+        "kind": "error",
+        "message": "LowListTests\\VersionTest::testNullLicenseIsSafe",
+        "details": [
+          "ErrorException: preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/Version.php:200",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/VersionTest.php:110"
+        ]
+      }
+    ]
+  },
+  {
+    "runtime": "PHP 8.3.28 (cli) (built: Nov 20 2025 11:21:23) (NTS clang 15.0.0)",
+    "exit": 2,
+    "tests": 158,
+    "assertions": 699,
+    "errors": 7,
+    "failures": 15,
+    "skipped": 0,
+    "warnings": 0,
+    "risky": 0,
+    "incomplete": 0,
+    "diagnostics": [
+      {
+        "test": "testPluginInfoCanBeRead",
+        "kind": "error",
+        "message": "LowListTests\\BaseTest::testPluginInfoCanBeRead",
+        "details": [
+          "Error: Using $this when not in object context",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Pi.php:30",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BaseTest.php:36"
+        ]
+      },
+      {
+        "test": "testExtensionAliasForwardsArguments",
+        "kind": "failure",
+        "message": "LowListTests\\BaseTest::testExtensionAliasForwardsArguments",
+        "details": [
+          "Failed asserting that two strings are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
+        ]
+      },
+      {
+        "test": "testEmptyModernRequestContextIsSafe with data set #0",
+        "kind": "error",
+        "message": "LowListTests\\BridgeTest::testEmptyModernRequestContextIsSafe with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
+        "details": [
+          "ErrorException: Undefined array key 3",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:412",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:133"
+        ]
+      },
+      {
+        "test": "testEmptyModernRequestContextIsSafe with data set #1",
+        "kind": "error",
+        "message": "LowListTests\\BridgeTest::testEmptyModernRequestContextIsSafe with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
+        "details": [
+          "ErrorException: Undefined array key 3",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:412",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:133"
+        ]
+      },
+      {
+        "test": "testModernNavigationActiveAlias with data set #0",
+        "kind": "failure",
+        "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
+        "details": [
+          "Failed asserting that LowListTests\\Header Object &000000000000035d0000000000000000 () is identical to 'License'.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+        ]
+      },
+      {
+        "test": "testModernNavigationActiveAlias with data set #1",
+        "kind": "failure",
+        "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
+        "details": [
+          "Failed asserting that LowListTests\\Header Object &00000000000003580000000000000000 () is identical to 'License'.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+        ]
+      },
+      {
+        "test": "testModernNavigationActiveAlias with data set #2",
+        "kind": "failure",
+        "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
+        "details": [
+          "Failed asserting that LowListTests\\Header Object &00000000000003530000000000000000 () is identical to 'License'.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+        ]
+      },
+      {
+        "test": "testModernNavigationActiveAlias with data set #3",
+        "kind": "failure",
+        "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
+        "details": [
+          "Failed asserting that LowListTests\\Header Object &000000000000034e0000000000000000 () is identical to 'License'.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+        ]
+      },
+      {
+        "test": "testMissingKeyIsSafe",
+        "kind": "error",
+        "message": "LowListTests\\GlobalFieldSettingsTest::testMissingKeyIsSafe",
+        "details": [
+          "ErrorException: Undefined array key \"missing\"",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/GlobalFieldSettings.php:21",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/GlobalFieldSettingsTest.php:52"
+        ]
+      },
+      {
+        "test": "testMalformedLegacySettingsAreSafe",
+        "kind": "error",
+        "message": "LowListTests\\GlobalFieldSettingsTest::testMalformedLegacySettingsAreSafe",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 25 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/GlobalFieldSettings.php:33",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/GlobalFieldSettingsTest.php:64"
+        ]
+      },
+      {
+        "test": "testBaseUrlsAndSessionModes",
+        "kind": "error",
+        "message": "LowListTests\\LegacyBridgeTest::testBaseUrlsAndSessionModes",
+        "details": [
+          "ValueError: version_compare(): Argument #3 ($operator) must be a valid comparison operator",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:47",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/LegacyBridgeTest.php:57"
+        ]
+      },
+      {
+        "test": "testNativeLoad with data set \"low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php\"",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testNativeLoad with data set \"low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php\" ('archive', 'FluxCapacitor/Conduit/McpNav.php')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: include_once(/Users/tomjaeger/Sites/add-ons/low_list/low_list/Conduit/McpNav.php): Failed to open stream: No such file or directory in phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php:7",
+          "Stack trace:",
+          "#0 phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php(7): {closure}(2, 'include_once(/U...', 'phar:///Users/t...', 7)",
+          "#1 phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php(7): include_once()"
+        ]
+      },
+      {
+        "test": "testArchiveFallbackHasNoSuppressedDiagnostics",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testArchiveFallbackHasNoSuppressedDiagnostics",
+        "details": [
+          "Fatal error: Uncaught ErrorException: mkdir(): File exists in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:177",
+          "Stack trace:",
+          "#0 [internal function]: {closure}(2, 'mkdir(): File e...', '/Users/tomjaege...', 177)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(177): mkdir('/private/var/fo...', 511, true)"
+        ]
+      },
+      {
+        "test": "testStoredValueSurvivesDiskRemovalWithinRequest",
+        "kind": "failure",
+        "message": "LowListTests\\PersistentCacheTest::testStoredValueSurvivesDiskRemovalWithinRequest",
+        "details": [
+          "Failed asserting that false is identical to Array &0 (",
+          "    'id' => 1",
+          ").",
+          ""
+        ]
+      },
+      {
+        "test": "testDiskReadWarmsDecodedRequestCache",
+        "kind": "failure",
+        "message": "LowListTests\\PersistentCacheTest::testDiskReadWarmsDecodedRequestCache",
+        "details": [
+          "Failed asserting that false is identical to Array &0 (",
+          "    'id' => 1",
+          ").",
+          ""
+        ]
+      },
+      {
+        "test": "testFalseLikeValuesRoundTrip with data set #1",
+        "kind": "failure",
+        "message": "LowListTests\\StaticCacheTest::testFalseLikeValuesRoundTrip with data set #1 (0)",
+        "details": [
+          "Failed asserting that false is identical to 0.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/StaticCacheTest.php:58"
+        ]
+      },
+      {
+        "test": "testFalseLikeValuesRoundTrip with data set #2",
+        "kind": "failure",
+        "message": "LowListTests\\StaticCacheTest::testFalseLikeValuesRoundTrip with data set #2 ('0')",
+        "details": [
+          "Failed asserting that false is identical to '0'.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/StaticCacheTest.php:58"
+        ]
+      },
+      {
+        "test": "testFalseLikeValuesRoundTrip with data set #3",
+        "kind": "failure",
+        "message": "LowListTests\\StaticCacheTest::testFalseLikeValuesRoundTrip with data set #3 ('')",
+        "details": [
+          "Failed asserting that false is identical to ''.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/StaticCacheTest.php:58"
+        ]
+      },
+      {
+        "test": "testFalseLikeValuesRoundTrip with data set #4",
+        "kind": "failure",
+        "message": "LowListTests\\StaticCacheTest::testFalseLikeValuesRoundTrip with data set #4 (array())",
+        "details": [
+          "Failed asserting that false is identical to Array &0 ().",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/StaticCacheTest.php:58"
+        ]
+      },
+      {
+        "test": "testFalseLikeValuesRoundTrip with data set #5",
+        "kind": "failure",
+        "message": "LowListTests\\StaticCacheTest::testFalseLikeValuesRoundTrip with data set #5 (null)",
+        "details": [
+          "Failed asserting that false is identical to null.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/StaticCacheTest.php:58"
+        ]
+      },
+      {
+        "test": "testZeroComponentsDoNotCollide",
+        "kind": "failure",
+        "message": "LowListTests\\StaticCacheTest::testZeroComponentsDoNotCollide",
+        "details": [
+          "Failed asserting that two strings are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
+        ]
+      },
+      {
+        "test": "testNullLicenseIsSafe",
+        "kind": "error",
+        "message": "LowListTests\\VersionTest::testNullLicenseIsSafe",
+        "details": [
+          "ErrorException: preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/Version.php:200",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/VersionTest.php:110"
+        ]
+      }
+    ]
+  },
+  {
+    "runtime": "PHP 8.4.15 (cli) (built: Nov 20 2025 14:28:49) (NTS clang 15.0.0)",
+    "exit": 2,
+    "tests": 158,
+    "assertions": 699,
+    "errors": 7,
+    "failures": 15,
+    "skipped": 0,
+    "warnings": 0,
+    "risky": 0,
+    "incomplete": 0,
+    "diagnostics": [
+      {
+        "test": "testPluginInfoCanBeRead",
+        "kind": "error",
+        "message": "LowListTests\\BaseTest::testPluginInfoCanBeRead",
+        "details": [
+          "Error: Using $this when not in object context",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Pi.php:30",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BaseTest.php:36"
+        ]
+      },
+      {
+        "test": "testExtensionAliasForwardsArguments",
+        "kind": "failure",
+        "message": "LowListTests\\BaseTest::testExtensionAliasForwardsArguments",
+        "details": [
+          "Failed asserting that two strings are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
+        ]
+      },
+      {
+        "test": "testEmptyModernRequestContextIsSafe with data set #0",
+        "kind": "error",
+        "message": "LowListTests\\BridgeTest::testEmptyModernRequestContextIsSafe with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
+        "details": [
+          "ErrorException: Undefined array key 3",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:412",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:133"
+        ]
+      },
+      {
+        "test": "testEmptyModernRequestContextIsSafe with data set #1",
+        "kind": "error",
+        "message": "LowListTests\\BridgeTest::testEmptyModernRequestContextIsSafe with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
+        "details": [
+          "ErrorException: Undefined array key 3",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:412",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:133"
+        ]
+      },
+      {
+        "test": "testModernNavigationActiveAlias with data set #0",
+        "kind": "failure",
+        "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
+        "details": [
+          "Failed asserting that LowListTests\\Header Object &000000000000035d0000000000000000 () is identical to 'License'.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+        ]
+      },
+      {
+        "test": "testModernNavigationActiveAlias with data set #1",
+        "kind": "failure",
+        "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
+        "details": [
+          "Failed asserting that LowListTests\\Header Object &00000000000003580000000000000000 () is identical to 'License'.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+        ]
+      },
+      {
+        "test": "testModernNavigationActiveAlias with data set #2",
+        "kind": "failure",
+        "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
+        "details": [
+          "Failed asserting that LowListTests\\Header Object &00000000000003530000000000000000 () is identical to 'License'.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+        ]
+      },
+      {
+        "test": "testModernNavigationActiveAlias with data set #3",
+        "kind": "failure",
+        "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
+        "details": [
+          "Failed asserting that LowListTests\\Header Object &000000000000034e0000000000000000 () is identical to 'License'.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+        ]
+      },
+      {
+        "test": "testMissingKeyIsSafe",
+        "kind": "error",
+        "message": "LowListTests\\GlobalFieldSettingsTest::testMissingKeyIsSafe",
+        "details": [
+          "ErrorException: Undefined array key \"missing\"",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/GlobalFieldSettings.php:21",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/GlobalFieldSettingsTest.php:52"
+        ]
+      },
+      {
+        "test": "testMalformedLegacySettingsAreSafe",
+        "kind": "error",
+        "message": "LowListTests\\GlobalFieldSettingsTest::testMalformedLegacySettingsAreSafe",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 25 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/GlobalFieldSettings.php:33",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/GlobalFieldSettingsTest.php:64"
+        ]
+      },
+      {
+        "test": "testBaseUrlsAndSessionModes",
+        "kind": "error",
+        "message": "LowListTests\\LegacyBridgeTest::testBaseUrlsAndSessionModes",
+        "details": [
+          "ValueError: version_compare(): Argument #3 ($operator) must be a valid comparison operator",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:47",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/LegacyBridgeTest.php:57"
+        ]
+      },
+      {
+        "test": "testNativeLoad with data set \"low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php\"",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testNativeLoad with data set \"low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php\" ('archive', 'FluxCapacitor/Conduit/McpNav.php')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: include_once(/Users/tomjaeger/Sites/add-ons/low_list/low_list/Conduit/McpNav.php): Failed to open stream: No such file or directory in phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php:7",
+          "Stack trace:",
+          "#0 phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php(7): {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:5}(2, 'include_once(/U...', 'phar:///Users/t...', 7)",
+          "#1 phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php(7): include_once()"
+        ]
+      },
+      {
+        "test": "testArchiveFallbackHasNoSuppressedDiagnostics",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testArchiveFallbackHasNoSuppressedDiagnostics",
+        "details": [
+          "Fatal error: Uncaught ErrorException: mkdir(): File exists in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:177",
+          "Stack trace:",
+          "#0 [internal function]: {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:5}(2, 'mkdir(): File e...', '/Users/tomjaege...', 177)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(177): mkdir('/private/var/fo...', 511, true)"
+        ]
+      },
+      {
+        "test": "testStoredValueSurvivesDiskRemovalWithinRequest",
+        "kind": "failure",
+        "message": "LowListTests\\PersistentCacheTest::testStoredValueSurvivesDiskRemovalWithinRequest",
+        "details": [
+          "Failed asserting that false is identical to Array &0 (",
+          "    'id' => 1",
+          ").",
+          ""
+        ]
+      },
+      {
+        "test": "testDiskReadWarmsDecodedRequestCache",
+        "kind": "failure",
+        "message": "LowListTests\\PersistentCacheTest::testDiskReadWarmsDecodedRequestCache",
+        "details": [
+          "Failed asserting that false is identical to Array &0 (",
+          "    'id' => 1",
+          ").",
+          ""
+        ]
+      },
+      {
+        "test": "testFalseLikeValuesRoundTrip with data set #1",
+        "kind": "failure",
+        "message": "LowListTests\\StaticCacheTest::testFalseLikeValuesRoundTrip with data set #1 (0)",
+        "details": [
+          "Failed asserting that false is identical to 0.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/StaticCacheTest.php:58"
+        ]
+      },
+      {
+        "test": "testFalseLikeValuesRoundTrip with data set #2",
+        "kind": "failure",
+        "message": "LowListTests\\StaticCacheTest::testFalseLikeValuesRoundTrip with data set #2 ('0')",
+        "details": [
+          "Failed asserting that false is identical to '0'.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/StaticCacheTest.php:58"
+        ]
+      },
+      {
+        "test": "testFalseLikeValuesRoundTrip with data set #3",
+        "kind": "failure",
+        "message": "LowListTests\\StaticCacheTest::testFalseLikeValuesRoundTrip with data set #3 ('')",
+        "details": [
+          "Failed asserting that false is identical to ''.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/StaticCacheTest.php:58"
+        ]
+      },
+      {
+        "test": "testFalseLikeValuesRoundTrip with data set #4",
+        "kind": "failure",
+        "message": "LowListTests\\StaticCacheTest::testFalseLikeValuesRoundTrip with data set #4 (array())",
+        "details": [
+          "Failed asserting that false is identical to Array &0 ().",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/StaticCacheTest.php:58"
+        ]
+      },
+      {
+        "test": "testFalseLikeValuesRoundTrip with data set #5",
+        "kind": "failure",
+        "message": "LowListTests\\StaticCacheTest::testFalseLikeValuesRoundTrip with data set #5 (null)",
+        "details": [
+          "Failed asserting that false is identical to null.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/StaticCacheTest.php:58"
+        ]
+      },
+      {
+        "test": "testZeroComponentsDoNotCollide",
+        "kind": "failure",
+        "message": "LowListTests\\StaticCacheTest::testZeroComponentsDoNotCollide",
+        "details": [
+          "Failed asserting that two strings are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
+        ]
+      },
+      {
+        "test": "testNullLicenseIsSafe",
+        "kind": "error",
+        "message": "LowListTests\\VersionTest::testNullLicenseIsSafe",
+        "details": [
+          "ErrorException: preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/Version.php:200",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/VersionTest.php:110"
+        ]
+      }
+    ]
+  },
+  {
+    "runtime": "PHP 8.5.0 (cli) (built: Nov 20 2025 09:30:23) (NTS clang 15.0.0)",
+    "exit": 2,
+    "tests": 158,
+    "assertions": 699,
+    "errors": 7,
+    "failures": 15,
+    "skipped": 0,
+    "warnings": 0,
+    "risky": 0,
+    "incomplete": 0,
+    "diagnostics": [
+      {
+        "test": "testPluginInfoCanBeRead",
+        "kind": "error",
+        "message": "LowListTests\\BaseTest::testPluginInfoCanBeRead",
+        "details": [
+          "Error: Using $this when not in object context",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Pi.php:30",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BaseTest.php:36"
+        ]
+      },
+      {
+        "test": "testExtensionAliasForwardsArguments",
+        "kind": "failure",
+        "message": "LowListTests\\BaseTest::testExtensionAliasForwardsArguments",
+        "details": [
+          "Failed asserting that two strings are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
+        ]
+      },
+      {
+        "test": "testEmptyModernRequestContextIsSafe with data set #0",
+        "kind": "error",
+        "message": "LowListTests\\BridgeTest::testEmptyModernRequestContextIsSafe with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
+        "details": [
+          "ErrorException: Undefined array key 3",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:412",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:133"
+        ]
+      },
+      {
+        "test": "testEmptyModernRequestContextIsSafe with data set #1",
+        "kind": "error",
+        "message": "LowListTests\\BridgeTest::testEmptyModernRequestContextIsSafe with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
+        "details": [
+          "ErrorException: Undefined array key 3",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:412",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:133"
+        ]
+      },
+      {
+        "test": "testModernNavigationActiveAlias with data set #0",
+        "kind": "failure",
+        "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
+        "details": [
+          "Failed asserting that LowListTests\\Header Object &000000000000035d0000000000000000 () is identical to 'License'.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+        ]
+      },
+      {
+        "test": "testModernNavigationActiveAlias with data set #1",
+        "kind": "failure",
+        "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
+        "details": [
+          "Failed asserting that LowListTests\\Header Object &00000000000003580000000000000000 () is identical to 'License'.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+        ]
+      },
+      {
+        "test": "testModernNavigationActiveAlias with data set #2",
+        "kind": "failure",
+        "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
+        "details": [
+          "Failed asserting that LowListTests\\Header Object &00000000000003530000000000000000 () is identical to 'License'.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+        ]
+      },
+      {
+        "test": "testModernNavigationActiveAlias with data set #3",
+        "kind": "failure",
+        "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
+        "details": [
+          "Failed asserting that LowListTests\\Header Object &000000000000034e0000000000000000 () is identical to 'License'.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+        ]
+      },
+      {
+        "test": "testMissingKeyIsSafe",
+        "kind": "error",
+        "message": "LowListTests\\GlobalFieldSettingsTest::testMissingKeyIsSafe",
+        "details": [
+          "ErrorException: Undefined array key \"missing\"",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/GlobalFieldSettings.php:21",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/GlobalFieldSettingsTest.php:52"
+        ]
+      },
+      {
+        "test": "testMalformedLegacySettingsAreSafe",
+        "kind": "error",
+        "message": "LowListTests\\GlobalFieldSettingsTest::testMalformedLegacySettingsAreSafe",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 25 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/GlobalFieldSettings.php:33",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/GlobalFieldSettingsTest.php:64"
+        ]
+      },
+      {
+        "test": "testBaseUrlsAndSessionModes",
+        "kind": "error",
+        "message": "LowListTests\\LegacyBridgeTest::testBaseUrlsAndSessionModes",
+        "details": [
+          "ValueError: version_compare(): Argument #3 ($operator) must be a valid comparison operator",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:47",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/LegacyBridgeTest.php:57"
+        ]
+      },
+      {
+        "test": "testNativeLoad with data set \"low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php\"",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testNativeLoad with data set \"low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php\" ('archive', 'FluxCapacitor/Conduit/McpNav.php')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: include_once(/Users/tomjaeger/Sites/add-ons/low_list/low_list/Conduit/McpNav.php): Failed to open stream: No such file or directory in phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php:7",
+          "Stack trace:",
+          "#0 phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php(7): {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:5}(2, 'include_once(/U...', 'phar:///Users/t...', 7)",
+          "#1 phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php(7): include_once()"
+        ]
+      },
+      {
+        "test": "testArchiveFallbackHasNoSuppressedDiagnostics",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testArchiveFallbackHasNoSuppressedDiagnostics",
+        "details": [
+          "Fatal error: Uncaught ErrorException: mkdir(): File exists in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:177",
+          "Stack trace:",
+          "#0 [internal function]: {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:5}(2, 'mkdir(): File e...', '/Users/tomjaege...', 177)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(177): mkdir('/private/var/fo...', 511, true)"
+        ]
+      },
+      {
+        "test": "testStoredValueSurvivesDiskRemovalWithinRequest",
+        "kind": "failure",
+        "message": "LowListTests\\PersistentCacheTest::testStoredValueSurvivesDiskRemovalWithinRequest",
+        "details": [
+          "Failed asserting that false is identical to Array &0 (",
+          "    'id' => 1",
+          ").",
+          ""
+        ]
+      },
+      {
+        "test": "testDiskReadWarmsDecodedRequestCache",
+        "kind": "failure",
+        "message": "LowListTests\\PersistentCacheTest::testDiskReadWarmsDecodedRequestCache",
+        "details": [
+          "Failed asserting that false is identical to Array &0 (",
+          "    'id' => 1",
+          ").",
+          ""
+        ]
+      },
+      {
+        "test": "testFalseLikeValuesRoundTrip with data set #1",
+        "kind": "failure",
+        "message": "LowListTests\\StaticCacheTest::testFalseLikeValuesRoundTrip with data set #1 (0)",
+        "details": [
+          "Failed asserting that false is identical to 0.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/StaticCacheTest.php:58"
+        ]
+      },
+      {
+        "test": "testFalseLikeValuesRoundTrip with data set #2",
+        "kind": "failure",
+        "message": "LowListTests\\StaticCacheTest::testFalseLikeValuesRoundTrip with data set #2 ('0')",
+        "details": [
+          "Failed asserting that false is identical to '0'.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/StaticCacheTest.php:58"
+        ]
+      },
+      {
+        "test": "testFalseLikeValuesRoundTrip with data set #3",
+        "kind": "failure",
+        "message": "LowListTests\\StaticCacheTest::testFalseLikeValuesRoundTrip with data set #3 ('')",
+        "details": [
+          "Failed asserting that false is identical to ''.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/StaticCacheTest.php:58"
+        ]
+      },
+      {
+        "test": "testFalseLikeValuesRoundTrip with data set #4",
+        "kind": "failure",
+        "message": "LowListTests\\StaticCacheTest::testFalseLikeValuesRoundTrip with data set #4 (array())",
+        "details": [
+          "Failed asserting that false is identical to Array &0 ().",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/StaticCacheTest.php:58"
+        ]
+      },
+      {
+        "test": "testFalseLikeValuesRoundTrip with data set #5",
+        "kind": "failure",
+        "message": "LowListTests\\StaticCacheTest::testFalseLikeValuesRoundTrip with data set #5 (null)",
+        "details": [
+          "Failed asserting that false is identical to null.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/StaticCacheTest.php:58"
+        ]
+      },
+      {
+        "test": "testZeroComponentsDoNotCollide",
+        "kind": "failure",
+        "message": "LowListTests\\StaticCacheTest::testZeroComponentsDoNotCollide",
+        "details": [
+          "Failed asserting that two strings are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
+        ]
+      },
+      {
+        "test": "testNullLicenseIsSafe",
+        "kind": "error",
+        "message": "LowListTests\\VersionTest::testNullLicenseIsSafe",
+        "details": [
+          "ErrorException: preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/Version.php:200",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/VersionTest.php:110"
+        ]
+      }
+    ]
+  }
+]
