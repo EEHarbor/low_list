@@ -146,8 +146,9 @@ class BridgeAdapterTest extends TestCase
         $this->assertSame('/explicit', ee()->services['View']->variables['base_url']);
         $this->assertSame('Explicit', ee()->services['View']->variables['cp_page_title']);
         ee()->services['CP/Pagination'] = new Pagination();
-        $this->assertSame('pagination', $bridge->pagination(array('total_rows' => 0, 'per_page' => 10, 'current_page' => 1, 'base_url' => '/empty')));
-        $this->assertSame(array(array('perPage', 10), array('currentPage', 1), array('render', '/empty')), ee()->services['CP/Pagination']->calls);
+        $url = (new Url())->make('empty');
+        $this->assertSame('pagination', $bridge->pagination(array('total_rows' => 0, 'per_page' => 10, 'current_page' => 1, 'base_url' => $url)));
+        $this->assertSame(array(array('perPage', 10), array('currentPage', 1), array('render', $url)), ee()->services['CP/Pagination']->calls);
     }
 
     /**

@@ -474,7 +474,7 @@ namespace {
      */
     function read_file($path)
     {
-        return is_file($path) ? file_get_contents($path) : false;
+        return file_exists($path) ? file_get_contents($path) : false;
     }
 
     /**
@@ -482,11 +482,23 @@ namespace {
      *
      * @param string $path
      * @param string $data
+     * @param string $mode
      * @return bool
      */
-    function write_file($path, $data)
+    function write_file($path, $data, $mode = 'wb')
     {
-        return file_put_contents($path, $data) !== false;
+        if (!$file = @fopen($path, $mode)) {
+            return false;
+        }
+        try {
+            flock($file, LOCK_EX);
+            fwrite($file, $data);
+            flock($file, LOCK_UN);
+        } finally {
+            fclose($file);
+        }
+
+        return true;
     }
 
     /**

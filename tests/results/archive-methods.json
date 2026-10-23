@@ -1,9 +1,9 @@
 {
   "summary": {
     "methods": 227,
-    "below_floor": 34,
+    "below_floor": 31,
     "above_floor": 10,
-    "at_target": 183
+    "at_target": 186
   },
   "methods": [
     {
@@ -189,20 +189,6 @@
       "status": "below_floor"
     },
     {
-      "file": "tests/.coverage-source/archive/FluxCapacitor/Conduit/PersistentCache.php",
-      "method": "checkPath",
-      "start_line": 189,
-      "end_line": 234,
-      "line_percent": 45.4545,
-      "branch_percent": null,
-      "effective_percent": 45.4545,
-      "executable_lines": 22,
-      "covered_lines": 10,
-      "branch_total": 0,
-      "branch_covered": 0,
-      "status": "below_floor"
-    },
-    {
       "file": "tests/.coverage-source/archive/FluxCapacitor/Base/Ext.php",
       "method": "cpCustomMenu",
       "start_line": 149,
@@ -287,20 +273,6 @@
       "status": "below_floor"
     },
     {
-      "file": "tests/.coverage-source/archive/FluxCapacitor/Conduit/PersistentCache.php",
-      "method": "set",
-      "start_line": 55,
-      "end_line": 82,
-      "line_percent": 66.6667,
-      "branch_percent": null,
-      "effective_percent": 66.6667,
-      "executable_lines": 12,
-      "covered_lines": 8,
-      "branch_total": 0,
-      "branch_covered": 0,
-      "status": "below_floor"
-    },
-    {
       "file": "tests/.coverage-source/archive/FluxCapacitor/Base/Ft.php",
       "method": "__construct",
       "start_line": 47,
@@ -315,6 +287,20 @@
       "status": "below_floor"
     },
     {
+      "file": "tests/.coverage-source/archive/FluxCapacitor/Conduit/PersistentCache.php",
+      "method": "checkPath",
+      "start_line": 189,
+      "end_line": 234,
+      "line_percent": 72.7273,
+      "branch_percent": null,
+      "effective_percent": 72.7273,
+      "executable_lines": 22,
+      "covered_lines": 16,
+      "branch_total": 0,
+      "branch_covered": 0,
+      "status": "below_floor"
+    },
+    {
       "file": "tests/.coverage-source/archive/FluxCapacitor/Bridge/EE2.php",
       "method": "reduce_double_slashes",
       "start_line": 406,
@@ -324,6 +310,20 @@
       "effective_percent": 75.0,
       "executable_lines": 4,
       "covered_lines": 3,
+      "branch_total": 0,
+      "branch_covered": 0,
+      "status": "below_floor"
+    },
+    {
+      "file": "tests/.coverage-source/archive/FluxCapacitor/Conduit/PersistentCache.php",
+      "method": "set",
+      "start_line": 55,
+      "end_line": 82,
+      "line_percent": 75.0,
+      "branch_percent": null,
+      "effective_percent": 75.0,
+      "executable_lines": 12,
+      "covered_lines": 9,
       "branch_total": 0,
       "branch_covered": 0,
       "status": "below_floor"
@@ -417,48 +417,6 @@
       "method": "getNav",
       "start_line": 78,
       "end_line": 90,
-      "line_percent": 85.7143,
-      "branch_percent": null,
-      "effective_percent": 85.7143,
-      "executable_lines": 7,
-      "covered_lines": 6,
-      "branch_total": 0,
-      "branch_covered": 0,
-      "status": "below_floor"
-    },
-    {
-      "file": "tests/.coverage-source/archive/FluxCapacitor/Conduit/PersistentCache.php",
-      "method": "get",
-      "start_line": 18,
-      "end_line": 48,
-      "line_percent": 85.7143,
-      "branch_percent": null,
-      "effective_percent": 85.7143,
-      "executable_lines": 14,
-      "covered_lines": 12,
-      "branch_total": 0,
-      "branch_covered": 0,
-      "status": "below_floor"
-    },
-    {
-      "file": "tests/.coverage-source/archive/FluxCapacitor/Conduit/PersistentCache.php",
-      "method": "delete",
-      "start_line": 88,
-      "end_line": 104,
-      "line_percent": 85.7143,
-      "branch_percent": null,
-      "effective_percent": 85.7143,
-      "executable_lines": 7,
-      "covered_lines": 6,
-      "branch_total": 0,
-      "branch_covered": 0,
-      "status": "below_floor"
-    },
-    {
-      "file": "tests/.coverage-source/archive/FluxCapacitor/Conduit/PersistentCache.php",
-      "method": "clear",
-      "start_line": 122,
-      "end_line": 141,
       "line_percent": 85.7143,
       "branch_percent": null,
       "effective_percent": 85.7143,
@@ -2934,6 +2892,34 @@
     },
     {
       "file": "tests/.coverage-source/archive/FluxCapacitor/Conduit/PersistentCache.php",
+      "method": "get",
+      "start_line": 18,
+      "end_line": 48,
+      "line_percent": 100.0,
+      "branch_percent": null,
+      "effective_percent": 100.0,
+      "executable_lines": 14,
+      "covered_lines": 14,
+      "branch_total": 0,
+      "branch_covered": 0,
+      "status": "at_target"
+    },
+    {
+      "file": "tests/.coverage-source/archive/FluxCapacitor/Conduit/PersistentCache.php",
+      "method": "delete",
+      "start_line": 88,
+      "end_line": 104,
+      "line_percent": 100.0,
+      "branch_percent": null,
+      "effective_percent": 100.0,
+      "executable_lines": 7,
+      "covered_lines": 7,
+      "branch_total": 0,
+      "branch_covered": 0,
+      "status": "at_target"
+    },
+    {
+      "file": "tests/.coverage-source/archive/FluxCapacitor/Conduit/PersistentCache.php",
       "method": "has",
       "start_line": 112,
       "end_line": 116,
@@ -2942,6 +2928,20 @@
       "effective_percent": 100.0,
       "executable_lines": 2,
       "covered_lines": 2,
+      "branch_total": 0,
+      "branch_covered": 0,
+      "status": "at_target"
+    },
+    {
+      "file": "tests/.coverage-source/archive/FluxCapacitor/Conduit/PersistentCache.php",
+      "method": "clear",
+      "start_line": 122,
+      "end_line": 141,
+      "line_percent": 100.0,
+      "branch_percent": null,
+      "effective_percent": 100.0,
+      "executable_lines": 7,
+      "covered_lines": 7,
       "branch_total": 0,
       "branch_covered": 0,
       "status": "at_target"

@@ -170,8 +170,9 @@ class BridgeTest extends TestCase
         $this->assertSame('/cp/addons/settings/low_list', $bridge->getBaseURL('/')->compile());
         $this->assertSame('/cp/addons/settings/low_list/license?site=1', $bridge->getBaseURL('license', '?site=1')->compile());
         ee()->services['CP/Pagination'] = new Pagination();
-        $this->assertSame('pagination', $bridge->pagination(array('total_rows' => 100, 'per_page' => 10, 'current_page' => 2, 'base_url' => '/items', 'page_links' => 3, 'page_query_string' => 'p')));
-        $this->assertSame(array(array('perPage', 10), array('currentPage', 2), array('displayPageLinks', 3), array('queryStringVariable', 'p'), array('render', '/items')), ee()->services['CP/Pagination']->calls);
+        $url = (new Url())->make('items');
+        $this->assertSame('pagination', $bridge->pagination(array('total_rows' => 100, 'per_page' => 10, 'current_page' => 2, 'base_url' => $url, 'page_links' => 3, 'page_query_string' => 'p')));
+        $this->assertSame(array(array('perPage', 10), array('currentPage', 2), array('displayPageLinks', 3), array('queryStringVariable', 'p'), array('render', $url)), ee()->services['CP/Pagination']->calls);
         ee()->cp = new ControlPanel();
         $bridge->javascript_to_page('window.example = true;');
         $this->assertSame(array('<script type="text/javascript">window.example = true;</script>'), $bridge->getFooter());

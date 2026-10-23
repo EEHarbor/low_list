@@ -2,10 +2,10 @@
   {
     "runtime": "PHP 7.4.33 (cli) (built: Dec 13 2023 21:52:05) ( NTS )",
     "exit": 2,
-    "tests": 259,
-    "assertions": 1284,
-    "errors": 12,
-    "failures": 22,
+    "tests": 293,
+    "assertions": 1431,
+    "errors": 18,
+    "failures": 26,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -84,7 +84,7 @@
         "details": [
           "Failed asserting that 'stored' is false.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeAdapterTest.php:192"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeAdapterTest.php:193"
         ]
       },
       {
@@ -114,9 +114,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000002b85c073000000003f90b6d7 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &000000001198aed6000000007dfcdd6a () is identical to 'License'.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
       },
       {
@@ -124,9 +124,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000002b85c0db000000003f90b6d7 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &000000001198af2e000000007dfcdd6a () is identical to 'License'.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
       },
       {
@@ -134,9 +134,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000002b85c0d1000000003f90b6d7 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &000000001198af30000000007dfcdd6a () is identical to 'License'.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
       },
       {
@@ -144,9 +144,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000002b85c0ec000000003f90b6d7 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &000000001198af35000000007dfcdd6a () is identical to 'License'.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
       },
       {
@@ -282,6 +282,113 @@
         ]
       },
       {
+        "test": "testDigestNamedKeyDoesNotReadAnotherEntriesRequestValue",
+        "kind": "failure",
+        "message": "LowListTests\\PersistentCacheTest::testDigestNamedKeyDoesNotReadAnotherEntriesRequestValue",
+        "details": [
+          "Failed asserting that two strings are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
+        ]
+      },
+      {
+        "test": "testProcessedExistenceKey",
+        "kind": "failure",
+        "message": "LowListTests\\PersistentCacheTest::testProcessedExistenceKey",
+        "details": [
+          "Failed asserting that false is true.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PersistentCacheTest.php:129"
+        ]
+      },
+      {
+        "test": "testZeroKeyComponentIsDistinct with data set #0",
+        "kind": "failure",
+        "message": "LowListTests\\PersistentCacheTest::testZeroKeyComponentIsDistinct with data set #0 (0)",
+        "details": [
+          "Failed asserting that false is true.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PersistentCacheTest.php:147"
+        ]
+      },
+      {
+        "test": "testZeroKeyComponentIsDistinct with data set #1",
+        "kind": "failure",
+        "message": "LowListTests\\PersistentCacheTest::testZeroKeyComponentIsDistinct with data set #1 ('0')",
+        "details": [
+          "Failed asserting that false is true.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PersistentCacheTest.php:147"
+        ]
+      },
+      {
+        "test": "testMalformedDiskPayloadIsRejectedWithoutDiagnostics",
+        "kind": "error",
+        "message": "LowListTests\\PersistentCacheTest::testMalformedDiskPayloadIsRejectedWithoutDiagnostics",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 19 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:181",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:45"
+        ]
+      },
+      {
+        "test": "testBlockingDirectoryFileIsRejectedWithoutDiagnostics with data set \"generic\"",
+        "kind": "error",
+        "message": "LowListTests\\PersistentCacheTest::testBlockingDirectoryFileIsRejectedWithoutDiagnostics with data set \"generic\" (false)",
+        "details": [
+          "ErrorException: mkdir(): Not a directory",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:196",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:57"
+        ]
+      },
+      {
+        "test": "testBlockingDirectoryFileIsRejectedWithoutDiagnostics with data set \"module\"",
+        "kind": "error",
+        "message": "LowListTests\\PersistentCacheTest::testBlockingDirectoryFileIsRejectedWithoutDiagnostics with data set \"module\" (true)",
+        "details": [
+          "ErrorException: mkdir(): Not a directory",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:215",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:57"
+        ]
+      },
+      {
+        "test": "testCompoundKeyRoundTrip",
+        "kind": "error",
+        "message": "LowListTests\\PersistentCacheTest::testCompoundKeyRoundTrip",
+        "details": [
+          "ErrorException: Illegal offset type in isset or empty",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/StaticCache.php:18",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:21"
+        ]
+      },
+      {
+        "test": "testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #0",
+        "kind": "error",
+        "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #0 ('get')",
+        "details": [
+          "ErrorException: file_get_contents(): read of 8192 bytes failed with errno=21 Is a directory",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:477",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:35"
+        ]
+      },
+      {
+        "test": "testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1",
+        "kind": "error",
+        "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1 ('set')",
+        "details": [
+          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-apPN6E/low_list/df88b84d816d3358b3793a61b73d80e93913e627): failed to open stream: Is a directory",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:490",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:66"
+        ]
+      },
+      {
         "test": "testTemporaryTreeCleanup with data set #2",
         "kind": "error",
         "message": "LowListTests\\PharStubTest::testTemporaryTreeCleanup with data set #2 ('nested')",
@@ -380,10 +487,10 @@
   {
     "runtime": "PHP 8.0.30 (cli) (built: Dec 21 2023 08:22:38) ( NTS )",
     "exit": 2,
-    "tests": 259,
-    "assertions": 1278,
-    "errors": 13,
-    "failures": 22,
+    "tests": 293,
+    "assertions": 1425,
+    "errors": 19,
+    "failures": 26,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -462,7 +569,7 @@
         "details": [
           "Failed asserting that 'stored' is false.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeAdapterTest.php:192"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeAdapterTest.php:193"
         ]
       },
       {
@@ -492,9 +599,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000003e36d6a40000000035d07df0 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &000000007f6a0f4000000000410c9c42 () is identical to 'License'.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
       },
       {
@@ -502,9 +609,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000003e36d64e0000000035d07df0 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &000000007f6a0efe00000000410c9c42 () is identical to 'License'.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
       },
       {
@@ -512,9 +619,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000003e36d6400000000035d07df0 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &000000007f6a0ee400000000410c9c42 () is identical to 'License'.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
       },
       {
@@ -522,9 +629,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000003e36d6450000000035d07df0 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &000000007f6a0ee100000000410c9c42 () is identical to 'License'.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
       },
       {
@@ -668,6 +775,113 @@
           "    'id' => 1",
           ").",
           ""
+        ]
+      },
+      {
+        "test": "testDigestNamedKeyDoesNotReadAnotherEntriesRequestValue",
+        "kind": "failure",
+        "message": "LowListTests\\PersistentCacheTest::testDigestNamedKeyDoesNotReadAnotherEntriesRequestValue",
+        "details": [
+          "Failed asserting that two strings are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
+        ]
+      },
+      {
+        "test": "testProcessedExistenceKey",
+        "kind": "failure",
+        "message": "LowListTests\\PersistentCacheTest::testProcessedExistenceKey",
+        "details": [
+          "Failed asserting that false is true.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PersistentCacheTest.php:129"
+        ]
+      },
+      {
+        "test": "testZeroKeyComponentIsDistinct with data set #0",
+        "kind": "failure",
+        "message": "LowListTests\\PersistentCacheTest::testZeroKeyComponentIsDistinct with data set #0 (0)",
+        "details": [
+          "Failed asserting that false is true.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PersistentCacheTest.php:147"
+        ]
+      },
+      {
+        "test": "testZeroKeyComponentIsDistinct with data set #1",
+        "kind": "failure",
+        "message": "LowListTests\\PersistentCacheTest::testZeroKeyComponentIsDistinct with data set #1 ('0')",
+        "details": [
+          "Failed asserting that false is true.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PersistentCacheTest.php:147"
+        ]
+      },
+      {
+        "test": "testMalformedDiskPayloadIsRejectedWithoutDiagnostics",
+        "kind": "error",
+        "message": "LowListTests\\PersistentCacheTest::testMalformedDiskPayloadIsRejectedWithoutDiagnostics",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 19 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:181",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:45"
+        ]
+      },
+      {
+        "test": "testBlockingDirectoryFileIsRejectedWithoutDiagnostics with data set \"generic\"",
+        "kind": "error",
+        "message": "LowListTests\\PersistentCacheTest::testBlockingDirectoryFileIsRejectedWithoutDiagnostics with data set \"generic\" (false)",
+        "details": [
+          "ErrorException: mkdir(): Not a directory",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:196",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:57"
+        ]
+      },
+      {
+        "test": "testBlockingDirectoryFileIsRejectedWithoutDiagnostics with data set \"module\"",
+        "kind": "error",
+        "message": "LowListTests\\PersistentCacheTest::testBlockingDirectoryFileIsRejectedWithoutDiagnostics with data set \"module\" (true)",
+        "details": [
+          "ErrorException: mkdir(): Not a directory",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:215",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:57"
+        ]
+      },
+      {
+        "test": "testCompoundKeyRoundTrip",
+        "kind": "error",
+        "message": "LowListTests\\PersistentCacheTest::testCompoundKeyRoundTrip",
+        "details": [
+          "TypeError: Illegal offset type in isset or empty",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/StaticCache.php:18",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:21"
+        ]
+      },
+      {
+        "test": "testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #0",
+        "kind": "error",
+        "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #0 ('get')",
+        "details": [
+          "ErrorException: file_get_contents(): Read of 8192 bytes failed with errno=21 Is a directory",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:477",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:35"
+        ]
+      },
+      {
+        "test": "testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1",
+        "kind": "error",
+        "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1 ('set')",
+        "details": [
+          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-0FOvW9/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:490",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:66"
         ]
       },
       {
@@ -769,10 +983,10 @@
   {
     "runtime": "PHP 8.1.33 (cli) (built: Jul  4 2025 00:24:36) (NTS)",
     "exit": 2,
-    "tests": 259,
-    "assertions": 1277,
-    "errors": 14,
-    "failures": 22,
+    "tests": 293,
+    "assertions": 1424,
+    "errors": 20,
+    "failures": 26,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -851,7 +1065,7 @@
         "details": [
           "Failed asserting that 'stored' is false.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeAdapterTest.php:192"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeAdapterTest.php:193"
         ]
       },
       {
@@ -881,9 +1095,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000004a10000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &000000000000050b0000000000000000 () is identical to 'License'.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
       },
       {
@@ -891,9 +1105,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000044b0000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004b50000000000000000 () is identical to 'License'.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
       },
       {
@@ -901,9 +1115,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000004450000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004af0000000000000000 () is identical to 'License'.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
       },
       {
@@ -911,9 +1125,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000004400000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004aa0000000000000000 () is identical to 'License'.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
       },
       {
@@ -1057,6 +1271,113 @@
           "    'id' => 1",
           ").",
           ""
+        ]
+      },
+      {
+        "test": "testDigestNamedKeyDoesNotReadAnotherEntriesRequestValue",
+        "kind": "failure",
+        "message": "LowListTests\\PersistentCacheTest::testDigestNamedKeyDoesNotReadAnotherEntriesRequestValue",
+        "details": [
+          "Failed asserting that two strings are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
+        ]
+      },
+      {
+        "test": "testProcessedExistenceKey",
+        "kind": "failure",
+        "message": "LowListTests\\PersistentCacheTest::testProcessedExistenceKey",
+        "details": [
+          "Failed asserting that false is true.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PersistentCacheTest.php:129"
+        ]
+      },
+      {
+        "test": "testZeroKeyComponentIsDistinct with data set #0",
+        "kind": "failure",
+        "message": "LowListTests\\PersistentCacheTest::testZeroKeyComponentIsDistinct with data set #0 (0)",
+        "details": [
+          "Failed asserting that false is true.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PersistentCacheTest.php:147"
+        ]
+      },
+      {
+        "test": "testZeroKeyComponentIsDistinct with data set #1",
+        "kind": "failure",
+        "message": "LowListTests\\PersistentCacheTest::testZeroKeyComponentIsDistinct with data set #1 ('0')",
+        "details": [
+          "Failed asserting that false is true.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PersistentCacheTest.php:147"
+        ]
+      },
+      {
+        "test": "testMalformedDiskPayloadIsRejectedWithoutDiagnostics",
+        "kind": "error",
+        "message": "LowListTests\\PersistentCacheTest::testMalformedDiskPayloadIsRejectedWithoutDiagnostics",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 19 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:181",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:45"
+        ]
+      },
+      {
+        "test": "testBlockingDirectoryFileIsRejectedWithoutDiagnostics with data set \"generic\"",
+        "kind": "error",
+        "message": "LowListTests\\PersistentCacheTest::testBlockingDirectoryFileIsRejectedWithoutDiagnostics with data set \"generic\" (false)",
+        "details": [
+          "ErrorException: mkdir(): Not a directory",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:196",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:57"
+        ]
+      },
+      {
+        "test": "testBlockingDirectoryFileIsRejectedWithoutDiagnostics with data set \"module\"",
+        "kind": "error",
+        "message": "LowListTests\\PersistentCacheTest::testBlockingDirectoryFileIsRejectedWithoutDiagnostics with data set \"module\" (true)",
+        "details": [
+          "ErrorException: mkdir(): Not a directory",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:215",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:57"
+        ]
+      },
+      {
+        "test": "testCompoundKeyRoundTrip",
+        "kind": "error",
+        "message": "LowListTests\\PersistentCacheTest::testCompoundKeyRoundTrip",
+        "details": [
+          "TypeError: Illegal offset type in isset or empty",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/StaticCache.php:18",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:21"
+        ]
+      },
+      {
+        "test": "testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #0",
+        "kind": "error",
+        "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #0 ('get')",
+        "details": [
+          "ErrorException: file_get_contents(): Read of 8192 bytes failed with errno=21 Is a directory",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:477",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:35"
+        ]
+      },
+      {
+        "test": "testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1",
+        "kind": "error",
+        "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1 ('set')",
+        "details": [
+          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-Sd5g6H/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:490",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:66"
         ]
       },
       {
@@ -1169,10 +1490,10 @@
   {
     "runtime": "PHP 8.2.30 (cli) (built: Dec 19 2025 07:42:41) (NTS clang 15.0.0)",
     "exit": 2,
-    "tests": 259,
-    "assertions": 1276,
-    "errors": 15,
-    "failures": 22,
+    "tests": 293,
+    "assertions": 1423,
+    "errors": 21,
+    "failures": 26,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -1251,7 +1572,7 @@
         "details": [
           "Failed asserting that 'stored' is false.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeAdapterTest.php:192"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeAdapterTest.php:193"
         ]
       },
       {
@@ -1281,9 +1602,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000004a10000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &000000000000050b0000000000000000 () is identical to 'License'.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
       },
       {
@@ -1291,9 +1612,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000044b0000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004b50000000000000000 () is identical to 'License'.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
       },
       {
@@ -1301,9 +1622,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000004450000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004af0000000000000000 () is identical to 'License'.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
       },
       {
@@ -1311,9 +1632,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000004400000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004aa0000000000000000 () is identical to 'License'.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
       },
       {
@@ -1368,7 +1689,7 @@
           "ErrorException: Creation of dynamic property LowList\\FluxCapacitor\\Base\\Mcp::$data is deprecated",
           "",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Mcp.php:165",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/McpPaginationTest.php:89"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/McpPaginationTest.php:91"
         ]
       },
       {
@@ -1468,6 +1789,113 @@
           "    'id' => 1",
           ").",
           ""
+        ]
+      },
+      {
+        "test": "testDigestNamedKeyDoesNotReadAnotherEntriesRequestValue",
+        "kind": "failure",
+        "message": "LowListTests\\PersistentCacheTest::testDigestNamedKeyDoesNotReadAnotherEntriesRequestValue",
+        "details": [
+          "Failed asserting that two strings are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
+        ]
+      },
+      {
+        "test": "testProcessedExistenceKey",
+        "kind": "failure",
+        "message": "LowListTests\\PersistentCacheTest::testProcessedExistenceKey",
+        "details": [
+          "Failed asserting that false is true.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PersistentCacheTest.php:129"
+        ]
+      },
+      {
+        "test": "testZeroKeyComponentIsDistinct with data set #0",
+        "kind": "failure",
+        "message": "LowListTests\\PersistentCacheTest::testZeroKeyComponentIsDistinct with data set #0 (0)",
+        "details": [
+          "Failed asserting that false is true.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PersistentCacheTest.php:147"
+        ]
+      },
+      {
+        "test": "testZeroKeyComponentIsDistinct with data set #1",
+        "kind": "failure",
+        "message": "LowListTests\\PersistentCacheTest::testZeroKeyComponentIsDistinct with data set #1 ('0')",
+        "details": [
+          "Failed asserting that false is true.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PersistentCacheTest.php:147"
+        ]
+      },
+      {
+        "test": "testMalformedDiskPayloadIsRejectedWithoutDiagnostics",
+        "kind": "error",
+        "message": "LowListTests\\PersistentCacheTest::testMalformedDiskPayloadIsRejectedWithoutDiagnostics",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 19 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:181",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:45"
+        ]
+      },
+      {
+        "test": "testBlockingDirectoryFileIsRejectedWithoutDiagnostics with data set \"generic\"",
+        "kind": "error",
+        "message": "LowListTests\\PersistentCacheTest::testBlockingDirectoryFileIsRejectedWithoutDiagnostics with data set \"generic\" (false)",
+        "details": [
+          "ErrorException: mkdir(): Not a directory",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:196",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:57"
+        ]
+      },
+      {
+        "test": "testBlockingDirectoryFileIsRejectedWithoutDiagnostics with data set \"module\"",
+        "kind": "error",
+        "message": "LowListTests\\PersistentCacheTest::testBlockingDirectoryFileIsRejectedWithoutDiagnostics with data set \"module\" (true)",
+        "details": [
+          "ErrorException: mkdir(): Not a directory",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:215",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:57"
+        ]
+      },
+      {
+        "test": "testCompoundKeyRoundTrip",
+        "kind": "error",
+        "message": "LowListTests\\PersistentCacheTest::testCompoundKeyRoundTrip",
+        "details": [
+          "TypeError: Illegal offset type in isset or empty",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/StaticCache.php:18",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:21"
+        ]
+      },
+      {
+        "test": "testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #0",
+        "kind": "error",
+        "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #0 ('get')",
+        "details": [
+          "ErrorException: file_get_contents(): Read of 8256 bytes failed with errno=21 Is a directory",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:477",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:35"
+        ]
+      },
+      {
+        "test": "testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1",
+        "kind": "error",
+        "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1 ('set')",
+        "details": [
+          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-fjQOJ7/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:490",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:66"
         ]
       },
       {
@@ -1580,10 +2008,10 @@
   {
     "runtime": "PHP 8.3.28 (cli) (built: Nov 20 2025 11:21:23) (NTS clang 15.0.0)",
     "exit": 2,
-    "tests": 259,
-    "assertions": 1276,
-    "errors": 15,
-    "failures": 22,
+    "tests": 293,
+    "assertions": 1423,
+    "errors": 21,
+    "failures": 26,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -1662,7 +2090,7 @@
         "details": [
           "Failed asserting that 'stored' is false.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeAdapterTest.php:192"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeAdapterTest.php:193"
         ]
       },
       {
@@ -1692,9 +2120,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000004a10000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &000000000000050b0000000000000000 () is identical to 'License'.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
       },
       {
@@ -1702,9 +2130,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000044b0000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004b50000000000000000 () is identical to 'License'.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
       },
       {
@@ -1712,9 +2140,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000004450000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004af0000000000000000 () is identical to 'License'.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
       },
       {
@@ -1722,9 +2150,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000004400000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004aa0000000000000000 () is identical to 'License'.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
       },
       {
@@ -1779,7 +2207,7 @@
           "ErrorException: Creation of dynamic property LowList\\FluxCapacitor\\Base\\Mcp::$data is deprecated",
           "",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Mcp.php:165",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/McpPaginationTest.php:89"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/McpPaginationTest.php:91"
         ]
       },
       {
@@ -1879,6 +2307,113 @@
           "    'id' => 1",
           ").",
           ""
+        ]
+      },
+      {
+        "test": "testDigestNamedKeyDoesNotReadAnotherEntriesRequestValue",
+        "kind": "failure",
+        "message": "LowListTests\\PersistentCacheTest::testDigestNamedKeyDoesNotReadAnotherEntriesRequestValue",
+        "details": [
+          "Failed asserting that two strings are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
+        ]
+      },
+      {
+        "test": "testProcessedExistenceKey",
+        "kind": "failure",
+        "message": "LowListTests\\PersistentCacheTest::testProcessedExistenceKey",
+        "details": [
+          "Failed asserting that false is true.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PersistentCacheTest.php:129"
+        ]
+      },
+      {
+        "test": "testZeroKeyComponentIsDistinct with data set #0",
+        "kind": "failure",
+        "message": "LowListTests\\PersistentCacheTest::testZeroKeyComponentIsDistinct with data set #0 (0)",
+        "details": [
+          "Failed asserting that false is true.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PersistentCacheTest.php:147"
+        ]
+      },
+      {
+        "test": "testZeroKeyComponentIsDistinct with data set #1",
+        "kind": "failure",
+        "message": "LowListTests\\PersistentCacheTest::testZeroKeyComponentIsDistinct with data set #1 ('0')",
+        "details": [
+          "Failed asserting that false is true.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PersistentCacheTest.php:147"
+        ]
+      },
+      {
+        "test": "testMalformedDiskPayloadIsRejectedWithoutDiagnostics",
+        "kind": "error",
+        "message": "LowListTests\\PersistentCacheTest::testMalformedDiskPayloadIsRejectedWithoutDiagnostics",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 19 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:181",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:45"
+        ]
+      },
+      {
+        "test": "testBlockingDirectoryFileIsRejectedWithoutDiagnostics with data set \"generic\"",
+        "kind": "error",
+        "message": "LowListTests\\PersistentCacheTest::testBlockingDirectoryFileIsRejectedWithoutDiagnostics with data set \"generic\" (false)",
+        "details": [
+          "ErrorException: mkdir(): Not a directory",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:196",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:57"
+        ]
+      },
+      {
+        "test": "testBlockingDirectoryFileIsRejectedWithoutDiagnostics with data set \"module\"",
+        "kind": "error",
+        "message": "LowListTests\\PersistentCacheTest::testBlockingDirectoryFileIsRejectedWithoutDiagnostics with data set \"module\" (true)",
+        "details": [
+          "ErrorException: mkdir(): Not a directory",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:215",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:57"
+        ]
+      },
+      {
+        "test": "testCompoundKeyRoundTrip",
+        "kind": "error",
+        "message": "LowListTests\\PersistentCacheTest::testCompoundKeyRoundTrip",
+        "details": [
+          "TypeError: Cannot access offset of type array in isset or empty",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/StaticCache.php:18",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:21"
+        ]
+      },
+      {
+        "test": "testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #0",
+        "kind": "error",
+        "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #0 ('get')",
+        "details": [
+          "ErrorException: file_get_contents(): Read of 8256 bytes failed with errno=21 Is a directory",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:477",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:35"
+        ]
+      },
+      {
+        "test": "testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1",
+        "kind": "error",
+        "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1 ('set')",
+        "details": [
+          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-9swc2H/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:490",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:66"
         ]
       },
       {
@@ -1991,10 +2526,10 @@
   {
     "runtime": "PHP 8.4.15 (cli) (built: Nov 20 2025 14:28:49) (NTS clang 15.0.0)",
     "exit": 2,
-    "tests": 259,
-    "assertions": 1276,
-    "errors": 15,
-    "failures": 22,
+    "tests": 293,
+    "assertions": 1423,
+    "errors": 21,
+    "failures": 26,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -2073,7 +2608,7 @@
         "details": [
           "Failed asserting that 'stored' is false.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeAdapterTest.php:192"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeAdapterTest.php:193"
         ]
       },
       {
@@ -2103,9 +2638,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000004a10000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &000000000000050b0000000000000000 () is identical to 'License'.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
       },
       {
@@ -2113,9 +2648,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000044b0000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004b50000000000000000 () is identical to 'License'.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
       },
       {
@@ -2123,9 +2658,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000004450000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004af0000000000000000 () is identical to 'License'.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
       },
       {
@@ -2133,9 +2668,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000004400000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004aa0000000000000000 () is identical to 'License'.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
       },
       {
@@ -2190,7 +2725,7 @@
           "ErrorException: Creation of dynamic property LowList\\FluxCapacitor\\Base\\Mcp::$data is deprecated",
           "",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Mcp.php:165",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/McpPaginationTest.php:89"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/McpPaginationTest.php:91"
         ]
       },
       {
@@ -2290,6 +2825,113 @@
           "    'id' => 1",
           ").",
           ""
+        ]
+      },
+      {
+        "test": "testDigestNamedKeyDoesNotReadAnotherEntriesRequestValue",
+        "kind": "failure",
+        "message": "LowListTests\\PersistentCacheTest::testDigestNamedKeyDoesNotReadAnotherEntriesRequestValue",
+        "details": [
+          "Failed asserting that two strings are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
+        ]
+      },
+      {
+        "test": "testProcessedExistenceKey",
+        "kind": "failure",
+        "message": "LowListTests\\PersistentCacheTest::testProcessedExistenceKey",
+        "details": [
+          "Failed asserting that false is true.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PersistentCacheTest.php:129"
+        ]
+      },
+      {
+        "test": "testZeroKeyComponentIsDistinct with data set #0",
+        "kind": "failure",
+        "message": "LowListTests\\PersistentCacheTest::testZeroKeyComponentIsDistinct with data set #0 (0)",
+        "details": [
+          "Failed asserting that false is true.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PersistentCacheTest.php:147"
+        ]
+      },
+      {
+        "test": "testZeroKeyComponentIsDistinct with data set #1",
+        "kind": "failure",
+        "message": "LowListTests\\PersistentCacheTest::testZeroKeyComponentIsDistinct with data set #1 ('0')",
+        "details": [
+          "Failed asserting that false is true.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PersistentCacheTest.php:147"
+        ]
+      },
+      {
+        "test": "testMalformedDiskPayloadIsRejectedWithoutDiagnostics",
+        "kind": "error",
+        "message": "LowListTests\\PersistentCacheTest::testMalformedDiskPayloadIsRejectedWithoutDiagnostics",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 19 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:181",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:45"
+        ]
+      },
+      {
+        "test": "testBlockingDirectoryFileIsRejectedWithoutDiagnostics with data set \"generic\"",
+        "kind": "error",
+        "message": "LowListTests\\PersistentCacheTest::testBlockingDirectoryFileIsRejectedWithoutDiagnostics with data set \"generic\" (false)",
+        "details": [
+          "ErrorException: mkdir(): Not a directory",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:196",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:57"
+        ]
+      },
+      {
+        "test": "testBlockingDirectoryFileIsRejectedWithoutDiagnostics with data set \"module\"",
+        "kind": "error",
+        "message": "LowListTests\\PersistentCacheTest::testBlockingDirectoryFileIsRejectedWithoutDiagnostics with data set \"module\" (true)",
+        "details": [
+          "ErrorException: mkdir(): Not a directory",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:215",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:57"
+        ]
+      },
+      {
+        "test": "testCompoundKeyRoundTrip",
+        "kind": "error",
+        "message": "LowListTests\\PersistentCacheTest::testCompoundKeyRoundTrip",
+        "details": [
+          "TypeError: Cannot access offset of type array in isset or empty",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/StaticCache.php:18",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:21"
+        ]
+      },
+      {
+        "test": "testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #0",
+        "kind": "error",
+        "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #0 ('get')",
+        "details": [
+          "ErrorException: file_get_contents(): Read of 8256 bytes failed with errno=21 Is a directory",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:477",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:35"
+        ]
+      },
+      {
+        "test": "testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1",
+        "kind": "error",
+        "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1 ('set')",
+        "details": [
+          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-bd6210jper994QKAaCA/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:490",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:66"
         ]
       },
       {
@@ -2402,10 +3044,10 @@
   {
     "runtime": "PHP 8.5.0 (cli) (built: Nov 20 2025 09:30:23) (NTS clang 15.0.0)",
     "exit": 2,
-    "tests": 259,
-    "assertions": 1276,
-    "errors": 15,
-    "failures": 22,
+    "tests": 293,
+    "assertions": 1423,
+    "errors": 21,
+    "failures": 26,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -2484,7 +3126,7 @@
         "details": [
           "Failed asserting that 'stored' is false.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeAdapterTest.php:192"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeAdapterTest.php:193"
         ]
       },
       {
@@ -2514,9 +3156,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000004a10000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &000000000000050b0000000000000000 () is identical to 'License'.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
       },
       {
@@ -2524,9 +3166,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000044b0000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004b50000000000000000 () is identical to 'License'.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
       },
       {
@@ -2534,9 +3176,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000004450000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004af0000000000000000 () is identical to 'License'.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
       },
       {
@@ -2544,9 +3186,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000004400000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004aa0000000000000000 () is identical to 'License'.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
       },
       {
@@ -2601,7 +3243,7 @@
           "ErrorException: Creation of dynamic property LowList\\FluxCapacitor\\Base\\Mcp::$data is deprecated",
           "",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Mcp.php:165",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/McpPaginationTest.php:89"
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/McpPaginationTest.php:91"
         ]
       },
       {
@@ -2701,6 +3343,113 @@
           "    'id' => 1",
           ").",
           ""
+        ]
+      },
+      {
+        "test": "testDigestNamedKeyDoesNotReadAnotherEntriesRequestValue",
+        "kind": "failure",
+        "message": "LowListTests\\PersistentCacheTest::testDigestNamedKeyDoesNotReadAnotherEntriesRequestValue",
+        "details": [
+          "Failed asserting that two strings are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
+        ]
+      },
+      {
+        "test": "testProcessedExistenceKey",
+        "kind": "failure",
+        "message": "LowListTests\\PersistentCacheTest::testProcessedExistenceKey",
+        "details": [
+          "Failed asserting that false is true.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PersistentCacheTest.php:129"
+        ]
+      },
+      {
+        "test": "testZeroKeyComponentIsDistinct with data set #0",
+        "kind": "failure",
+        "message": "LowListTests\\PersistentCacheTest::testZeroKeyComponentIsDistinct with data set #0 (0)",
+        "details": [
+          "Failed asserting that false is true.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PersistentCacheTest.php:147"
+        ]
+      },
+      {
+        "test": "testZeroKeyComponentIsDistinct with data set #1",
+        "kind": "failure",
+        "message": "LowListTests\\PersistentCacheTest::testZeroKeyComponentIsDistinct with data set #1 ('0')",
+        "details": [
+          "Failed asserting that false is true.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PersistentCacheTest.php:147"
+        ]
+      },
+      {
+        "test": "testMalformedDiskPayloadIsRejectedWithoutDiagnostics",
+        "kind": "error",
+        "message": "LowListTests\\PersistentCacheTest::testMalformedDiskPayloadIsRejectedWithoutDiagnostics",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 19 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:181",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:45"
+        ]
+      },
+      {
+        "test": "testBlockingDirectoryFileIsRejectedWithoutDiagnostics with data set \"generic\"",
+        "kind": "error",
+        "message": "LowListTests\\PersistentCacheTest::testBlockingDirectoryFileIsRejectedWithoutDiagnostics with data set \"generic\" (false)",
+        "details": [
+          "ErrorException: mkdir(): Not a directory",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:196",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:57"
+        ]
+      },
+      {
+        "test": "testBlockingDirectoryFileIsRejectedWithoutDiagnostics with data set \"module\"",
+        "kind": "error",
+        "message": "LowListTests\\PersistentCacheTest::testBlockingDirectoryFileIsRejectedWithoutDiagnostics with data set \"module\" (true)",
+        "details": [
+          "ErrorException: mkdir(): Not a directory",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:215",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:57"
+        ]
+      },
+      {
+        "test": "testCompoundKeyRoundTrip",
+        "kind": "error",
+        "message": "LowListTests\\PersistentCacheTest::testCompoundKeyRoundTrip",
+        "details": [
+          "TypeError: Cannot access offset of type array in isset or empty",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/StaticCache.php:18",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:21"
+        ]
+      },
+      {
+        "test": "testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #0",
+        "kind": "error",
+        "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #0 ('get')",
+        "details": [
+          "ErrorException: file_get_contents(): Read of 8256 bytes failed with errno=21 Is a directory",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:477",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:35"
+        ]
+      },
+      {
+        "test": "testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1",
+        "kind": "error",
+        "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1 ('set')",
+        "details": [
+          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-phnfcn7619579gqFZGe/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:490",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:66"
         ]
       },
       {

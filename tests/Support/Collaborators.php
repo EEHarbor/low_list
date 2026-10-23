@@ -216,17 +216,30 @@ class Pagination
      *
      * @param string $method
      * @param array $arguments
-     * @return self|string
+     * @return self
      * @throws \LogicException
      */
     public function __call($method, $arguments)
     {
-        if (!in_array($method, array('perPage', 'currentPage', 'displayPageLinks', 'queryStringVariable', 'render'), true)) {
+        if (!in_array($method, array('perPage', 'currentPage', 'displayPageLinks', 'queryStringVariable'), true)) {
             throw new \LogicException('Unexpected pagination method: ' . $method);
         }
         $this->calls[] = array($method, $arguments[0]);
 
-        return $method === 'render' ? 'pagination' : $this;
+        return $this;
+    }
+
+    /**
+     * Require a CP URL object at the native renderer's typed boundary.
+     *
+     * @param Url $baseUrl
+     * @return string
+     */
+    public function render(Url $baseUrl)
+    {
+        $this->calls[] = array('render', $baseUrl);
+
+        return 'pagination';
     }
 }
 

@@ -20,11 +20,12 @@ class McpPaginationTest extends TestCase
         $mcp = $this->controller();
         ee()->input->values['page'] = $page;
         $model = new PaginationModel(array('one', 'two', 'three'));
+        $url = (new Url())->make('explicit');
 
-        $this->assertSame($model, $mcp->paginateModel($model, '/explicit', 10, 7, 'page'));
+        $this->assertSame($model, $mcp->paginateModel($model, $url, 10, 7, 'page'));
         $this->assertSame(array(array('limit', 10), array('offset', $expectedOffset)), $model->calls);
         $this->assertContains(array('CP/Pagination', 3), ee()->serviceCalls);
-        $this->assertSame(array(array('perPage', 10), array('currentPage', $expectedPage), array('displayPageLinks', 7), array('queryStringVariable', 'page'), array('render', '/explicit')), ee()->services['CP/Pagination']->calls);
+        $this->assertSame(array(array('perPage', 10), array('currentPage', $expectedPage), array('displayPageLinks', 7), array('queryStringVariable', 'page'), array('render', $url)), ee()->services['CP/Pagination']->calls);
         $this->assertSame(array('pagination' => 'pagination'), $mcp->data);
     }
 
@@ -56,6 +57,7 @@ class McpPaginationTest extends TestCase
         $this->assertSame(array(array('limit', 25), array('offset', 25)), $model->calls);
         $calls = ee()->services['CP/Pagination']->calls;
         $this->assertSame(array('queryStringVariable', 'position'), $calls[3]);
+        $this->assertSame(ee()->services['CP/URL'], $calls[4][1]);
         $this->assertSame('/cp/addons/settings/low_list/listing', $calls[4][1]->compile());
         $this->assertContains(array('CP/Pagination', 0), ee()->serviceCalls);
     }
@@ -70,7 +72,7 @@ class McpPaginationTest extends TestCase
         $mcp = $this->controller();
         ee()->input->values['page'] = '-2';
         $model = new PaginationModel(array());
-        $mcp->paginateModel($model, '/explicit', 10);
+        $mcp->paginateModel($model, (new Url())->make('explicit'), 10);
 
         $this->assertSame(array(array('limit', 10), array('offset', 0)), $model->calls);
     }
@@ -86,7 +88,7 @@ class McpPaginationTest extends TestCase
         $mcp = new Mcp();
         $model = new PaginationModel(array());
 
-        $this->assertSame($model, $mcp->paginateModel($model, '/explicit'));
+        $this->assertSame($model, $mcp->paginateModel($model, (new Url())->make('explicit')));
     }
 
     /**

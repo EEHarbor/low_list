@@ -4,9 +4,9 @@
     "runtime": "8.3.28",
     "xdebug": "3.5.3",
     "totals_compiled_only": {
-        "lines_hit": 1316,
+        "lines_hit": 1327,
         "lines": 1565,
-        "basic_blocks_hit": 901,
+        "basic_blocks_hit": 908,
         "basic_blocks": 1160
     },
     "files": {
@@ -22703,48 +22703,31 @@
         "low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php": {
             "sha256": "0a24047edd675a26584a99a9a8c0288fec2d420aa4752213e1c499ffc8e04ff7",
             "compiled_in_main_process": true,
-            "lines_hit": 50,
+            "lines_hit": 61,
             "lines": 70,
             "uncovered_lines": [
-                24,
-                28,
-                58,
                 67,
                 68,
                 70,
-                91,
-                125,
                 197,
                 198,
                 199,
-                208,
-                209,
-                210,
                 216,
                 217,
-                218,
-                228,
-                229,
-                230
+                218
             ],
-            "basic_blocks_hit": 34,
+            "basic_blocks_hit": 41,
             "basic_blocks": 45,
             "functions": {
                 "LowList\\FluxCapacitor\\Conduit\\PersistentCache->clear": {
-                    "basic_blocks_hit": 7,
+                    "basic_blocks_hit": 8,
                     "basic_blocks": 8,
-                    "uncovered": [
-                        {
-                            "id": 5,
-                            "line_start": 125,
-                            "line_end": 125
-                        }
-                    ],
+                    "uncovered": [],
                     "edges": [
                         {
                             "branch": 0,
                             "destination": 5,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 0,
@@ -22809,7 +22792,7 @@
                                 7
                             ],
                             "out_hit": [
-                                0,
+                                1,
                                 1
                             ]
                         },
@@ -22818,7 +22801,7 @@
                             "op_end": 6,
                             "line_start": 125,
                             "line_end": 125,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 2147483645
                             ],
@@ -22976,14 +22959,9 @@
                     ]
                 },
                 "LowList\\FluxCapacitor\\Conduit\\PersistentCache->set": {
-                    "basic_blocks_hit": 3,
+                    "basic_blocks_hit": 4,
                     "basic_blocks": 5,
                     "uncovered": [
-                        {
-                            "id": 7,
-                            "line_start": 58,
-                            "line_end": 58
-                        },
                         {
                             "id": 35,
                             "line_start": 67,
@@ -22994,7 +22972,7 @@
                         {
                             "branch": 0,
                             "destination": 7,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 0,
@@ -23034,7 +23012,7 @@
                                 9
                             ],
                             "out_hit": [
-                                0,
+                                1,
                                 1
                             ]
                         },
@@ -23043,7 +23021,7 @@
                             "op_end": 8,
                             "line_start": 58,
                             "line_end": 58,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 2147483645
                             ],
@@ -23091,20 +23069,14 @@
                     }
                 },
                 "LowList\\FluxCapacitor\\Conduit\\PersistentCache->delete": {
-                    "basic_blocks_hit": 4,
+                    "basic_blocks_hit": 5,
                     "basic_blocks": 5,
-                    "uncovered": [
-                        {
-                            "id": 6,
-                            "line_start": 91,
-                            "line_end": 91
-                        }
-                    ],
+                    "uncovered": [],
                     "edges": [
                         {
                             "branch": 0,
                             "destination": 6,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 0,
@@ -23144,7 +23116,7 @@
                                 8
                             ],
                             "out_hit": [
-                                0,
+                                1,
                                 1
                             ]
                         },
@@ -23153,7 +23125,7 @@
                             "op_end": 7,
                             "line_start": 91,
                             "line_end": 91,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 2147483645
                             ],
@@ -23201,25 +23173,14 @@
                     }
                 },
                 "LowList\\FluxCapacitor\\Conduit\\PersistentCache->get": {
-                    "basic_blocks_hit": 5,
+                    "basic_blocks_hit": 7,
                     "basic_blocks": 7,
-                    "uncovered": [
-                        {
-                            "id": 11,
-                            "line_start": 24,
-                            "line_end": 24
-                        },
-                        {
-                            "id": 18,
-                            "line_start": 28,
-                            "line_end": 28
-                        }
-                    ],
+                    "uncovered": [],
                     "edges": [
                         {
                             "branch": 0,
                             "destination": 11,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 0,
@@ -23234,7 +23195,7 @@
                         {
                             "branch": 13,
                             "destination": 18,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 13,
@@ -23274,7 +23235,7 @@
                                 13
                             ],
                             "out_hit": [
-                                0,
+                                1,
                                 1
                             ]
                         },
@@ -23283,7 +23244,7 @@
                             "op_end": 12,
                             "line_start": 24,
                             "line_end": 24,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 2147483645
                             ],
@@ -23302,7 +23263,7 @@
                                 20
                             ],
                             "out_hit": [
-                                0,
+                                1,
                                 1
                             ]
                         },
@@ -23311,7 +23272,7 @@
                             "op_end": 19,
                             "line_start": 28,
                             "line_end": 28,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 2147483645
                             ],
@@ -23376,7 +23337,7 @@
                     ]
                 },
                 "LowList\\FluxCapacitor\\Conduit\\PersistentCache->checkPath": {
-                    "basic_blocks_hit": 9,
+                    "basic_blocks_hit": 11,
                     "basic_blocks": 13,
                     "uncovered": [
                         {
@@ -23385,19 +23346,9 @@
                             "line_end": 199
                         },
                         {
-                            "id": 68,
-                            "line_start": 208,
-                            "line_end": 210
-                        },
-                        {
                             "id": 108,
                             "line_start": 216,
                             "line_end": 218
-                        },
-                        {
-                            "id": 144,
-                            "line_start": 228,
-                            "line_end": 230
                         }
                     ],
                     "edges": [
@@ -23434,7 +23385,7 @@
                         {
                             "branch": 60,
                             "destination": 68,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 60,
@@ -23479,7 +23430,7 @@
                         {
                             "branch": 136,
                             "destination": 144,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 136,
@@ -23560,7 +23511,7 @@
                                 86
                             ],
                             "out_hit": [
-                                0,
+                                1,
                                 1
                             ]
                         },
@@ -23569,7 +23520,7 @@
                             "op_end": 85,
                             "line_start": 208,
                             "line_end": 210,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 2147483645
                             ],
@@ -23644,7 +23595,7 @@
                                 162
                             ],
                             "out_hit": [
-                                0,
+                                1,
                                 1
                             ]
                         },
@@ -23653,7 +23604,7 @@
                             "op_end": 161,
                             "line_start": 228,
                             "line_end": 230,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 2147483645
                             ],
