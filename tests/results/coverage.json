@@ -4,9 +4,9 @@
     "runtime": "8.3.28",
     "xdebug": "3.5.3",
     "totals_compiled_only": {
-        "lines_hit": 1327,
+        "lines_hit": 1336,
         "lines": 1565,
-        "basic_blocks_hit": 908,
+        "basic_blocks_hit": 910,
         "basic_blocks": 1160
     },
     "files": {
@@ -24038,21 +24038,12 @@
         "low_list/low_list.phar/FluxCapacitor/Conduit/Version.php": {
             "sha256": "0e4558295e5f8bcc1894a8d13576c6aaee0a80550e9ec0da2177df7f90889e83",
             "compiled_in_main_process": true,
-            "lines_hit": 90,
+            "lines_hit": 99,
             "lines": 100,
             "uncovered_lines": [
-                88,
-                91,
-                98,
-                99,
-                100,
-                101,
-                105,
-                107,
-                111,
                 187
             ],
-            "basic_blocks_hit": 54,
+            "basic_blocks_hit": 56,
             "basic_blocks": 60,
             "functions": {
                 "LowList\\FluxCapacitor\\Conduit\\Version->getOpenSSLPublicKey": {
@@ -24556,20 +24547,9 @@
                     ]
                 },
                 "LowList\\FluxCapacitor\\Conduit\\Version->verifyLicenseTable": {
-                    "basic_blocks_hit": 12,
+                    "basic_blocks_hit": 14,
                     "basic_blocks": 14,
-                    "uncovered": [
-                        {
-                            "id": 33,
-                            "line_start": 88,
-                            "line_end": 104
-                        },
-                        {
-                            "id": 80,
-                            "line_start": 105,
-                            "line_end": 114
-                        }
-                    ],
+                    "uncovered": [],
                     "edges": [
                         {
                             "branch": 0,
@@ -24604,7 +24584,7 @@
                         {
                             "branch": 24,
                             "destination": 33,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 24,
@@ -24614,12 +24594,12 @@
                         {
                             "branch": 33,
                             "destination": 70,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 70,
                             "destination": 80,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 70,
@@ -24629,7 +24609,7 @@
                         {
                             "branch": 80,
                             "destination": 96,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 96,
@@ -24740,7 +24720,7 @@
                                 70
                             ],
                             "out_hit": [
-                                0,
+                                1,
                                 1
                             ]
                         },
@@ -24749,12 +24729,12 @@
                             "op_end": 69,
                             "line_start": 88,
                             "line_end": 104,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 70
                             ],
                             "out_hit": [
-                                0
+                                1
                             ]
                         },
                         "70": {
@@ -24768,7 +24748,7 @@
                                 96
                             ],
                             "out_hit": [
-                                0,
+                                1,
                                 1
                             ]
                         },
@@ -24777,12 +24757,12 @@
                             "op_end": 95,
                             "line_start": 105,
                             "line_end": 114,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 96
                             ],
                             "out_hit": [
-                                0
+                                1
                             ]
                         },
                         "96": {

@@ -2,10 +2,10 @@
   {
     "runtime": "PHP 7.4.33 (cli) (built: Dec 13 2023 21:52:05) ( NTS )",
     "exit": 2,
-    "tests": 293,
-    "assertions": 1431,
+    "tests": 309,
+    "assertions": 1525,
     "errors": 18,
-    "failures": 26,
+    "failures": 29,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -40,7 +40,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:344"
         ]
       },
@@ -51,7 +51,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:344"
         ]
       },
@@ -62,7 +62,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
         ]
       },
@@ -73,7 +73,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
         ]
       },
@@ -114,7 +114,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000001198aed6000000007dfcdd6a () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &000000006142c420000000000dd7d07a () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
@@ -124,7 +124,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000001198af2e000000007dfcdd6a () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &000000006142c448000000000dd7d07a () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
@@ -134,7 +134,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000001198af30000000007dfcdd6a () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &000000006142c442000000000dd7d07a () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
@@ -144,7 +144,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000001198af35000000007dfcdd6a () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &000000006142c5bf000000000dd7d07a () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
@@ -373,7 +373,7 @@
         "details": [
           "ErrorException: file_get_contents(): read of 8192 bytes failed with errno=21 Is a directory",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:477",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:514",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:35"
         ]
       },
@@ -382,9 +382,9 @@
         "kind": "error",
         "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1 ('set')",
         "details": [
-          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-apPN6E/low_list/df88b84d816d3358b3793a61b73d80e93913e627): failed to open stream: Is a directory",
+          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-lvc6kE/low_list/df88b84d816d3358b3793a61b73d80e93913e627): failed to open stream: Is a directory",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:490",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:527",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:66"
         ]
       },
@@ -477,6 +477,37 @@
         "message": "LowListTests\\StaticCacheTest::testZeroComponentsDoNotCollide",
         "details": [
           "Failed asserting that two strings are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
+        ]
+      },
+      {
+        "test": "testInstalledProVersionIsIncluded",
+        "kind": "failure",
+        "message": "LowListTests\\VersionPayloadTest::testInstalledProVersionIsIncluded",
+        "details": [
+          "Failed asserting that 0 is identical to '2.3.0'.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/VersionPayloadTest.php:60"
+        ]
+      },
+      {
+        "test": "testCachedValidityIsIncludedInEveryPayload",
+        "kind": "failure",
+        "message": "LowListTests\\VersionPayloadTest::testCachedValidityIsIncludedInEveryPayload",
+        "details": [
+          "Failed asserting that true is false.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/VersionPayloadTest.php:77"
+        ]
+      },
+      {
+        "test": "testOversizedPayloadDoesNotPublishEmptyCiphertext",
+        "kind": "failure",
+        "message": "LowListTests\\VersionPayloadTest::testOversizedPayloadDoesNotPublishEmptyCiphertext",
+        "details": [
+          "Failed asserting that two arrays are identical.",
           "--- Expected",
           "+++ Actual",
           "@@ @@"
@@ -487,10 +518,10 @@
   {
     "runtime": "PHP 8.0.30 (cli) (built: Dec 21 2023 08:22:38) ( NTS )",
     "exit": 2,
-    "tests": 293,
-    "assertions": 1425,
+    "tests": 309,
+    "assertions": 1519,
     "errors": 19,
-    "failures": 26,
+    "failures": 29,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -525,7 +556,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:344"
         ]
       },
@@ -536,7 +567,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:344"
         ]
       },
@@ -547,7 +578,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
         ]
       },
@@ -558,7 +589,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
         ]
       },
@@ -599,7 +630,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000007f6a0f4000000000410c9c42 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &000000006ebf8c76000000004a3efcdf () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
@@ -609,7 +640,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000007f6a0efe00000000410c9c42 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &000000006ebf8ddc000000004a3efcdf () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
@@ -619,7 +650,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000007f6a0ee400000000410c9c42 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &000000006ebf8dd2000000004a3efcdf () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
@@ -629,7 +660,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000007f6a0ee100000000410c9c42 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &000000006ebf8dd7000000004a3efcdf () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
@@ -869,7 +900,7 @@
         "details": [
           "ErrorException: file_get_contents(): Read of 8192 bytes failed with errno=21 Is a directory",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:477",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:514",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:35"
         ]
       },
@@ -878,9 +909,9 @@
         "kind": "error",
         "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1 ('set')",
         "details": [
-          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-0FOvW9/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
+          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-z71XRj/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:490",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:527",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:66"
         ]
       },
@@ -973,6 +1004,37 @@
         "message": "LowListTests\\StaticCacheTest::testZeroComponentsDoNotCollide",
         "details": [
           "Failed asserting that two strings are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
+        ]
+      },
+      {
+        "test": "testInstalledProVersionIsIncluded",
+        "kind": "failure",
+        "message": "LowListTests\\VersionPayloadTest::testInstalledProVersionIsIncluded",
+        "details": [
+          "Failed asserting that 0 is identical to '2.3.0'.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/VersionPayloadTest.php:60"
+        ]
+      },
+      {
+        "test": "testCachedValidityIsIncludedInEveryPayload",
+        "kind": "failure",
+        "message": "LowListTests\\VersionPayloadTest::testCachedValidityIsIncludedInEveryPayload",
+        "details": [
+          "Failed asserting that true is false.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/VersionPayloadTest.php:77"
+        ]
+      },
+      {
+        "test": "testOversizedPayloadDoesNotPublishEmptyCiphertext",
+        "kind": "failure",
+        "message": "LowListTests\\VersionPayloadTest::testOversizedPayloadDoesNotPublishEmptyCiphertext",
+        "details": [
+          "Failed asserting that two arrays are identical.",
           "--- Expected",
           "+++ Actual",
           "@@ @@"
@@ -983,10 +1045,10 @@
   {
     "runtime": "PHP 8.1.33 (cli) (built: Jul  4 2025 00:24:36) (NTS)",
     "exit": 2,
-    "tests": 293,
-    "assertions": 1424,
-    "errors": 20,
-    "failures": 26,
+    "tests": 309,
+    "assertions": 1515,
+    "errors": 21,
+    "failures": 28,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -1021,7 +1083,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:344"
         ]
       },
@@ -1032,7 +1094,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:344"
         ]
       },
@@ -1043,7 +1105,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
         ]
       },
@@ -1054,7 +1116,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
         ]
       },
@@ -1095,7 +1157,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000050b0000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000005410000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
@@ -1105,7 +1167,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000004b50000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004eb0000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
@@ -1115,7 +1177,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000004af0000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004e50000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
@@ -1125,7 +1187,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000004aa0000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004e00000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
@@ -1365,7 +1427,7 @@
         "details": [
           "ErrorException: file_get_contents(): Read of 8192 bytes failed with errno=21 Is a directory",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:477",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:514",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:35"
         ]
       },
@@ -1374,9 +1436,9 @@
         "kind": "error",
         "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1 ('set')",
         "details": [
-          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-Sd5g6H/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
+          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-vfkKZ9/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:490",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:527",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:66"
         ]
       },
@@ -1472,6 +1534,37 @@
           "--- Expected",
           "+++ Actual",
           "@@ @@"
+        ]
+      },
+      {
+        "test": "testInstalledProVersionIsIncluded",
+        "kind": "failure",
+        "message": "LowListTests\\VersionPayloadTest::testInstalledProVersionIsIncluded",
+        "details": [
+          "Failed asserting that 0 is identical to '2.3.0'.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/VersionPayloadTest.php:60"
+        ]
+      },
+      {
+        "test": "testCachedValidityIsIncludedInEveryPayload",
+        "kind": "failure",
+        "message": "LowListTests\\VersionPayloadTest::testCachedValidityIsIncludedInEveryPayload",
+        "details": [
+          "Failed asserting that true is false.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/VersionPayloadTest.php:77"
+        ]
+      },
+      {
+        "test": "testOversizedPayloadDoesNotPublishEmptyCiphertext",
+        "kind": "error",
+        "message": "LowListTests\\VersionPayloadTest::testOversizedPayloadDoesNotPublishEmptyCiphertext",
+        "details": [
+          "ErrorException: bin2hex(): Passing null to parameter #1 ($string) of type string is deprecated",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/Version.php:167",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/VersionPayloadTest.php:89"
         ]
       },
       {
@@ -1490,10 +1583,10 @@
   {
     "runtime": "PHP 8.2.30 (cli) (built: Dec 19 2025 07:42:41) (NTS clang 15.0.0)",
     "exit": 2,
-    "tests": 293,
-    "assertions": 1423,
-    "errors": 21,
-    "failures": 26,
+    "tests": 309,
+    "assertions": 1514,
+    "errors": 22,
+    "failures": 28,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -1528,7 +1621,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:344"
         ]
       },
@@ -1539,7 +1632,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:344"
         ]
       },
@@ -1550,7 +1643,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
         ]
       },
@@ -1561,7 +1654,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
         ]
       },
@@ -1602,7 +1695,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000050b0000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000005410000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
@@ -1612,7 +1705,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000004b50000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004eb0000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
@@ -1622,7 +1715,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000004af0000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004e50000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
@@ -1632,7 +1725,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000004aa0000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004e00000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
@@ -1883,7 +1976,7 @@
         "details": [
           "ErrorException: file_get_contents(): Read of 8256 bytes failed with errno=21 Is a directory",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:477",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:514",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:35"
         ]
       },
@@ -1892,9 +1985,9 @@
         "kind": "error",
         "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1 ('set')",
         "details": [
-          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-fjQOJ7/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
+          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-KYps8B/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:490",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:527",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:66"
         ]
       },
@@ -1993,6 +2086,37 @@
         ]
       },
       {
+        "test": "testInstalledProVersionIsIncluded",
+        "kind": "failure",
+        "message": "LowListTests\\VersionPayloadTest::testInstalledProVersionIsIncluded",
+        "details": [
+          "Failed asserting that 0 is identical to '2.3.0'.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/VersionPayloadTest.php:60"
+        ]
+      },
+      {
+        "test": "testCachedValidityIsIncludedInEveryPayload",
+        "kind": "failure",
+        "message": "LowListTests\\VersionPayloadTest::testCachedValidityIsIncludedInEveryPayload",
+        "details": [
+          "Failed asserting that true is false.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/VersionPayloadTest.php:77"
+        ]
+      },
+      {
+        "test": "testOversizedPayloadDoesNotPublishEmptyCiphertext",
+        "kind": "error",
+        "message": "LowListTests\\VersionPayloadTest::testOversizedPayloadDoesNotPublishEmptyCiphertext",
+        "details": [
+          "ErrorException: bin2hex(): Passing null to parameter #1 ($string) of type string is deprecated",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/Version.php:167",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/VersionPayloadTest.php:89"
+        ]
+      },
+      {
         "test": "testNullLicenseIsSafe",
         "kind": "error",
         "message": "LowListTests\\VersionTest::testNullLicenseIsSafe",
@@ -2008,10 +2132,10 @@
   {
     "runtime": "PHP 8.3.28 (cli) (built: Nov 20 2025 11:21:23) (NTS clang 15.0.0)",
     "exit": 2,
-    "tests": 293,
-    "assertions": 1423,
-    "errors": 21,
-    "failures": 26,
+    "tests": 309,
+    "assertions": 1514,
+    "errors": 22,
+    "failures": 28,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -2046,7 +2170,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:344"
         ]
       },
@@ -2057,7 +2181,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:344"
         ]
       },
@@ -2068,7 +2192,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
         ]
       },
@@ -2079,7 +2203,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
         ]
       },
@@ -2120,7 +2244,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000050b0000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000005410000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
@@ -2130,7 +2254,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000004b50000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004eb0000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
@@ -2140,7 +2264,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000004af0000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004e50000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
@@ -2150,7 +2274,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000004aa0000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004e00000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
@@ -2401,7 +2525,7 @@
         "details": [
           "ErrorException: file_get_contents(): Read of 8256 bytes failed with errno=21 Is a directory",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:477",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:514",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:35"
         ]
       },
@@ -2410,9 +2534,9 @@
         "kind": "error",
         "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1 ('set')",
         "details": [
-          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-9swc2H/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
+          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-Skn9gy/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:490",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:527",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:66"
         ]
       },
@@ -2508,6 +2632,37 @@
           "--- Expected",
           "+++ Actual",
           "@@ @@"
+        ]
+      },
+      {
+        "test": "testInstalledProVersionIsIncluded",
+        "kind": "failure",
+        "message": "LowListTests\\VersionPayloadTest::testInstalledProVersionIsIncluded",
+        "details": [
+          "Failed asserting that 0 is identical to '2.3.0'.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/VersionPayloadTest.php:60"
+        ]
+      },
+      {
+        "test": "testCachedValidityIsIncludedInEveryPayload",
+        "kind": "failure",
+        "message": "LowListTests\\VersionPayloadTest::testCachedValidityIsIncludedInEveryPayload",
+        "details": [
+          "Failed asserting that true is false.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/VersionPayloadTest.php:77"
+        ]
+      },
+      {
+        "test": "testOversizedPayloadDoesNotPublishEmptyCiphertext",
+        "kind": "error",
+        "message": "LowListTests\\VersionPayloadTest::testOversizedPayloadDoesNotPublishEmptyCiphertext",
+        "details": [
+          "ErrorException: bin2hex(): Passing null to parameter #1 ($string) of type string is deprecated",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/Version.php:167",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/VersionPayloadTest.php:89"
         ]
       },
       {
@@ -2526,10 +2681,10 @@
   {
     "runtime": "PHP 8.4.15 (cli) (built: Nov 20 2025 14:28:49) (NTS clang 15.0.0)",
     "exit": 2,
-    "tests": 293,
-    "assertions": 1423,
-    "errors": 21,
-    "failures": 26,
+    "tests": 309,
+    "assertions": 1514,
+    "errors": 22,
+    "failures": 28,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -2564,7 +2719,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:344"
         ]
       },
@@ -2575,7 +2730,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:344"
         ]
       },
@@ -2586,7 +2741,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
         ]
       },
@@ -2597,7 +2752,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
         ]
       },
@@ -2638,7 +2793,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000050b0000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000005410000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
@@ -2648,7 +2803,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000004b50000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004eb0000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
@@ -2658,7 +2813,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000004af0000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004e50000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
@@ -2668,7 +2823,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000004aa0000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004e00000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
@@ -2919,7 +3074,7 @@
         "details": [
           "ErrorException: file_get_contents(): Read of 8256 bytes failed with errno=21 Is a directory",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:477",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:514",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:35"
         ]
       },
@@ -2928,9 +3083,9 @@
         "kind": "error",
         "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1 ('set')",
         "details": [
-          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-bd6210jper994QKAaCA/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
+          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-gdj1i3v0bm7m4zgzqgo/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:490",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:527",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:66"
         ]
       },
@@ -3026,6 +3181,37 @@
           "--- Expected",
           "+++ Actual",
           "@@ @@"
+        ]
+      },
+      {
+        "test": "testInstalledProVersionIsIncluded",
+        "kind": "failure",
+        "message": "LowListTests\\VersionPayloadTest::testInstalledProVersionIsIncluded",
+        "details": [
+          "Failed asserting that 0 is identical to '2.3.0'.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/VersionPayloadTest.php:60"
+        ]
+      },
+      {
+        "test": "testCachedValidityIsIncludedInEveryPayload",
+        "kind": "failure",
+        "message": "LowListTests\\VersionPayloadTest::testCachedValidityIsIncludedInEveryPayload",
+        "details": [
+          "Failed asserting that true is false.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/VersionPayloadTest.php:77"
+        ]
+      },
+      {
+        "test": "testOversizedPayloadDoesNotPublishEmptyCiphertext",
+        "kind": "error",
+        "message": "LowListTests\\VersionPayloadTest::testOversizedPayloadDoesNotPublishEmptyCiphertext",
+        "details": [
+          "ErrorException: bin2hex(): Passing null to parameter #1 ($string) of type string is deprecated",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/Version.php:167",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/VersionPayloadTest.php:89"
         ]
       },
       {
@@ -3044,10 +3230,10 @@
   {
     "runtime": "PHP 8.5.0 (cli) (built: Nov 20 2025 09:30:23) (NTS clang 15.0.0)",
     "exit": 2,
-    "tests": 293,
-    "assertions": 1423,
-    "errors": 21,
-    "failures": 26,
+    "tests": 309,
+    "assertions": 1514,
+    "errors": 22,
+    "failures": 28,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -3082,7 +3268,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:344"
         ]
       },
@@ -3093,7 +3279,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:344"
         ]
       },
@@ -3104,7 +3290,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
         ]
       },
@@ -3115,7 +3301,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
         ]
       },
@@ -3156,7 +3342,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000050b0000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000005410000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
@@ -3166,7 +3352,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000004b50000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004eb0000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
@@ -3176,7 +3362,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000004af0000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004e50000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
@@ -3186,7 +3372,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000004aa0000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004e00000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:222"
         ]
@@ -3437,7 +3623,7 @@
         "details": [
           "ErrorException: file_get_contents(): Read of 8256 bytes failed with errno=21 Is a directory",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:477",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:514",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:35"
         ]
       },
@@ -3446,9 +3632,9 @@
         "kind": "error",
         "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1 ('set')",
         "details": [
-          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-phnfcn7619579gqFZGe/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
+          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-8taumqefejvna4aMx3U/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:490",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:527",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:66"
         ]
       },
@@ -3544,6 +3730,37 @@
           "--- Expected",
           "+++ Actual",
           "@@ @@"
+        ]
+      },
+      {
+        "test": "testInstalledProVersionIsIncluded",
+        "kind": "failure",
+        "message": "LowListTests\\VersionPayloadTest::testInstalledProVersionIsIncluded",
+        "details": [
+          "Failed asserting that 0 is identical to '2.3.0'.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/VersionPayloadTest.php:60"
+        ]
+      },
+      {
+        "test": "testCachedValidityIsIncludedInEveryPayload",
+        "kind": "failure",
+        "message": "LowListTests\\VersionPayloadTest::testCachedValidityIsIncludedInEveryPayload",
+        "details": [
+          "Failed asserting that true is false.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/VersionPayloadTest.php:77"
+        ]
+      },
+      {
+        "test": "testOversizedPayloadDoesNotPublishEmptyCiphertext",
+        "kind": "error",
+        "message": "LowListTests\\VersionPayloadTest::testOversizedPayloadDoesNotPublishEmptyCiphertext",
+        "details": [
+          "ErrorException: bin2hex(): Passing null to parameter #1 ($string) of type string is deprecated",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/Version.php:167",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/VersionPayloadTest.php:89"
         ]
       },
       {

@@ -19,7 +19,7 @@ class VersionTest extends TestCase
         ee()->db->data_cache['table_names'] = array('stale');
         $version = new Version();
 
-        $this->assertArrayNotHasKey('table_names', ee()->db->data_cache);
+        $this->assertSame(array('exp_eeharbor_licenses'), ee()->db->data_cache['table_names']);
         $this->assertFalse($version->verifyLicenseTable());
         StaticCache::clear();
         ee()->db->rows = array();

@@ -8,6 +8,7 @@ abstract class TestCase extends \PHPUnit\Framework\TestCase
 {
     private $includePath;
     private $workingDirectory;
+    private $encryptionLog;
 
     /**
      * Install strict diagnostics, including errors hidden with @.
@@ -18,6 +19,8 @@ abstract class TestCase extends \PHPUnit\Framework\TestCase
     {
         $this->includePath = get_include_path();
         $this->workingDirectory = getcwd();
+        $this->encryptionLog = array(array_key_exists('low_list_encryptions', $GLOBALS), isset($GLOBALS['low_list_encryptions']) ? $GLOBALS['low_list_encryptions'] : null);
+        $GLOBALS['low_list_encryptions'] = array();
         $GLOBALS['low_list_ee'] = new Environment();
         $GLOBALS['low_list_helpers'] = array();
         set_error_handler(static function ($severity, $message, $file, $line) {
@@ -38,6 +41,11 @@ abstract class TestCase extends \PHPUnit\Framework\TestCase
         set_include_path($this->includePath);
         chdir($this->workingDirectory);
         $this->removeDirectory(PATH_CACHE);
+        if ($this->encryptionLog[0]) {
+            $GLOBALS['low_list_encryptions'] = $this->encryptionLog[1];
+        } else {
+            unset($GLOBALS['low_list_encryptions']);
+        }
         unset($GLOBALS['low_list_ee'], $GLOBALS['low_list_helpers']);
     }
 

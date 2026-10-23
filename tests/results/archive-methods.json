@@ -1,9 +1,9 @@
 {
   "summary": {
     "methods": 227,
-    "below_floor": 31,
+    "below_floor": 30,
     "above_floor": 10,
-    "at_target": 186
+    "at_target": 187
   },
   "methods": [
     {
@@ -198,20 +198,6 @@
       "effective_percent": 50.0,
       "executable_lines": 4,
       "covered_lines": 2,
-      "branch_total": 0,
-      "branch_covered": 0,
-      "status": "below_floor"
-    },
-    {
-      "file": "tests/.coverage-source/archive/FluxCapacitor/Conduit/Version.php",
-      "method": "verifyLicenseTable",
-      "start_line": 74,
-      "end_line": 128,
-      "line_percent": 59.0909,
-      "branch_percent": null,
-      "effective_percent": 59.0909,
-      "executable_lines": 22,
-      "covered_lines": 13,
       "branch_total": 0,
       "branch_covered": 0,
       "status": "below_floor"
@@ -3152,6 +3138,20 @@
       "effective_percent": 100.0,
       "executable_lines": 4,
       "covered_lines": 4,
+      "branch_total": 0,
+      "branch_covered": 0,
+      "status": "at_target"
+    },
+    {
+      "file": "tests/.coverage-source/archive/FluxCapacitor/Conduit/Version.php",
+      "method": "verifyLicenseTable",
+      "start_line": 74,
+      "end_line": 128,
+      "line_percent": 100.0,
+      "branch_percent": null,
+      "effective_percent": 100.0,
+      "executable_lines": 22,
+      "covered_lines": 22,
       "branch_total": 0,
       "branch_covered": 0,
       "status": "at_target"

@@ -147,20 +147,30 @@ class Database
     public $rows = array();
     public $data_cache = array();
     public $tables = array();
+    public $dbprefix = 'exp_';
+    public $fields = array('eeharbor_licenses' => array('site_id', 'addon', 'license_key', 'ignore_site'));
     public $count = 0;
     public $results = array();
     public $resultQueues = array();
     private $recorder;
 
     /**
-     * Share the operation log across cloned query builders like a shared DB connection.
+     * Share connection operations and schema across independently cached builders.
      *
      * @return void
      */
     public function __construct()
     {
-        $this->recorder = (object) array('calls' => array());
+        $this->recorder = (object) array(
+            'calls' => array(), 'tables' => $this->tables, 'fields' => $this->fields,
+            'results' => $this->results, 'rows' => $this->rows, 'resultQueues' => $this->resultQueues,
+        );
         $this->calls = &$this->recorder->calls;
+        $this->tables = &$this->recorder->tables;
+        $this->fields = &$this->recorder->fields;
+        $this->results = &$this->recorder->results;
+        $this->rows = &$this->recorder->rows;
+        $this->resultQueues = &$this->recorder->resultQueues;
     }
 
     /**
@@ -184,10 +194,22 @@ class Database
             return new Result($this->rows);
         }
         if ($name === 'table_exists') {
-            return in_array($arguments[0], $this->tables, true);
+            if (!isset($this->data_cache['table_names'])) {
+                $prefix = $this->dbprefix;
+                $this->data_cache['table_names'] = array_map(static function ($table) use ($prefix) {
+                    return $prefix . $table;
+                }, $this->tables);
+            }
+
+            return in_array($this->dbprefix . $arguments[0], $this->data_cache['table_names'], true);
         }
         if ($name === 'field_exists') {
-            return true;
+            $table = $arguments[1];
+            if (!isset($this->data_cache['field_names'][$table])) {
+                $this->data_cache['field_names'][$table] = isset($this->fields[$table]) ? $this->fields[$table] : array();
+            }
+
+            return in_array($arguments[0], $this->data_cache['field_names'][$table], true);
         }
         if ($name === 'count_all_results') {
             return $this->count;
@@ -400,6 +422,21 @@ class Loader
     public function library($name)
     {
         $this->calls[] = array('library', $name);
+    }
+
+    /**
+     * Install the schema builder only when the facade has not already loaded it.
+     *
+     * @return void
+     */
+    public function dbforge()
+    {
+        $this->calls[] = array('dbforge');
+        if (ee()->has('dbforge')) {
+            return;
+        }
+
+        ee()->set('dbforge', new SchemaForge(ee('db')));
     }
 
     /**
