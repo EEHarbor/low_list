@@ -8,7 +8,7 @@
     "metrics": "Independent native contexts; raw basic blocks and out/out_hit exits are preserved without graph merging.",
     "contexts": {
         "shared-legacy": {
-            "capture": "native-control-panel-1459a53ed035c568.json",
+            "capture": "native-control-panel-0d114023f7cb50bd.json",
             "context": {
                 "APP_VER": "2.5.5",
                 "REQ": "CP",
@@ -381,7 +381,7 @@
             }
         },
         "shared-modern": {
-            "capture": "native-control-panel-56754abe46685ff9.json",
+            "capture": "native-control-panel-8e40c9cf9412fc3d.json",
             "context": {
                 "APP_VER": "7.5.0",
                 "REQ": "CP",
@@ -754,7 +754,7 @@
             }
         },
         "tab-legacy": {
-            "capture": "native-control-panel-be9706fa2d68b435.json",
+            "capture": "native-control-panel-f981fbad90697845.json",
             "context": {
                 "APP_VER": "2.5.5",
                 "REQ": "CP",
@@ -1127,7 +1127,7 @@
             }
         },
         "tab-modern": {
-            "capture": "native-control-panel-5def2a1a8350c4a4.json",
+            "capture": "native-control-panel-518e0e275d0babdf.json",
             "context": {
                 "APP_VER": "7.5.0",
                 "REQ": "CP",

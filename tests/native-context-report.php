@@ -11,6 +11,10 @@ $inventory = sourceInventory();
 $reportDirectory = $argv[1];
 $mode = isset($argv[2]) ? $argv[2] : 'navigation';
 $configurations = array(
+    'controller-loading' => array(
+        'source' => 'low_list/low_list.phar/FluxCapacitor/Base/Mcp.php',
+        'cases' => array('modern-present' => '7.5.0', 'legacy-present' => '2.5.5', 'modern-empty' => '7.5.0', 'legacy-empty' => '2.5.5', 'modern-missing' => '7.5.0', 'legacy-missing' => '2.5.5', 'modern-predeclared' => '7.5.0', 'legacy-predeclared' => '2.5.5'),
+    ),
     'bootstrap' => array(
         'source' => 'low_list/low_list.phar/FluxCapacitor/Bridge/EE.php',
         'cases' => array('configured' => '2.5.5', 'defined-legacy' => '2.5.5', 'defined-modern' => '7.5.0'),

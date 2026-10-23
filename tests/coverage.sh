@@ -19,7 +19,7 @@ set -e
 "$php_bin" tests/native-context-report.php "$reports"
 "$php_bin" tests/native-context-report.php "$reports" legacy-bridge
 "$php_bin" tests/native-context-report.php "$reports" fieldtype
-for mode in cp-fieldtype cp-tab cp-menu cp-updater bootstrap fieldtype-loading; do
+for mode in cp-fieldtype cp-tab cp-menu cp-updater bootstrap fieldtype-loading controller-loading; do
   "$php_bin" tests/native-context-report.php "$reports" "$mode"
 done
 python3 /Users/tomjaeger/.codex/skills/ee-addon-phpunit-coverage-writer/scripts/addon_method_coverage_report.py \

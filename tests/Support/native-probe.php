@@ -28,6 +28,11 @@ if ($argv[1] === 'bootstrap' || $argv[1] === 'fieldtype-loading') {
     echo json_encode(\LowListTests\LoadingProbe::run($root, $argv[1], $argv[2]), JSON_UNESCAPED_SLASHES);
     exit(0);
 }
+if ($argv[1] === 'controller-loading') {
+    require __DIR__ . '/controller-loading-probe.php';
+    echo json_encode(\LowListTests\ControllerLoadingProbe::run($root, $argv[2]), JSON_UNESCAPED_SLASHES);
+    exit(0);
+}
 if ($argv[1] === 'control-panel') {
     require __DIR__ . '/control-panel-probe.php';
     echo json_encode(\LowListTests\ControlPanelProbe::run($root, $argv[2]), JSON_UNESCAPED_SLASHES);

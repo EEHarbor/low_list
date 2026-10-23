@@ -10,9 +10,9 @@
         "native_case": null
     },
     "totals_compiled_only": {
-        "lines_hit": 1358,
+        "lines_hit": 1364,
         "lines": 1565,
-        "basic_blocks_hit": 940,
+        "basic_blocks_hit": 943,
         "basic_blocks": 1160
     },
     "files": {
@@ -13346,13 +13346,10 @@
         "low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php": {
             "sha256": "ad1b199acef13cfd70c0f8ff140fea71fb392f363dc9a1817383a5699da7e1e0",
             "compiled_in_main_process": true,
-            "lines_hit": 178,
+            "lines_hit": 180,
             "lines": 180,
-            "uncovered_lines": [
-                90,
-                91
-            ],
-            "basic_blocks_hit": 145,
+            "uncovered_lines": [],
+            "basic_blocks_hit": 146,
             "basic_blocks": 149,
             "functions": {
                 "LowList\\FluxCapacitor\\Bridge\\EE3->initiateSettings": {
@@ -13795,7 +13792,7 @@
                     ]
                 },
                 "LowList\\FluxCapacitor\\Bridge\\EE3->getNav": {
-                    "basic_blocks_hit": 25,
+                    "basic_blocks_hit": 26,
                     "basic_blocks": 26,
                     "attribution": {
                         "status": "matched",
@@ -13806,15 +13803,9 @@
                             "line_end": 104
                         }
                     },
-                    "declared_basic_blocks_hit": 25,
+                    "declared_basic_blocks_hit": 26,
                     "declared_basic_blocks": 26,
-                    "uncovered": [
-                        {
-                            "id": 87,
-                            "line_start": 90,
-                            "line_end": 69
-                        }
-                    ],
+                    "uncovered": [],
                     "edges": [
                         {
                             "branch": 0,
@@ -13919,7 +13910,7 @@
                         {
                             "branch": 77,
                             "destination": 86,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 80,
@@ -13944,7 +13935,7 @@
                         {
                             "branch": 86,
                             "destination": 87,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 86,
@@ -13954,7 +13945,7 @@
                         {
                             "branch": 87,
                             "destination": 93,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 93,
@@ -13969,7 +13960,7 @@
                         {
                             "branch": 94,
                             "destination": 103,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 99,
@@ -13984,7 +13975,7 @@
                         {
                             "branch": 103,
                             "destination": 113,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 104,
@@ -13999,7 +13990,7 @@
                         {
                             "branch": 113,
                             "destination": 133,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 115,
@@ -14195,7 +14186,7 @@
                             ],
                             "out_hit": [
                                 1,
-                                0
+                                1
                             ]
                         },
                         "80": {
@@ -14250,7 +14241,7 @@
                                 93
                             ],
                             "out_hit": [
-                                0,
+                                1,
                                 1
                             ]
                         },
@@ -14259,12 +14250,12 @@
                             "op_end": 92,
                             "line_start": 90,
                             "line_end": 69,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 93
                             ],
                             "out_hit": [
-                                0
+                                1
                             ]
                         },
                         "93": {
@@ -14292,7 +14283,7 @@
                             ],
                             "out_hit": [
                                 1,
-                                0
+                                1
                             ]
                         },
                         "99": {
@@ -14320,7 +14311,7 @@
                             ],
                             "out_hit": [
                                 1,
-                                0
+                                1
                             ]
                         },
                         "104": {
@@ -14348,7 +14339,7 @@
                             ],
                             "out_hit": [
                                 1,
-                                0
+                                1
                             ]
                         },
                         "115": {
@@ -16914,13 +16905,10 @@
         "low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php": {
             "sha256": "bc5192719a6eeddaec170cd9b6aa511fd68b37be0d9b5bea3c6f31dd41a70ae1",
             "compiled_in_main_process": true,
-            "lines_hit": 178,
+            "lines_hit": 180,
             "lines": 180,
-            "uncovered_lines": [
-                90,
-                91
-            ],
-            "basic_blocks_hit": 145,
+            "uncovered_lines": [],
+            "basic_blocks_hit": 146,
             "basic_blocks": 149,
             "functions": {
                 "LowList\\FluxCapacitor\\Bridge\\EE4->getStartNum": {
@@ -19183,7 +19171,7 @@
                     }
                 },
                 "LowList\\FluxCapacitor\\Bridge\\EE4->getNav": {
-                    "basic_blocks_hit": 25,
+                    "basic_blocks_hit": 26,
                     "basic_blocks": 26,
                     "attribution": {
                         "status": "matched",
@@ -19194,15 +19182,9 @@
                             "line_end": 104
                         }
                     },
-                    "declared_basic_blocks_hit": 25,
+                    "declared_basic_blocks_hit": 26,
                     "declared_basic_blocks": 26,
-                    "uncovered": [
-                        {
-                            "id": 87,
-                            "line_start": 90,
-                            "line_end": 69
-                        }
-                    ],
+                    "uncovered": [],
                     "edges": [
                         {
                             "branch": 0,
@@ -19307,7 +19289,7 @@
                         {
                             "branch": 77,
                             "destination": 86,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 80,
@@ -19332,7 +19314,7 @@
                         {
                             "branch": 86,
                             "destination": 87,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 86,
@@ -19342,7 +19324,7 @@
                         {
                             "branch": 87,
                             "destination": 93,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 93,
@@ -19357,7 +19339,7 @@
                         {
                             "branch": 94,
                             "destination": 103,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 99,
@@ -19372,7 +19354,7 @@
                         {
                             "branch": 103,
                             "destination": 113,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 104,
@@ -19387,7 +19369,7 @@
                         {
                             "branch": 113,
                             "destination": 133,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 115,
@@ -19583,7 +19565,7 @@
                             ],
                             "out_hit": [
                                 1,
-                                0
+                                1
                             ]
                         },
                         "80": {
@@ -19638,7 +19620,7 @@
                                 93
                             ],
                             "out_hit": [
-                                0,
+                                1,
                                 1
                             ]
                         },
@@ -19647,12 +19629,12 @@
                             "op_end": 92,
                             "line_start": 90,
                             "line_end": 69,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 93
                             ],
                             "out_hit": [
-                                0
+                                1
                             ]
                         },
                         "93": {
@@ -19680,7 +19662,7 @@
                             ],
                             "out_hit": [
                                 1,
-                                0
+                                1
                             ]
                         },
                         "99": {
@@ -19708,7 +19690,7 @@
                             ],
                             "out_hit": [
                                 1,
-                                0
+                                1
                             ]
                         },
                         "104": {
@@ -19736,7 +19718,7 @@
                             ],
                             "out_hit": [
                                 1,
-                                0
+                                1
                             ]
                         },
                         "115": {
@@ -20482,13 +20464,10 @@
         "low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php": {
             "sha256": "31a4a5810152bb4a41fce63dc486d4dac35bcceeec9c04ca4bb1d44bcde37ca9",
             "compiled_in_main_process": true,
-            "lines_hit": 184,
+            "lines_hit": 186,
             "lines": 186,
-            "uncovered_lines": [
-                90,
-                91
-            ],
-            "basic_blocks_hit": 154,
+            "uncovered_lines": [],
+            "basic_blocks_hit": 155,
             "basic_blocks": 159,
             "functions": {
                 "LowList\\FluxCapacitor\\Bridge\\EE5->prep_url": {
@@ -21212,7 +21191,7 @@
                     }
                 },
                 "LowList\\FluxCapacitor\\Bridge\\EE5->getNav": {
-                    "basic_blocks_hit": 25,
+                    "basic_blocks_hit": 26,
                     "basic_blocks": 26,
                     "attribution": {
                         "status": "matched",
@@ -21223,15 +21202,9 @@
                             "line_end": 104
                         }
                     },
-                    "declared_basic_blocks_hit": 25,
+                    "declared_basic_blocks_hit": 26,
                     "declared_basic_blocks": 26,
-                    "uncovered": [
-                        {
-                            "id": 87,
-                            "line_start": 90,
-                            "line_end": 69
-                        }
-                    ],
+                    "uncovered": [],
                     "edges": [
                         {
                             "branch": 0,
@@ -21336,7 +21309,7 @@
                         {
                             "branch": 77,
                             "destination": 86,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 80,
@@ -21361,7 +21334,7 @@
                         {
                             "branch": 86,
                             "destination": 87,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 86,
@@ -21371,7 +21344,7 @@
                         {
                             "branch": 87,
                             "destination": 93,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 93,
@@ -21386,7 +21359,7 @@
                         {
                             "branch": 94,
                             "destination": 103,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 99,
@@ -21401,7 +21374,7 @@
                         {
                             "branch": 103,
                             "destination": 113,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 104,
@@ -21416,7 +21389,7 @@
                         {
                             "branch": 113,
                             "destination": 133,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 115,
@@ -21612,7 +21585,7 @@
                             ],
                             "out_hit": [
                                 1,
-                                0
+                                1
                             ]
                         },
                         "80": {
@@ -21667,7 +21640,7 @@
                                 93
                             ],
                             "out_hit": [
-                                0,
+                                1,
                                 1
                             ]
                         },
@@ -21676,12 +21649,12 @@
                             "op_end": 92,
                             "line_start": 90,
                             "line_end": 69,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 93
                             ],
                             "out_hit": [
-                                0
+                                1
                             ]
                         },
                         "93": {
@@ -21709,7 +21682,7 @@
                             ],
                             "out_hit": [
                                 1,
-                                0
+                                1
                             ]
                         },
                         "99": {
@@ -21737,7 +21710,7 @@
                             ],
                             "out_hit": [
                                 1,
-                                0
+                                1
                             ]
                         },
                         "104": {
@@ -21765,7 +21738,7 @@
                             ],
                             "out_hit": [
                                 1,
-                                0
+                                1
                             ]
                         },
                         "115": {
