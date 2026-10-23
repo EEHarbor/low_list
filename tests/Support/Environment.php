@@ -225,6 +225,7 @@ class Environment
     public $services = array();
     public $serviceCalls = array();
     private $loaded = array();
+    private $databasePrototype;
 
     /**
      * Create fresh collaborators for one test.
@@ -235,9 +236,23 @@ class Environment
     {
         $this->TMPL = new Template();
         $this->db = new Database();
+        $this->databasePrototype = $this->db;
         $this->config = new Config();
         $this->load = new Loader();
         $this->logger = new Logger();
+    }
+
+    /**
+     * Create a query from the independent database service, not the facade slot.
+     *
+     * @return Database
+     */
+    public function newDatabaseQuery()
+    {
+        $query = clone $this->databasePrototype;
+        $query->data_cache = array();
+
+        return $query;
     }
 
     /**
@@ -254,7 +269,7 @@ class Environment
             throw new \RuntimeException('Cannot overwrite ' . $name . ' on the loader.');
         }
         $this->loaded[$name] = $value;
-        if (array_key_exists($name, get_object_vars($this))) {
+        if (array_key_exists($name, (array) $this)) {
             unset($this->$name);
         }
         if ($name === 'session') {
@@ -270,7 +285,7 @@ class Environment
      */
     public function has($name)
     {
-        $properties = get_object_vars($this);
+        $properties = (array) $this;
 
         return array_key_exists($name, $this->loaded)
             || (array_key_exists($name, $properties) && $properties[$name] !== null);
@@ -288,7 +303,7 @@ class Environment
         if (array_key_exists($name, $this->loaded)) {
             return $this->loaded[$name];
         }
-        $properties = get_object_vars($this);
+        $properties = (array) $this;
         if (array_key_exists($name, $properties) && $properties[$name] !== null) {
             return $properties[$name];
         }
@@ -328,7 +343,7 @@ class Environment
     public function remove($name)
     {
         unset($this->loaded[$name]);
-        if (array_key_exists($name, get_object_vars($this))) {
+        if (array_key_exists($name, (array) $this)) {
             unset($this->$name);
         }
     }
@@ -436,10 +451,7 @@ namespace {
         }
         $GLOBALS['low_list_ee']->serviceCalls[] = func_get_args();
         if ($service === 'db') {
-            $query = clone $GLOBALS['low_list_ee']->db;
-            $query->data_cache = array();
-
-            return $query;
+            return $GLOBALS['low_list_ee']->newDatabaseQuery();
         }
         if (!isset($GLOBALS['low_list_ee']->services[$service])) {
             throw new \LogicException('Unexpected EE service: ' . $service);

@@ -1,9 +1,9 @@
 {
   "summary": {
     "methods": 227,
-    "below_floor": 36,
-    "above_floor": 9,
-    "at_target": 182
+    "below_floor": 34,
+    "above_floor": 10,
+    "at_target": 183
   },
   "methods": [
     {
@@ -119,62 +119,6 @@
       "status": "below_floor"
     },
     {
-      "file": "tests/.coverage-source/stub.php",
-      "method": "tmpdir",
-      "start_line": 196,
-      "end_line": 211,
-      "line_percent": 0.0,
-      "branch_percent": null,
-      "effective_percent": 0.0,
-      "executable_lines": 9,
-      "covered_lines": 0,
-      "branch_total": 0,
-      "branch_covered": 0,
-      "status": "below_floor"
-    },
-    {
-      "file": "tests/.coverage-source/stub.php",
-      "method": "_unpack",
-      "start_line": 213,
-      "end_line": 237,
-      "line_percent": 0.0,
-      "branch_percent": null,
-      "effective_percent": 0.0,
-      "executable_lines": 20,
-      "covered_lines": 0,
-      "branch_total": 0,
-      "branch_covered": 0,
-      "status": "below_floor"
-    },
-    {
-      "file": "tests/.coverage-source/stub.php",
-      "method": "extractFile",
-      "start_line": 239,
-      "end_line": 270,
-      "line_percent": 0.0,
-      "branch_percent": null,
-      "effective_percent": 0.0,
-      "executable_lines": 18,
-      "covered_lines": 0,
-      "branch_total": 0,
-      "branch_covered": 0,
-      "status": "below_floor"
-    },
-    {
-      "file": "tests/.coverage-source/stub.php",
-      "method": "_removeTmpFiles",
-      "start_line": 272,
-      "end_line": 288,
-      "line_percent": 0.0,
-      "branch_percent": null,
-      "effective_percent": 0.0,
-      "executable_lines": 10,
-      "covered_lines": 0,
-      "branch_total": 0,
-      "branch_covered": 0,
-      "status": "below_floor"
-    },
-    {
       "file": "tests/.coverage-source/archive/FluxCapacitor/Base/Pi.php",
       "method": "info",
       "start_line": 27,
@@ -226,6 +170,20 @@
       "effective_percent": 33.3333,
       "executable_lines": 6,
       "covered_lines": 2,
+      "branch_total": 0,
+      "branch_covered": 0,
+      "status": "below_floor"
+    },
+    {
+      "file": "tests/.coverage-source/stub.php",
+      "method": "tmpdir",
+      "start_line": 196,
+      "end_line": 211,
+      "line_percent": 44.4444,
+      "branch_percent": null,
+      "effective_percent": 44.4444,
+      "executable_lines": 9,
+      "covered_lines": 4,
       "branch_total": 0,
       "branch_covered": 0,
       "status": "below_floor"
@@ -385,6 +343,20 @@
       "status": "below_floor"
     },
     {
+      "file": "tests/.coverage-source/stub.php",
+      "method": "extractFile",
+      "start_line": 239,
+      "end_line": 270,
+      "line_percent": 83.3333,
+      "branch_percent": null,
+      "effective_percent": 83.3333,
+      "executable_lines": 18,
+      "covered_lines": 15,
+      "branch_total": 0,
+      "branch_covered": 0,
+      "status": "below_floor"
+    },
+    {
       "file": "tests/.coverage-source/archive/FluxCapacitor/Bridge/EE3.php",
       "method": "initiateSettings",
       "start_line": 456,
@@ -509,6 +481,20 @@
       "branch_total": 0,
       "branch_covered": 0,
       "status": "below_floor"
+    },
+    {
+      "file": "tests/.coverage-source/stub.php",
+      "method": "_removeTmpFiles",
+      "start_line": 272,
+      "end_line": 288,
+      "line_percent": 90.0,
+      "branch_percent": null,
+      "effective_percent": 90.0,
+      "executable_lines": 10,
+      "covered_lines": 9,
+      "branch_total": 0,
+      "branch_covered": 0,
+      "status": "above_floor"
     },
     {
       "file": "tests/.coverage-source/archive/FluxCapacitor/Bridge/EE3.php",
@@ -3180,6 +3166,20 @@
       "effective_percent": 100.0,
       "executable_lines": 3,
       "covered_lines": 3,
+      "branch_total": 0,
+      "branch_covered": 0,
+      "status": "at_target"
+    },
+    {
+      "file": "tests/.coverage-source/stub.php",
+      "method": "_unpack",
+      "start_line": 213,
+      "end_line": 237,
+      "line_percent": 100.0,
+      "branch_percent": null,
+      "effective_percent": 100.0,
+      "executable_lines": 20,
+      "covered_lines": 20,
       "branch_total": 0,
       "branch_covered": 0,
       "status": "at_target"

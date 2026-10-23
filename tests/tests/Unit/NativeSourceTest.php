@@ -80,6 +80,125 @@ class NativeSourceTest extends TestCase
     }
 
     /**
+     * Reject corrupt extraction payloads without leaking PHP diagnostics.
+     *
+     * @dataProvider corruptPayloads
+     * @param string $kind
+     * @param string $message
+     * @return void
+     */
+    public function testArchivePayloadValidation($kind, $message): void
+    {
+        $this->assertArchiveValidation($this->probe(array('stub-extract', $kind)), $message);
+    }
+
+    /**
+     * Reject an abnormal child exit even when it prints the exact validation text.
+     *
+     * @return void
+     */
+    public function testValidationOracleRejectsAbnormalExit(): void
+    {
+        $result = $this->probe(array('validation-abnormal-exit'));
+        $this->assertSame(23, $result[0]);
+        $this->assertSame('Invalid internal .phar file (checksum error)', $result[1]);
+        $this->assertSame('', $result[2]);
+        $this->expectException(\PHPUnit\Framework\ExpectationFailedException::class);
+
+        $this->assertArchiveValidation($result, 'Invalid internal .phar file (checksum error)');
+    }
+
+    /**
+     * Terminate a stalled owned child, retain its diagnostics and remove capture files.
+     *
+     * @return void
+     */
+    public function testNativeProbeDeadline(): void
+    {
+        $before = (array) glob(PATH_CACHE . 'native-*');
+        $started = hrtime(true);
+        try {
+            $this->probe(array('stall'), 1.0);
+            $this->fail('A stalled native child must reach its deadline.');
+        } catch (NativeProbeTimeout $exception) {
+            $elapsed = (hrtime(true) - $started) / 1000000000;
+            $this->assertGreaterThanOrEqual(1.0, $elapsed);
+            $this->assertLessThan(5.0, $elapsed);
+            $this->assertSame("STALL_READY\n", $exception->output);
+            $this->assertSame("STALL_STDERR\n", $exception->errors);
+            $this->assertFalse(posix_kill($exception->pid, 0));
+        }
+        $this->assertSame($before, (array) glob(PATH_CACHE . 'native-*'));
+    }
+
+    /**
+     * Supply wrong size/checksum and invalid supported compression payloads.
+     *
+     * @return array
+     */
+    public static function corruptPayloads(): array
+    {
+        return array(
+            array('size', 'Invalid internal .phar file (size error 7 != 8)'),
+            array('checksum', 'Invalid internal .phar file (checksum error)'),
+            array('gzip', 'Invalid internal .phar file ('),
+            array('bzip2', 'Invalid internal .phar file ('),
+        );
+    }
+
+    /**
+     * Reject corrupt manifest bytes with an explicit exception, without PHP warnings.
+     *
+     * @dataProvider corruptManifests
+     * @param string $kind
+     * @return void
+     */
+    public function testArchiveManifestValidation($kind): void
+    {
+        list($status, $output, $errors) = $this->probe(array('stub-manifest', $kind));
+
+        $this->assertSame(0, $status, $errors);
+        $this->assertSame('', $errors);
+        $this->assertSame('REJECTED', $output);
+    }
+
+    /**
+     * Supply absent and truncated original manifest bytes.
+     *
+     * @return array
+     */
+    public static function corruptManifests(): array
+    {
+        return array(array('empty'), array('truncated'));
+    }
+
+    /**
+     * Verify missing-resource guards and the process-local opcache compatibility path.
+     *
+     * @dataProvider loaderModes
+     * @param string $mode
+     * @return void
+     */
+    public function testNativeLoaderModes($mode): void
+    {
+        list($status, $output, $errors) = $this->probe(array($mode, ''));
+
+        $this->assertSame(0, $status, $errors);
+        $this->assertSame('', $errors);
+        $this->assertSame('OK', $output);
+    }
+
+    /**
+     * Supply independently configured native loader scenarios.
+     *
+     * @return array
+     */
+    public static function loaderModes(): array
+    {
+        return array(array('loader-missing-archive'), array('loader-missing-class'), array('loader-opcache'));
+    }
+
+    /**
      * Enumerate all non-view loose/archive source and the original PHAR stub.
      *
      * @return array
@@ -117,37 +236,120 @@ class NativeSourceTest extends TestCase
     }
 
     /**
+     * Accept only controlled validation termination with no native diagnostics.
+     *
+     * @param array $result
+     * @param string $message
+     * @return void
+     */
+    private function assertArchiveValidation(array $result, $message)
+    {
+        list($status, $output, $errors) = $result;
+        $this->assertSame(0, $status, $errors);
+        $this->assertSame('', $errors);
+        $this->assertStringContainsString($message, $output);
+        $this->assertStringNotContainsString('UNEXPECTED_RETURN', $output);
+    }
+
+    /**
      * Start a child using this suite's explicit PHP binary and local settings.
      *
      * @param array $arguments
+     * @param float $timeoutSeconds
      * @return array
      * @throws \RuntimeException
+     * @throws NativeProbeTimeout
      */
-    private function probe(array $arguments)
+    private function probe(array $arguments, $timeoutSeconds = 10.0)
     {
         $command = array(PHP_BINARY, '-d', 'error_reporting=-1', '-d', 'display_errors=stderr', dirname(__DIR__, 2) . '/Support/native-probe.php');
         $environment = getenv();
+        if ($arguments[0] === 'loader-opcache') {
+            array_splice($command, 1, 0, array('-d', 'opcache.enable_cli=1', '-d', 'opcache.validate_permission=1'));
+        }
         if (getenv('LOW_LIST_XDEBUG_EXTENSION')) {
             array_splice($command, 1, 0, array('-d', 'zend_extension=' . getenv('LOW_LIST_XDEBUG_EXTENSION'), '-d', 'auto_prepend_file=' . dirname(__DIR__, 2) . '/coverage-prepend.php'));
-            $environment['LOW_LIST_COVERAGE_FILE'] = getenv('LOW_LIST_COVERAGE_DIRECTORY') . '/native-' . bin2hex(random_bytes(8)) . '.json';
+            $environment['LOW_LIST_COVERAGE_FILE'] = getenv('LOW_LIST_COVERAGE_DIRECTORY') . '/native-' . $arguments[0] . '-' . bin2hex(random_bytes(8)) . '.json';
         }
         if (!is_dir(PATH_CACHE)) {
             mkdir(PATH_CACHE, 0700, true);
         }
         array_splice($command, 1, 0, array('-d', 'sys_temp_dir=' . PATH_CACHE));
         $environment['TMPDIR'] = PATH_CACHE;
-        $outputPath = tempnam(PATH_CACHE, 'native-out-');
-        $errorPath = tempnam(PATH_CACHE, 'native-err-');
-        $process = proc_open(array_merge($command, $arguments), array(1 => array('file', $outputPath, 'w'), 2 => array('file', $errorPath, 'w')), $pipes, null, $environment);
-        if (!is_resource($process)) {
-            throw new \RuntimeException('Unable to start native source probe.');
+        $outputPath = null;
+        $errorPath = null;
+        $process = null;
+        $status = null;
+        $expired = false;
+        $pid = null;
+        try {
+            $outputPath = tempnam(PATH_CACHE, 'native-out-');
+            $errorPath = tempnam(PATH_CACHE, 'native-err-');
+            $process = proc_open(array_merge($command, $arguments), array(1 => array('file', $outputPath, 'w'), 2 => array('file', $errorPath, 'w')), $pipes, null, $environment);
+            if (!is_resource($process)) {
+                throw new \RuntimeException('Unable to start native source probe.');
+            }
+            $deadline = hrtime(true) + $timeoutSeconds * 1000000000;
+            while (true) {
+                $information = proc_get_status($process);
+                $pid = $information['pid'];
+                if (!$information['running']) {
+                    $status = $information['exitcode'];
+                    break;
+                }
+                if (hrtime(true) >= $deadline) {
+                    $expired = true;
+                    break;
+                }
+                usleep(10000);
+            }
+        } finally {
+            if (is_resource($process)) {
+                $information = proc_get_status($process);
+                if ($information['running']) {
+                    proc_terminate($process, 9);
+                }
+                $closedStatus = proc_close($process);
+                if ($status === null || $status < 0) {
+                    $status = $closedStatus;
+                }
+            }
+            $output = $outputPath === null ? '' : file_get_contents($outputPath);
+            $errors = $errorPath === null ? '' : file_get_contents($errorPath);
+            if ($outputPath !== null) {
+                unlink($outputPath);
+            }
+            if ($errorPath !== null) {
+                unlink($errorPath);
+            }
         }
-        $status = proc_close($process);
-        $output = file_get_contents($outputPath);
-        $errors = file_get_contents($errorPath);
-        unlink($outputPath);
-        unlink($errorPath);
+        if ($expired) {
+            throw new NativeProbeTimeout($pid, $output, $errors);
+        }
 
         return array($status, $output, $errors);
+    }
+}
+
+class NativeProbeTimeout extends \RuntimeException
+{
+    public $pid;
+    public $output;
+    public $errors;
+
+    /**
+     * Preserve the timed-out child's identity and captured diagnostics after cleanup.
+     *
+     * @param int $pid
+     * @param string $output
+     * @param string $errors
+     * @return void
+     */
+    public function __construct($pid, $output, $errors)
+    {
+        parent::__construct('The owned native source probe exceeded its deadline.');
+        $this->pid = $pid;
+        $this->output = $output;
+        $this->errors = $errors;
     }
 }

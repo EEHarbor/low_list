@@ -2,10 +2,10 @@
   {
     "runtime": "PHP 7.4.33 (cli) (built: Dec 13 2023 21:52:05) ( NTS )",
     "exit": 2,
-    "tests": 222,
-    "assertions": 1039,
-    "errors": 9,
-    "failures": 17,
+    "tests": 259,
+    "assertions": 1284,
+    "errors": 12,
+    "failures": 22,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -40,7 +40,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:344"
         ]
       },
@@ -51,7 +51,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:344"
         ]
       },
@@ -62,7 +62,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
         ]
       },
@@ -73,7 +73,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
         ]
       },
@@ -114,7 +114,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000006b6c0613000000005db5a530 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &000000002b85c073000000003f90b6d7 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -124,7 +124,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000006b6c01bb000000005db5a530 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &000000002b85c0db000000003f90b6d7 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -134,7 +134,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000006b6c01b1000000005db5a530 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &000000002b85c0d1000000003f90b6d7 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -144,7 +144,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000006b6c01ac000000005db5a530 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &000000002b85c0ec000000003f90b6d7 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -205,6 +205,61 @@
         ]
       },
       {
+        "test": "testArchivePayloadValidation with data set #0",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testArchivePayloadValidation with data set #0 ('size', 'Invalid internal .phar file (... != 8)')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: Undefined variable: stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
+          "Stack trace:",
+          "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure}(8, 'Undefined varia...', '/Users/tomjaege...', 262, Array)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(115): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+        ]
+      },
+      {
+        "test": "testArchivePayloadValidation with data set #2",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testArchivePayloadValidation with data set #2 ('gzip', 'Invalid internal .phar file (')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: gzinflate(): data error in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:255",
+          "Stack trace:",
+          "#0 [internal function]: {closure}(2, 'gzinflate(): da...', '/Users/tomjaege...', 255, Array)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(255): gzinflate('invalid-gzip-pa...')"
+        ]
+      },
+      {
+        "test": "testArchivePayloadValidation with data set #3",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testArchivePayloadValidation with data set #3 ('bzip2', 'Invalid internal .phar file (')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: Undefined variable: stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
+          "Stack trace:",
+          "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure}(8, 'Undefined varia...', '/Users/tomjaege...', 262, Array)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(115): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+        ]
+      },
+      {
+        "test": "testArchiveManifestValidation with data set #0",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testArchiveManifestValidation with data set #0 ('empty')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: unpack(): Type V: not enough input, need 4, have 0 in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:215",
+          "Stack trace:",
+          "#0 [internal function]: {closure}(2, 'unpack(): Type ...', '/Users/tomjaege...', 215, Array)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(215): unpack('V', '')"
+        ]
+      },
+      {
+        "test": "testArchiveManifestValidation with data set #1",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testArchiveManifestValidation with data set #1 ('truncated')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: unpack(): Type V: not enough input, need 4, have 0 in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:218",
+          "Stack trace:",
+          "#0 [internal function]: {closure}(2, 'unpack(): Type ...', '/Users/tomjaege...', 218, Array)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(218): unpack('V', '')"
+        ]
+      },
+      {
         "test": "testStoredValueSurvivesDiskRemovalWithinRequest",
         "kind": "failure",
         "message": "LowListTests\\PersistentCacheTest::testStoredValueSurvivesDiskRemovalWithinRequest",
@@ -224,6 +279,39 @@
           "    'id' => 1",
           ").",
           ""
+        ]
+      },
+      {
+        "test": "testTemporaryTreeCleanup with data set #2",
+        "kind": "error",
+        "message": "LowListTests\\PharStubTest::testTemporaryTreeCleanup with data set #2 ('nested')",
+        "details": [
+          "ErrorException: rmdir(nested): Directory not empty",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:278",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:189"
+        ]
+      },
+      {
+        "test": "testCleanupPreservesSymlinkTarget",
+        "kind": "error",
+        "message": "LowListTests\\PharStubTest::testCleanupPreservesSymlinkTarget",
+        "details": [
+          "ErrorException: rmdir(linked-directory): Not a directory",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:278",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:225"
+        ]
+      },
+      {
+        "test": "testLooseAutoloadNamespaceBoundary with data set #2",
+        "kind": "error",
+        "message": "LowListTests\\PharStubTest::testLooseAutoloadNamespaceBoundary with data set #2 ('LowList\\FluxCapacitorOther\\Missing')",
+        "details": [
+          "Exception: Class at location phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitorOther/Missing.php not found.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/low_list/autoload.php:87",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:297"
         ]
       },
       {
@@ -292,10 +380,10 @@
   {
     "runtime": "PHP 8.0.30 (cli) (built: Dec 21 2023 08:22:38) ( NTS )",
     "exit": 2,
-    "tests": 222,
-    "assertions": 1033,
-    "errors": 10,
-    "failures": 17,
+    "tests": 259,
+    "assertions": 1278,
+    "errors": 13,
+    "failures": 22,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -330,7 +418,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:344"
         ]
       },
@@ -341,7 +429,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:344"
         ]
       },
@@ -352,7 +440,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
         ]
       },
@@ -363,7 +451,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
         ]
       },
@@ -404,7 +492,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000173b6630000000058cc2858 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &000000003e36d6a40000000035d07df0 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -414,7 +502,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000173b1890000000058cc2858 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &000000003e36d64e0000000035d07df0 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -424,7 +512,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000173b1870000000058cc2858 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &000000003e36d6400000000035d07df0 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -434,7 +522,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000173b1820000000058cc2858 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &000000003e36d6450000000035d07df0 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -506,6 +594,61 @@
         ]
       },
       {
+        "test": "testArchivePayloadValidation with data set #0",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testArchivePayloadValidation with data set #0 ('size', 'Invalid internal .phar file (... != 8)')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: Undefined variable $stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
+          "Stack trace:",
+          "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(115): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+        ]
+      },
+      {
+        "test": "testArchivePayloadValidation with data set #2",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testArchivePayloadValidation with data set #2 ('gzip', 'Invalid internal .phar file (')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: gzinflate(): data error in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:255",
+          "Stack trace:",
+          "#0 [internal function]: {closure}(2, 'gzinflate(): da...', '/Users/tomjaege...', 255)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(255): gzinflate('invalid-gzip-pa...')"
+        ]
+      },
+      {
+        "test": "testArchivePayloadValidation with data set #3",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testArchivePayloadValidation with data set #3 ('bzip2', 'Invalid internal .phar file (')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: Undefined variable $stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
+          "Stack trace:",
+          "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(115): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+        ]
+      },
+      {
+        "test": "testArchiveManifestValidation with data set #0",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testArchiveManifestValidation with data set #0 ('empty')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: unpack(): Type V: not enough input, need 4, have 0 in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:215",
+          "Stack trace:",
+          "#0 [internal function]: {closure}(2, 'unpack(): Type ...', '/Users/tomjaege...', 215)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(215): unpack('V', '')"
+        ]
+      },
+      {
+        "test": "testArchiveManifestValidation with data set #1",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testArchiveManifestValidation with data set #1 ('truncated')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: unpack(): Type V: not enough input, need 4, have 0 in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:218",
+          "Stack trace:",
+          "#0 [internal function]: {closure}(2, 'unpack(): Type ...', '/Users/tomjaege...', 218)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(218): unpack('V', '')"
+        ]
+      },
+      {
         "test": "testStoredValueSurvivesDiskRemovalWithinRequest",
         "kind": "failure",
         "message": "LowListTests\\PersistentCacheTest::testStoredValueSurvivesDiskRemovalWithinRequest",
@@ -525,6 +668,39 @@
           "    'id' => 1",
           ").",
           ""
+        ]
+      },
+      {
+        "test": "testTemporaryTreeCleanup with data set #2",
+        "kind": "error",
+        "message": "LowListTests\\PharStubTest::testTemporaryTreeCleanup with data set #2 ('nested')",
+        "details": [
+          "ErrorException: rmdir(nested): Directory not empty",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:278",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:189"
+        ]
+      },
+      {
+        "test": "testCleanupPreservesSymlinkTarget",
+        "kind": "error",
+        "message": "LowListTests\\PharStubTest::testCleanupPreservesSymlinkTarget",
+        "details": [
+          "ErrorException: rmdir(linked-directory): Not a directory",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:278",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:225"
+        ]
+      },
+      {
+        "test": "testLooseAutoloadNamespaceBoundary with data set #2",
+        "kind": "error",
+        "message": "LowListTests\\PharStubTest::testLooseAutoloadNamespaceBoundary with data set #2 ('LowList\\FluxCapacitorOther\\Missing')",
+        "details": [
+          "Exception: Class at location phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitorOther/Missing.php not found.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/low_list/autoload.php:87",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:297"
         ]
       },
       {
@@ -593,10 +769,10 @@
   {
     "runtime": "PHP 8.1.33 (cli) (built: Jul  4 2025 00:24:36) (NTS)",
     "exit": 2,
-    "tests": 222,
-    "assertions": 1032,
-    "errors": 11,
-    "failures": 17,
+    "tests": 259,
+    "assertions": 1277,
+    "errors": 14,
+    "failures": 22,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -631,7 +807,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:344"
         ]
       },
@@ -642,7 +818,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:344"
         ]
       },
@@ -653,7 +829,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
         ]
       },
@@ -664,7 +840,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
         ]
       },
@@ -705,7 +881,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000004310000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004a10000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -715,7 +891,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000003db0000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &000000000000044b0000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -725,7 +901,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000003d50000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004450000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -735,7 +911,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000003d00000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004400000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -807,6 +983,61 @@
         ]
       },
       {
+        "test": "testArchivePayloadValidation with data set #0",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testArchivePayloadValidation with data set #0 ('size', 'Invalid internal .phar file (... != 8)')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: Undefined variable $stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
+          "Stack trace:",
+          "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(115): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+        ]
+      },
+      {
+        "test": "testArchivePayloadValidation with data set #2",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testArchivePayloadValidation with data set #2 ('gzip', 'Invalid internal .phar file (')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: gzinflate(): data error in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:255",
+          "Stack trace:",
+          "#0 [internal function]: {closure}(2, 'gzinflate(): da...', '/Users/tomjaege...', 255)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(255): gzinflate('invalid-gzip-pa...')"
+        ]
+      },
+      {
+        "test": "testArchivePayloadValidation with data set #3",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testArchivePayloadValidation with data set #3 ('bzip2', 'Invalid internal .phar file (')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: Undefined variable $stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
+          "Stack trace:",
+          "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(115): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+        ]
+      },
+      {
+        "test": "testArchiveManifestValidation with data set #0",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testArchiveManifestValidation with data set #0 ('empty')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: unpack(): Type V: not enough input, need 4, have 0 in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:215",
+          "Stack trace:",
+          "#0 [internal function]: {closure}(2, 'unpack(): Type ...', '/Users/tomjaege...', 215)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(215): unpack('V', '')"
+        ]
+      },
+      {
+        "test": "testArchiveManifestValidation with data set #1",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testArchiveManifestValidation with data set #1 ('truncated')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: unpack(): Type V: not enough input, need 4, have 0 in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:218",
+          "Stack trace:",
+          "#0 [internal function]: {closure}(2, 'unpack(): Type ...', '/Users/tomjaege...', 218)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(218): unpack('V', '')"
+        ]
+      },
+      {
         "test": "testStoredValueSurvivesDiskRemovalWithinRequest",
         "kind": "failure",
         "message": "LowListTests\\PersistentCacheTest::testStoredValueSurvivesDiskRemovalWithinRequest",
@@ -826,6 +1057,39 @@
           "    'id' => 1",
           ").",
           ""
+        ]
+      },
+      {
+        "test": "testTemporaryTreeCleanup with data set #2",
+        "kind": "error",
+        "message": "LowListTests\\PharStubTest::testTemporaryTreeCleanup with data set #2 ('nested')",
+        "details": [
+          "ErrorException: rmdir(nested): Directory not empty",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:278",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:189"
+        ]
+      },
+      {
+        "test": "testCleanupPreservesSymlinkTarget",
+        "kind": "error",
+        "message": "LowListTests\\PharStubTest::testCleanupPreservesSymlinkTarget",
+        "details": [
+          "ErrorException: rmdir(linked-directory): Not a directory",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:278",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:225"
+        ]
+      },
+      {
+        "test": "testLooseAutoloadNamespaceBoundary with data set #2",
+        "kind": "error",
+        "message": "LowListTests\\PharStubTest::testLooseAutoloadNamespaceBoundary with data set #2 ('LowList\\FluxCapacitorOther\\Missing')",
+        "details": [
+          "Exception: Class at location phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitorOther/Missing.php not found.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/low_list/autoload.php:87",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:297"
         ]
       },
       {
@@ -905,10 +1169,10 @@
   {
     "runtime": "PHP 8.2.30 (cli) (built: Dec 19 2025 07:42:41) (NTS clang 15.0.0)",
     "exit": 2,
-    "tests": 222,
-    "assertions": 1031,
-    "errors": 12,
-    "failures": 17,
+    "tests": 259,
+    "assertions": 1276,
+    "errors": 15,
+    "failures": 22,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -943,7 +1207,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:344"
         ]
       },
@@ -954,7 +1218,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:344"
         ]
       },
@@ -965,7 +1229,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
         ]
       },
@@ -976,7 +1240,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
         ]
       },
@@ -1017,7 +1281,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000004310000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004a10000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -1027,7 +1291,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000003db0000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &000000000000044b0000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -1037,7 +1301,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000003d50000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004450000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -1047,7 +1311,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000003d00000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004400000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -1130,6 +1394,61 @@
         ]
       },
       {
+        "test": "testArchivePayloadValidation with data set #0",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testArchivePayloadValidation with data set #0 ('size', 'Invalid internal .phar file (... != 8)')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: Undefined variable $stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
+          "Stack trace:",
+          "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(115): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+        ]
+      },
+      {
+        "test": "testArchivePayloadValidation with data set #2",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testArchivePayloadValidation with data set #2 ('gzip', 'Invalid internal .phar file (')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: gzinflate(): data error in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:255",
+          "Stack trace:",
+          "#0 [internal function]: {closure}(2, 'gzinflate(): da...', '/Users/tomjaege...', 255)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(255): gzinflate('invalid-gzip-pa...')"
+        ]
+      },
+      {
+        "test": "testArchivePayloadValidation with data set #3",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testArchivePayloadValidation with data set #3 ('bzip2', 'Invalid internal .phar file (')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: Undefined variable $stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
+          "Stack trace:",
+          "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(115): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+        ]
+      },
+      {
+        "test": "testArchiveManifestValidation with data set #0",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testArchiveManifestValidation with data set #0 ('empty')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: unpack(): Type V: not enough input, need 4, have 0 in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:215",
+          "Stack trace:",
+          "#0 [internal function]: {closure}(2, 'unpack(): Type ...', '/Users/tomjaege...', 215)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(215): unpack('V', '')"
+        ]
+      },
+      {
+        "test": "testArchiveManifestValidation with data set #1",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testArchiveManifestValidation with data set #1 ('truncated')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: unpack(): Type V: not enough input, need 4, have 0 in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:218",
+          "Stack trace:",
+          "#0 [internal function]: {closure}(2, 'unpack(): Type ...', '/Users/tomjaege...', 218)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(218): unpack('V', '')"
+        ]
+      },
+      {
         "test": "testStoredValueSurvivesDiskRemovalWithinRequest",
         "kind": "failure",
         "message": "LowListTests\\PersistentCacheTest::testStoredValueSurvivesDiskRemovalWithinRequest",
@@ -1149,6 +1468,39 @@
           "    'id' => 1",
           ").",
           ""
+        ]
+      },
+      {
+        "test": "testTemporaryTreeCleanup with data set #2",
+        "kind": "error",
+        "message": "LowListTests\\PharStubTest::testTemporaryTreeCleanup with data set #2 ('nested')",
+        "details": [
+          "ErrorException: rmdir(nested): Directory not empty",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:278",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:189"
+        ]
+      },
+      {
+        "test": "testCleanupPreservesSymlinkTarget",
+        "kind": "error",
+        "message": "LowListTests\\PharStubTest::testCleanupPreservesSymlinkTarget",
+        "details": [
+          "ErrorException: rmdir(linked-directory): Not a directory",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:278",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:225"
+        ]
+      },
+      {
+        "test": "testLooseAutoloadNamespaceBoundary with data set #2",
+        "kind": "error",
+        "message": "LowListTests\\PharStubTest::testLooseAutoloadNamespaceBoundary with data set #2 ('LowList\\FluxCapacitorOther\\Missing')",
+        "details": [
+          "Exception: Class at location phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitorOther/Missing.php not found.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/low_list/autoload.php:87",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:297"
         ]
       },
       {
@@ -1228,10 +1580,10 @@
   {
     "runtime": "PHP 8.3.28 (cli) (built: Nov 20 2025 11:21:23) (NTS clang 15.0.0)",
     "exit": 2,
-    "tests": 222,
-    "assertions": 1031,
-    "errors": 12,
-    "failures": 17,
+    "tests": 259,
+    "assertions": 1276,
+    "errors": 15,
+    "failures": 22,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -1266,7 +1618,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:344"
         ]
       },
@@ -1277,7 +1629,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:344"
         ]
       },
@@ -1288,7 +1640,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
         ]
       },
@@ -1299,7 +1651,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
         ]
       },
@@ -1340,7 +1692,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000004310000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004a10000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -1350,7 +1702,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000003db0000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &000000000000044b0000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -1360,7 +1712,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000003d50000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004450000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -1370,7 +1722,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000003d00000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004400000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -1453,6 +1805,61 @@
         ]
       },
       {
+        "test": "testArchivePayloadValidation with data set #0",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testArchivePayloadValidation with data set #0 ('size', 'Invalid internal .phar file (... != 8)')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: Undefined variable $stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
+          "Stack trace:",
+          "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(115): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+        ]
+      },
+      {
+        "test": "testArchivePayloadValidation with data set #2",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testArchivePayloadValidation with data set #2 ('gzip', 'Invalid internal .phar file (')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: gzinflate(): data error in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:255",
+          "Stack trace:",
+          "#0 [internal function]: {closure}(2, 'gzinflate(): da...', '/Users/tomjaege...', 255)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(255): gzinflate('invalid-gzip-pa...')"
+        ]
+      },
+      {
+        "test": "testArchivePayloadValidation with data set #3",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testArchivePayloadValidation with data set #3 ('bzip2', 'Invalid internal .phar file (')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: Undefined variable $stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
+          "Stack trace:",
+          "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(115): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+        ]
+      },
+      {
+        "test": "testArchiveManifestValidation with data set #0",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testArchiveManifestValidation with data set #0 ('empty')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: unpack(): Type V: not enough input values, need 4 values but only 0 were provided in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:215",
+          "Stack trace:",
+          "#0 [internal function]: {closure}(2, 'unpack(): Type ...', '/Users/tomjaege...', 215)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(215): unpack('V', '')"
+        ]
+      },
+      {
+        "test": "testArchiveManifestValidation with data set #1",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testArchiveManifestValidation with data set #1 ('truncated')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: unpack(): Type V: not enough input values, need 4 values but only 0 were provided in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:218",
+          "Stack trace:",
+          "#0 [internal function]: {closure}(2, 'unpack(): Type ...', '/Users/tomjaege...', 218)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(218): unpack('V', '')"
+        ]
+      },
+      {
         "test": "testStoredValueSurvivesDiskRemovalWithinRequest",
         "kind": "failure",
         "message": "LowListTests\\PersistentCacheTest::testStoredValueSurvivesDiskRemovalWithinRequest",
@@ -1472,6 +1879,39 @@
           "    'id' => 1",
           ").",
           ""
+        ]
+      },
+      {
+        "test": "testTemporaryTreeCleanup with data set #2",
+        "kind": "error",
+        "message": "LowListTests\\PharStubTest::testTemporaryTreeCleanup with data set #2 ('nested')",
+        "details": [
+          "ErrorException: rmdir(nested): Directory not empty",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:278",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:189"
+        ]
+      },
+      {
+        "test": "testCleanupPreservesSymlinkTarget",
+        "kind": "error",
+        "message": "LowListTests\\PharStubTest::testCleanupPreservesSymlinkTarget",
+        "details": [
+          "ErrorException: rmdir(linked-directory): Not a directory",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:278",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:225"
+        ]
+      },
+      {
+        "test": "testLooseAutoloadNamespaceBoundary with data set #2",
+        "kind": "error",
+        "message": "LowListTests\\PharStubTest::testLooseAutoloadNamespaceBoundary with data set #2 ('LowList\\FluxCapacitorOther\\Missing')",
+        "details": [
+          "Exception: Class at location phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitorOther/Missing.php not found.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/low_list/autoload.php:87",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:297"
         ]
       },
       {
@@ -1551,10 +1991,10 @@
   {
     "runtime": "PHP 8.4.15 (cli) (built: Nov 20 2025 14:28:49) (NTS clang 15.0.0)",
     "exit": 2,
-    "tests": 222,
-    "assertions": 1031,
-    "errors": 12,
-    "failures": 17,
+    "tests": 259,
+    "assertions": 1276,
+    "errors": 15,
+    "failures": 22,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -1589,7 +2029,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:344"
         ]
       },
@@ -1600,7 +2040,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:344"
         ]
       },
@@ -1611,7 +2051,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
         ]
       },
@@ -1622,7 +2062,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
         ]
       },
@@ -1663,7 +2103,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000004310000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004a10000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -1673,7 +2113,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000003db0000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &000000000000044b0000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -1683,7 +2123,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000003d50000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004450000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -1693,7 +2133,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000003d00000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004400000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -1776,6 +2216,61 @@
         ]
       },
       {
+        "test": "testArchivePayloadValidation with data set #0",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testArchivePayloadValidation with data set #0 ('size', 'Invalid internal .phar file (... != 8)')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: Undefined variable $stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
+          "Stack trace:",
+          "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:5}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(115): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+        ]
+      },
+      {
+        "test": "testArchivePayloadValidation with data set #2",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testArchivePayloadValidation with data set #2 ('gzip', 'Invalid internal .phar file (')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: gzinflate(): data error in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:255",
+          "Stack trace:",
+          "#0 [internal function]: {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:5}(2, 'gzinflate(): da...', '/Users/tomjaege...', 255)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(255): gzinflate('invalid-gzip-pa...')"
+        ]
+      },
+      {
+        "test": "testArchivePayloadValidation with data set #3",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testArchivePayloadValidation with data set #3 ('bzip2', 'Invalid internal .phar file (')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: Undefined variable $stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
+          "Stack trace:",
+          "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:5}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(115): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+        ]
+      },
+      {
+        "test": "testArchiveManifestValidation with data set #0",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testArchiveManifestValidation with data set #0 ('empty')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: unpack(): Type V: not enough input values, need 4 values but only 0 were provided in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:215",
+          "Stack trace:",
+          "#0 [internal function]: {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:5}(2, 'unpack(): Type ...', '/Users/tomjaege...', 215)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(215): unpack('V', '')"
+        ]
+      },
+      {
+        "test": "testArchiveManifestValidation with data set #1",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testArchiveManifestValidation with data set #1 ('truncated')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: unpack(): Type V: not enough input values, need 4 values but only 0 were provided in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:218",
+          "Stack trace:",
+          "#0 [internal function]: {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:5}(2, 'unpack(): Type ...', '/Users/tomjaege...', 218)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(218): unpack('V', '')"
+        ]
+      },
+      {
         "test": "testStoredValueSurvivesDiskRemovalWithinRequest",
         "kind": "failure",
         "message": "LowListTests\\PersistentCacheTest::testStoredValueSurvivesDiskRemovalWithinRequest",
@@ -1795,6 +2290,39 @@
           "    'id' => 1",
           ").",
           ""
+        ]
+      },
+      {
+        "test": "testTemporaryTreeCleanup with data set #2",
+        "kind": "error",
+        "message": "LowListTests\\PharStubTest::testTemporaryTreeCleanup with data set #2 ('nested')",
+        "details": [
+          "ErrorException: rmdir(nested): Directory not empty",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:278",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:189"
+        ]
+      },
+      {
+        "test": "testCleanupPreservesSymlinkTarget",
+        "kind": "error",
+        "message": "LowListTests\\PharStubTest::testCleanupPreservesSymlinkTarget",
+        "details": [
+          "ErrorException: rmdir(linked-directory): Not a directory",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:278",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:225"
+        ]
+      },
+      {
+        "test": "testLooseAutoloadNamespaceBoundary with data set #2",
+        "kind": "error",
+        "message": "LowListTests\\PharStubTest::testLooseAutoloadNamespaceBoundary with data set #2 ('LowList\\FluxCapacitorOther\\Missing')",
+        "details": [
+          "Exception: Class at location phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitorOther/Missing.php not found.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/low_list/autoload.php:87",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:297"
         ]
       },
       {
@@ -1874,10 +2402,10 @@
   {
     "runtime": "PHP 8.5.0 (cli) (built: Nov 20 2025 09:30:23) (NTS clang 15.0.0)",
     "exit": 2,
-    "tests": 222,
-    "assertions": 1031,
-    "errors": 12,
-    "failures": 17,
+    "tests": 259,
+    "assertions": 1276,
+    "errors": 15,
+    "failures": 22,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -1912,7 +2440,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:344"
         ]
       },
@@ -1923,7 +2451,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:344"
         ]
       },
@@ -1934,7 +2462,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
         ]
       },
@@ -1945,7 +2473,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:254",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:269",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
         ]
       },
@@ -1986,7 +2514,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000004310000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004a10000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -1996,7 +2524,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000003db0000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &000000000000044b0000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -2006,7 +2534,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000003d50000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004450000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -2016,7 +2544,7 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000003d00000000000000000 () is identical to 'License'.",
+          "Failed asserting that LowListTests\\Header Object &00000000000004400000000000000000 () is identical to 'License'.",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/BridgeTest.php:221"
         ]
@@ -2099,6 +2627,61 @@
         ]
       },
       {
+        "test": "testArchivePayloadValidation with data set #0",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testArchivePayloadValidation with data set #0 ('size', 'Invalid internal .phar file (... != 8)')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: Undefined variable $stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
+          "Stack trace:",
+          "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:5}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(115): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+        ]
+      },
+      {
+        "test": "testArchivePayloadValidation with data set #2",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testArchivePayloadValidation with data set #2 ('gzip', 'Invalid internal .phar file (')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: gzinflate(): data error in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:255",
+          "Stack trace:",
+          "#0 [internal function]: {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:5}(2, 'gzinflate(): da...', '/Users/tomjaege...', 255)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(255): gzinflate('invalid-gzip-pa...')"
+        ]
+      },
+      {
+        "test": "testArchivePayloadValidation with data set #3",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testArchivePayloadValidation with data set #3 ('bzip2', 'Invalid internal .phar file (')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: Undefined variable $stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
+          "Stack trace:",
+          "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:5}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(115): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+        ]
+      },
+      {
+        "test": "testArchiveManifestValidation with data set #0",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testArchiveManifestValidation with data set #0 ('empty')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: unpack(): Type V: not enough input values, need 4 values but only 0 were provided in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:215",
+          "Stack trace:",
+          "#0 [internal function]: {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:5}(2, 'unpack(): Type ...', '/Users/tomjaege...', 215)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(215): unpack('V', '')"
+        ]
+      },
+      {
+        "test": "testArchiveManifestValidation with data set #1",
+        "kind": "failure",
+        "message": "LowListTests\\NativeSourceTest::testArchiveManifestValidation with data set #1 ('truncated')",
+        "details": [
+          "Fatal error: Uncaught ErrorException: unpack(): Type V: not enough input values, need 4 values but only 0 were provided in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:218",
+          "Stack trace:",
+          "#0 [internal function]: {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:5}(2, 'unpack(): Type ...', '/Users/tomjaege...', 218)",
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(218): unpack('V', '')"
+        ]
+      },
+      {
         "test": "testStoredValueSurvivesDiskRemovalWithinRequest",
         "kind": "failure",
         "message": "LowListTests\\PersistentCacheTest::testStoredValueSurvivesDiskRemovalWithinRequest",
@@ -2118,6 +2701,39 @@
           "    'id' => 1",
           ").",
           ""
+        ]
+      },
+      {
+        "test": "testTemporaryTreeCleanup with data set #2",
+        "kind": "error",
+        "message": "LowListTests\\PharStubTest::testTemporaryTreeCleanup with data set #2 ('nested')",
+        "details": [
+          "ErrorException: rmdir(nested): Directory not empty",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:278",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:189"
+        ]
+      },
+      {
+        "test": "testCleanupPreservesSymlinkTarget",
+        "kind": "error",
+        "message": "LowListTests\\PharStubTest::testCleanupPreservesSymlinkTarget",
+        "details": [
+          "ErrorException: rmdir(linked-directory): Not a directory",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:278",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:225"
+        ]
+      },
+      {
+        "test": "testLooseAutoloadNamespaceBoundary with data set #2",
+        "kind": "error",
+        "message": "LowListTests\\PharStubTest::testLooseAutoloadNamespaceBoundary with data set #2 ('LowList\\FluxCapacitorOther\\Missing')",
+        "details": [
+          "Exception: Class at location phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitorOther/Missing.php not found.",
+          "",
+          "/Users/tomjaeger/Sites/add-ons/low_list/low_list/autoload.php:87",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:297"
         ]
       },
       {

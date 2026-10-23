@@ -4,9 +4,9 @@
     "runtime": "8.3.28",
     "xdebug": "3.5.3",
     "totals_compiled_only": {
-        "lines_hit": 1262,
+        "lines_hit": 1316,
         "lines": 1565,
-        "basic_blocks_hit": 868,
+        "basic_blocks_hit": 901,
         "basic_blocks": 1160
     },
     "files": {
@@ -791,7 +791,7 @@
         "low_list/low_list.phar#stub": {
             "sha256": "fb7fa98667305e174c01d9ff728770032a0c608fb6bd6167faa56c29d9dd8474",
             "compiled_in_main_process": true,
-            "lines_hit": 7,
+            "lines_hit": 55,
             "lines": 154,
             "uncovered_lines": [
                 13,
@@ -882,209 +882,101 @@
                 191,
                 192,
                 194,
-                198,
                 199,
                 200,
                 202,
                 203,
                 205,
-                207,
-                208,
-                210,
-                215,
-                216,
-                217,
-                218,
-                219,
-                220,
-                221,
-                223,
-                224,
-                225,
-                226,
-                227,
-                228,
-                229,
-                230,
-                231,
-                232,
-                233,
-                234,
-                236,
-                241,
-                242,
-                244,
-                245,
-                246,
-                247,
-                249,
-                250,
-                254,
-                255,
-                256,
-                257,
-                260,
                 261,
                 262,
-                265,
                 266,
-                269,
-                274,
-                276,
-                277,
-                278,
-                279,
                 280,
-                285,
-                286,
-                287,
-                288,
                 291,
                 292
             ],
-            "basic_blocks_hit": 0,
+            "basic_blocks_hit": 30,
             "basic_blocks": 109,
             "functions": {
                 "Extract_low_list->extractFile": {
-                    "basic_blocks_hit": 0,
+                    "basic_blocks_hit": 12,
                     "basic_blocks": 14,
                     "uncovered": [
-                        {
-                            "id": 0,
-                            "line_start": 239,
-                            "line_end": 244
-                        },
-                        {
-                            "id": 10,
-                            "line_start": 245,
-                            "line_end": 245
-                        },
-                        {
-                            "id": 13,
-                            "line_start": 246,
-                            "line_end": 245
-                        },
-                        {
-                            "id": 24,
-                            "line_start": 249,
-                            "line_end": 244
-                        },
-                        {
-                            "id": 34,
-                            "line_start": 244,
-                            "line_end": 244
-                        },
-                        {
-                            "id": 35,
-                            "line_start": 254,
-                            "line_end": 254
-                        },
-                        {
-                            "id": 39,
-                            "line_start": 255,
-                            "line_end": 254
-                        },
-                        {
-                            "id": 45,
-                            "line_start": 256,
-                            "line_end": 256
-                        },
-                        {
-                            "id": 49,
-                            "line_start": 257,
-                            "line_end": 260
-                        },
-                        {
-                            "id": 54,
-                            "line_start": 260,
-                            "line_end": 260
-                        },
                         {
                             "id": 59,
                             "line_start": 261,
                             "line_end": 262
                         },
                         {
-                            "id": 67,
-                            "line_start": 265,
-                            "line_end": 265
-                        },
-                        {
                             "id": 79,
                             "line_start": 266,
                             "line_end": 266
-                        },
-                        {
-                            "id": 81,
-                            "line_start": 269,
-                            "line_end": 270
                         }
                     ],
                     "edges": [
                         {
                             "branch": 0,
                             "destination": 34,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 10,
                             "destination": 13,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 10,
                             "destination": 24,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 13,
                             "destination": 34,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 24,
                             "destination": 34,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 34,
                             "destination": 35,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 34,
                             "destination": 10,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 35,
                             "destination": 39,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 35,
                             "destination": 45,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 39,
                             "destination": 54,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 45,
                             "destination": 49,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 45,
                             "destination": 54,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 49,
                             "destination": 54,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 54,
@@ -1094,7 +986,7 @@
                         {
                             "branch": 54,
                             "destination": 67,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 59,
@@ -1109,7 +1001,7 @@
                         {
                             "branch": 67,
                             "destination": 81,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 79,
@@ -1123,12 +1015,12 @@
                             "op_end": 9,
                             "line_start": 239,
                             "line_end": 244,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 34
                             ],
                             "out_hit": [
-                                0
+                                1
                             ]
                         },
                         "10": {
@@ -1136,14 +1028,14 @@
                             "op_end": 12,
                             "line_start": 245,
                             "line_end": 245,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 13,
                                 24
                             ],
                             "out_hit": [
-                                0,
-                                0
+                                1,
+                                1
                             ]
                         },
                         "13": {
@@ -1151,12 +1043,12 @@
                             "op_end": 23,
                             "line_start": 246,
                             "line_end": 245,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 34
                             ],
                             "out_hit": [
-                                0
+                                1
                             ]
                         },
                         "24": {
@@ -1164,12 +1056,12 @@
                             "op_end": 33,
                             "line_start": 249,
                             "line_end": 244,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 34
                             ],
                             "out_hit": [
-                                0
+                                1
                             ]
                         },
                         "34": {
@@ -1177,14 +1069,14 @@
                             "op_end": 34,
                             "line_start": 244,
                             "line_end": 244,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 35,
                                 10
                             ],
                             "out_hit": [
-                                0,
-                                0
+                                1,
+                                1
                             ]
                         },
                         "35": {
@@ -1192,14 +1084,14 @@
                             "op_end": 38,
                             "line_start": 254,
                             "line_end": 254,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 39,
                                 45
                             ],
                             "out_hit": [
-                                0,
-                                0
+                                1,
+                                1
                             ]
                         },
                         "39": {
@@ -1207,12 +1099,12 @@
                             "op_end": 44,
                             "line_start": 255,
                             "line_end": 254,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 54
                             ],
                             "out_hit": [
-                                0
+                                1
                             ]
                         },
                         "45": {
@@ -1220,14 +1112,14 @@
                             "op_end": 48,
                             "line_start": 256,
                             "line_end": 256,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 49,
                                 54
                             ],
                             "out_hit": [
-                                0,
-                                0
+                                1,
+                                1
                             ]
                         },
                         "49": {
@@ -1235,12 +1127,12 @@
                             "op_end": 53,
                             "line_start": 257,
                             "line_end": 260,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 54
                             ],
                             "out_hit": [
-                                0
+                                1
                             ]
                         },
                         "54": {
@@ -1248,14 +1140,14 @@
                             "op_end": 58,
                             "line_start": 260,
                             "line_end": 260,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 59,
                                 67
                             ],
                             "out_hit": [
                                 0,
-                                0
+                                1
                             ]
                         },
                         "59": {
@@ -1276,14 +1168,14 @@
                             "op_end": 78,
                             "line_start": 265,
                             "line_end": 265,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 79,
                                 81
                             ],
                             "out_hit": [
                                 0,
-                                0
+                                1
                             ]
                         },
                         "79": {
@@ -1304,58 +1196,18 @@
                             "op_end": 84,
                             "line_start": 269,
                             "line_end": 270,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [],
                             "out_hit": []
                         }
                     }
                 },
                 "Extract_low_list->_removeTmpFiles": {
-                    "basic_blocks_hit": 0,
+                    "basic_blocks_hit": 10,
                     "basic_blocks": 12,
                     "uncovered": [
                         {
-                            "id": 0,
-                            "line_start": 272,
-                            "line_end": 276
-                        },
-                        {
-                            "id": 11,
-                            "line_start": 276,
-                            "line_end": 276
-                        },
-                        {
-                            "id": 12,
-                            "line_start": 277,
-                            "line_end": 277
-                        },
-                        {
-                            "id": 17,
-                            "line_start": 278,
-                            "line_end": 278
-                        },
-                        {
-                            "id": 22,
-                            "line_start": 278,
-                            "line_end": 278
-                        },
-                        {
-                            "id": 29,
-                            "line_start": 278,
-                            "line_end": 278
-                        },
-                        {
-                            "id": 35,
-                            "line_start": 278,
-                            "line_end": 279
-                        },
-                        {
                             "id": 41,
-                            "line_start": 279,
-                            "line_end": 279
-                        },
-                        {
-                            "id": 45,
                             "line_start": 279,
                             "line_end": 279
                         },
@@ -1363,23 +1215,13 @@
                             "id": 46,
                             "line_start": 280,
                             "line_end": 276
-                        },
-                        {
-                            "id": 53,
-                            "line_start": 276,
-                            "line_end": 276
-                        },
-                        {
-                            "id": 54,
-                            "line_start": 276,
-                            "line_end": 288
                         }
                     ],
                     "edges": [
                         {
                             "branch": 0,
                             "destination": 11,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 0,
@@ -1389,17 +1231,17 @@
                         {
                             "branch": 11,
                             "destination": 12,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 11,
                             "destination": 54,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 12,
                             "destination": 17,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 12,
@@ -1409,12 +1251,12 @@
                         {
                             "branch": 17,
                             "destination": 22,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 17,
                             "destination": 29,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 22,
@@ -1424,7 +1266,7 @@
                         {
                             "branch": 29,
                             "destination": 35,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 35,
@@ -1434,7 +1276,7 @@
                         {
                             "branch": 35,
                             "destination": 45,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 41,
@@ -1449,7 +1291,7 @@
                         {
                             "branch": 45,
                             "destination": 53,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 46,
@@ -1459,7 +1301,7 @@
                         {
                             "branch": 53,
                             "destination": 11,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 54,
@@ -1473,13 +1315,13 @@
                             "op_end": 10,
                             "line_start": 272,
                             "line_end": 276,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 11,
                                 54
                             ],
                             "out_hit": [
-                                0,
+                                1,
                                 0
                             ]
                         },
@@ -1488,14 +1330,14 @@
                             "op_end": 11,
                             "line_start": 276,
                             "line_end": 276,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 12,
                                 54
                             ],
                             "out_hit": [
-                                0,
-                                0
+                                1,
+                                1
                             ]
                         },
                         "12": {
@@ -1503,13 +1345,13 @@
                             "op_end": 16,
                             "line_start": 277,
                             "line_end": 277,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 17,
                                 53
                             ],
                             "out_hit": [
-                                0,
+                                1,
                                 0
                             ]
                         },
@@ -1518,14 +1360,14 @@
                             "op_end": 21,
                             "line_start": 278,
                             "line_end": 278,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 22,
                                 29
                             ],
                             "out_hit": [
-                                0,
-                                0
+                                1,
+                                1
                             ]
                         },
                         "22": {
@@ -1533,7 +1375,7 @@
                             "op_end": 28,
                             "line_start": 278,
                             "line_end": 278,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 35
                             ],
@@ -1546,12 +1388,12 @@
                             "op_end": 34,
                             "line_start": 278,
                             "line_end": 278,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 35
                             ],
                             "out_hit": [
-                                0
+                                1
                             ]
                         },
                         "35": {
@@ -1559,14 +1401,14 @@
                             "op_end": 40,
                             "line_start": 278,
                             "line_end": 279,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 41,
                                 45
                             ],
                             "out_hit": [
                                 0,
-                                0
+                                1
                             ]
                         },
                         "41": {
@@ -1587,14 +1429,14 @@
                             "op_end": 45,
                             "line_start": 279,
                             "line_end": 279,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 46,
                                 53
                             ],
                             "out_hit": [
                                 0,
-                                0
+                                1
                             ]
                         },
                         "46": {
@@ -1615,12 +1457,12 @@
                             "op_end": 53,
                             "line_start": 276,
                             "line_end": 276,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 11
                             ],
                             "out_hit": [
-                                0
+                                1
                             ]
                         },
                         "54": {
@@ -1628,7 +1470,7 @@
                             "op_end": 69,
                             "line_start": 276,
                             "line_end": 288,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 2147483645
                             ],
@@ -3385,50 +3227,29 @@
                     }
                 },
                 "Extract_low_list->_unpack": {
-                    "basic_blocks_hit": 0,
+                    "basic_blocks_hit": 4,
                     "basic_blocks": 4,
-                    "uncovered": [
-                        {
-                            "id": 0,
-                            "line_start": 213,
-                            "line_end": 223
-                        },
-                        {
-                            "id": 54,
-                            "line_start": 224,
-                            "line_end": 223
-                        },
-                        {
-                            "id": 131,
-                            "line_start": 223,
-                            "line_end": 223
-                        },
-                        {
-                            "id": 135,
-                            "line_start": 236,
-                            "line_end": 237
-                        }
-                    ],
+                    "uncovered": [],
                     "edges": [
                         {
                             "branch": 0,
                             "destination": 131,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 54,
                             "destination": 131,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 131,
                             "destination": 135,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 131,
                             "destination": 54,
-                            "hit": 0
+                            "hit": 1
                         }
                     ],
                     "graph": {
@@ -3437,12 +3258,12 @@
                             "op_end": 53,
                             "line_start": 213,
                             "line_end": 223,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 131
                             ],
                             "out_hit": [
-                                0
+                                1
                             ]
                         },
                         "54": {
@@ -3450,12 +3271,12 @@
                             "op_end": 130,
                             "line_start": 224,
                             "line_end": 223,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 131
                             ],
                             "out_hit": [
-                                0
+                                1
                             ]
                         },
                         "131": {
@@ -3463,14 +3284,14 @@
                             "op_end": 134,
                             "line_start": 223,
                             "line_end": 223,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 135,
                                 54
                             ],
                             "out_hit": [
-                                0,
-                                0
+                                1,
+                                1
                             ]
                         },
                         "135": {
@@ -3478,21 +3299,16 @@
                             "op_end": 138,
                             "line_start": 236,
                             "line_end": 237,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [],
                             "out_hit": []
                         }
                     }
                 },
                 "Extract_low_list->tmpdir": {
-                    "basic_blocks_hit": 0,
+                    "basic_blocks_hit": 4,
                     "basic_blocks": 14,
                     "uncovered": [
-                        {
-                            "id": 0,
-                            "line_start": 198,
-                            "line_end": 198
-                        },
                         {
                             "id": 7,
                             "line_start": 199,
@@ -3542,21 +3358,6 @@
                             "id": 40,
                             "line_start": 205,
                             "line_end": 205
-                        },
-                        {
-                            "id": 42,
-                            "line_start": 207,
-                            "line_end": 207
-                        },
-                        {
-                            "id": 48,
-                            "line_start": 208,
-                            "line_end": 208
-                        },
-                        {
-                            "id": 50,
-                            "line_start": 210,
-                            "line_end": 211
                         }
                     ],
                     "edges": [
@@ -3568,7 +3369,7 @@
                         {
                             "branch": 0,
                             "destination": 42,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 7,
@@ -3643,12 +3444,12 @@
                         {
                             "branch": 42,
                             "destination": 48,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 42,
                             "destination": 50,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 48,
@@ -3662,14 +3463,14 @@
                             "op_end": 6,
                             "line_start": 198,
                             "line_end": 198,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 7,
                                 42
                             ],
                             "out_hit": [
                                 0,
-                                0
+                                1
                             ]
                         },
                         "7": {
@@ -3815,14 +3616,14 @@
                             "op_end": 47,
                             "line_start": 207,
                             "line_end": 207,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 48,
                                 50
                             ],
                             "out_hit": [
-                                0,
-                                0
+                                1,
+                                1
                             ]
                         },
                         "48": {
@@ -3830,7 +3631,7 @@
                             "op_end": 49,
                             "line_start": 208,
                             "line_end": 208,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 2147483645
                             ],
@@ -3843,7 +3644,7 @@
                             "op_end": 56,
                             "line_start": 210,
                             "line_end": 211,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [],
                             "out_hit": []
                         }
@@ -25863,17 +25664,10 @@
         "low_list/low_list.phar/index.php": {
             "sha256": "b5bd62691200035ea76f05b133b886d058962675d317f7649e5b4b1e652a2c41",
             "compiled_in_main_process": true,
-            "lines_hit": 7,
+            "lines_hit": 13,
             "lines": 13,
-            "uncovered_lines": [
-                14,
-                17,
-                18,
-                21,
-                24,
-                26
-            ],
-            "basic_blocks_hit": 2,
+            "uncovered_lines": [],
+            "basic_blocks_hit": 5,
             "basic_blocks": 6,
             "functions": {
                 "{main}": {
@@ -25910,25 +25704,9 @@
                     ]
                 },
                 "{closure:phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/index.php:3-28}": {
-                    "basic_blocks_hit": 2,
+                    "basic_blocks_hit": 5,
                     "basic_blocks": 5,
-                    "uncovered": [
-                        {
-                            "id": 16,
-                            "line_start": 14,
-                            "line_end": 24
-                        },
-                        {
-                            "id": 44,
-                            "line_start": 26,
-                            "line_end": 28
-                        },
-                        {
-                            "id": 46,
-                            "line_start": 28,
-                            "line_end": 28
-                        }
-                    ],
+                    "uncovered": [],
                     "edges": [
                         {
                             "branch": 0,
@@ -25938,7 +25716,7 @@
                         {
                             "branch": 0,
                             "destination": 16,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 14,
@@ -25948,17 +25726,17 @@
                         {
                             "branch": 16,
                             "destination": 44,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 16,
                             "destination": 46,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 44,
                             "destination": 46,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 46,
@@ -25979,7 +25757,7 @@
                             ],
                             "out_hit": [
                                 1,
-                                0
+                                1
                             ]
                         },
                         "14": {
@@ -26000,14 +25778,14 @@
                             "op_end": 43,
                             "line_start": 14,
                             "line_end": 24,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 44,
                                 46
                             ],
                             "out_hit": [
-                                0,
-                                0
+                                1,
+                                1
                             ]
                         },
                         "44": {
@@ -26015,12 +25793,12 @@
                             "op_end": 45,
                             "line_start": 26,
                             "line_end": 28,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 46
                             ],
                             "out_hit": [
-                                0
+                                1
                             ]
                         },
                         "46": {
@@ -26028,7 +25806,7 @@
                             "op_end": 47,
                             "line_start": 28,
                             "line_end": 28,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 2147483645
                             ],

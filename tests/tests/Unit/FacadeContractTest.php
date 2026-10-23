@@ -106,4 +106,48 @@ class FacadeContractTest extends TestCase
         $this->assertSame(array('table_names' => array('stale')), ee()->db->data_cache);
         $this->assertSame(array(array('where', array('site_id', 1))), ee()->db->calls);
     }
+
+    /**
+     * Preserve factory access and backend data after removing the facade DB object.
+     *
+     * @return void
+     */
+    public function testDatabaseFactorySurvivesFacadeRemoval(): void
+    {
+        $original = ee()->db;
+        $original->results['records'] = array(array('id' => 7));
+        ee()->remove('db');
+
+        $query = ee('db');
+
+        $this->assertFalse(ee()->has('db'));
+        $this->assertNotSame($original, $query);
+        $this->assertSame(7, $query->get('records')->row('id'));
+        $this->assertSame(array(array('get', array('records'))), $original->calls);
+        $this->assertFalse(ee()->has('db'));
+    }
+
+    /**
+     * Keep a replacement facade object separate from the retained database backend.
+     *
+     * @return void
+     */
+    public function testDatabaseFactoryIgnoresFacadeReplacement(): void
+    {
+        $original = ee()->db;
+        $original->results['records'] = array(array('id' => 7));
+        $replacement = new Database();
+        $replacement->results['records'] = array(array('id' => 99));
+        ee()->remove('db');
+        ee()->set('db', $replacement);
+
+        $query = ee('db');
+
+        $this->assertSame($replacement, ee()->db);
+        $this->assertSame($replacement, ee()->get('db'));
+        $this->assertNotSame($replacement, $query);
+        $this->assertSame(7, $query->get('records')->row('id'));
+        $this->assertSame(array(), $replacement->calls);
+        $this->assertSame(array(array('get', array('records'))), $original->calls);
+    }
 }
