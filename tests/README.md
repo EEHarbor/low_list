@@ -8,7 +8,7 @@ tests/run-matrix.sh
 tests/coverage.sh
 ```
 
-The matrix runs the **complete configured suite** on Herd PHP 7.4, 8.0, 8.1, 8.2, 8.3, 8.4 and 8.5. Every run uses a unique report directory and positive JUnit case counts. The strict test handler throws on E_ALL, including diagnostics hidden by `@`; native compilation/load probes install the same policy before loading source. Harness diagnostics fail too. Runtime changes do not alter production or global configuration.
+The matrix runs the **complete configured suite** on Herd PHP 7.4, 8.0, 8.1, 8.2, 8.3, 8.4 and 8.5. Every run uses a unique report directory and positive JUnit case counts. Empty suites also fail directly at the PHPUnit launcher boundary, including filters that match no tests. The strict test handler throws on E_ALL, including diagnostics hidden by `@`; native compilation/load probes install the same policy before loading source. Harness diagnostics fail too. Runtime changes do not alter production or global configuration.
 
 Tests execute the original loose files and `low_list.phar`. The fieldtype fixture contains only the inherited settings/content-ID boundary and does not replace shipped add-on code. Other collaborators record real EE Active Record, template, cache, view, URL and alert interfaces. The template parameter fixture follows the observed `Template::fetch_param` defaults and legacy yes/no aliases in the current EE checkout. There is no network request, customer database or actual CP redirect.
 
