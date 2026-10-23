@@ -35,12 +35,19 @@ class McpWriteTest extends TestCase
     public function testSuccessfulLicenseWrites(array $posted, $exists, array $expected): void
     {
         $mcp = $this->controller();
-        ee()->input->values = $posted;
+        ee()->input->postValues = $posted;
         ee()->db->count = $exists ? 1 : 0;
         $row = $exists ? array(array('site_id' => 1, 'addon' => 'LowList', 'license_key' => 'CURRENT')) : array();
         ee()->db->results['eeharbor_licenses'] = $row;
         ee()->db->resultQueues['eeharbor_licenses'] = array(array());
         $this->saveUntilRedirect($mcp);
+        $cleaned = array();
+        foreach (array('license_key', 'ignore_site') as $key) {
+            if (isset($posted[$key])) {
+                $cleaned[] = $posted[$key];
+            }
+        }
+        $this->assertSame($cleaned, ee()->services['Security/XSS']->calls);
 
         $writes = $this->writes();
         $this->assertSame(array(array($exists ? 'update' : 'insert', array('eeharbor_licenses', $expected))), $writes);
@@ -81,7 +88,7 @@ class McpWriteTest extends TestCase
     public function testOversizedKeyGuard(): void
     {
         $mcp = $this->controller();
-        ee()->input->values['license_key'] = str_repeat('A', 51);
+        ee()->input->postValues['license_key'] = str_repeat('A', 51);
         $this->saveUntilRedirect($mcp);
 
         $this->assertSame(array(), $this->writes());
@@ -102,7 +109,7 @@ class McpWriteTest extends TestCase
     public function testConflictingLicenseGuard(array $row, array $siteRows, $message): void
     {
         $mcp = $this->controller();
-        ee()->input->values = array('license_key' => 'KEY', 'ignore_site' => '0');
+        ee()->input->postValues = array('license_key' => 'KEY', 'ignore_site' => '0');
         ee()->db->results['eeharbor_licenses'] = array($row);
         ee()->db->results['sites'] = $siteRows;
         $this->saveUntilRedirect($mcp);
@@ -136,7 +143,7 @@ class McpWriteTest extends TestCase
     public function testUnignoreSiteDeletesOnlyCurrentAddonRecord(): void
     {
         $mcp = $this->controller();
-        ee()->input->values = array('license_key' => '', 'ignore_site' => '0');
+        ee()->input->postValues = array('license_key' => '', 'ignore_site' => '0');
         ee()->db->count = 1;
         ee()->db->resultQueues['eeharbor_licenses'] = array(array(), array(array('license_key' => 'low-list-ignore-site-1')));
         $this->saveUntilRedirect($mcp);
@@ -155,7 +162,7 @@ class McpWriteTest extends TestCase
     public function testStructuredLicenseKeyIsRejected(): void
     {
         $mcp = $this->controller();
-        ee()->input->values['license_key'] = array('not-a-scalar');
+        ee()->input->postValues['license_key'] = array('not-a-scalar');
         try {
             $this->expectException(PHP_VERSION_ID >= 80000 ? \TypeError::class : \ErrorException::class);
             $mcp->save_license();
@@ -174,6 +181,7 @@ class McpWriteTest extends TestCase
         $mcp = new Mcp();
         ee()->functions = new Functions();
         ee()->input = new Input();
+        ee()->services['Security/XSS'] = new CleanRequestValues();
         ee()->services['CP/URL'] = new Url();
         ee()->services['CP/Alert'] = new AlertRecorder();
         ee()->db->tables = array('eeharbor_licenses');

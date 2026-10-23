@@ -29,9 +29,9 @@ class BridgeTest extends TestCase
             $this->assertFalse($bridge->$method());
         }
         $this->assertSame(1, $bridge->getCurrentPage(array('per_page' => 25)));
-        ee()->input->values['page'] = '3';
+        ee()->input->getValues['page'] = '3';
         $this->assertEquals(3, $bridge->getCurrentPage(array('per_page' => 25)));
-        ee()->input->values['per_page'] = 50;
+        ee()->input->getValues['per_page'] = 50;
         $expected = substr($class, -3) === 'EE2' ? 3 : 50;
         $this->assertEquals($expected, $bridge->getCurrentPage(array('per_page' => 25)));
         $this->assertSame(50, $bridge->getStartNum(array('current_page' => 3, 'per_page' => 25)));

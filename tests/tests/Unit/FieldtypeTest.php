@@ -2,8 +2,6 @@
 
 namespace LowListTests;
 
-use LowList\FluxCapacitor\Base\Ft;
-
 class FieldtypeTest extends TestCase
 {
     /**
@@ -33,30 +31,10 @@ class FieldtypeTest extends TestCase
     public function testChannelContextFromSettingsAndRequest(): void
     {
         $field = new Fieldtype();
-        ee()->input = new FieldInput();
-        ee()->input->channel = 9;
+        ee()->input = new Input();
+        ee()->input->getValues['channel_id'] = 9;
         $this->assertSame(9, $field->getChannelId());
         $field->settings = array('field_channel_id' => '12');
         $this->assertSame('12', $field->getChannelId());
-    }
-}
-
-class Fieldtype extends Ft
-{
-}
-
-class FieldInput
-{
-    public $channel;
-
-    /**
-     * Return the channel identifier from GET/POST.
-     *
-     * @param string $name
-     * @return mixed
-     */
-    public function get_post($name)
-    {
-        return $this->channel;
     }
 }

@@ -9,20 +9,21 @@ trait NativeProbe
      *
      * @param array $arguments
      * @param float $timeoutSeconds
+     * @param string|null $entryFile
      * @return array
      * @throws \RuntimeException
      * @throws NativeProbeTimeout
      */
-    private function probe(array $arguments, $timeoutSeconds = 10.0)
+    private function probe(array $arguments, $timeoutSeconds = 10.0, $entryFile = null)
     {
-        $command = array(PHP_BINARY, '-d', 'error_reporting=-1', '-d', 'display_errors=stderr', __DIR__ . '/native-probe.php');
+        $command = array(PHP_BINARY, '-d', 'error_reporting=-1', '-d', 'display_errors=stderr', $entryFile === null ? __DIR__ . '/native-probe.php' : $entryFile);
         $environment = getenv();
         $environment['LOW_LIST_NATIVE_MODE'] = $arguments[0];
         $environment['LOW_LIST_NATIVE_CASE'] = isset($arguments[1]) ? $arguments[1] : '';
         if ($arguments[0] === 'loader-opcache') {
             array_splice($command, 1, 0, array('-d', 'opcache.enable_cli=1', '-d', 'opcache.validate_permission=1'));
         }
-        if (getenv('LOW_LIST_XDEBUG_EXTENSION')) {
+        if ($entryFile === null && getenv('LOW_LIST_XDEBUG_EXTENSION')) {
             array_splice($command, 1, 0, array('-d', 'zend_extension=' . getenv('LOW_LIST_XDEBUG_EXTENSION'), '-d', 'auto_prepend_file=' . dirname(__DIR__) . '/coverage-prepend.php'));
             $environment['LOW_LIST_COVERAGE_FILE'] = getenv('LOW_LIST_COVERAGE_DIRECTORY') . '/native-' . $arguments[0] . '-' . bin2hex(random_bytes(8)) . '.json';
         }

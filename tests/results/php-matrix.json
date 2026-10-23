@@ -2,10 +2,10 @@
   {
     "runtime": "PHP 7.4.33 (cli) (built: Dec 13 2023 21:52:05) ( NTS )",
     "exit": 2,
-    "tests": 388,
-    "assertions": 1846,
-    "errors": 28,
-    "failures": 30,
+    "tests": 440,
+    "assertions": 2152,
+    "errors": 29,
+    "failures": 33,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -114,9 +114,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000005290dc0e00000000638b1a88 (",
+          "Failed asserting that LowListTests\\Header Object &000000006098c0a700000000472a2b30 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &000000005290dc0000000000638b1a88 (",
+          "    'url' => LowListTests\\Url Object &000000006098c0b500000000472a2b30 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -125,9 +125,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000005290dff800000000638b1a88 (",
+          "Failed asserting that LowListTests\\Header Object &000000006098c07d00000000472a2b30 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &000000005290dc1500000000638b1a88 (",
+          "    'url' => LowListTests\\Url Object &000000006098c0da00000000472a2b30 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -136,9 +136,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000005290dfee00000000638b1a88 (",
+          "Failed asserting that LowListTests\\Header Object &000000006098c04700000000472a2b30 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &000000005290dc1300000000638b1a88 (",
+          "    'url' => LowListTests\\Url Object &000000006098c0a400000000472a2b30 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -147,10 +147,54 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000005290dfe800000000638b1a88 (",
+          "Failed asserting that LowListTests\\Header Object &000000006098c04d00000000472a2b30 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &000000005290dc1700000000638b1a88 (",
+          "    'url' => LowListTests\\Url Object &000000006098c0d800000000472a2b30 (",
           "        'last' => Array &0 ("
+        ]
+      },
+      {
+        "test": "testChannelSelection with data set \"structured query channel is rejected\"",
+        "kind": "failure",
+        "message": "LowListTests\\FieldtypeContextTest::testChannelSelection with data set \"structured query channel is rejected\" (null, array(), array(array('9')), array(), '', array(), false, false)",
+        "details": [
+          "Failed asserting that Array &0 (",
+          "    0 => '9'",
+          ") is identical to false.",
+          ""
+        ]
+      },
+      {
+        "test": "testChannelSelection with data set \"structured posted channel is rejected\"",
+        "kind": "failure",
+        "message": "LowListTests\\FieldtypeContextTest::testChannelSelection with data set \"structured posted channel is rejected\" (null, array(), array('8'), array(array('9')), '', array(), false, false)",
+        "details": [
+          "Failed asserting that Array &0 (",
+          "    0 => '9'",
+          ") is identical to false.",
+          ""
+        ]
+      },
+      {
+        "test": "testChannelSelection with data set \"deleted entry is safely absent\"",
+        "kind": "error",
+        "message": "LowListTests\\FieldtypeContextTest::testChannelSelection with data set \"deleted entry is safely absent\" (19, array(), array(), array(), '', array(), false, true)",
+        "details": [
+          "ErrorException: Trying to get property 'channel_id' of non-object",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Ft.php:87",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/FieldtypeContextTest.php:35"
+        ]
+      },
+      {
+        "test": "testLegacyStructuredChannelIsRejected",
+        "kind": "failure",
+        "message": "LowListTests\\FieldtypeRuntimeTest::testLegacyStructuredChannelIsRejected",
+        "details": [
+          "Failed asserting that two arrays are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
         ]
       },
       {
@@ -216,7 +260,7 @@
           "Fatal error: Uncaught ErrorException: Undefined variable: stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
           "Stack trace:",
           "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure}(8, 'Undefined varia...', '/Users/tomjaege...', 262, Array)",
-          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(125): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(130): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
         ]
       },
       {
@@ -238,7 +282,7 @@
           "Fatal error: Uncaught ErrorException: Undefined variable: stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
           "Stack trace:",
           "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure}(8, 'Undefined varia...', '/Users/tomjaege...', 262, Array)",
-          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(125): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(130): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
         ]
       },
       {
@@ -397,7 +441,7 @@
         "kind": "error",
         "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1 ('set')",
         "details": [
-          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-7DSNRF/low_list/df88b84d816d3358b3793a61b73d80e93913e627): failed to open stream: Is a directory",
+          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-RF43g4/low_list/df88b84d816d3358b3793a61b73d80e93913e627): failed to open stream: Is a directory",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:561",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:66"
@@ -643,10 +687,10 @@
   {
     "runtime": "PHP 8.0.30 (cli) (built: Dec 21 2023 08:22:38) ( NTS )",
     "exit": 2,
-    "tests": 388,
-    "assertions": 1840,
-    "errors": 29,
-    "failures": 30,
+    "tests": 440,
+    "assertions": 2146,
+    "errors": 30,
+    "failures": 33,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -755,9 +799,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &0000000065cbed5900000000426c01a6 (",
+          "Failed asserting that LowListTests\\Header Object &000000000ae2bff800000000052bcba5 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &0000000065cbeeaa00000000426c01a6 (",
+          "    'url' => LowListTests\\Url Object &000000000ae2bfed00000000052bcba5 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -766,9 +810,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &0000000065cbeeed00000000426c01a6 (",
+          "Failed asserting that LowListTests\\Header Object &000000000ae2bf2c00000000052bcba5 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &0000000065cbed4200000000426c01a6 (",
+          "    'url' => LowListTests\\Url Object &000000000ae2bfc500000000052bcba5 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -777,9 +821,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &0000000065cbeee700000000426c01a6 (",
+          "Failed asserting that LowListTests\\Header Object &000000000ae2bf5a00000000052bcba5 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &0000000065cbed4400000000426c01a6 (",
+          "    'url' => LowListTests\\Url Object &000000000ae2bffb00000000052bcba5 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -788,10 +832,54 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &0000000065cbeefd00000000426c01a6 (",
+          "Failed asserting that LowListTests\\Header Object &000000000ae2bf5c00000000052bcba5 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &0000000065cbed4000000000426c01a6 (",
+          "    'url' => LowListTests\\Url Object &000000000ae2bfc700000000052bcba5 (",
           "        'last' => Array &0 ("
+        ]
+      },
+      {
+        "test": "testChannelSelection with data set \"structured query channel is rejected\"",
+        "kind": "failure",
+        "message": "LowListTests\\FieldtypeContextTest::testChannelSelection with data set \"structured query channel is rejected\" (null, array(), array(array('9')), array(), '', array(), false, false)",
+        "details": [
+          "Failed asserting that Array &0 (",
+          "    0 => '9'",
+          ") is identical to false.",
+          ""
+        ]
+      },
+      {
+        "test": "testChannelSelection with data set \"structured posted channel is rejected\"",
+        "kind": "failure",
+        "message": "LowListTests\\FieldtypeContextTest::testChannelSelection with data set \"structured posted channel is rejected\" (null, array(), array('8'), array(array('9')), '', array(), false, false)",
+        "details": [
+          "Failed asserting that Array &0 (",
+          "    0 => '9'",
+          ") is identical to false.",
+          ""
+        ]
+      },
+      {
+        "test": "testChannelSelection with data set \"deleted entry is safely absent\"",
+        "kind": "error",
+        "message": "LowListTests\\FieldtypeContextTest::testChannelSelection with data set \"deleted entry is safely absent\" (19, array(), array(), array(), '', array(), false, true)",
+        "details": [
+          "ErrorException: Attempt to read property \"channel_id\" on null",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Ft.php:87",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/FieldtypeContextTest.php:35"
+        ]
+      },
+      {
+        "test": "testLegacyStructuredChannelIsRejected",
+        "kind": "failure",
+        "message": "LowListTests\\FieldtypeRuntimeTest::testLegacyStructuredChannelIsRejected",
+        "details": [
+          "Failed asserting that two arrays are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
         ]
       },
       {
@@ -868,7 +956,7 @@
           "Fatal error: Uncaught ErrorException: Undefined variable $stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
           "Stack trace:",
           "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
-          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(125): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(130): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
         ]
       },
       {
@@ -890,7 +978,7 @@
           "Fatal error: Uncaught ErrorException: Undefined variable $stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
           "Stack trace:",
           "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
-          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(125): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(130): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
         ]
       },
       {
@@ -1049,7 +1137,7 @@
         "kind": "error",
         "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1 ('set')",
         "details": [
-          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-yNRAtm/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
+          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-ZT1HTy/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:561",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:66"
@@ -1295,10 +1383,10 @@
   {
     "runtime": "PHP 8.1.33 (cli) (built: Jul  4 2025 00:24:36) (NTS)",
     "exit": 2,
-    "tests": 388,
-    "assertions": 1826,
-    "errors": 36,
-    "failures": 29,
+    "tests": 440,
+    "assertions": 2132,
+    "errors": 37,
+    "failures": 32,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -1407,9 +1495,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000060f0000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &000000000000069c0000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000005fc0000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000006890000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -1418,9 +1506,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000005bb0000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000006480000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000006140000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000006a10000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -1429,9 +1517,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000005b10000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &000000000000063e0000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000006120000000000000000 (",
+          "    'url' => LowListTests\\Url Object &000000000000069f0000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -1440,10 +1528,54 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000005ab0000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000006380000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000006160000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000006a30000000000000000 (",
           "        'last' => Array &0 ("
+        ]
+      },
+      {
+        "test": "testChannelSelection with data set \"structured query channel is rejected\"",
+        "kind": "failure",
+        "message": "LowListTests\\FieldtypeContextTest::testChannelSelection with data set \"structured query channel is rejected\" (null, array(), array(array('9')), array(), '', array(), false, false)",
+        "details": [
+          "Failed asserting that Array &0 (",
+          "    0 => '9'",
+          ") is identical to false.",
+          ""
+        ]
+      },
+      {
+        "test": "testChannelSelection with data set \"structured posted channel is rejected\"",
+        "kind": "failure",
+        "message": "LowListTests\\FieldtypeContextTest::testChannelSelection with data set \"structured posted channel is rejected\" (null, array(), array('8'), array(array('9')), '', array(), false, false)",
+        "details": [
+          "Failed asserting that Array &0 (",
+          "    0 => '9'",
+          ") is identical to false.",
+          ""
+        ]
+      },
+      {
+        "test": "testChannelSelection with data set \"deleted entry is safely absent\"",
+        "kind": "error",
+        "message": "LowListTests\\FieldtypeContextTest::testChannelSelection with data set \"deleted entry is safely absent\" (19, array(), array(), array(), '', array(), false, true)",
+        "details": [
+          "ErrorException: Attempt to read property \"channel_id\" on null",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Ft.php:87",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/FieldtypeContextTest.php:35"
+        ]
+      },
+      {
+        "test": "testLegacyStructuredChannelIsRejected",
+        "kind": "failure",
+        "message": "LowListTests\\FieldtypeRuntimeTest::testLegacyStructuredChannelIsRejected",
+        "details": [
+          "Failed asserting that two arrays are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
         ]
       },
       {
@@ -1520,7 +1652,7 @@
           "Fatal error: Uncaught ErrorException: Undefined variable $stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
           "Stack trace:",
           "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
-          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(125): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(130): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
         ]
       },
       {
@@ -1542,7 +1674,7 @@
           "Fatal error: Uncaught ErrorException: Undefined variable $stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
           "Stack trace:",
           "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
-          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(125): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(130): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
         ]
       },
       {
@@ -1701,7 +1833,7 @@
         "kind": "error",
         "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1 ('set')",
         "details": [
-          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-i8EZzh/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
+          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-bxacOY/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:561",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:66"
@@ -2013,10 +2145,10 @@
   {
     "runtime": "PHP 8.2.30 (cli) (built: Dec 19 2025 07:42:41) (NTS clang 15.0.0)",
     "exit": 2,
-    "tests": 388,
-    "assertions": 1825,
-    "errors": 37,
-    "failures": 29,
+    "tests": 440,
+    "assertions": 2131,
+    "errors": 38,
+    "failures": 32,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -2125,9 +2257,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000060f0000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &000000000000069c0000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000005fc0000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000006890000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -2136,9 +2268,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000005bb0000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000006480000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000006140000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000006a10000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -2147,9 +2279,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000005b10000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &000000000000063e0000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000006120000000000000000 (",
+          "    'url' => LowListTests\\Url Object &000000000000069f0000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -2158,10 +2290,54 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000005ab0000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000006380000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000006160000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000006a30000000000000000 (",
           "        'last' => Array &0 ("
+        ]
+      },
+      {
+        "test": "testChannelSelection with data set \"structured query channel is rejected\"",
+        "kind": "failure",
+        "message": "LowListTests\\FieldtypeContextTest::testChannelSelection with data set \"structured query channel is rejected\" (null, array(), array(array('9')), array(), '', array(), false, false)",
+        "details": [
+          "Failed asserting that Array &0 (",
+          "    0 => '9'",
+          ") is identical to false.",
+          ""
+        ]
+      },
+      {
+        "test": "testChannelSelection with data set \"structured posted channel is rejected\"",
+        "kind": "failure",
+        "message": "LowListTests\\FieldtypeContextTest::testChannelSelection with data set \"structured posted channel is rejected\" (null, array(), array('8'), array(array('9')), '', array(), false, false)",
+        "details": [
+          "Failed asserting that Array &0 (",
+          "    0 => '9'",
+          ") is identical to false.",
+          ""
+        ]
+      },
+      {
+        "test": "testChannelSelection with data set \"deleted entry is safely absent\"",
+        "kind": "error",
+        "message": "LowListTests\\FieldtypeContextTest::testChannelSelection with data set \"deleted entry is safely absent\" (19, array(), array(), array(), '', array(), false, true)",
+        "details": [
+          "ErrorException: Attempt to read property \"channel_id\" on null",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Ft.php:87",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/FieldtypeContextTest.php:35"
+        ]
+      },
+      {
+        "test": "testLegacyStructuredChannelIsRejected",
+        "kind": "failure",
+        "message": "LowListTests\\FieldtypeRuntimeTest::testLegacyStructuredChannelIsRejected",
+        "details": [
+          "Failed asserting that two arrays are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
         ]
       },
       {
@@ -2249,7 +2425,7 @@
           "Fatal error: Uncaught ErrorException: Undefined variable $stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
           "Stack trace:",
           "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
-          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(125): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(130): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
         ]
       },
       {
@@ -2271,7 +2447,7 @@
           "Fatal error: Uncaught ErrorException: Undefined variable $stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
           "Stack trace:",
           "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
-          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(125): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(130): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
         ]
       },
       {
@@ -2430,7 +2606,7 @@
         "kind": "error",
         "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1 ('set')",
         "details": [
-          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-3SQWc5/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
+          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-JrLTwR/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:561",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:66"
@@ -2742,10 +2918,10 @@
   {
     "runtime": "PHP 8.3.28 (cli) (built: Nov 20 2025 11:21:23) (NTS clang 15.0.0)",
     "exit": 2,
-    "tests": 388,
-    "assertions": 1825,
-    "errors": 37,
-    "failures": 29,
+    "tests": 440,
+    "assertions": 2131,
+    "errors": 38,
+    "failures": 32,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -2854,9 +3030,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000060f0000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &000000000000069c0000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000005fc0000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000006890000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -2865,9 +3041,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000005bb0000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000006480000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000006140000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000006a10000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -2876,9 +3052,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000005b10000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &000000000000063e0000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000006120000000000000000 (",
+          "    'url' => LowListTests\\Url Object &000000000000069f0000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -2887,10 +3063,54 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000005ab0000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000006380000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000006160000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000006a30000000000000000 (",
           "        'last' => Array &0 ("
+        ]
+      },
+      {
+        "test": "testChannelSelection with data set \"structured query channel is rejected\"",
+        "kind": "failure",
+        "message": "LowListTests\\FieldtypeContextTest::testChannelSelection with data set \"structured query channel is rejected\" (null, array(), array(array('9')), array(), '', array(), false, false)",
+        "details": [
+          "Failed asserting that Array &0 (",
+          "    0 => '9'",
+          ") is identical to false.",
+          ""
+        ]
+      },
+      {
+        "test": "testChannelSelection with data set \"structured posted channel is rejected\"",
+        "kind": "failure",
+        "message": "LowListTests\\FieldtypeContextTest::testChannelSelection with data set \"structured posted channel is rejected\" (null, array(), array('8'), array(array('9')), '', array(), false, false)",
+        "details": [
+          "Failed asserting that Array &0 (",
+          "    0 => '9'",
+          ") is identical to false.",
+          ""
+        ]
+      },
+      {
+        "test": "testChannelSelection with data set \"deleted entry is safely absent\"",
+        "kind": "error",
+        "message": "LowListTests\\FieldtypeContextTest::testChannelSelection with data set \"deleted entry is safely absent\" (19, array(), array(), array(), '', array(), false, true)",
+        "details": [
+          "ErrorException: Attempt to read property \"channel_id\" on null",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Ft.php:87",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/FieldtypeContextTest.php:35"
+        ]
+      },
+      {
+        "test": "testLegacyStructuredChannelIsRejected",
+        "kind": "failure",
+        "message": "LowListTests\\FieldtypeRuntimeTest::testLegacyStructuredChannelIsRejected",
+        "details": [
+          "Failed asserting that two arrays are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
         ]
       },
       {
@@ -2978,7 +3198,7 @@
           "Fatal error: Uncaught ErrorException: Undefined variable $stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
           "Stack trace:",
           "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
-          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(125): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(130): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
         ]
       },
       {
@@ -3000,7 +3220,7 @@
           "Fatal error: Uncaught ErrorException: Undefined variable $stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
           "Stack trace:",
           "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
-          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(125): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(130): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
         ]
       },
       {
@@ -3159,7 +3379,7 @@
         "kind": "error",
         "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1 ('set')",
         "details": [
-          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-fHfPTJ/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
+          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-QxT9NP/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:561",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:66"
@@ -3471,10 +3691,10 @@
   {
     "runtime": "PHP 8.4.15 (cli) (built: Nov 20 2025 14:28:49) (NTS clang 15.0.0)",
     "exit": 2,
-    "tests": 388,
-    "assertions": 1825,
-    "errors": 37,
-    "failures": 29,
+    "tests": 440,
+    "assertions": 2131,
+    "errors": 38,
+    "failures": 32,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -3583,9 +3803,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000060f0000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &000000000000069c0000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000005fc0000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000006890000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -3594,9 +3814,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000005bb0000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000006480000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000006140000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000006a10000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -3605,9 +3825,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000005b10000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &000000000000063e0000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000006120000000000000000 (",
+          "    'url' => LowListTests\\Url Object &000000000000069f0000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -3616,10 +3836,54 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000005ab0000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000006380000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000006160000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000006a30000000000000000 (",
           "        'last' => Array &0 ("
+        ]
+      },
+      {
+        "test": "testChannelSelection with data set \"structured query channel is rejected\"",
+        "kind": "failure",
+        "message": "LowListTests\\FieldtypeContextTest::testChannelSelection with data set \"structured query channel is rejected\" (null, array(), array(array('9')), array(), '', array(), false, false)",
+        "details": [
+          "Failed asserting that Array &0 (",
+          "    0 => '9'",
+          ") is identical to false.",
+          ""
+        ]
+      },
+      {
+        "test": "testChannelSelection with data set \"structured posted channel is rejected\"",
+        "kind": "failure",
+        "message": "LowListTests\\FieldtypeContextTest::testChannelSelection with data set \"structured posted channel is rejected\" (null, array(), array('8'), array(array('9')), '', array(), false, false)",
+        "details": [
+          "Failed asserting that Array &0 (",
+          "    0 => '9'",
+          ") is identical to false.",
+          ""
+        ]
+      },
+      {
+        "test": "testChannelSelection with data set \"deleted entry is safely absent\"",
+        "kind": "error",
+        "message": "LowListTests\\FieldtypeContextTest::testChannelSelection with data set \"deleted entry is safely absent\" (19, array(), array(), array(), '', array(), false, true)",
+        "details": [
+          "ErrorException: Attempt to read property \"channel_id\" on null",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Ft.php:87",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/FieldtypeContextTest.php:35"
+        ]
+      },
+      {
+        "test": "testLegacyStructuredChannelIsRejected",
+        "kind": "failure",
+        "message": "LowListTests\\FieldtypeRuntimeTest::testLegacyStructuredChannelIsRejected",
+        "details": [
+          "Failed asserting that two arrays are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
         ]
       },
       {
@@ -3707,7 +3971,7 @@
           "Fatal error: Uncaught ErrorException: Undefined variable $stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
           "Stack trace:",
           "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:5}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
-          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(125): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(130): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
         ]
       },
       {
@@ -3729,7 +3993,7 @@
           "Fatal error: Uncaught ErrorException: Undefined variable $stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
           "Stack trace:",
           "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:5}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
-          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(125): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(130): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
         ]
       },
       {
@@ -3888,7 +4152,7 @@
         "kind": "error",
         "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1 ('set')",
         "details": [
-          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-ec4hc177n0rufPDeVNr/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
+          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-t9c3gfpgg7p43eHbbEi/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:561",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:66"
@@ -4200,10 +4464,10 @@
   {
     "runtime": "PHP 8.5.0 (cli) (built: Nov 20 2025 09:30:23) (NTS clang 15.0.0)",
     "exit": 2,
-    "tests": 388,
-    "assertions": 1825,
-    "errors": 37,
-    "failures": 29,
+    "tests": 440,
+    "assertions": 2132,
+    "errors": 38,
+    "failures": 32,
     "skipped": 0,
     "warnings": 0,
     "risky": 0,
@@ -4312,9 +4576,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000060f0000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &000000000000069c0000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000005fc0000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000006890000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -4323,9 +4587,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000005bb0000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000006480000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000006140000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000006a10000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -4334,9 +4598,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000005b10000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &000000000000063e0000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000006120000000000000000 (",
+          "    'url' => LowListTests\\Url Object &000000000000069f0000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -4345,10 +4609,54 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000005ab0000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000006380000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000006160000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000006a30000000000000000 (",
           "        'last' => Array &0 ("
+        ]
+      },
+      {
+        "test": "testChannelSelection with data set \"structured query channel is rejected\"",
+        "kind": "failure",
+        "message": "LowListTests\\FieldtypeContextTest::testChannelSelection with data set \"structured query channel is rejected\" (null, array(), array(array('9')), array(), '', array(), false, false)",
+        "details": [
+          "Failed asserting that Array &0 (",
+          "    0 => '9'",
+          ") is identical to false.",
+          ""
+        ]
+      },
+      {
+        "test": "testChannelSelection with data set \"structured posted channel is rejected\"",
+        "kind": "failure",
+        "message": "LowListTests\\FieldtypeContextTest::testChannelSelection with data set \"structured posted channel is rejected\" (null, array(), array('8'), array(array('9')), '', array(), false, false)",
+        "details": [
+          "Failed asserting that Array &0 (",
+          "    0 => '9'",
+          ") is identical to false.",
+          ""
+        ]
+      },
+      {
+        "test": "testChannelSelection with data set \"deleted entry is safely absent\"",
+        "kind": "error",
+        "message": "LowListTests\\FieldtypeContextTest::testChannelSelection with data set \"deleted entry is safely absent\" (19, array(), array(), array(), '', array(), false, true)",
+        "details": [
+          "ErrorException: Attempt to read property \"channel_id\" on null",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Ft.php:87",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/FieldtypeContextTest.php:35"
+        ]
+      },
+      {
+        "test": "testLegacyStructuredChannelIsRejected",
+        "kind": "failure",
+        "message": "LowListTests\\FieldtypeRuntimeTest::testLegacyStructuredChannelIsRejected",
+        "details": [
+          "Failed asserting that two arrays are identical.",
+          "--- Expected",
+          "+++ Actual",
+          "@@ @@"
         ]
       },
       {
@@ -4436,7 +4744,7 @@
           "Fatal error: Uncaught ErrorException: Undefined variable $stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
           "Stack trace:",
           "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:5}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
-          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(125): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(130): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
         ]
       },
       {
@@ -4458,7 +4766,7 @@
           "Fatal error: Uncaught ErrorException: Undefined variable $stat in /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar:262",
           "Stack trace:",
           "#0 /Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar(262): {closure:/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php:5}(2, 'Undefined varia...', '/Users/tomjaege...', 262)",
-          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(125): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
+          "#1 /Users/tomjaeger/Sites/add-ons/low_list/tests/Support/native-probe.php(130): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)"
         ]
       },
       {
@@ -4617,7 +4925,7 @@
         "kind": "error",
         "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1 ('set')",
         "details": [
-          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-s8qm37sgomcl5XbuJ5U/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
+          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-pfj1eheg7vm10rxyDrr/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:561",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:66"

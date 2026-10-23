@@ -1,8 +1,8 @@
 {
   "summary": {
     "methods": 227,
-    "below_floor": 26,
-    "above_floor": 7,
+    "below_floor": 25,
+    "above_floor": 8,
     "at_target": 194
   },
   "methods": [
@@ -218,20 +218,6 @@
     },
     {
       "file": "tests/.coverage-source/archive/FluxCapacitor/Base/Ft.php",
-      "method": "getChannelId",
-      "start_line": 69,
-      "end_line": 99,
-      "line_percent": 61.5385,
-      "branch_percent": null,
-      "effective_percent": 61.5385,
-      "executable_lines": 13,
-      "covered_lines": 8,
-      "branch_total": 0,
-      "branch_covered": 0,
-      "status": "below_floor"
-    },
-    {
-      "file": "tests/.coverage-source/archive/FluxCapacitor/Base/Ft.php",
       "method": "displaySettingsRow",
       "start_line": 101,
       "end_line": 126,
@@ -436,6 +422,20 @@
       "effective_percent": 92.1053,
       "executable_lines": 38,
       "covered_lines": 35,
+      "branch_total": 0,
+      "branch_covered": 0,
+      "status": "above_floor"
+    },
+    {
+      "file": "tests/.coverage-source/archive/FluxCapacitor/Base/Ft.php",
+      "method": "getChannelId",
+      "start_line": 69,
+      "end_line": 99,
+      "line_percent": 92.3077,
+      "branch_percent": null,
+      "effective_percent": 92.3077,
+      "executable_lines": 13,
+      "covered_lines": 12,
       "branch_total": 0,
       "branch_covered": 0,
       "status": "above_floor"

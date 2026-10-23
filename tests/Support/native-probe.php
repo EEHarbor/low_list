@@ -23,6 +23,11 @@ if ($argv[1] === 'validation-abnormal-exit') {
 }
 
 $root = dirname(__DIR__, 2);
+if ($argv[1] === 'fieldtype') {
+    require __DIR__ . '/fieldtype-probe.php';
+    echo json_encode(\LowListTests\FieldtypeProbe::run($root, $argv[2]), JSON_UNESCAPED_SLASHES);
+    exit(0);
+}
 if ($argv[1] === 'legacy-bridge') {
     require __DIR__ . '/legacy-bridge-probe.php';
     echo json_encode(\LowListTests\LegacyBridgeProbe::run($root, $argv[2]), JSON_UNESCAPED_SLASHES);

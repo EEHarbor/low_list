@@ -1,5 +1,10 @@
 <?php
 
+error_reporting(E_ALL);
+set_error_handler(static function ($severity, $message, $file, $line) {
+    throw new ErrorException($message, 0, $severity, $file, $line);
+}, E_ALL);
+
 require_once __DIR__ . '/Support/Coverage.php';
 
 if (!extension_loaded('xdebug') || !defined('XDEBUG_CC_BRANCH_CHECK')) {

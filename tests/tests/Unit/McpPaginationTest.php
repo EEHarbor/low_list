@@ -18,7 +18,7 @@ class McpPaginationTest extends TestCase
     public function testPageInputs($page, $expectedPage, $expectedOffset): void
     {
         $mcp = $this->controller();
-        ee()->input->values['page'] = $page;
+        ee()->input->getValues['page'] = $page;
         $model = new PaginationModel(array('one', 'two', 'three'));
         $url = (new Url())->make('explicit');
 
@@ -51,7 +51,7 @@ class McpPaginationTest extends TestCase
     public function testHandlerUrlAndCustomPageParameter(): void
     {
         $mcp = $this->controller();
-        ee()->input->values['position'] = '2';
+        ee()->input->getValues['position'] = '2';
         $model = new PaginationModel(array());
         $this->assertSame($model, $mcp->listing($model));
         $this->assertSame(array(array('limit', 25), array('offset', 25)), $model->calls);
@@ -70,7 +70,7 @@ class McpPaginationTest extends TestCase
     public function testNegativePageDoesNotCreateNegativeOffset(): void
     {
         $mcp = $this->controller();
-        ee()->input->values['page'] = '-2';
+        ee()->input->getValues['page'] = '-2';
         $model = new PaginationModel(array());
         $mcp->paginateModel($model, (new Url())->make('explicit'), 10);
 

@@ -8,7 +8,7 @@
     "metrics": "Independent native contexts; raw basic blocks and out/out_hit exits are preserved without graph merging.",
     "contexts": {
         "http-route": {
-            "capture": "native-navigation-4bf124b64e9c1195.json",
+            "capture": "native-navigation-5bbab89224039329.json",
             "context": {
                 "APP_VER": "7.5.0",
                 "REQ": "CP",
@@ -1363,7 +1363,7 @@
             }
         },
         "legacy": {
-            "capture": "native-navigation-99cbff78d2af039c.json",
+            "capture": "native-navigation-215fde0e6a02061d.json",
             "context": {
                 "APP_VER": "2.5.5",
                 "REQ": "CP",
@@ -2718,7 +2718,7 @@
             }
         },
         "modern": {
-            "capture": "native-navigation-df4934f6f3a1aeac.json",
+            "capture": "native-navigation-38c56cdc354059df.json",
             "context": {
                 "APP_VER": "7.5.0",
                 "REQ": "CP",

@@ -573,6 +573,16 @@ namespace {
     }
 
     /**
+     * Read the native URI service's canonical request string.
+     *
+     * @return string
+     */
+    function uri_string()
+    {
+        return ee()->uri->uri_string();
+    }
+
+    /**
      * Record an opening form helper call.
      *
      * @param string $action

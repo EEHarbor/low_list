@@ -42,30 +42,63 @@ class Redirected extends \RuntimeException
 
 class Input
 {
-    public $values = array();
+    public $getValues = array();
+    public $postValues = array();
 
     /**
-     * Return query-string parameters with EE's absent-value false.
+     * Read the request's query-string collection using the legacy EE boundary.
      *
-     * @param string $name
+     * @param mixed $name
      * @param bool $xss
      * @return mixed
      */
-    public function get($name, $xss = false)
+    public function get($name = '', $xss = false)
     {
-        return isset($this->values[$name]) ? $this->values[$name] : false;
+        return $this->fetch($this->getValues, $name, $xss);
     }
 
     /**
-     * Preserve legacy posted values, including zero and missing/null false values.
+     * Read the independent posted collection without coercing falsey values.
      *
-     * @param string $name
+     * @param mixed $name
      * @param bool $xss
      * @return mixed
      */
-    public function post($name, $xss = false)
+    public function post($name = '', $xss = false)
     {
-        return isset($this->values[$name]) ? $this->values[$name] : false;
+        return $this->fetch($this->postValues, $name, $xss);
+    }
+
+    /**
+     * Prefer an existing non-null POST value, otherwise consult GET.
+     *
+     * @param mixed $name
+     * @param bool $xss
+     * @return mixed
+     */
+    public function get_post($name = '', $xss = false)
+    {
+        return isset($this->postValues[$name]) ? $this->post($name, $xss) : $this->get($name, $xss);
+    }
+
+    /**
+     * Preserve native absent values, strict XSS selection and index diagnostics.
+     *
+     * @param array $values
+     * @param mixed $name
+     * @param bool $xss
+     * @return mixed
+     */
+    private function fetch(array $values, $name, $xss)
+    {
+        if (!isset($values[$name])) {
+            return false;
+        }
+        if ($xss === true) {
+            return ee('Security/XSS')->clean($values[$name]);
+        }
+
+        return $values[$name];
     }
 }
 
@@ -74,7 +107,7 @@ class Uri
     public $path = '';
 
     /**
-     * Return the current request path.
+     * Return the supplied canonical request path without routing it again.
      *
      * @return string
      */
@@ -84,13 +117,32 @@ class Uri
     }
 
     /**
-     * Return the current URI segments for sidebar selection.
+     * Return one-based segments from the supplied canonical request path.
      *
      * @return array
      */
     public function segment_array()
     {
-        return explode('/', $this->path);
+        if ($this->path === '') {
+            return array();
+        }
+        $segments = explode('/', $this->path);
+
+        return array_combine(range(1, count($segments)), $segments);
+    }
+
+    /**
+     * Read a one-based segment using the native caller-provided fallback.
+     *
+     * @param int $number
+     * @param mixed $default
+     * @return mixed
+     */
+    public function segment($number, $default = false)
+    {
+        $segments = $this->segment_array();
+
+        return isset($segments[$number]) ? $segments[$number] : $default;
     }
 }
 

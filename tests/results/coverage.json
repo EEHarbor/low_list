@@ -10,9 +10,9 @@
         "native_case": null
     },
     "totals_compiled_only": {
-        "lines_hit": 1354,
+        "lines_hit": 1358,
         "lines": 1565,
-        "basic_blocks_hit": 936,
+        "basic_blocks_hit": 940,
         "basic_blocks": 1160
     },
     "files": {
@@ -4621,7 +4621,7 @@
         "low_list/low_list.phar/FluxCapacitor/Base/Ft.php": {
             "sha256": "b31ff7a7ccb1bdea8b8803f43664f462920ab942df92be410fe7753ef913206b",
             "compiled_in_main_process": true,
-            "lines_hit": 38,
+            "lines_hit": 42,
             "lines": 57,
             "uncovered_lines": [
                 10,
@@ -4633,10 +4633,6 @@
                 54,
                 55,
                 73,
-                86,
-                87,
-                93,
-                94,
                 105,
                 106,
                 108,
@@ -4644,7 +4640,7 @@
                 110,
                 134
             ],
-            "basic_blocks_hit": 21,
+            "basic_blocks_hit": 25,
             "basic_blocks": 44,
             "functions": {
                 "LowList\\FluxCapacitor\\Base\\Ft->_package_display_settings": {
@@ -4704,7 +4700,7 @@
                     ]
                 },
                 "LowList\\FluxCapacitor\\Base\\Ft->getChannelId": {
-                    "basic_blocks_hit": 8,
+                    "basic_blocks_hit": 12,
                     "basic_blocks": 13,
                     "attribution": {
                         "status": "matched",
@@ -4715,33 +4711,13 @@
                             "line_end": 99
                         }
                     },
-                    "declared_basic_blocks_hit": 8,
+                    "declared_basic_blocks_hit": 12,
                     "declared_basic_blocks": 13,
                     "uncovered": [
                         {
                             "id": 5,
                             "line_start": 73,
                             "line_end": 73
-                        },
-                        {
-                            "id": 36,
-                            "line_start": 85,
-                            "line_end": 85
-                        },
-                        {
-                            "id": 38,
-                            "line_start": 86,
-                            "line_end": 91
-                        },
-                        {
-                            "id": 58,
-                            "line_start": 93,
-                            "line_end": 93
-                        },
-                        {
-                            "id": 67,
-                            "line_start": 94,
-                            "line_end": 98
                         }
                     ],
                     "edges": [
@@ -4783,7 +4759,7 @@
                         {
                             "branch": 32,
                             "destination": 36,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 32,
@@ -4793,12 +4769,12 @@
                         {
                             "branch": 36,
                             "destination": 37,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 37,
                             "destination": 38,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 37,
@@ -4808,12 +4784,12 @@
                         {
                             "branch": 38,
                             "destination": 55,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 55,
                             "destination": 58,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 55,
@@ -4823,17 +4799,17 @@
                         {
                             "branch": 58,
                             "destination": 67,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 58,
                             "destination": 77,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 67,
                             "destination": 77,
-                            "hit": 0
+                            "hit": 1
                         }
                     ],
                     "graph": {
@@ -4917,7 +4893,7 @@
                                 37
                             ],
                             "out_hit": [
-                                0,
+                                1,
                                 1
                             ]
                         },
@@ -4926,12 +4902,12 @@
                             "op_end": 36,
                             "line_start": 85,
                             "line_end": 85,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 37
                             ],
                             "out_hit": [
-                                0
+                                1
                             ]
                         },
                         "37": {
@@ -4945,7 +4921,7 @@
                                 55
                             ],
                             "out_hit": [
-                                0,
+                                1,
                                 1
                             ]
                         },
@@ -4954,12 +4930,12 @@
                             "op_end": 54,
                             "line_start": 86,
                             "line_end": 91,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 55
                             ],
                             "out_hit": [
-                                0
+                                1
                             ]
                         },
                         "55": {
@@ -4973,7 +4949,7 @@
                                 77
                             ],
                             "out_hit": [
-                                0,
+                                1,
                                 1
                             ]
                         },
@@ -4982,14 +4958,14 @@
                             "op_end": 66,
                             "line_start": 93,
                             "line_end": 93,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 67,
                                 77
                             ],
                             "out_hit": [
-                                0,
-                                0
+                                1,
+                                1
                             ]
                         },
                         "67": {
@@ -4997,12 +4973,12 @@
                             "op_end": 76,
                             "line_start": 94,
                             "line_end": 98,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 77
                             ],
                             "out_hit": [
-                                0
+                                1
                             ]
                         },
                         "77": {

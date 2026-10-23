@@ -10,6 +10,11 @@ $configurations = array(
         'source' => 'low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php',
         'cases' => array('modern' => '7.5.0', 'legacy' => '2.5.5', 'http-route' => '7.5.0'),
     ),
+    'fieldtype' => array(
+        'source' => 'low_list/low_list.phar/FluxCapacitor/Base/Ft.php',
+        'cases' => array('legacy' => '2.5.5', 'legacy-structured' => '2.5.5'),
+        'request' => 'PAGE',
+    ),
     'legacy-bridge' => array(
         'source' => 'low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php',
         'cases' => array('urls' => '2.5.5', 'view-writable' => '2.5.5', 'view-readonly' => '2.5.5'),
@@ -42,7 +47,7 @@ foreach (glob($reportDirectory . '/native-' . $mode . '-*.json') as $path) {
     if ($capture['php'] !== $parent['php'] || $capture['xdebug'] !== $parent['xdebug'] || !isset($capture['coverage'][$native])) {
         throw new RuntimeException('Missing or incompatible native source instrumentation.');
     }
-    if ($capture['context']['REQ'] !== 'CP' || $capture['context']['APP_VER'] !== $configuration['cases'][$case]) {
+    if ($capture['context']['REQ'] !== (isset($configuration['request']) ? $configuration['request'] : 'CP') || $capture['context']['APP_VER'] !== $configuration['cases'][$case]) {
         throw new RuntimeException('Unexpected native source request context.');
     }
     $source = $capture['coverage'][$native];

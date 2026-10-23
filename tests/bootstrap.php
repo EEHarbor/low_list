@@ -1,8 +1,14 @@
 <?php
 
+error_reporting(E_ALL);
+set_error_handler(static function ($severity, $message, $file, $line) {
+    throw new ErrorException($message, 0, $severity, $file, $line);
+}, E_ALL);
+
 require_once __DIR__ . '/Support/Environment.php';
 require_once __DIR__ . '/Support/Url.php';
 require_once __DIR__ . '/Support/Collaborators.php';
+require_once __DIR__ . '/Support/FieldtypeCollaborators.php';
 require_once __DIR__ . '/Support/AdapterCollaborators.php';
 require_once __DIR__ . '/Support/SchemaForge.php';
 require_once __DIR__ . '/Support/Encryption.php';
@@ -24,4 +30,5 @@ define('FILE_WRITE_MODE', 0600);
 
 require_once PATH_THIRD . 'low_list/autoload.php';
 require_once PATH_THIRD . 'low_list/pi.low_list.php';
+require_once __DIR__ . '/Support/Fieldtype.php';
 require_once __DIR__ . '/Support/TestCase.php';
