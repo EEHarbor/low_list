@@ -1,9 +1,9 @@
 {
   "summary": {
     "methods": 227,
-    "below_floor": 30,
-    "above_floor": 10,
-    "at_target": 187
+    "below_floor": 26,
+    "above_floor": 7,
+    "at_target": 194
   },
   "methods": [
     {
@@ -343,48 +343,6 @@
       "status": "below_floor"
     },
     {
-      "file": "tests/.coverage-source/archive/FluxCapacitor/Bridge/EE3.php",
-      "method": "initiateSettings",
-      "start_line": 456,
-      "end_line": 512,
-      "line_percent": 84.0,
-      "branch_percent": null,
-      "effective_percent": 84.0,
-      "executable_lines": 25,
-      "covered_lines": 21,
-      "branch_total": 0,
-      "branch_covered": 0,
-      "status": "below_floor"
-    },
-    {
-      "file": "tests/.coverage-source/archive/FluxCapacitor/Bridge/EE4.php",
-      "method": "initiateSettings",
-      "start_line": 456,
-      "end_line": 512,
-      "line_percent": 84.0,
-      "branch_percent": null,
-      "effective_percent": 84.0,
-      "executable_lines": 25,
-      "covered_lines": 21,
-      "branch_total": 0,
-      "branch_covered": 0,
-      "status": "below_floor"
-    },
-    {
-      "file": "tests/.coverage-source/archive/FluxCapacitor/Bridge/EE5.php",
-      "method": "initiateSettings",
-      "start_line": 465,
-      "end_line": 521,
-      "line_percent": 84.0,
-      "branch_percent": null,
-      "effective_percent": 84.0,
-      "executable_lines": 25,
-      "covered_lines": 21,
-      "branch_total": 0,
-      "branch_covered": 0,
-      "status": "below_floor"
-    },
-    {
       "file": "tests/.coverage-source/archive/FluxCapacitor/Base/Ft.php",
       "method": "displaySettingsReturn",
       "start_line": 128,
@@ -408,20 +366,6 @@
       "effective_percent": 85.7143,
       "executable_lines": 7,
       "covered_lines": 6,
-      "branch_total": 0,
-      "branch_covered": 0,
-      "status": "below_floor"
-    },
-    {
-      "file": "tests/.coverage-source/archive/FluxCapacitor/Bridge/EE2.php",
-      "method": "initiateSettings",
-      "start_line": 420,
-      "end_line": 475,
-      "line_percent": 88.0,
-      "branch_percent": null,
-      "effective_percent": 88.0,
-      "executable_lines": 25,
-      "covered_lines": 22,
       "branch_total": 0,
       "branch_covered": 0,
       "status": "below_floor"
@@ -492,48 +436,6 @@
       "effective_percent": 92.1053,
       "executable_lines": 38,
       "covered_lines": 35,
-      "branch_total": 0,
-      "branch_covered": 0,
-      "status": "above_floor"
-    },
-    {
-      "file": "tests/.coverage-source/archive/FluxCapacitor/Bridge/EE3.php",
-      "method": "setConfig",
-      "start_line": 221,
-      "end_line": 254,
-      "line_percent": 93.75,
-      "branch_percent": null,
-      "effective_percent": 93.75,
-      "executable_lines": 16,
-      "covered_lines": 15,
-      "branch_total": 0,
-      "branch_covered": 0,
-      "status": "above_floor"
-    },
-    {
-      "file": "tests/.coverage-source/archive/FluxCapacitor/Bridge/EE4.php",
-      "method": "setConfig",
-      "start_line": 221,
-      "end_line": 254,
-      "line_percent": 93.75,
-      "branch_percent": null,
-      "effective_percent": 93.75,
-      "executable_lines": 16,
-      "covered_lines": 15,
-      "branch_total": 0,
-      "branch_covered": 0,
-      "status": "above_floor"
-    },
-    {
-      "file": "tests/.coverage-source/archive/FluxCapacitor/Bridge/EE5.php",
-      "method": "setConfig",
-      "start_line": 221,
-      "end_line": 254,
-      "line_percent": 93.75,
-      "branch_percent": null,
-      "effective_percent": 93.75,
-      "executable_lines": 16,
-      "covered_lines": 15,
       "branch_total": 0,
       "branch_covered": 0,
       "status": "above_floor"
@@ -1408,6 +1310,20 @@
     },
     {
       "file": "tests/.coverage-source/archive/FluxCapacitor/Bridge/EE2.php",
+      "method": "initiateSettings",
+      "start_line": 420,
+      "end_line": 475,
+      "line_percent": 100.0,
+      "branch_percent": null,
+      "effective_percent": 100.0,
+      "executable_lines": 25,
+      "covered_lines": 25,
+      "branch_total": 0,
+      "branch_covered": 0,
+      "status": "at_target"
+    },
+    {
+      "file": "tests/.coverage-source/archive/FluxCapacitor/Bridge/EE2.php",
       "method": "javascript_to_page",
       "start_line": 480,
       "end_line": 483,
@@ -1618,6 +1534,20 @@
     },
     {
       "file": "tests/.coverage-source/archive/FluxCapacitor/Bridge/EE3.php",
+      "method": "setConfig",
+      "start_line": 221,
+      "end_line": 254,
+      "line_percent": 100.0,
+      "branch_percent": null,
+      "effective_percent": 100.0,
+      "executable_lines": 16,
+      "covered_lines": 16,
+      "branch_total": 0,
+      "branch_covered": 0,
+      "status": "at_target"
+    },
+    {
+      "file": "tests/.coverage-source/archive/FluxCapacitor/Bridge/EE3.php",
       "method": "cache",
       "start_line": 256,
       "end_line": 284,
@@ -1794,6 +1724,20 @@
       "effective_percent": 100.0,
       "executable_lines": 2,
       "covered_lines": 2,
+      "branch_total": 0,
+      "branch_covered": 0,
+      "status": "at_target"
+    },
+    {
+      "file": "tests/.coverage-source/archive/FluxCapacitor/Bridge/EE3.php",
+      "method": "initiateSettings",
+      "start_line": 456,
+      "end_line": 512,
+      "line_percent": 100.0,
+      "branch_percent": null,
+      "effective_percent": 100.0,
+      "executable_lines": 25,
+      "covered_lines": 25,
       "branch_total": 0,
       "branch_covered": 0,
       "status": "at_target"
@@ -1996,6 +1940,20 @@
     },
     {
       "file": "tests/.coverage-source/archive/FluxCapacitor/Bridge/EE4.php",
+      "method": "setConfig",
+      "start_line": 221,
+      "end_line": 254,
+      "line_percent": 100.0,
+      "branch_percent": null,
+      "effective_percent": 100.0,
+      "executable_lines": 16,
+      "covered_lines": 16,
+      "branch_total": 0,
+      "branch_covered": 0,
+      "status": "at_target"
+    },
+    {
+      "file": "tests/.coverage-source/archive/FluxCapacitor/Bridge/EE4.php",
       "method": "cache",
       "start_line": 256,
       "end_line": 284,
@@ -2172,6 +2130,20 @@
       "effective_percent": 100.0,
       "executable_lines": 2,
       "covered_lines": 2,
+      "branch_total": 0,
+      "branch_covered": 0,
+      "status": "at_target"
+    },
+    {
+      "file": "tests/.coverage-source/archive/FluxCapacitor/Bridge/EE4.php",
+      "method": "initiateSettings",
+      "start_line": 456,
+      "end_line": 512,
+      "line_percent": 100.0,
+      "branch_percent": null,
+      "effective_percent": 100.0,
+      "executable_lines": 25,
+      "covered_lines": 25,
       "branch_total": 0,
       "branch_covered": 0,
       "status": "at_target"
@@ -2368,6 +2340,20 @@
       "effective_percent": 100.0,
       "executable_lines": 2,
       "covered_lines": 2,
+      "branch_total": 0,
+      "branch_covered": 0,
+      "status": "at_target"
+    },
+    {
+      "file": "tests/.coverage-source/archive/FluxCapacitor/Bridge/EE5.php",
+      "method": "setConfig",
+      "start_line": 221,
+      "end_line": 254,
+      "line_percent": 100.0,
+      "branch_percent": null,
+      "effective_percent": 100.0,
+      "executable_lines": 16,
+      "covered_lines": 16,
       "branch_total": 0,
       "branch_covered": 0,
       "status": "at_target"
@@ -2550,6 +2536,20 @@
       "effective_percent": 100.0,
       "executable_lines": 2,
       "covered_lines": 2,
+      "branch_total": 0,
+      "branch_covered": 0,
+      "status": "at_target"
+    },
+    {
+      "file": "tests/.coverage-source/archive/FluxCapacitor/Bridge/EE5.php",
+      "method": "initiateSettings",
+      "start_line": 465,
+      "end_line": 521,
+      "line_percent": 100.0,
+      "branch_percent": null,
+      "effective_percent": 100.0,
+      "executable_lines": 25,
+      "covered_lines": 25,
       "branch_total": 0,
       "branch_covered": 0,
       "status": "at_target"

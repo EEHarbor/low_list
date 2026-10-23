@@ -89,6 +89,29 @@ class Result
     }
 
     /**
+     * Return retained row objects or the native non-object array representation.
+     *
+     * @param string $type
+     * @return array
+     */
+    public function result($type = 'object')
+    {
+        return $type == 'object' ? $this->rows : $this->result_array();
+    }
+
+    /**
+     * Copy rows as arrays without moving the selected row or replacing objects.
+     *
+     * @return array
+     */
+    public function result_array()
+    {
+        return array_map(static function ($row) {
+            return (array) $row;
+        }, $this->rows);
+    }
+
+    /**
      * Match EE's named-column, numeric-index and current-row fallback behavior.
      *
      * @param int|string $index
@@ -248,16 +271,20 @@ class Environment
     public $serviceCalls = array();
     private $loaded = array();
     private $databasePrototype;
+    private $databaseMetadata;
 
     /**
-     * Create fresh collaborators for one test.
+     * Create collaborators with optional connection-configured query metadata.
      *
+     * @param array $databaseMetadata
      * @return void
      */
-    public function __construct()
+    public function __construct(array $databaseMetadata = array())
     {
         $this->TMPL = new Template();
         $this->db = new Database();
+        $this->databaseMetadata = $databaseMetadata;
+        $this->db->data_cache = $databaseMetadata;
         $this->databasePrototype = $this->db;
         $this->config = new Config();
         $this->load = new Loader();
@@ -265,14 +292,14 @@ class Environment
     }
 
     /**
-     * Create a query from the independent database service, not the facade slot.
+     * Create an independent query using its connection's configured metadata.
      *
      * @return Database
      */
     public function newDatabaseQuery()
     {
         $query = clone $this->databasePrototype;
-        $query->data_cache = array();
+        $query->data_cache = $this->databaseMetadata;
 
         return $query;
     }

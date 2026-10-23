@@ -10,9 +10,9 @@
         "native_case": null
     },
     "totals_compiled_only": {
-        "lines_hit": 1336,
+        "lines_hit": 1354,
         "lines": 1565,
-        "basic_blocks_hit": 910,
+        "basic_blocks_hit": 936,
         "basic_blocks": 1160
     },
     "files": {
@@ -9185,7 +9185,7 @@
         "low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php": {
             "sha256": "56be84f351db72896f70d6a9da64bcf27a881acca4dfa5400ecbf67a75946aee",
             "compiled_in_main_process": true,
-            "lines_hit": 164,
+            "lines_hit": 167,
             "lines": 195,
             "uncovered_lines": [
                 41,
@@ -9215,16 +9215,13 @@
                 154,
                 163,
                 164,
-                409,
-                444,
-                445,
-                462
+                409
             ],
-            "basic_blocks_hit": 128,
+            "basic_blocks_hit": 133,
             "basic_blocks": 167,
             "functions": {
                 "LowList\\FluxCapacitor\\Bridge\\EE2->initiateSettings": {
-                    "basic_blocks_hit": 12,
+                    "basic_blocks_hit": 17,
                     "basic_blocks": 17,
                     "attribution": {
                         "status": "matched",
@@ -9235,35 +9232,9 @@
                             "line_end": 475
                         }
                     },
-                    "declared_basic_blocks_hit": 12,
+                    "declared_basic_blocks_hit": 17,
                     "declared_basic_blocks": 17,
-                    "uncovered": [
-                        {
-                            "id": 55,
-                            "line_start": 444,
-                            "line_end": 444
-                        },
-                        {
-                            "id": 59,
-                            "line_start": 444,
-                            "line_end": 444
-                        },
-                        {
-                            "id": 60,
-                            "line_start": 445,
-                            "line_end": 444
-                        },
-                        {
-                            "id": 66,
-                            "line_start": 444,
-                            "line_end": 443
-                        },
-                        {
-                            "id": 109,
-                            "line_start": 462,
-                            "line_end": 457
-                        }
-                    ],
+                    "uncovered": [],
                     "edges": [
                         {
                             "branch": 0,
@@ -9308,7 +9279,7 @@
                         {
                             "branch": 34,
                             "destination": 55,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 34,
@@ -9318,7 +9289,7 @@
                         {
                             "branch": 55,
                             "destination": 59,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 55,
@@ -9328,22 +9299,22 @@
                         {
                             "branch": 59,
                             "destination": 60,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 59,
                             "destination": 66,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 60,
                             "destination": 59,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 66,
                             "destination": 72,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 68,
@@ -9363,7 +9334,7 @@
                         {
                             "branch": 91,
                             "destination": 109,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 91,
@@ -9373,7 +9344,7 @@
                         {
                             "branch": 109,
                             "destination": 111,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 111,
@@ -9469,7 +9440,7 @@
                                 68
                             ],
                             "out_hit": [
-                                0,
+                                1,
                                 1
                             ]
                         },
@@ -9478,13 +9449,13 @@
                             "op_end": 58,
                             "line_start": 444,
                             "line_end": 444,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 59,
                                 66
                             ],
                             "out_hit": [
-                                0,
+                                1,
                                 0
                             ]
                         },
@@ -9493,14 +9464,14 @@
                             "op_end": 59,
                             "line_start": 444,
                             "line_end": 444,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 60,
                                 66
                             ],
                             "out_hit": [
-                                0,
-                                0
+                                1,
+                                1
                             ]
                         },
                         "60": {
@@ -9508,12 +9479,12 @@
                             "op_end": 65,
                             "line_start": 445,
                             "line_end": 444,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 59
                             ],
                             "out_hit": [
-                                0
+                                1
                             ]
                         },
                         "66": {
@@ -9521,12 +9492,12 @@
                             "op_end": 67,
                             "line_start": 444,
                             "line_end": 443,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 72
                             ],
                             "out_hit": [
-                                0
+                                1
                             ]
                         },
                         "68": {
@@ -9568,7 +9539,7 @@
                                 111
                             ],
                             "out_hit": [
-                                0,
+                                1,
                                 1
                             ]
                         },
@@ -9577,12 +9548,12 @@
                             "op_end": 110,
                             "line_start": 462,
                             "line_end": 457,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 111
                             ],
                             "out_hit": [
-                                0
+                                1
                             ]
                         },
                         "111": {
@@ -12166,7 +12137,7 @@
                         {
                             "branch": 0,
                             "destination": 18,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 15,
@@ -12222,7 +12193,7 @@
                             ],
                             "out_hit": [
                                 1,
-                                0
+                                1
                             ]
                         },
                         "15": {
@@ -13399,22 +13370,17 @@
         "low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php": {
             "sha256": "ad1b199acef13cfd70c0f8ff140fea71fb392f363dc9a1817383a5699da7e1e0",
             "compiled_in_main_process": true,
-            "lines_hit": 173,
+            "lines_hit": 178,
             "lines": 180,
             "uncovered_lines": [
                 90,
-                91,
-                231,
-                472,
-                481,
-                482,
-                499
+                91
             ],
-            "basic_blocks_hit": 138,
+            "basic_blocks_hit": 145,
             "basic_blocks": 149,
             "functions": {
                 "LowList\\FluxCapacitor\\Bridge\\EE3->initiateSettings": {
-                    "basic_blocks_hit": 11,
+                    "basic_blocks_hit": 17,
                     "basic_blocks": 17,
                     "attribution": {
                         "status": "matched",
@@ -13425,40 +13391,9 @@
                             "line_end": 512
                         }
                     },
-                    "declared_basic_blocks_hit": 11,
+                    "declared_basic_blocks_hit": 17,
                     "declared_basic_blocks": 17,
-                    "uncovered": [
-                        {
-                            "id": 21,
-                            "line_start": 472,
-                            "line_end": 475
-                        },
-                        {
-                            "id": 54,
-                            "line_start": 481,
-                            "line_end": 481
-                        },
-                        {
-                            "id": 58,
-                            "line_start": 481,
-                            "line_end": 481
-                        },
-                        {
-                            "id": 59,
-                            "line_start": 482,
-                            "line_end": 481
-                        },
-                        {
-                            "id": 65,
-                            "line_start": 481,
-                            "line_end": 480
-                        },
-                        {
-                            "id": 108,
-                            "line_start": 499,
-                            "line_end": 494
-                        }
-                    ],
+                    "uncovered": [],
                     "edges": [
                         {
                             "branch": 0,
@@ -13478,7 +13413,7 @@
                         {
                             "branch": 12,
                             "destination": 21,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 12,
@@ -13488,7 +13423,7 @@
                         {
                             "branch": 21,
                             "destination": 24,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 24,
@@ -13503,7 +13438,7 @@
                         {
                             "branch": 33,
                             "destination": 54,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 33,
@@ -13513,7 +13448,7 @@
                         {
                             "branch": 54,
                             "destination": 58,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 54,
@@ -13523,22 +13458,22 @@
                         {
                             "branch": 58,
                             "destination": 59,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 58,
                             "destination": 65,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 59,
                             "destination": 58,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 65,
                             "destination": 71,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 67,
@@ -13558,7 +13493,7 @@
                         {
                             "branch": 90,
                             "destination": 108,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 90,
@@ -13568,7 +13503,7 @@
                         {
                             "branch": 108,
                             "destination": 110,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 110,
@@ -13621,7 +13556,7 @@
                                 24
                             ],
                             "out_hit": [
-                                0,
+                                1,
                                 1
                             ]
                         },
@@ -13630,12 +13565,12 @@
                             "op_end": 23,
                             "line_start": 472,
                             "line_end": 475,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 24
                             ],
                             "out_hit": [
-                                0
+                                1
                             ]
                         },
                         "24": {
@@ -13664,7 +13599,7 @@
                                 67
                             ],
                             "out_hit": [
-                                0,
+                                1,
                                 1
                             ]
                         },
@@ -13673,13 +13608,13 @@
                             "op_end": 57,
                             "line_start": 481,
                             "line_end": 481,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 58,
                                 65
                             ],
                             "out_hit": [
-                                0,
+                                1,
                                 0
                             ]
                         },
@@ -13688,14 +13623,14 @@
                             "op_end": 58,
                             "line_start": 481,
                             "line_end": 481,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 59,
                                 65
                             ],
                             "out_hit": [
-                                0,
-                                0
+                                1,
+                                1
                             ]
                         },
                         "59": {
@@ -13703,12 +13638,12 @@
                             "op_end": 64,
                             "line_start": 482,
                             "line_end": 481,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 58
                             ],
                             "out_hit": [
-                                0
+                                1
                             ]
                         },
                         "65": {
@@ -13716,12 +13651,12 @@
                             "op_end": 66,
                             "line_start": 481,
                             "line_end": 480,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 71
                             ],
                             "out_hit": [
-                                0
+                                1
                             ]
                         },
                         "67": {
@@ -13763,7 +13698,7 @@
                                 110
                             ],
                             "out_hit": [
-                                0,
+                                1,
                                 1
                             ]
                         },
@@ -13772,12 +13707,12 @@
                             "op_end": 109,
                             "line_start": 499,
                             "line_end": 494,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 110
                             ],
                             "out_hit": [
-                                0
+                                1
                             ]
                         },
                         "110": {
@@ -16102,7 +16037,7 @@
                     ]
                 },
                 "LowList\\FluxCapacitor\\Bridge\\EE3->setConfig": {
-                    "basic_blocks_hit": 6,
+                    "basic_blocks_hit": 7,
                     "basic_blocks": 7,
                     "attribution": {
                         "status": "matched",
@@ -16113,20 +16048,14 @@
                             "line_end": 254
                         }
                     },
-                    "declared_basic_blocks_hit": 6,
+                    "declared_basic_blocks_hit": 7,
                     "declared_basic_blocks": 7,
-                    "uncovered": [
-                        {
-                            "id": 14,
-                            "line_start": 231,
-                            "line_end": 235
-                        }
-                    ],
+                    "uncovered": [],
                     "edges": [
                         {
                             "branch": 0,
                             "destination": 14,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 0,
@@ -16136,7 +16065,7 @@
                         {
                             "branch": 14,
                             "destination": 17,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 17,
@@ -16186,7 +16115,7 @@
                                 17
                             ],
                             "out_hit": [
-                                0,
+                                1,
                                 1
                             ]
                         },
@@ -16195,12 +16124,12 @@
                             "op_end": 16,
                             "line_start": 231,
                             "line_end": 235,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 17
                             ],
                             "out_hit": [
-                                0
+                                1
                             ]
                         },
                         "17": {
@@ -17009,18 +16938,13 @@
         "low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php": {
             "sha256": "bc5192719a6eeddaec170cd9b6aa511fd68b37be0d9b5bea3c6f31dd41a70ae1",
             "compiled_in_main_process": true,
-            "lines_hit": 173,
+            "lines_hit": 178,
             "lines": 180,
             "uncovered_lines": [
                 90,
-                91,
-                231,
-                472,
-                481,
-                482,
-                499
+                91
             ],
-            "basic_blocks_hit": 138,
+            "basic_blocks_hit": 145,
             "basic_blocks": 149,
             "functions": {
                 "LowList\\FluxCapacitor\\Bridge\\EE4->getStartNum": {
@@ -17432,7 +17356,7 @@
                     ]
                 },
                 "LowList\\FluxCapacitor\\Bridge\\EE4->initiateSettings": {
-                    "basic_blocks_hit": 11,
+                    "basic_blocks_hit": 17,
                     "basic_blocks": 17,
                     "attribution": {
                         "status": "matched",
@@ -17443,40 +17367,9 @@
                             "line_end": 512
                         }
                     },
-                    "declared_basic_blocks_hit": 11,
+                    "declared_basic_blocks_hit": 17,
                     "declared_basic_blocks": 17,
-                    "uncovered": [
-                        {
-                            "id": 21,
-                            "line_start": 472,
-                            "line_end": 475
-                        },
-                        {
-                            "id": 54,
-                            "line_start": 481,
-                            "line_end": 481
-                        },
-                        {
-                            "id": 58,
-                            "line_start": 481,
-                            "line_end": 481
-                        },
-                        {
-                            "id": 59,
-                            "line_start": 482,
-                            "line_end": 481
-                        },
-                        {
-                            "id": 65,
-                            "line_start": 481,
-                            "line_end": 480
-                        },
-                        {
-                            "id": 108,
-                            "line_start": 499,
-                            "line_end": 494
-                        }
-                    ],
+                    "uncovered": [],
                     "edges": [
                         {
                             "branch": 0,
@@ -17496,7 +17389,7 @@
                         {
                             "branch": 12,
                             "destination": 21,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 12,
@@ -17506,7 +17399,7 @@
                         {
                             "branch": 21,
                             "destination": 24,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 24,
@@ -17521,7 +17414,7 @@
                         {
                             "branch": 33,
                             "destination": 54,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 33,
@@ -17531,7 +17424,7 @@
                         {
                             "branch": 54,
                             "destination": 58,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 54,
@@ -17541,22 +17434,22 @@
                         {
                             "branch": 58,
                             "destination": 59,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 58,
                             "destination": 65,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 59,
                             "destination": 58,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 65,
                             "destination": 71,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 67,
@@ -17576,7 +17469,7 @@
                         {
                             "branch": 90,
                             "destination": 108,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 90,
@@ -17586,7 +17479,7 @@
                         {
                             "branch": 108,
                             "destination": 110,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 110,
@@ -17639,7 +17532,7 @@
                                 24
                             ],
                             "out_hit": [
-                                0,
+                                1,
                                 1
                             ]
                         },
@@ -17648,12 +17541,12 @@
                             "op_end": 23,
                             "line_start": 472,
                             "line_end": 475,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 24
                             ],
                             "out_hit": [
-                                0
+                                1
                             ]
                         },
                         "24": {
@@ -17682,7 +17575,7 @@
                                 67
                             ],
                             "out_hit": [
-                                0,
+                                1,
                                 1
                             ]
                         },
@@ -17691,13 +17584,13 @@
                             "op_end": 57,
                             "line_start": 481,
                             "line_end": 481,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 58,
                                 65
                             ],
                             "out_hit": [
-                                0,
+                                1,
                                 0
                             ]
                         },
@@ -17706,14 +17599,14 @@
                             "op_end": 58,
                             "line_start": 481,
                             "line_end": 481,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 59,
                                 65
                             ],
                             "out_hit": [
-                                0,
-                                0
+                                1,
+                                1
                             ]
                         },
                         "59": {
@@ -17721,12 +17614,12 @@
                             "op_end": 64,
                             "line_start": 482,
                             "line_end": 481,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 58
                             ],
                             "out_hit": [
-                                0
+                                1
                             ]
                         },
                         "65": {
@@ -17734,12 +17627,12 @@
                             "op_end": 66,
                             "line_start": 481,
                             "line_end": 480,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 71
                             ],
                             "out_hit": [
-                                0
+                                1
                             ]
                         },
                         "67": {
@@ -17781,7 +17674,7 @@
                                 110
                             ],
                             "out_hit": [
-                                0,
+                                1,
                                 1
                             ]
                         },
@@ -17790,12 +17683,12 @@
                             "op_end": 109,
                             "line_start": 499,
                             "line_end": 494,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 110
                             ],
                             "out_hit": [
-                                0
+                                1
                             ]
                         },
                         "110": {
@@ -17836,7 +17729,7 @@
                     }
                 },
                 "LowList\\FluxCapacitor\\Bridge\\EE4->setConfig": {
-                    "basic_blocks_hit": 6,
+                    "basic_blocks_hit": 7,
                     "basic_blocks": 7,
                     "attribution": {
                         "status": "matched",
@@ -17847,20 +17740,14 @@
                             "line_end": 254
                         }
                     },
-                    "declared_basic_blocks_hit": 6,
+                    "declared_basic_blocks_hit": 7,
                     "declared_basic_blocks": 7,
-                    "uncovered": [
-                        {
-                            "id": 14,
-                            "line_start": 231,
-                            "line_end": 235
-                        }
-                    ],
+                    "uncovered": [],
                     "edges": [
                         {
                             "branch": 0,
                             "destination": 14,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 0,
@@ -17870,7 +17757,7 @@
                         {
                             "branch": 14,
                             "destination": 17,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 17,
@@ -17920,7 +17807,7 @@
                                 17
                             ],
                             "out_hit": [
-                                0,
+                                1,
                                 1
                             ]
                         },
@@ -17929,12 +17816,12 @@
                             "op_end": 16,
                             "line_start": 231,
                             "line_end": 235,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 17
                             ],
                             "out_hit": [
-                                0
+                                1
                             ]
                         },
                         "17": {
@@ -20619,18 +20506,13 @@
         "low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php": {
             "sha256": "31a4a5810152bb4a41fce63dc486d4dac35bcceeec9c04ca4bb1d44bcde37ca9",
             "compiled_in_main_process": true,
-            "lines_hit": 179,
+            "lines_hit": 184,
             "lines": 186,
             "uncovered_lines": [
                 90,
-                91,
-                231,
-                481,
-                490,
-                491,
-                508
+                91
             ],
-            "basic_blocks_hit": 147,
+            "basic_blocks_hit": 154,
             "basic_blocks": 159,
             "functions": {
                 "LowList\\FluxCapacitor\\Bridge\\EE5->prep_url": {
@@ -20690,7 +20572,7 @@
                     ]
                 },
                 "LowList\\FluxCapacitor\\Bridge\\EE5->initiateSettings": {
-                    "basic_blocks_hit": 11,
+                    "basic_blocks_hit": 17,
                     "basic_blocks": 17,
                     "attribution": {
                         "status": "matched",
@@ -20701,40 +20583,9 @@
                             "line_end": 521
                         }
                     },
-                    "declared_basic_blocks_hit": 11,
+                    "declared_basic_blocks_hit": 17,
                     "declared_basic_blocks": 17,
-                    "uncovered": [
-                        {
-                            "id": 21,
-                            "line_start": 481,
-                            "line_end": 484
-                        },
-                        {
-                            "id": 54,
-                            "line_start": 490,
-                            "line_end": 490
-                        },
-                        {
-                            "id": 58,
-                            "line_start": 490,
-                            "line_end": 490
-                        },
-                        {
-                            "id": 59,
-                            "line_start": 491,
-                            "line_end": 490
-                        },
-                        {
-                            "id": 65,
-                            "line_start": 490,
-                            "line_end": 489
-                        },
-                        {
-                            "id": 108,
-                            "line_start": 508,
-                            "line_end": 503
-                        }
-                    ],
+                    "uncovered": [],
                     "edges": [
                         {
                             "branch": 0,
@@ -20754,7 +20605,7 @@
                         {
                             "branch": 12,
                             "destination": 21,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 12,
@@ -20764,7 +20615,7 @@
                         {
                             "branch": 21,
                             "destination": 24,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 24,
@@ -20779,7 +20630,7 @@
                         {
                             "branch": 33,
                             "destination": 54,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 33,
@@ -20789,7 +20640,7 @@
                         {
                             "branch": 54,
                             "destination": 58,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 54,
@@ -20799,22 +20650,22 @@
                         {
                             "branch": 58,
                             "destination": 59,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 58,
                             "destination": 65,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 59,
                             "destination": 58,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 65,
                             "destination": 71,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 67,
@@ -20834,7 +20685,7 @@
                         {
                             "branch": 90,
                             "destination": 108,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 90,
@@ -20844,7 +20695,7 @@
                         {
                             "branch": 108,
                             "destination": 110,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 110,
@@ -20897,7 +20748,7 @@
                                 24
                             ],
                             "out_hit": [
-                                0,
+                                1,
                                 1
                             ]
                         },
@@ -20906,12 +20757,12 @@
                             "op_end": 23,
                             "line_start": 481,
                             "line_end": 484,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 24
                             ],
                             "out_hit": [
-                                0
+                                1
                             ]
                         },
                         "24": {
@@ -20940,7 +20791,7 @@
                                 67
                             ],
                             "out_hit": [
-                                0,
+                                1,
                                 1
                             ]
                         },
@@ -20949,13 +20800,13 @@
                             "op_end": 57,
                             "line_start": 490,
                             "line_end": 490,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 58,
                                 65
                             ],
                             "out_hit": [
-                                0,
+                                1,
                                 0
                             ]
                         },
@@ -20964,14 +20815,14 @@
                             "op_end": 58,
                             "line_start": 490,
                             "line_end": 490,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 59,
                                 65
                             ],
                             "out_hit": [
-                                0,
-                                0
+                                1,
+                                1
                             ]
                         },
                         "59": {
@@ -20979,12 +20830,12 @@
                             "op_end": 64,
                             "line_start": 491,
                             "line_end": 490,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 58
                             ],
                             "out_hit": [
-                                0
+                                1
                             ]
                         },
                         "65": {
@@ -20992,12 +20843,12 @@
                             "op_end": 66,
                             "line_start": 490,
                             "line_end": 489,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 71
                             ],
                             "out_hit": [
-                                0
+                                1
                             ]
                         },
                         "67": {
@@ -21039,7 +20890,7 @@
                                 110
                             ],
                             "out_hit": [
-                                0,
+                                1,
                                 1
                             ]
                         },
@@ -21048,12 +20899,12 @@
                             "op_end": 109,
                             "line_start": 508,
                             "line_end": 503,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 110
                             ],
                             "out_hit": [
-                                0
+                                1
                             ]
                         },
                         "110": {
@@ -24018,7 +23869,7 @@
                     ]
                 },
                 "LowList\\FluxCapacitor\\Bridge\\EE5->setConfig": {
-                    "basic_blocks_hit": 6,
+                    "basic_blocks_hit": 7,
                     "basic_blocks": 7,
                     "attribution": {
                         "status": "matched",
@@ -24029,20 +23880,14 @@
                             "line_end": 254
                         }
                     },
-                    "declared_basic_blocks_hit": 6,
+                    "declared_basic_blocks_hit": 7,
                     "declared_basic_blocks": 7,
-                    "uncovered": [
-                        {
-                            "id": 14,
-                            "line_start": 231,
-                            "line_end": 235
-                        }
-                    ],
+                    "uncovered": [],
                     "edges": [
                         {
                             "branch": 0,
                             "destination": 14,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 0,
@@ -24052,7 +23897,7 @@
                         {
                             "branch": 14,
                             "destination": 17,
-                            "hit": 0
+                            "hit": 1
                         },
                         {
                             "branch": 17,
@@ -24102,7 +23947,7 @@
                                 17
                             ],
                             "out_hit": [
-                                0,
+                                1,
                                 1
                             ]
                         },
@@ -24111,12 +23956,12 @@
                             "op_end": 16,
                             "line_start": 231,
                             "line_end": 235,
-                            "hit": 0,
+                            "hit": 1,
                             "out": [
                                 17
                             ],
                             "out_hit": [
-                                0
+                                1
                             ]
                         },
                         "17": {

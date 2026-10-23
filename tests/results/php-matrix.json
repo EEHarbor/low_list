@@ -2,9 +2,9 @@
   {
     "runtime": "PHP 7.4.33 (cli) (built: Dec 13 2023 21:52:05) ( NTS )",
     "exit": 2,
-    "tests": 316,
-    "assertions": 1603,
-    "errors": 18,
+    "tests": 383,
+    "assertions": 1806,
+    "errors": 28,
     "failures": 30,
     "skipped": 0,
     "warnings": 0,
@@ -40,7 +40,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:318",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:344"
         ]
       },
@@ -51,7 +51,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:318",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:344"
         ]
       },
@@ -62,7 +62,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:318",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
         ]
       },
@@ -73,7 +73,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:318",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
         ]
       },
@@ -114,9 +114,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000004536ab9f000000003abd40b6 (",
+          "Failed asserting that LowListTests\\Header Object &000000003d77c108000000003652968b (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &000000004536ab91000000003abd40b6 (",
+          "    'url' => LowListTests\\Url Object &000000003d77c11a000000003652968b (",
           "        'last' => Array &0 ("
         ]
       },
@@ -125,9 +125,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000004536abc9000000003abd40b6 (",
+          "Failed asserting that LowListTests\\Header Object &000000003d77c2d2000000003652968b (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &000000004536ab64000000003abd40b6 (",
+          "    'url' => LowListTests\\Url Object &000000003d77c10d000000003652968b (",
           "        'last' => Array &0 ("
         ]
       },
@@ -136,9 +136,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000004536abff000000003abd40b6 (",
+          "Failed asserting that LowListTests\\Header Object &000000003d77c2a8000000003652968b (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &000000004536ab62000000003abd40b6 (",
+          "    'url' => LowListTests\\Url Object &000000003d77c10b000000003652968b (",
           "        'last' => Array &0 ("
         ]
       },
@@ -147,9 +147,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000004536abf9000000003abd40b6 (",
+          "Failed asserting that LowListTests\\Header Object &000000003d77c2a2000000003652968b (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &000000004536ab66000000003abd40b6 (",
+          "    'url' => LowListTests\\Url Object &000000003d77c10f000000003652968b (",
           "        'last' => Array &0 ("
         ]
       },
@@ -388,7 +388,7 @@
         "details": [
           "ErrorException: file_get_contents(): read of 8192 bytes failed with errno=21 Is a directory",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:514",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:541",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:35"
         ]
       },
@@ -397,9 +397,9 @@
         "kind": "error",
         "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1 ('set')",
         "details": [
-          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-ToU7Xl/low_list/df88b84d816d3358b3793a61b73d80e93913e627): failed to open stream: Is a directory",
+          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-6qGuhg/low_list/df88b84d816d3358b3793a61b73d80e93913e627): failed to open stream: Is a directory",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:527",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:554",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:66"
         ]
       },
@@ -434,6 +434,116 @@
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/low_list/autoload.php:87",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:297"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE2-malformed-serialized-text\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE2-malformed-serialized-text\" ('LowList\\FluxCapacitor\\Bridge\\EE2', 'bm90IHNlcmlhbGl6ZWQ=')",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 14 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:458",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE2-serialized-nonempty-string\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE2-serialized-nonempty-string\" ('LowList\\FluxCapacitor\\Bridge\\EE2', 'czoxMToid3Jvbmcgc2hhcGUiOw==')",
+        "details": [
+          "ErrorException: array_merge(): Expected parameter 1 to be an array, string given",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:470",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE3-malformed-serialized-text\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE3-malformed-serialized-text\" ('LowList\\FluxCapacitor\\Bridge\\EE3', 'bm90IHNlcmlhbGl6ZWQ=')",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 14 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:495",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE3-serialized-nonempty-string\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE3-serialized-nonempty-string\" ('LowList\\FluxCapacitor\\Bridge\\EE3', 'czoxMToid3Jvbmcgc2hhcGUiOw==')",
+        "details": [
+          "ErrorException: array_merge(): Expected parameter 1 to be an array, string given",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:507",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE4-malformed-serialized-text\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE4-malformed-serialized-text\" ('LowList\\FluxCapacitor\\Bridge\\EE4', 'bm90IHNlcmlhbGl6ZWQ=')",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 14 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:495",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE4-serialized-nonempty-string\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE4-serialized-nonempty-string\" ('LowList\\FluxCapacitor\\Bridge\\EE4', 'czoxMToid3Jvbmcgc2hhcGUiOw==')",
+        "details": [
+          "ErrorException: array_merge(): Expected parameter 1 to be an array, string given",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:507",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE5-malformed-serialized-text\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE5-malformed-serialized-text\" ('LowList\\FluxCapacitor\\Bridge\\EE5', 'bm90IHNlcmlhbGl6ZWQ=')",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 14 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:504",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE5-serialized-nonempty-string\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE5-serialized-nonempty-string\" ('LowList\\FluxCapacitor\\Bridge\\EE5', 'czoxMToid3Jvbmcgc2hhcGUiOw==')",
+        "details": [
+          "ErrorException: array_merge(): Expected parameter 1 to be an array, string given",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:516",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE6-malformed-serialized-text\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE6-malformed-serialized-text\" ('LowList\\FluxCapacitor\\Bridge\\EE6', 'bm90IHNlcmlhbGl6ZWQ=')",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 14 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:504",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE6-serialized-nonempty-string\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE6-serialized-nonempty-string\" ('LowList\\FluxCapacitor\\Bridge\\EE6', 'czoxMToid3Jvbmcgc2hhcGUiOw==')",
+        "details": [
+          "ErrorException: array_merge(): Expected parameter 1 to be an array, string given",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:516",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:205"
         ]
       },
       {
@@ -533,9 +643,9 @@
   {
     "runtime": "PHP 8.0.30 (cli) (built: Dec 21 2023 08:22:38) ( NTS )",
     "exit": 2,
-    "tests": 316,
-    "assertions": 1597,
-    "errors": 19,
+    "tests": 383,
+    "assertions": 1800,
+    "errors": 29,
     "failures": 30,
     "skipped": 0,
     "warnings": 0,
@@ -571,7 +681,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:318",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:344"
         ]
       },
@@ -582,7 +692,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:318",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:344"
         ]
       },
@@ -593,7 +703,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:318",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
         ]
       },
@@ -604,7 +714,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:318",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
         ]
       },
@@ -645,9 +755,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000671e40eb000000002601e45d (",
+          "Failed asserting that LowListTests\\Header Object &000000006ec6a5b0000000007ebd185b (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000671e40f8000000002601e45d (",
+          "    'url' => LowListTests\\Url Object &000000006ec6a5ad000000007ebd185b (",
           "        'last' => Array &0 ("
         ]
       },
@@ -656,9 +766,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000671e40bf000000002601e45d (",
+          "Failed asserting that LowListTests\\Header Object &000000006ec6a5ec000000007ebd185b (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000671e40d0000000002601e45d (",
+          "    'url' => LowListTests\\Url Object &000000006ec6a5b5000000007ebd185b (",
           "        'last' => Array &0 ("
         ]
       },
@@ -667,9 +777,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000671e40b5000000002601e45d (",
+          "Failed asserting that LowListTests\\Header Object &000000006ec6a5d2000000007ebd185b (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000671e40d6000000002601e45d (",
+          "    'url' => LowListTests\\Url Object &000000006ec6a5b3000000007ebd185b (",
           "        'last' => Array &0 ("
         ]
       },
@@ -678,9 +788,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000671e414f000000002601e45d (",
+          "Failed asserting that LowListTests\\Header Object &000000006ec6a5dc000000007ebd185b (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000671e40d2000000002601e45d (",
+          "    'url' => LowListTests\\Url Object &000000006ec6a5b7000000007ebd185b (",
           "        'last' => Array &0 ("
         ]
       },
@@ -930,7 +1040,7 @@
         "details": [
           "ErrorException: file_get_contents(): Read of 8192 bytes failed with errno=21 Is a directory",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:514",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:541",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:35"
         ]
       },
@@ -939,9 +1049,9 @@
         "kind": "error",
         "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1 ('set')",
         "details": [
-          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-Rpv9cD/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
+          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-VUNKVm/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:527",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:554",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:66"
         ]
       },
@@ -976,6 +1086,116 @@
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/low_list/autoload.php:87",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:297"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE2-malformed-serialized-text\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE2-malformed-serialized-text\" ('LowList\\FluxCapacitor\\Bridge\\EE2', 'bm90IHNlcmlhbGl6ZWQ=')",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 14 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:458",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE2-serialized-nonempty-string\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE2-serialized-nonempty-string\" ('LowList\\FluxCapacitor\\Bridge\\EE2', 'czoxMToid3Jvbmcgc2hhcGUiOw==')",
+        "details": [
+          "TypeError: array_merge(): Argument #1 must be of type array, string given",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:470",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE3-malformed-serialized-text\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE3-malformed-serialized-text\" ('LowList\\FluxCapacitor\\Bridge\\EE3', 'bm90IHNlcmlhbGl6ZWQ=')",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 14 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:495",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE3-serialized-nonempty-string\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE3-serialized-nonempty-string\" ('LowList\\FluxCapacitor\\Bridge\\EE3', 'czoxMToid3Jvbmcgc2hhcGUiOw==')",
+        "details": [
+          "TypeError: array_merge(): Argument #1 must be of type array, string given",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:507",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE4-malformed-serialized-text\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE4-malformed-serialized-text\" ('LowList\\FluxCapacitor\\Bridge\\EE4', 'bm90IHNlcmlhbGl6ZWQ=')",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 14 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:495",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE4-serialized-nonempty-string\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE4-serialized-nonempty-string\" ('LowList\\FluxCapacitor\\Bridge\\EE4', 'czoxMToid3Jvbmcgc2hhcGUiOw==')",
+        "details": [
+          "TypeError: array_merge(): Argument #1 must be of type array, string given",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:507",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE5-malformed-serialized-text\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE5-malformed-serialized-text\" ('LowList\\FluxCapacitor\\Bridge\\EE5', 'bm90IHNlcmlhbGl6ZWQ=')",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 14 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:504",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE5-serialized-nonempty-string\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE5-serialized-nonempty-string\" ('LowList\\FluxCapacitor\\Bridge\\EE5', 'czoxMToid3Jvbmcgc2hhcGUiOw==')",
+        "details": [
+          "TypeError: array_merge(): Argument #1 must be of type array, string given",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:516",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE6-malformed-serialized-text\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE6-malformed-serialized-text\" ('LowList\\FluxCapacitor\\Bridge\\EE6', 'bm90IHNlcmlhbGl6ZWQ=')",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 14 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:504",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE6-serialized-nonempty-string\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE6-serialized-nonempty-string\" ('LowList\\FluxCapacitor\\Bridge\\EE6', 'czoxMToid3Jvbmcgc2hhcGUiOw==')",
+        "details": [
+          "TypeError: array_merge(): Argument #1 must be of type array, string given",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:516",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:205"
         ]
       },
       {
@@ -1075,9 +1295,9 @@
   {
     "runtime": "PHP 8.1.33 (cli) (built: Jul  4 2025 00:24:36) (NTS)",
     "exit": 2,
-    "tests": 316,
-    "assertions": 1593,
-    "errors": 21,
+    "tests": 383,
+    "assertions": 1786,
+    "errors": 36,
     "failures": 29,
     "skipped": 0,
     "warnings": 0,
@@ -1113,7 +1333,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:318",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:344"
         ]
       },
@@ -1124,7 +1344,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:318",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:344"
         ]
       },
@@ -1135,7 +1355,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:318",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
         ]
       },
@@ -1146,7 +1366,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:318",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
         ]
       },
@@ -1187,9 +1407,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000055f0000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000005f80000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &000000000000054c0000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000005e50000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -1198,9 +1418,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000050b0000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000005a40000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000005640000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000005fd0000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -1209,9 +1429,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000005010000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &000000000000059a0000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000005620000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000005fb0000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -1220,9 +1440,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000004fb0000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000005940000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000005660000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000005ff0000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -1472,7 +1692,7 @@
         "details": [
           "ErrorException: file_get_contents(): Read of 8192 bytes failed with errno=21 Is a directory",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:514",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:541",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:35"
         ]
       },
@@ -1481,9 +1701,9 @@
         "kind": "error",
         "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1 ('set')",
         "details": [
-          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-8xbVZT/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
+          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-DN5A97/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:527",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:554",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:66"
         ]
       },
@@ -1518,6 +1738,171 @@
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/low_list/autoload.php:87",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:297"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE2-sql-null\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE2-sql-null\" ('LowList\\FluxCapacitor\\Bridge\\EE2', null)",
+        "details": [
+          "ErrorException: base64_decode(): Passing null to parameter #1 ($string) of type string is deprecated",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:458",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE2-malformed-serialized-text\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE2-malformed-serialized-text\" ('LowList\\FluxCapacitor\\Bridge\\EE2', 'bm90IHNlcmlhbGl6ZWQ=')",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 14 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:458",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE2-serialized-nonempty-string\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE2-serialized-nonempty-string\" ('LowList\\FluxCapacitor\\Bridge\\EE2', 'czoxMToid3Jvbmcgc2hhcGUiOw==')",
+        "details": [
+          "TypeError: array_merge(): Argument #1 must be of type array, string given",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:470",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE3-sql-null\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE3-sql-null\" ('LowList\\FluxCapacitor\\Bridge\\EE3', null)",
+        "details": [
+          "ErrorException: base64_decode(): Passing null to parameter #1 ($string) of type string is deprecated",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:495",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE3-malformed-serialized-text\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE3-malformed-serialized-text\" ('LowList\\FluxCapacitor\\Bridge\\EE3', 'bm90IHNlcmlhbGl6ZWQ=')",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 14 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:495",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE3-serialized-nonempty-string\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE3-serialized-nonempty-string\" ('LowList\\FluxCapacitor\\Bridge\\EE3', 'czoxMToid3Jvbmcgc2hhcGUiOw==')",
+        "details": [
+          "TypeError: array_merge(): Argument #1 must be of type array, string given",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:507",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE4-sql-null\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE4-sql-null\" ('LowList\\FluxCapacitor\\Bridge\\EE4', null)",
+        "details": [
+          "ErrorException: base64_decode(): Passing null to parameter #1 ($string) of type string is deprecated",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:495",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE4-malformed-serialized-text\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE4-malformed-serialized-text\" ('LowList\\FluxCapacitor\\Bridge\\EE4', 'bm90IHNlcmlhbGl6ZWQ=')",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 14 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:495",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE4-serialized-nonempty-string\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE4-serialized-nonempty-string\" ('LowList\\FluxCapacitor\\Bridge\\EE4', 'czoxMToid3Jvbmcgc2hhcGUiOw==')",
+        "details": [
+          "TypeError: array_merge(): Argument #1 must be of type array, string given",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:507",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE5-sql-null\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE5-sql-null\" ('LowList\\FluxCapacitor\\Bridge\\EE5', null)",
+        "details": [
+          "ErrorException: base64_decode(): Passing null to parameter #1 ($string) of type string is deprecated",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:504",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE5-malformed-serialized-text\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE5-malformed-serialized-text\" ('LowList\\FluxCapacitor\\Bridge\\EE5', 'bm90IHNlcmlhbGl6ZWQ=')",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 14 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:504",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE5-serialized-nonempty-string\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE5-serialized-nonempty-string\" ('LowList\\FluxCapacitor\\Bridge\\EE5', 'czoxMToid3Jvbmcgc2hhcGUiOw==')",
+        "details": [
+          "TypeError: array_merge(): Argument #1 must be of type array, string given",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:516",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE6-sql-null\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE6-sql-null\" ('LowList\\FluxCapacitor\\Bridge\\EE6', null)",
+        "details": [
+          "ErrorException: base64_decode(): Passing null to parameter #1 ($string) of type string is deprecated",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:504",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE6-malformed-serialized-text\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE6-malformed-serialized-text\" ('LowList\\FluxCapacitor\\Bridge\\EE6', 'bm90IHNlcmlhbGl6ZWQ=')",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 14 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:504",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE6-serialized-nonempty-string\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE6-serialized-nonempty-string\" ('LowList\\FluxCapacitor\\Bridge\\EE6', 'czoxMToid3Jvbmcgc2hhcGUiOw==')",
+        "details": [
+          "TypeError: array_merge(): Argument #1 must be of type array, string given",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:516",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:205"
         ]
       },
       {
@@ -1628,9 +2013,9 @@
   {
     "runtime": "PHP 8.2.30 (cli) (built: Dec 19 2025 07:42:41) (NTS clang 15.0.0)",
     "exit": 2,
-    "tests": 316,
-    "assertions": 1592,
-    "errors": 22,
+    "tests": 383,
+    "assertions": 1785,
+    "errors": 37,
     "failures": 29,
     "skipped": 0,
     "warnings": 0,
@@ -1666,7 +2051,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:318",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:344"
         ]
       },
@@ -1677,7 +2062,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:318",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:344"
         ]
       },
@@ -1688,7 +2073,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:318",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
         ]
       },
@@ -1699,7 +2084,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:318",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
         ]
       },
@@ -1740,9 +2125,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000055f0000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000005f80000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &000000000000054c0000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000005e50000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -1751,9 +2136,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000050b0000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000005a40000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000005640000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000005fd0000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -1762,9 +2147,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000005010000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &000000000000059a0000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000005620000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000005fb0000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -1773,9 +2158,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000004fb0000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000005940000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000005660000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000005ff0000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -2036,7 +2421,7 @@
         "details": [
           "ErrorException: file_get_contents(): Read of 8256 bytes failed with errno=21 Is a directory",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:514",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:541",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:35"
         ]
       },
@@ -2045,9 +2430,9 @@
         "kind": "error",
         "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1 ('set')",
         "details": [
-          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-wpCj1n/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
+          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-uEYBTO/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:527",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:554",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:66"
         ]
       },
@@ -2082,6 +2467,171 @@
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/low_list/autoload.php:87",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:297"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE2-sql-null\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE2-sql-null\" ('LowList\\FluxCapacitor\\Bridge\\EE2', null)",
+        "details": [
+          "ErrorException: base64_decode(): Passing null to parameter #1 ($string) of type string is deprecated",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:458",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE2-malformed-serialized-text\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE2-malformed-serialized-text\" ('LowList\\FluxCapacitor\\Bridge\\EE2', 'bm90IHNlcmlhbGl6ZWQ=')",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 14 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:458",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE2-serialized-nonempty-string\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE2-serialized-nonempty-string\" ('LowList\\FluxCapacitor\\Bridge\\EE2', 'czoxMToid3Jvbmcgc2hhcGUiOw==')",
+        "details": [
+          "TypeError: array_merge(): Argument #1 must be of type array, string given",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:470",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE3-sql-null\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE3-sql-null\" ('LowList\\FluxCapacitor\\Bridge\\EE3', null)",
+        "details": [
+          "ErrorException: base64_decode(): Passing null to parameter #1 ($string) of type string is deprecated",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:495",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE3-malformed-serialized-text\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE3-malformed-serialized-text\" ('LowList\\FluxCapacitor\\Bridge\\EE3', 'bm90IHNlcmlhbGl6ZWQ=')",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 14 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:495",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE3-serialized-nonempty-string\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE3-serialized-nonempty-string\" ('LowList\\FluxCapacitor\\Bridge\\EE3', 'czoxMToid3Jvbmcgc2hhcGUiOw==')",
+        "details": [
+          "TypeError: array_merge(): Argument #1 must be of type array, string given",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:507",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE4-sql-null\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE4-sql-null\" ('LowList\\FluxCapacitor\\Bridge\\EE4', null)",
+        "details": [
+          "ErrorException: base64_decode(): Passing null to parameter #1 ($string) of type string is deprecated",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:495",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE4-malformed-serialized-text\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE4-malformed-serialized-text\" ('LowList\\FluxCapacitor\\Bridge\\EE4', 'bm90IHNlcmlhbGl6ZWQ=')",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 14 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:495",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE4-serialized-nonempty-string\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE4-serialized-nonempty-string\" ('LowList\\FluxCapacitor\\Bridge\\EE4', 'czoxMToid3Jvbmcgc2hhcGUiOw==')",
+        "details": [
+          "TypeError: array_merge(): Argument #1 must be of type array, string given",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:507",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE5-sql-null\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE5-sql-null\" ('LowList\\FluxCapacitor\\Bridge\\EE5', null)",
+        "details": [
+          "ErrorException: base64_decode(): Passing null to parameter #1 ($string) of type string is deprecated",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:504",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE5-malformed-serialized-text\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE5-malformed-serialized-text\" ('LowList\\FluxCapacitor\\Bridge\\EE5', 'bm90IHNlcmlhbGl6ZWQ=')",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 14 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:504",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE5-serialized-nonempty-string\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE5-serialized-nonempty-string\" ('LowList\\FluxCapacitor\\Bridge\\EE5', 'czoxMToid3Jvbmcgc2hhcGUiOw==')",
+        "details": [
+          "TypeError: array_merge(): Argument #1 must be of type array, string given",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:516",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE6-sql-null\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE6-sql-null\" ('LowList\\FluxCapacitor\\Bridge\\EE6', null)",
+        "details": [
+          "ErrorException: base64_decode(): Passing null to parameter #1 ($string) of type string is deprecated",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:504",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE6-malformed-serialized-text\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE6-malformed-serialized-text\" ('LowList\\FluxCapacitor\\Bridge\\EE6', 'bm90IHNlcmlhbGl6ZWQ=')",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 14 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:504",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE6-serialized-nonempty-string\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE6-serialized-nonempty-string\" ('LowList\\FluxCapacitor\\Bridge\\EE6', 'czoxMToid3Jvbmcgc2hhcGUiOw==')",
+        "details": [
+          "TypeError: array_merge(): Argument #1 must be of type array, string given",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:516",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:205"
         ]
       },
       {
@@ -2192,9 +2742,9 @@
   {
     "runtime": "PHP 8.3.28 (cli) (built: Nov 20 2025 11:21:23) (NTS clang 15.0.0)",
     "exit": 2,
-    "tests": 316,
-    "assertions": 1592,
-    "errors": 22,
+    "tests": 383,
+    "assertions": 1785,
+    "errors": 37,
     "failures": 29,
     "skipped": 0,
     "warnings": 0,
@@ -2230,7 +2780,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:318",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:344"
         ]
       },
@@ -2241,7 +2791,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:318",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:344"
         ]
       },
@@ -2252,7 +2802,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:318",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
         ]
       },
@@ -2263,7 +2813,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:318",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
         ]
       },
@@ -2304,9 +2854,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000055f0000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000005f80000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &000000000000054c0000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000005e50000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -2315,9 +2865,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000050b0000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000005a40000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000005640000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000005fd0000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -2326,9 +2876,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000005010000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &000000000000059a0000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000005620000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000005fb0000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -2337,9 +2887,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000004fb0000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000005940000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000005660000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000005ff0000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -2600,7 +3150,7 @@
         "details": [
           "ErrorException: file_get_contents(): Read of 8256 bytes failed with errno=21 Is a directory",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:514",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:541",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:35"
         ]
       },
@@ -2609,9 +3159,9 @@
         "kind": "error",
         "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1 ('set')",
         "details": [
-          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-eSZy3S/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
+          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-qQg6l5/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:527",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:554",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:66"
         ]
       },
@@ -2646,6 +3196,171 @@
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/low_list/autoload.php:87",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:297"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE2-sql-null\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE2-sql-null\" ('LowList\\FluxCapacitor\\Bridge\\EE2', null)",
+        "details": [
+          "ErrorException: base64_decode(): Passing null to parameter #1 ($string) of type string is deprecated",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:458",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE2-malformed-serialized-text\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE2-malformed-serialized-text\" ('LowList\\FluxCapacitor\\Bridge\\EE2', 'bm90IHNlcmlhbGl6ZWQ=')",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 14 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:458",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE2-serialized-nonempty-string\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE2-serialized-nonempty-string\" ('LowList\\FluxCapacitor\\Bridge\\EE2', 'czoxMToid3Jvbmcgc2hhcGUiOw==')",
+        "details": [
+          "TypeError: array_merge(): Argument #1 must be of type array, string given",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:470",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE3-sql-null\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE3-sql-null\" ('LowList\\FluxCapacitor\\Bridge\\EE3', null)",
+        "details": [
+          "ErrorException: base64_decode(): Passing null to parameter #1 ($string) of type string is deprecated",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:495",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE3-malformed-serialized-text\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE3-malformed-serialized-text\" ('LowList\\FluxCapacitor\\Bridge\\EE3', 'bm90IHNlcmlhbGl6ZWQ=')",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 14 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:495",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE3-serialized-nonempty-string\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE3-serialized-nonempty-string\" ('LowList\\FluxCapacitor\\Bridge\\EE3', 'czoxMToid3Jvbmcgc2hhcGUiOw==')",
+        "details": [
+          "TypeError: array_merge(): Argument #1 must be of type array, string given",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:507",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE4-sql-null\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE4-sql-null\" ('LowList\\FluxCapacitor\\Bridge\\EE4', null)",
+        "details": [
+          "ErrorException: base64_decode(): Passing null to parameter #1 ($string) of type string is deprecated",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:495",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE4-malformed-serialized-text\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE4-malformed-serialized-text\" ('LowList\\FluxCapacitor\\Bridge\\EE4', 'bm90IHNlcmlhbGl6ZWQ=')",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 14 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:495",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE4-serialized-nonempty-string\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE4-serialized-nonempty-string\" ('LowList\\FluxCapacitor\\Bridge\\EE4', 'czoxMToid3Jvbmcgc2hhcGUiOw==')",
+        "details": [
+          "TypeError: array_merge(): Argument #1 must be of type array, string given",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:507",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE5-sql-null\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE5-sql-null\" ('LowList\\FluxCapacitor\\Bridge\\EE5', null)",
+        "details": [
+          "ErrorException: base64_decode(): Passing null to parameter #1 ($string) of type string is deprecated",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:504",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE5-malformed-serialized-text\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE5-malformed-serialized-text\" ('LowList\\FluxCapacitor\\Bridge\\EE5', 'bm90IHNlcmlhbGl6ZWQ=')",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 14 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:504",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE5-serialized-nonempty-string\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE5-serialized-nonempty-string\" ('LowList\\FluxCapacitor\\Bridge\\EE5', 'czoxMToid3Jvbmcgc2hhcGUiOw==')",
+        "details": [
+          "TypeError: array_merge(): Argument #1 must be of type array, string given",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:516",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE6-sql-null\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE6-sql-null\" ('LowList\\FluxCapacitor\\Bridge\\EE6', null)",
+        "details": [
+          "ErrorException: base64_decode(): Passing null to parameter #1 ($string) of type string is deprecated",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:504",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE6-malformed-serialized-text\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE6-malformed-serialized-text\" ('LowList\\FluxCapacitor\\Bridge\\EE6', 'bm90IHNlcmlhbGl6ZWQ=')",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 14 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:504",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE6-serialized-nonempty-string\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE6-serialized-nonempty-string\" ('LowList\\FluxCapacitor\\Bridge\\EE6', 'czoxMToid3Jvbmcgc2hhcGUiOw==')",
+        "details": [
+          "TypeError: array_merge(): Argument #1 must be of type array, string given",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:516",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:205"
         ]
       },
       {
@@ -2756,9 +3471,9 @@
   {
     "runtime": "PHP 8.4.15 (cli) (built: Nov 20 2025 14:28:49) (NTS clang 15.0.0)",
     "exit": 2,
-    "tests": 316,
-    "assertions": 1592,
-    "errors": 22,
+    "tests": 383,
+    "assertions": 1785,
+    "errors": 37,
     "failures": 29,
     "skipped": 0,
     "warnings": 0,
@@ -2794,7 +3509,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:318",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:344"
         ]
       },
@@ -2805,7 +3520,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:318",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:344"
         ]
       },
@@ -2816,7 +3531,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:318",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
         ]
       },
@@ -2827,7 +3542,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:318",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
         ]
       },
@@ -2868,9 +3583,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000055f0000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000005f80000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &000000000000054c0000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000005e50000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -2879,9 +3594,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000050b0000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000005a40000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000005640000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000005fd0000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -2890,9 +3605,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000005010000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &000000000000059a0000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000005620000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000005fb0000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -2901,9 +3616,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000004fb0000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000005940000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000005660000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000005ff0000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -3164,7 +3879,7 @@
         "details": [
           "ErrorException: file_get_contents(): Read of 8256 bytes failed with errno=21 Is a directory",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:514",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:541",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:35"
         ]
       },
@@ -3173,9 +3888,9 @@
         "kind": "error",
         "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1 ('set')",
         "details": [
-          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-phoj911m6c4s2sW2NPY/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
+          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-dg836v5pesh2e9Uuzrm/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:527",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:554",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:66"
         ]
       },
@@ -3210,6 +3925,171 @@
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/low_list/autoload.php:87",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:297"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE2-sql-null\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE2-sql-null\" ('LowList\\FluxCapacitor\\Bridge\\EE2', null)",
+        "details": [
+          "ErrorException: base64_decode(): Passing null to parameter #1 ($string) of type string is deprecated",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:458",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE2-malformed-serialized-text\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE2-malformed-serialized-text\" ('LowList\\FluxCapacitor\\Bridge\\EE2', 'bm90IHNlcmlhbGl6ZWQ=')",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 14 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:458",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE2-serialized-nonempty-string\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE2-serialized-nonempty-string\" ('LowList\\FluxCapacitor\\Bridge\\EE2', 'czoxMToid3Jvbmcgc2hhcGUiOw==')",
+        "details": [
+          "TypeError: array_merge(): Argument #1 must be of type array, string given",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:470",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE3-sql-null\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE3-sql-null\" ('LowList\\FluxCapacitor\\Bridge\\EE3', null)",
+        "details": [
+          "ErrorException: base64_decode(): Passing null to parameter #1 ($string) of type string is deprecated",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:495",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE3-malformed-serialized-text\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE3-malformed-serialized-text\" ('LowList\\FluxCapacitor\\Bridge\\EE3', 'bm90IHNlcmlhbGl6ZWQ=')",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 14 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:495",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE3-serialized-nonempty-string\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE3-serialized-nonempty-string\" ('LowList\\FluxCapacitor\\Bridge\\EE3', 'czoxMToid3Jvbmcgc2hhcGUiOw==')",
+        "details": [
+          "TypeError: array_merge(): Argument #1 must be of type array, string given",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:507",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE4-sql-null\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE4-sql-null\" ('LowList\\FluxCapacitor\\Bridge\\EE4', null)",
+        "details": [
+          "ErrorException: base64_decode(): Passing null to parameter #1 ($string) of type string is deprecated",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:495",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE4-malformed-serialized-text\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE4-malformed-serialized-text\" ('LowList\\FluxCapacitor\\Bridge\\EE4', 'bm90IHNlcmlhbGl6ZWQ=')",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 14 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:495",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE4-serialized-nonempty-string\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE4-serialized-nonempty-string\" ('LowList\\FluxCapacitor\\Bridge\\EE4', 'czoxMToid3Jvbmcgc2hhcGUiOw==')",
+        "details": [
+          "TypeError: array_merge(): Argument #1 must be of type array, string given",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:507",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE5-sql-null\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE5-sql-null\" ('LowList\\FluxCapacitor\\Bridge\\EE5', null)",
+        "details": [
+          "ErrorException: base64_decode(): Passing null to parameter #1 ($string) of type string is deprecated",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:504",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE5-malformed-serialized-text\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE5-malformed-serialized-text\" ('LowList\\FluxCapacitor\\Bridge\\EE5', 'bm90IHNlcmlhbGl6ZWQ=')",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 14 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:504",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE5-serialized-nonempty-string\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE5-serialized-nonempty-string\" ('LowList\\FluxCapacitor\\Bridge\\EE5', 'czoxMToid3Jvbmcgc2hhcGUiOw==')",
+        "details": [
+          "TypeError: array_merge(): Argument #1 must be of type array, string given",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:516",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE6-sql-null\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE6-sql-null\" ('LowList\\FluxCapacitor\\Bridge\\EE6', null)",
+        "details": [
+          "ErrorException: base64_decode(): Passing null to parameter #1 ($string) of type string is deprecated",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:504",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE6-malformed-serialized-text\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE6-malformed-serialized-text\" ('LowList\\FluxCapacitor\\Bridge\\EE6', 'bm90IHNlcmlhbGl6ZWQ=')",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 14 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:504",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE6-serialized-nonempty-string\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE6-serialized-nonempty-string\" ('LowList\\FluxCapacitor\\Bridge\\EE6', 'czoxMToid3Jvbmcgc2hhcGUiOw==')",
+        "details": [
+          "TypeError: array_merge(): Argument #1 must be of type array, string given",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:516",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:205"
         ]
       },
       {
@@ -3320,9 +4200,9 @@
   {
     "runtime": "PHP 8.5.0 (cli) (built: Nov 20 2025 09:30:23) (NTS clang 15.0.0)",
     "exit": 2,
-    "tests": 316,
-    "assertions": 1592,
-    "errors": 22,
+    "tests": 383,
+    "assertions": 1785,
+    "errors": 37,
     "failures": 29,
     "skipped": 0,
     "warnings": 0,
@@ -3358,7 +4238,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:318",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:344"
         ]
       },
@@ -3369,7 +4249,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:318",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:344"
         ]
       },
@@ -3380,7 +4260,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:318",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
         ]
       },
@@ -3391,7 +4271,7 @@
         "details": [
           "RuntimeException: Cannot overwrite logger on the loader.",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:291",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:318",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344"
         ]
       },
@@ -3432,9 +4312,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000055f0000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000005f80000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &000000000000054c0000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000005e50000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -3443,9 +4323,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &000000000000050b0000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000005a40000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000005640000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000005fd0000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -3454,9 +4334,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000005010000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &000000000000059a0000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000005620000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000005fb0000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -3465,9 +4345,9 @@
         "kind": "failure",
         "message": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')",
         "details": [
-          "Failed asserting that LowListTests\\Header Object &00000000000004fb0000000000000000 (",
+          "Failed asserting that LowListTests\\Header Object &00000000000005940000000000000000 (",
           "    'text' => 'License'",
-          "    'url' => LowListTests\\Url Object &00000000000005660000000000000000 (",
+          "    'url' => LowListTests\\Url Object &00000000000005ff0000000000000000 (",
           "        'last' => Array &0 ("
         ]
       },
@@ -3728,7 +4608,7 @@
         "details": [
           "ErrorException: file_get_contents(): Read of 8256 bytes failed with errno=21 Is a directory",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:514",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:541",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:35"
         ]
       },
@@ -3737,9 +4617,9 @@
         "kind": "error",
         "message": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1 ('set')",
         "details": [
-          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-vicuiuhuuanjaKsXxuT/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
+          "ErrorException: fopen(/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-tests-7bmt7s1a88gubQkdgic/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory",
           "",
-          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:527",
+          "/Users/tomjaeger/Sites/add-ons/low_list/tests/Support/Environment.php:554",
           "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:66"
         ]
       },
@@ -3774,6 +4654,171 @@
           "",
           "/Users/tomjaeger/Sites/add-ons/low_list/low_list/autoload.php:87",
           "/Users/tomjaeger/Sites/add-ons/low_list/tests/tests/Unit/PharStubTest.php:297"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE2-sql-null\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE2-sql-null\" ('LowList\\FluxCapacitor\\Bridge\\EE2', null)",
+        "details": [
+          "ErrorException: base64_decode(): Passing null to parameter #1 ($string) of type string is deprecated",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:458",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE2-malformed-serialized-text\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE2-malformed-serialized-text\" ('LowList\\FluxCapacitor\\Bridge\\EE2', 'bm90IHNlcmlhbGl6ZWQ=')",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 14 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:458",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE2-serialized-nonempty-string\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE2-serialized-nonempty-string\" ('LowList\\FluxCapacitor\\Bridge\\EE2', 'czoxMToid3Jvbmcgc2hhcGUiOw==')",
+        "details": [
+          "TypeError: array_merge(): Argument #1 must be of type array, string given",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:470",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE3-sql-null\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE3-sql-null\" ('LowList\\FluxCapacitor\\Bridge\\EE3', null)",
+        "details": [
+          "ErrorException: base64_decode(): Passing null to parameter #1 ($string) of type string is deprecated",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:495",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE3-malformed-serialized-text\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE3-malformed-serialized-text\" ('LowList\\FluxCapacitor\\Bridge\\EE3', 'bm90IHNlcmlhbGl6ZWQ=')",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 14 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:495",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE3-serialized-nonempty-string\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE3-serialized-nonempty-string\" ('LowList\\FluxCapacitor\\Bridge\\EE3', 'czoxMToid3Jvbmcgc2hhcGUiOw==')",
+        "details": [
+          "TypeError: array_merge(): Argument #1 must be of type array, string given",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:507",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE4-sql-null\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE4-sql-null\" ('LowList\\FluxCapacitor\\Bridge\\EE4', null)",
+        "details": [
+          "ErrorException: base64_decode(): Passing null to parameter #1 ($string) of type string is deprecated",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:495",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE4-malformed-serialized-text\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE4-malformed-serialized-text\" ('LowList\\FluxCapacitor\\Bridge\\EE4', 'bm90IHNlcmlhbGl6ZWQ=')",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 14 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:495",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE4-serialized-nonempty-string\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE4-serialized-nonempty-string\" ('LowList\\FluxCapacitor\\Bridge\\EE4', 'czoxMToid3Jvbmcgc2hhcGUiOw==')",
+        "details": [
+          "TypeError: array_merge(): Argument #1 must be of type array, string given",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:507",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE5-sql-null\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE5-sql-null\" ('LowList\\FluxCapacitor\\Bridge\\EE5', null)",
+        "details": [
+          "ErrorException: base64_decode(): Passing null to parameter #1 ($string) of type string is deprecated",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:504",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE5-malformed-serialized-text\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE5-malformed-serialized-text\" ('LowList\\FluxCapacitor\\Bridge\\EE5', 'bm90IHNlcmlhbGl6ZWQ=')",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 14 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:504",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE5-serialized-nonempty-string\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE5-serialized-nonempty-string\" ('LowList\\FluxCapacitor\\Bridge\\EE5', 'czoxMToid3Jvbmcgc2hhcGUiOw==')",
+        "details": [
+          "TypeError: array_merge(): Argument #1 must be of type array, string given",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:516",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE6-sql-null\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE6-sql-null\" ('LowList\\FluxCapacitor\\Bridge\\EE6', null)",
+        "details": [
+          "ErrorException: base64_decode(): Passing null to parameter #1 ($string) of type string is deprecated",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:504",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE6-malformed-serialized-text\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE6-malformed-serialized-text\" ('LowList\\FluxCapacitor\\Bridge\\EE6', 'bm90IHNlcmlhbGl6ZWQ=')",
+        "details": [
+          "ErrorException: unserialize(): Error at offset 0 of 14 bytes",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:504",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:205"
+        ]
+      },
+      {
+        "test": "testFieldtypeSettingsCellIsSafe with data set \"EE6-serialized-nonempty-string\"",
+        "kind": "error",
+        "message": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE6-serialized-nonempty-string\" ('LowList\\FluxCapacitor\\Bridge\\EE6', 'czoxMToid3Jvbmcgc2hhcGUiOw==')",
+        "details": [
+          "TypeError: array_merge(): Argument #1 must be of type array, string given",
+          "",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:516",
+          "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:205"
         ]
       },
       {

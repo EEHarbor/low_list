@@ -56,4 +56,30 @@ class ResultContractTest extends TestCase
         $this->assertSame($first, $result->row());
         $this->assertSame(2, $result->num_rows());
     }
+
+    /**
+     * Preserve complete-result shape, object identity and the selected row.
+     *
+     * @return void
+     */
+    public function testCompleteResultsPreserveRowsAndSelection(): void
+    {
+        $result = new Result(array(array('id' => 1, 'nullable' => null), array('id' => 2, 'nullable' => 'value')));
+        $second = $result->row(1);
+        $rows = $result->result();
+
+        $this->assertCount(2, $rows);
+        $this->assertSame($second, $rows[1]);
+        $this->assertSame($second, $result->row(99));
+        $this->assertSame(array(array('id' => 1, 'nullable' => null), array('id' => 2, 'nullable' => 'value')), $result->result_array());
+        $this->assertSame($result->result_array(), $result->result('array'));
+        $this->assertSame($result->result_array(), $result->result('other'));
+        $array = $result->result_array();
+        $array[1]['id'] = 99;
+        $this->assertSame(2, $result->row(99)->id);
+        $rows[1]->id = 7;
+        $this->assertSame(7, $result->row(99)->id);
+        $this->assertSame(array(), (new Result(array()))->result());
+        $this->assertSame(array(), (new Result(array()))->result_array());
+    }
 }

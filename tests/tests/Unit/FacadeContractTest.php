@@ -150,4 +150,28 @@ class FacadeContractTest extends TestCase
         $this->assertSame(array(), $replacement->calls);
         $this->assertSame(array(array('get', array('records'))), $original->calls);
     }
+
+    /**
+     * Seed every fresh query from connection defaults without copying facade state.
+     *
+     * @return void
+     */
+    public function testConfiguredDatabaseMetadataIsIndependent(): void
+    {
+        $metadata = array('table_names' => array('exp_stale'), 'unrelated' => 'keep');
+        $GLOBALS['low_list_ee'] = new Environment($metadata);
+        $this->assertSame($metadata, ee()->db->data_cache);
+        ee()->db->data_cache = array('table_names' => array('facade-only'));
+        $first = ee('db');
+        $second = ee('db');
+
+        $this->assertSame($metadata, $first->data_cache);
+        $this->assertSame($metadata, $second->data_cache);
+        $this->assertNotSame($first, $second);
+        unset($first->data_cache['table_names']);
+        $this->assertSame(array('unrelated' => 'keep'), $first->data_cache);
+        $this->assertSame($metadata, $second->data_cache);
+        $this->assertSame($metadata, ee('db')->data_cache);
+        $this->assertSame(array('table_names' => array('facade-only')), ee()->db->data_cache);
+    }
 }
