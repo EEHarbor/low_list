@@ -45,6 +45,48 @@ class LegacyRuntimeTest extends TestCase
     }
 
     /**
+     * Preserve the original EE2.5 URL contract without loading the later string helper.
+     *
+     * @return void
+     */
+    public function testLegacySlashCleanup(): void
+    {
+        $result = $this->legacy('slashes');
+
+        $this->assertSame('2.5.4', $result['version']);
+        $this->assertSame(array('', '0', '/', '/', '/', 'path/to/file',
+            'https://example.test/path/', 'http://example.test',
+            '/example.test/path', 'scheme://path', "binary\0/path",
+            'https://example.test/?next=http://other.test/path'), $result['values']);
+        $this->assertSame(array(), $result['loader_calls']);
+        $this->assertSame(array(), $result['helper_calls']);
+    }
+
+    /**
+     * Delegate later EE2 cleanup to the native string-helper boundary on each call.
+     *
+     * @return void
+     */
+    public function testLaterLegacySlashCleanup(): void
+    {
+        $result = $this->legacy('slashes-helper');
+        $inputs = array('', '0', '/', '//', '///', 'path//to///file',
+            'https://example.test//path///', 'http://example.test',
+            '//example.test///path', 'scheme:////path', "binary\0//path",
+            'https://example.test/?next=http://other.test//path');
+
+        $this->assertSame('2.10.1', $result['version']);
+        $this->assertSame(array('', '0', '/', '//', '///', 'path/to/file',
+            'https://example.test/path/', 'http://example.test',
+            '//example.test/path', 'scheme:////path', "binary\0/path",
+            'https://example.test/?next=http://other.test/path'), $result['values']);
+        $this->assertSame(array_fill(0, count($inputs), array('helper', 'string')), $result['loader_calls']);
+        $this->assertSame(array_map(static function ($input) {
+            return array('reduce_double_slashes', $input);
+        }, $inputs), $result['helper_calls']);
+    }
+
+    /**
      * Write only owned writable inline views and preserve loader output behavior.
      *
      * @dataProvider viewModes

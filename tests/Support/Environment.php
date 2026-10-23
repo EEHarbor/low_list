@@ -662,7 +662,7 @@ namespace {
     }
 
     /**
-     * Record the string helper boundary used by each bridge.
+     * Preserve the EE2.6+ string helper result and record its delegated input.
      *
      * @param string $text
      * @return string
@@ -671,6 +671,6 @@ namespace {
     {
         $GLOBALS['low_list_helpers'][] = array('reduce_double_slashes', $text);
 
-        return 'reduced-result';
+        return preg_replace('#([^/:])/+#', '\\1/', $text);
     }
 }

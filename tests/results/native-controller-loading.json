@@ -8,7 +8,7 @@
     "metrics": "Independent native contexts; raw basic blocks and out/out_hit exits are preserved without graph merging.",
     "contexts": {
         "legacy-empty": {
-            "capture": "native-controller-loading-7f83e0c57a629ef2.json",
+            "capture": "native-controller-loading-ef2d595d46931779.json",
             "context": {
                 "APP_VER": "2.5.5",
                 "REQ": "CP",
@@ -918,7 +918,7 @@
             }
         },
         "legacy-missing": {
-            "capture": "native-controller-loading-d36325cb2e62cc41.json",
+            "capture": "native-controller-loading-7ad953a757d80117.json",
             "context": {
                 "APP_VER": "2.5.5",
                 "REQ": "CP",
@@ -1828,7 +1828,7 @@
             }
         },
         "legacy-predeclared": {
-            "capture": "native-controller-loading-06eddf0fc2432b4b.json",
+            "capture": "native-controller-loading-446b763abd9eb64f.json",
             "context": {
                 "APP_VER": "2.5.5",
                 "REQ": "CP",
@@ -2738,7 +2738,7 @@
             }
         },
         "legacy-present": {
-            "capture": "native-controller-loading-70e06bb8873ce1d1.json",
+            "capture": "native-controller-loading-4c726306fa1dc7c9.json",
             "context": {
                 "APP_VER": "2.5.5",
                 "REQ": "CP",
@@ -3648,7 +3648,7 @@
             }
         },
         "modern-empty": {
-            "capture": "native-controller-loading-2c59db4586ea51ba.json",
+            "capture": "native-controller-loading-737abb24d1ff2030.json",
             "context": {
                 "APP_VER": "7.5.0",
                 "REQ": "CP",
@@ -4558,7 +4558,7 @@
             }
         },
         "modern-missing": {
-            "capture": "native-controller-loading-8c29edc5617e549e.json",
+            "capture": "native-controller-loading-b3af20513a3d44b7.json",
             "context": {
                 "APP_VER": "7.5.0",
                 "REQ": "CP",
@@ -5468,7 +5468,7 @@
             }
         },
         "modern-predeclared": {
-            "capture": "native-controller-loading-04348d16e71481be.json",
+            "capture": "native-controller-loading-58e12f01b7220b6a.json",
             "context": {
                 "APP_VER": "7.5.0",
                 "REQ": "CP",
@@ -6378,7 +6378,7 @@
             }
         },
         "modern-present": {
-            "capture": "native-controller-loading-cf55f921024893e4.json",
+            "capture": "native-controller-loading-176189d6482763a7.json",
             "context": {
                 "APP_VER": "7.5.0",
                 "REQ": "CP",

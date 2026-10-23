@@ -24,11 +24,15 @@ final class LegacyBridgeProbe
             }
             define('BASEPATH', __DIR__);
             define('PATH_THIRD', $installation . '/');
-            define('APP_VER', '2.5.5');
+            $versions = array('slashes' => '2.5.4', 'slashes-helper' => '2.10.1');
+            define('APP_VER', isset($versions[$mode]) ? $versions[$mode] : '2.5.5');
             define('REQ', 'CP');
             define('BASE', 'https://admin.example.test/index.php?');
             define('AMP', '&amp;');
             require $root . '/low_list/autoload.php';
+            if ($mode === 'slashes' || $mode === 'slashes-helper') {
+                return self::slashes();
+            }
             if ($mode === 'urls') {
                 return self::urls();
             }
@@ -66,6 +70,30 @@ final class LegacyBridgeProbe
         ee()->config->items['cp_session_type'] = $sessionType;
 
         return new \LowList\FluxCapacitor\Bridge\EE2(array('module' => 'low_list', 'module_name' => 'Low List'));
+    }
+
+    /**
+     * Run the original EE2 bridge against its verified version-specific slash API.
+     *
+     * @return array
+     */
+    private static function slashes()
+    {
+        $bridge = self::bridge();
+        ee()->functions = new Functions();
+        $GLOBALS['low_list_helpers'] = array();
+        $values = array('', '0', '/', '//', '///', 'path//to///file',
+            'https://example.test//path///', 'http://example.test',
+            '//example.test///path', 'scheme:////path', "binary\0//path",
+            'https://example.test/?next=http://other.test//path');
+        $result = array('version' => APP_VER, 'values' => array());
+        foreach ($values as $value) {
+            $result['values'][] = $bridge->reduce_double_slashes($value);
+        }
+        $result['loader_calls'] = ee()->load->calls;
+        $result['helper_calls'] = $GLOBALS['low_list_helpers'];
+
+        return $result;
     }
 
     /**

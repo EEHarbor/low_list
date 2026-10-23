@@ -37,7 +37,7 @@ $configurations = array(
     ),
     'legacy-bridge' => array(
         'source' => 'low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php',
-        'cases' => array('urls' => '2.5.5', 'view-writable' => '2.5.5', 'view-readonly' => '2.5.5'),
+        'cases' => array('urls' => '2.5.5', 'view-writable' => '2.5.5', 'view-readonly' => '2.5.5', 'slashes' => '2.5.4', 'slashes-helper' => '2.10.1'),
     ),
     'cp-fieldtype' => array(
         'source' => 'low_list/low_list.phar/FluxCapacitor/Base/Ft.php',

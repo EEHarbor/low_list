@@ -20,6 +20,17 @@ class Functions
     }
 
     /**
+     * Preserve the pre-2.6 EE URL cleanup contract, including protocol separators.
+     *
+     * @param string $text
+     * @return string
+     */
+    public function remove_double_slashes($text)
+    {
+        return preg_replace('#(^|[^:])//+#', '\\1/', $text);
+    }
+
+    /**
      * Model EE's terminal redirect without terminating the PHPUnit process.
      *
      * @param string|object $url

@@ -93,7 +93,7 @@ class BridgeAdapterTest extends TestCase
         if (method_exists($bridge, 'prep_url')) {
             $this->assertSame('prepared-result', $bridge->prep_url('example.test/path'));
         }
-        $this->assertSame('reduced-result', $bridge->reduce_double_slashes('https://example.test//path'));
+        $this->assertSame('https://example.test/path', $bridge->reduce_double_slashes('https://example.test//path'));
         $this->assertContains(array('reduce_double_slashes', 'https://example.test//path'), $GLOBALS['low_list_helpers']);
         $this->assertContains(array('helper', 'string'), ee()->load->calls);
     }
