@@ -1,0 +1,2077 @@
+{
+  "state": "REVIEW_PENDING_SOURCE_ORDINARY_547_CHECKPOINT",
+  "base": "dc80121cf9b0671b96c426802ae9fe171571ea36",
+  "source_baseline": "86e4da6b2e585467b9c068e55f0190e69107fe4f",
+  "scope_units": 27,
+  "archive_sha256": "32a3538131e73a067d439d9d078f7b6a6abb5d576a01cbbd60c0deb7ec48144c",
+  "new_cases": 5,
+  "new_assertions": 25,
+  "source_contract": {
+    "source_contract": "Original AbstractBridge public getAddonThemesDir; original EE version selector+unmodified EE2/3/4/5 implementations and inherited EE6. Existing undefined-constant fallbacks remain in BridgeTest/BridgeAdapterTest; new predefined host URL branch is selected independently in fresh requests.",
+    "current_native_core_context": "Core.php252 defines URL_THIRD_THEMES from theme_url/user; app.setup passes it to Theme service, StandardGlobals83 exposes it. Legacy prefix supplied as normal host configuration, not historical full-EE execution.",
+    "external_sources_read_only": [
+      {
+        "path": "/Users/tomjaeger/Sites/ee75/system/ee/legacy/libraries/Core.php",
+        "bytes": 36956,
+        "sha256": "f084c41a1524ecc92c0d49af49ec1ba780e8015706b8b6b58a5ec8275045790b"
+      },
+      {
+        "path": "/Users/tomjaeger/Sites/ee75/system/ee/ExpressionEngine/app.setup.php",
+        "bytes": 29909,
+        "sha256": "84b9bac5b8ce23ac3f3ae9f56f47825906d7de861fabb05e532a4c111b04724c"
+      },
+      {
+        "path": "/Users/tomjaeger/Sites/ee75/system/ee/ExpressionEngine/Service/Template/Variables/StandardGlobals.php",
+        "bytes": 5904,
+        "sha256": "80f48633294a99bfd7f75994b54d2e823dfa88ac2aba70167c9d666cba1601af"
+      }
+    ],
+    "old_main_graph_hint_only": {
+      "lines": "getAddonThemesDir branch URL_THIRD_THEMES defined was not observed in parent83. Existing native contexts were statically checked for this literal and none defines it.",
+      "no_current_coverage_claim": true
+    },
+    "source_fix_fake_builtin_mocks_source_override": false,
+    "new_source_test_contexts": 5,
+    "new_backend_native_collector_module_filter": false,
+    "initial_private_source_draft_patch_sha256": "f46a98537b963c4a1f64ae19a3b2657d6a2238b35966a3c9f03c14e0f0243242",
+    "draft_boundary": "Retained initial source-only diff predates a summary-doc clarification. Current executed PHP bytes are pinned in ORDINARY_INPUTS; exact final source bytes are bound by the final four-path manifest."
+  },
+  "original_member_contracts": {
+    "low_list/low_list.phar/FluxCapacitor/Bridge/AbstractBridge.php": {
+      "sha256": "233c0f9ecf654bb8784909742d4a895e0c07da3b787f8bed082349919e8bdecd",
+      "bytes": 3414,
+      "purpose": "Read-only original selector/interface/implementation contract; executed source comes from unchanged original PHAR."
+    },
+    "low_list/low_list.phar/FluxCapacitor/Bridge/EE.php": {
+      "sha256": "a7f848eda3c0bbdff3e46c3b3d301567735efb8e6e03b3874ce85d218ac44250",
+      "bytes": 2156,
+      "purpose": "Read-only original selector/interface/implementation contract; executed source comes from unchanged original PHAR."
+    },
+    "low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php": {
+      "sha256": "56be84f351db72896f70d6a9da64bcf27a881acca4dfa5400ecbf67a75946aee",
+      "bytes": 16018,
+      "purpose": "Read-only original selector/interface/implementation contract; executed source comes from unchanged original PHAR."
+    },
+    "low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php": {
+      "sha256": "ad1b199acef13cfd70c0f8ff140fea71fb392f363dc9a1817383a5699da7e1e0",
+      "bytes": 16918,
+      "purpose": "Read-only original selector/interface/implementation contract; executed source comes from unchanged original PHAR."
+    },
+    "low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php": {
+      "sha256": "bc5192719a6eeddaec170cd9b6aa511fd68b37be0d9b5bea3c6f31dd41a70ae1",
+      "bytes": 17002,
+      "purpose": "Read-only original selector/interface/implementation contract; executed source comes from unchanged original PHAR."
+    },
+    "low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php": {
+      "sha256": "31a4a5810152bb4a41fce63dc486d4dac35bcceeec9c04ca4bb1d44bcde37ca9",
+      "bytes": 17405,
+      "purpose": "Read-only original selector/interface/implementation contract; executed source comes from unchanged original PHAR."
+    },
+    "low_list/low_list.phar/FluxCapacitor/Bridge/EE6.php": {
+      "sha256": "0c0e827fa49817da933aaece52c8900576768e5f2a6bf79f048d8258bfcbc1af",
+      "bytes": 427,
+      "purpose": "Read-only original selector/interface/implementation contract; executed source comes from unchanged original PHAR."
+    }
+  },
+  "new_test_contexts": {
+    "EE2": "2.10.1",
+    "EE3": "3.5.11",
+    "EE4": "4.3.8",
+    "EE5": "5.4.3",
+    "current_EE6_inheriting_EE5": "7.5.0"
+  },
+  "oracle": "Exact complete returned structure: original selector parent, configured host constant, repeated returned addon URL after two distinct fallback config changes, preserved final config, zero database/service calls, parent constant-definition state unchanged.",
+  "ordinary": {
+    "focus_all7": {
+      "cases": 5,
+      "assertions": 25,
+      "errors": 0,
+      "failures": 0,
+      "status": 0,
+      "binary_suffixes": [
+        "74",
+        "80",
+        "81",
+        "82",
+        "83",
+        "84",
+        "85"
+      ],
+      "historical_version_labels": [
+        "7.4.33",
+        "8.0.30",
+        "8.1.33",
+        "8.2.30",
+        "8.3.28",
+        "8.4.15",
+        "8.5.0"
+      ],
+      "version_boundary": "Exact binary bytes/paths are sealed; version labels come from the retained prior matrix, with no new standalone ABI/version probe."
+    },
+    "full82": {
+      "cases": 547,
+      "assertions": 2928,
+      "errors": 40,
+      "failures": 42,
+      "warnings": 0,
+      "risky": 0,
+      "skipped": 0,
+      "incomplete": 0,
+      "status": 2
+    },
+    "focused_orders": [
+      "reverse74",
+      "random85 seed547"
+    ],
+    "changed_file_lints": [
+      "74 support",
+      "74 test",
+      "85 support",
+      "85 test"
+    ],
+    "full_all7_current547_executed": false,
+    "prior542_full_all7_historical_unchanged": true,
+    "whole_case_comparison": {
+      "state": "EXACT_PRIOR_542_AND_NEW_FIVE_ORDINARY",
+      "prior_cases": 542,
+      "current_cases": 547,
+      "new_cases": 5,
+      "new_assertions": 25,
+      "prior_all_case_attributes_assertions_issue_tags_types_full_text_equal": true,
+      "prior_errors": 40,
+      "prior_failures": 42,
+      "new_issues": 0,
+      "full82": {
+        "path": "/private/tmp/low-list-theme-branch-twwdu1xa/reports/full82.xml",
+        "sha256": "1d69abe25a5123898808ad1fb9987ff4de7cbfede1cf540da0d58dbbe0931fa3",
+        "bytes": 239173
+      },
+      "prior82": {
+        "path": "/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T/low-list-matrix.fl0EtJ/php82.xml",
+        "sha256": "f67bc296e9ac23fa31d11cbb4caee977cbb06ef88593195c4a4e8562177b4901",
+        "bytes": 226774
+      },
+      "focus_all7": {
+        "74": {
+          "path": "/private/tmp/low-list-theme-branch-twwdu1xa/reports/focus74.xml",
+          "sha256": "46ca5588eedd11f5317a971660b3f7088fae899271c663cec8fd332b0bc5460c",
+          "bytes": 2384
+        },
+        "80": {
+          "path": "/private/tmp/low-list-theme-branch-twwdu1xa/reports/focus80.xml",
+          "sha256": "e77699162c1f7307a9302517558b7056498c7203ae247680ef5c1cc6c2f23cf4",
+          "bytes": 2384
+        },
+        "81": {
+          "path": "/private/tmp/low-list-theme-branch-twwdu1xa/reports/focus81.xml",
+          "sha256": "9a5a702a8b6360e95bbb29c6c9a5410ad3cab3427d8b00fbe096397bb43cc1db",
+          "bytes": 2384
+        },
+        "82": {
+          "path": "/private/tmp/low-list-theme-branch-twwdu1xa/reports/focus82.xml",
+          "sha256": "2b0bfaa8e8ca2a3629b41306da23343fb8718c2243d517e6b74bb08a7d7e7a15",
+          "bytes": 2384
+        },
+        "83": {
+          "path": "/private/tmp/low-list-theme-branch-twwdu1xa/reports/focus83.xml",
+          "sha256": "d45c9dd7825912dfc4c7480df38cdda0b183ffee1ec03eb31b1f61af123e1c70",
+          "bytes": 2384
+        },
+        "84": {
+          "path": "/private/tmp/low-list-theme-branch-twwdu1xa/reports/focus84.xml",
+          "sha256": "185956cb73e25f519996d980d262e748cc69554d0e322b8aaa03bb763a5f28f3",
+          "bytes": 2384
+        },
+        "85": {
+          "path": "/private/tmp/low-list-theme-branch-twwdu1xa/reports/focus85.xml",
+          "sha256": "c4dd0b54c7dc4ae0384455846ab5d7c563502689845f2e822a829e04d7d6621f",
+          "bytes": 2384
+        }
+      },
+      "focused_endpoint_orders_equal": true,
+      "normalization": {
+        "excluded_case_attribute": [
+          "time"
+        ],
+        "exact_roots": [
+          "/Users/tomjaeger/Sites/add-ons/low_list",
+          "/private/tmp/low-list-theme-branch-twwdu1xa/snapshot"
+        ],
+        "root_derived_15_character_PHP_stack_previews": [
+          [
+            "/Users/tomjaege...",
+            "/private/tmp/lo..."
+          ],
+          [
+            "phar:///Users/t...",
+            "phar:///private..."
+          ],
+          [
+            "include_once(/U...",
+            "include_once(/p..."
+          ],
+          [
+            "/private/var/fo...",
+            "/private/tmp/lo..."
+          ]
+        ],
+        "owned_temp_cache_roots": [
+          "/private/var/folders/07/g6ql86ns3m75y257j7nb6pv00000gn/T",
+          "/private/tmp/low-list-theme-branch-twwdu1xa/tmp"
+        ],
+        "cache_suffix": "low-list-tests-[a-zA-Z0-9]{6}",
+        "updater_suffix": "/low-list-updater-[a-f0-9]{16}/",
+        "incidental_object_field": "Object &[a-f0-9]{32}"
+      },
+      "full_current_issues": [
+        {
+          "class": "LowListTests\\BaseTest",
+          "case": "testPluginInfoCanBeRead",
+          "issues": [
+            {
+              "tag": "error",
+              "attributes": {
+                "type": "Error"
+              },
+              "text": "LowListTests\\BaseTest::testPluginInfoCanBeRead\nError: Using $this when not in object context\n\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Base/Pi.php:30\n<ROOT>/tests/tests/Unit/BaseTest.php:36"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\BaseTest",
+          "case": "testExtensionAliasForwardsArguments",
+          "issues": [
+            {
+              "tag": "failure",
+              "attributes": {
+                "type": "PHPUnit\\Framework\\ExpectationFailedException"
+              },
+              "text": "LowListTests\\BaseTest::testExtensionAliasForwardsArguments\nFailed asserting that two strings are identical.\n--- Expected\n+++ Actual\n@@ @@\n-'different_hook'\n+'method'\n\n<ROOT>/tests/tests/Unit/BaseTest.php:108"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\BridgeAdapterTest",
+          "case": "testExistingNativeClassCanBeReplaced with data set #0",
+          "issues": [
+            {
+              "tag": "error",
+              "attributes": {
+                "type": "RuntimeException"
+              },
+              "text": "LowListTests\\BridgeAdapterTest::testExistingNativeClassCanBeReplaced with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')\nRuntimeException: Cannot overwrite logger on the loader.\n\n<ROOT>/tests/Support/Environment.php:318\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:344\n<ROOT>/tests/tests/Unit/BridgeAdapterTest.php:70"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\BridgeAdapterTest",
+          "case": "testExistingNativeClassCanBeReplaced with data set #1",
+          "issues": [
+            {
+              "tag": "error",
+              "attributes": {
+                "type": "RuntimeException"
+              },
+              "text": "LowListTests\\BridgeAdapterTest::testExistingNativeClassCanBeReplaced with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')\nRuntimeException: Cannot overwrite logger on the loader.\n\n<ROOT>/tests/Support/Environment.php:318\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:344\n<ROOT>/tests/tests/Unit/BridgeAdapterTest.php:70"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\BridgeAdapterTest",
+          "case": "testExistingNativeClassCanBeReplaced with data set #2",
+          "issues": [
+            {
+              "tag": "error",
+              "attributes": {
+                "type": "RuntimeException"
+              },
+              "text": "LowListTests\\BridgeAdapterTest::testExistingNativeClassCanBeReplaced with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')\nRuntimeException: Cannot overwrite logger on the loader.\n\n<ROOT>/tests/Support/Environment.php:318\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344\n<ROOT>/tests/tests/Unit/BridgeAdapterTest.php:70"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\BridgeAdapterTest",
+          "case": "testExistingNativeClassCanBeReplaced with data set #3",
+          "issues": [
+            {
+              "tag": "error",
+              "attributes": {
+                "type": "RuntimeException"
+              },
+              "text": "LowListTests\\BridgeAdapterTest::testExistingNativeClassCanBeReplaced with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')\nRuntimeException: Cannot overwrite logger on the loader.\n\n<ROOT>/tests/Support/Environment.php:318\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:344\n<ROOT>/tests/tests/Unit/BridgeAdapterTest.php:70"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\BridgeAdapterTest",
+          "case": "testLegacyPersistentCacheDeletion",
+          "issues": [
+            {
+              "tag": "failure",
+              "attributes": {
+                "type": "PHPUnit\\Framework\\ExpectationFailedException"
+              },
+              "text": "LowListTests\\BridgeAdapterTest::testLegacyPersistentCacheDeletion\nFailed asserting that 'stored' is false.\n\n<ROOT>/tests/tests/Unit/BridgeAdapterTest.php:193"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\BridgeTest",
+          "case": "testEmptyModernRequestContextIsSafe with data set #0",
+          "issues": [
+            {
+              "tag": "error",
+              "attributes": {
+                "type": "ErrorException"
+              },
+              "text": "LowListTests\\BridgeTest::testEmptyModernRequestContextIsSafe with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')\nErrorException: Undefined array key 3\n\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:412\n<ROOT>/tests/tests/Unit/BridgeTest.php:133"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\BridgeTest",
+          "case": "testEmptyModernRequestContextIsSafe with data set #1",
+          "issues": [
+            {
+              "tag": "error",
+              "attributes": {
+                "type": "ErrorException"
+              },
+              "text": "LowListTests\\BridgeTest::testEmptyModernRequestContextIsSafe with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')\nErrorException: Undefined array key 3\n\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:412\n<ROOT>/tests/tests/Unit/BridgeTest.php:133"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\BridgeTest",
+          "case": "testModernNavigationActiveAlias with data set #0",
+          "issues": [
+            {
+              "tag": "failure",
+              "attributes": {
+                "type": "PHPUnit\\Framework\\ExpectationFailedException"
+              },
+              "text": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #0 ('LowList\\FluxCapacitor\\Bridge\\EE3')\nFailed asserting that LowListTests\\Header Object &<INCIDENTAL_OBJECT_ID> (\n    'text' => 'License'\n    'url' => LowListTests\\Url Object &<INCIDENTAL_OBJECT_ID> (\n        'last' => Array &0 (\n            0 => 'addons/settings/low_list/index'\n            1 => Array &1 ()\n        )\n        'requested' => false\n    )\n    'button' => Array &2 (\n        'text' => 'Save'\n        'url' => LowListTests\\Url Object &<INCIDENTAL_OBJECT_ID>\n    )\n    'class' => 'active '\n) is identical to 'License'.\n\n<ROOT>/tests/tests/Unit/BridgeTest.php:222"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\BridgeTest",
+          "case": "testModernNavigationActiveAlias with data set #1",
+          "issues": [
+            {
+              "tag": "failure",
+              "attributes": {
+                "type": "PHPUnit\\Framework\\ExpectationFailedException"
+              },
+              "text": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #1 ('LowList\\FluxCapacitor\\Bridge\\EE4')\nFailed asserting that LowListTests\\Header Object &<INCIDENTAL_OBJECT_ID> (\n    'text' => 'License'\n    'url' => LowListTests\\Url Object &<INCIDENTAL_OBJECT_ID> (\n        'last' => Array &0 (\n            0 => 'addons/settings/low_list/index'\n            1 => Array &1 ()\n        )\n        'requested' => false\n    )\n    'button' => Array &2 (\n        'text' => 'Save'\n        'url' => LowListTests\\Url Object &<INCIDENTAL_OBJECT_ID>\n    )\n    'class' => 'active '\n) is identical to 'License'.\n\n<ROOT>/tests/tests/Unit/BridgeTest.php:222"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\BridgeTest",
+          "case": "testModernNavigationActiveAlias with data set #2",
+          "issues": [
+            {
+              "tag": "failure",
+              "attributes": {
+                "type": "PHPUnit\\Framework\\ExpectationFailedException"
+              },
+              "text": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #2 ('LowList\\FluxCapacitor\\Bridge\\EE5')\nFailed asserting that LowListTests\\Header Object &<INCIDENTAL_OBJECT_ID> (\n    'text' => 'License'\n    'url' => LowListTests\\Url Object &<INCIDENTAL_OBJECT_ID> (\n        'last' => Array &0 (\n            0 => 'addons/settings/low_list/index'\n            1 => Array &1 ()\n        )\n        'requested' => false\n    )\n    'button' => Array &2 (\n        'text' => 'Save'\n        'url' => LowListTests\\Url Object &<INCIDENTAL_OBJECT_ID>\n    )\n    'class' => 'active '\n) is identical to 'License'.\n\n<ROOT>/tests/tests/Unit/BridgeTest.php:222"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\BridgeTest",
+          "case": "testModernNavigationActiveAlias with data set #3",
+          "issues": [
+            {
+              "tag": "failure",
+              "attributes": {
+                "type": "PHPUnit\\Framework\\ExpectationFailedException"
+              },
+              "text": "LowListTests\\BridgeTest::testModernNavigationActiveAlias with data set #3 ('LowList\\FluxCapacitor\\Bridge\\EE6')\nFailed asserting that LowListTests\\Header Object &<INCIDENTAL_OBJECT_ID> (\n    'text' => 'License'\n    'url' => LowListTests\\Url Object &<INCIDENTAL_OBJECT_ID> (\n        'last' => Array &0 (\n            0 => 'addons/settings/low_list/index'\n            1 => Array &1 ()\n        )\n        'requested' => false\n    )\n    'button' => Array &2 (\n        'text' => 'Save'\n        'url' => LowListTests\\Url Object &<INCIDENTAL_OBJECT_ID>\n    )\n    'class' => 'active '\n) is identical to 'License'.\n\n<ROOT>/tests/tests/Unit/BridgeTest.php:222"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\ControlPanelRuntimeTest",
+          "case": "testConstructorsKeepValidSchemaAndOnePixel with data set #4",
+          "issues": [
+            {
+              "tag": "failure",
+              "attributes": {
+                "type": "PHPUnit\\Framework\\ExpectationFailedException"
+              },
+              "text": "LowListTests\\ControlPanelRuntimeTest::testConstructorsKeepValidSchemaAndOnePixel with data set #4 ('shared-modern')\nFailed asserting that true is false.\n\n<ROOT>/tests/tests/Unit/ControlPanelRuntimeTest.php:42"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\ControlPanelRuntimeTest",
+          "case": "testConstructorsKeepValidSchemaAndOnePixel with data set #5",
+          "issues": [
+            {
+              "tag": "failure",
+              "attributes": {
+                "type": "PHPUnit\\Framework\\ExpectationFailedException"
+              },
+              "text": "LowListTests\\ControlPanelRuntimeTest::testConstructorsKeepValidSchemaAndOnePixel with data set #5 ('shared-legacy')\nFailed asserting that true is false.\n\n<ROOT>/tests/tests/Unit/ControlPanelRuntimeTest.php:42"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\ControlPanelRuntimeTest",
+          "case": "testUpdaterLoadsOptionalProvider with data set #2",
+          "issues": [
+            {
+              "tag": "failure",
+              "attributes": {
+                "type": "PHPUnit\\Framework\\ExpectationFailedException"
+              },
+              "text": "LowListTests\\ControlPanelRuntimeTest::testUpdaterLoadsOptionalProvider with data set #2 ('updater-missing')\nFatal error: Uncaught ErrorException: include_once(<OWNED_CACHE>/low-list-updater-<UPDATER_NONCE>/low_list/ext.low_list.php): Failed to open stream: No such file or directory in phar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Base/Upd.php:64\nStack trace:\n#0 phar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Base/Upd.php(64): {closure}(2, '<OWNED_PATH_PREVIEW>', '<OWNED_PATH_PREVIEW>', 64)\n#1 phar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Base/Upd.php(64): include_once()\n#2 <ROOT>/tests/Support/control-panel-probe.php(63): LowList\\FluxCapacitor\\Base\\Upd->update('1.0.0')\n#3 <ROOT>/tests/Support/native-probe.php(43): LowListTests\\ControlPanelProbe::run('<OWNED_PATH_PREVIEW>', 'updater-missing')\n#4 {main}\n  thrown in phar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Base/Upd.php on line 64\n\nFailed asserting that 255 is identical to 0.\n\n<ROOT>/tests/tests/Unit/ControlPanelRuntimeTest.php:114\n<ROOT>/tests/tests/Unit/ControlPanelRuntimeTest.php:92"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\FieldtypeContextTest",
+          "case": "testChannelSelection with data set \"structured query channel is rejected\"",
+          "issues": [
+            {
+              "tag": "failure",
+              "attributes": {
+                "type": "PHPUnit\\Framework\\ExpectationFailedException"
+              },
+              "text": "LowListTests\\FieldtypeContextTest::testChannelSelection with data set \"structured query channel is rejected\" (null, array(), array(array('9')), array(), '', array(), false, false)\nFailed asserting that Array &0 (\n    0 => '9'\n) is identical to false.\n\n<ROOT>/tests/tests/Unit/FieldtypeContextTest.php:35"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\FieldtypeContextTest",
+          "case": "testChannelSelection with data set \"structured posted channel is rejected\"",
+          "issues": [
+            {
+              "tag": "failure",
+              "attributes": {
+                "type": "PHPUnit\\Framework\\ExpectationFailedException"
+              },
+              "text": "LowListTests\\FieldtypeContextTest::testChannelSelection with data set \"structured posted channel is rejected\" (null, array(), array('8'), array(array('9')), '', array(), false, false)\nFailed asserting that Array &0 (\n    0 => '9'\n) is identical to false.\n\n<ROOT>/tests/tests/Unit/FieldtypeContextTest.php:35"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\FieldtypeContextTest",
+          "case": "testChannelSelection with data set \"deleted entry is safely absent\"",
+          "issues": [
+            {
+              "tag": "error",
+              "attributes": {
+                "type": "ErrorException"
+              },
+              "text": "LowListTests\\FieldtypeContextTest::testChannelSelection with data set \"deleted entry is safely absent\" (19, array(), array(), array(), '', array(), false, true)\nErrorException: Attempt to read property \"channel_id\" on null\n\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Base/Ft.php:87\n<ROOT>/tests/tests/Unit/FieldtypeContextTest.php:35"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\FieldtypeRuntimeTest",
+          "case": "testLegacyStructuredChannelIsRejected",
+          "issues": [
+            {
+              "tag": "failure",
+              "attributes": {
+                "type": "PHPUnit\\Framework\\ExpectationFailedException"
+              },
+              "text": "LowListTests\\FieldtypeRuntimeTest::testLegacyStructuredChannelIsRejected\nFailed asserting that two arrays are identical.\n--- Expected\n+++ Actual\n@@ @@\n Array &0 (\n-    0 => false\n+    0 => Array &1 (\n+        0 => '9'\n+    )\n     1 => false\n )\n\n<ROOT>/tests/tests/Unit/FieldtypeRuntimeTest.php:41"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\GlobalFieldSettingsTest",
+          "case": "testMissingKeyIsSafe",
+          "issues": [
+            {
+              "tag": "error",
+              "attributes": {
+                "type": "ErrorException"
+              },
+              "text": "LowListTests\\GlobalFieldSettingsTest::testMissingKeyIsSafe\nErrorException: Undefined array key \"missing\"\n\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Conduit/GlobalFieldSettings.php:21\n<ROOT>/tests/tests/Unit/GlobalFieldSettingsTest.php:52"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\GlobalFieldSettingsTest",
+          "case": "testMalformedLegacySettingsAreSafe",
+          "issues": [
+            {
+              "tag": "error",
+              "attributes": {
+                "type": "ErrorException"
+              },
+              "text": "LowListTests\\GlobalFieldSettingsTest::testMalformedLegacySettingsAreSafe\nErrorException: unserialize(): Error at offset 0 of 25 bytes\n\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Conduit/GlobalFieldSettings.php:33\n<ROOT>/tests/tests/Unit/GlobalFieldSettingsTest.php:64"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\LegacyBridgeTest",
+          "case": "testBaseUrlsAndSessionModes",
+          "issues": [
+            {
+              "tag": "error",
+              "attributes": {
+                "type": "ValueError"
+              },
+              "text": "LowListTests\\LegacyBridgeTest::testBaseUrlsAndSessionModes\nValueError: version_compare(): Argument #3 ($operator) must be a valid comparison operator\n\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:47\n<ROOT>/tests/tests/Unit/LegacyBridgeTest.php:57"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\McpPaginationTest",
+          "case": "testNegativePageDoesNotCreateNegativeOffset",
+          "issues": [
+            {
+              "tag": "failure",
+              "attributes": {
+                "type": "PHPUnit\\Framework\\ExpectationFailedException"
+              },
+              "text": "LowListTests\\McpPaginationTest::testNegativePageDoesNotCreateNegativeOffset\nFailed asserting that two arrays are identical.\n--- Expected\n+++ Actual\n@@ @@\n     )\n     1 => Array &2 (\n         0 => 'offset'\n-        1 => 0\n+        1 => -30\n     )\n )\n\n<ROOT>/tests/tests/Unit/McpPaginationTest.php:77"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\McpPaginationTest",
+          "case": "testBaseControllerPaginationHasNoDeprecations",
+          "issues": [
+            {
+              "tag": "error",
+              "attributes": {
+                "type": "ErrorException"
+              },
+              "text": "LowListTests\\McpPaginationTest::testBaseControllerPaginationHasNoDeprecations\nErrorException: Creation of dynamic property LowList\\FluxCapacitor\\Base\\Mcp::$data is deprecated\n\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Base/Mcp.php:165\n<ROOT>/tests/tests/Unit/McpPaginationTest.php:91"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\NativeLoadingTest",
+          "case": "testOriginalFieldtypeLayouts with data set #4",
+          "issues": [
+            {
+              "tag": "failure",
+              "attributes": {
+                "type": "PHPUnit\\Framework\\ExpectationFailedException"
+              },
+              "text": "LowListTests\\NativeLoadingTest::testOriginalFieldtypeLayouts with data set #4 ('installer-ancestor', 'installer-backup/expressionen...pe.php')\nFatal error: Uncaught Error: Class \"EE_Fieldtype\" not found in phar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Base/Ft.php:34\nStack trace:\n#0 <ROOT>/low_list/autoload.php(84): include()\n#1 <ROOT>/tests/Support/loading-probe.php(126): LowListTests\\LoadingProbe::{closure}('FluxCapacitor/B...')\n#2 <ROOT>/tests/Support/loading-probe.php(32): LowListTests\\LoadingProbe::fieldtype('<OWNED_PATH_PREVIEW>', 'installer-ances...')\n#3 <ROOT>/tests/Support/native-probe.php(33): LowListTests\\LoadingProbe::run('<OWNED_PATH_PREVIEW>', 'fieldtype-loadi...', 'installer-ances...')\n#4 {main}\n  thrown in phar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Base/Ft.php on line 34\n\nFailed asserting that 255 is identical to 0.\n\n<ROOT>/tests/tests/Unit/NativeLoadingTest.php:88\n<ROOT>/tests/tests/Unit/NativeLoadingTest.php:67"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\NativeSourceTest",
+          "case": "testNativeLoad with data set \"low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php\"",
+          "issues": [
+            {
+              "tag": "failure",
+              "attributes": {
+                "type": "PHPUnit\\Framework\\ExpectationFailedException"
+              },
+              "text": "LowListTests\\NativeSourceTest::testNativeLoad with data set \"low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php\" ('archive', 'FluxCapacitor/Conduit/McpNav.php')\nFatal error: Uncaught ErrorException: include_once(<ROOT>/low_list/Conduit/McpNav.php): Failed to open stream: No such file or directory in phar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php:7\nStack trace:\n#0 phar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php(7): {closure}(2, '<OWNED_PATH_PREVIEW>', '<OWNED_PATH_PREVIEW>', 7)\n#1 phar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php(7): include_once()\n#2 <ROOT>/tests/Support/native-probe.php(158): require('<OWNED_PATH_PREVIEW>')\n#3 {main}\n  thrown in phar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Conduit/McpNav.php on line 7\n\nFailed asserting that 255 is identical to 0.\n\n<ROOT>/tests/tests/Unit/NativeSourceTest.php:21"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\NativeSourceTest",
+          "case": "testArchiveFallbackHasNoSuppressedDiagnostics",
+          "issues": [
+            {
+              "tag": "failure",
+              "attributes": {
+                "type": "PHPUnit\\Framework\\ExpectationFailedException"
+              },
+              "text": "LowListTests\\NativeSourceTest::testArchiveFallbackHasNoSuppressedDiagnostics\nFatal error: Uncaught ErrorException: mkdir(): File exists in <ROOT>/low_list/low_list.phar:177\nStack trace:\n#0 [internal function]: {closure}(2, 'mkdir(): File e...', '<OWNED_PATH_PREVIEW>', 177)\n#1 <ROOT>/low_list/low_list.phar(177): mkdir('<OWNED_PATH_PREVIEW>', 511, true)\n#2 <ROOT>/low_list/low_list.phar(291): Extract_low_list::go()\n#3 <ROOT>/tests/Support/native-probe.php(160): require('<OWNED_PATH_PREVIEW>')\n#4 {main}\n  thrown in <ROOT>/low_list/low_list.phar on line 177\n\nFailed asserting that 255 is identical to 0.\n\n<ROOT>/tests/tests/Unit/NativeSourceTest.php:79"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\NativeSourceTest",
+          "case": "testArchivePayloadValidation with data set #0",
+          "issues": [
+            {
+              "tag": "failure",
+              "attributes": {
+                "type": "PHPUnit\\Framework\\ExpectationFailedException"
+              },
+              "text": "LowListTests\\NativeSourceTest::testArchivePayloadValidation with data set #0 ('size', 'Invalid internal .phar file (... != 8)')\nFatal error: Uncaught ErrorException: Undefined variable $stat in <ROOT>/low_list/low_list.phar:262\nStack trace:\n#0 <ROOT>/low_list/low_list.phar(262): {closure}(2, 'Undefined varia...', '<OWNED_PATH_PREVIEW>', 262)\n#1 <ROOT>/tests/Support/native-probe.php(150): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)\n#2 {main}\n  thrown in <ROOT>/low_list/low_list.phar on line 262\n\nFailed asserting that 255 is identical to 0.\n\n<ROOT>/tests/tests/Unit/NativeSourceTest.php:250\n<ROOT>/tests/tests/Unit/NativeSourceTest.php:94"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\NativeSourceTest",
+          "case": "testArchivePayloadValidation with data set #2",
+          "issues": [
+            {
+              "tag": "failure",
+              "attributes": {
+                "type": "PHPUnit\\Framework\\ExpectationFailedException"
+              },
+              "text": "LowListTests\\NativeSourceTest::testArchivePayloadValidation with data set #2 ('gzip', 'Invalid internal .phar file (')\nFatal error: Uncaught ErrorException: gzinflate(): data error in <ROOT>/low_list/low_list.phar:255\nStack trace:\n#0 [internal function]: {closure}(2, 'gzinflate(): da...', '<OWNED_PATH_PREVIEW>', 255)\n#1 <ROOT>/low_list/low_list.phar(255): gzinflate('invalid-gzip-pa...')\n#2 <ROOT>/tests/Support/native-probe.php(150): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)\n#3 {main}\n  thrown in <ROOT>/low_list/low_list.phar on line 255\n\nFailed asserting that 255 is identical to 0.\n\n<ROOT>/tests/tests/Unit/NativeSourceTest.php:250\n<ROOT>/tests/tests/Unit/NativeSourceTest.php:94"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\NativeSourceTest",
+          "case": "testArchivePayloadValidation with data set #3",
+          "issues": [
+            {
+              "tag": "failure",
+              "attributes": {
+                "type": "PHPUnit\\Framework\\ExpectationFailedException"
+              },
+              "text": "LowListTests\\NativeSourceTest::testArchivePayloadValidation with data set #3 ('bzip2', 'Invalid internal .phar file (')\nFatal error: Uncaught ErrorException: Undefined variable $stat in <ROOT>/low_list/low_list.phar:262\nStack trace:\n#0 <ROOT>/low_list/low_list.phar(262): {closure}(2, 'Undefined varia...', '<OWNED_PATH_PREVIEW>', 262)\n#1 <ROOT>/tests/Support/native-probe.php(150): Extract_low_list::extractFile('fixture.bin', Array, Resource id #14)\n#2 {main}\n  thrown in <ROOT>/low_list/low_list.phar on line 262\n\nFailed asserting that 255 is identical to 0.\n\n<ROOT>/tests/tests/Unit/NativeSourceTest.php:250\n<ROOT>/tests/tests/Unit/NativeSourceTest.php:94"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\NativeSourceTest",
+          "case": "testArchiveManifestValidation with data set #0",
+          "issues": [
+            {
+              "tag": "failure",
+              "attributes": {
+                "type": "PHPUnit\\Framework\\ExpectationFailedException"
+              },
+              "text": "LowListTests\\NativeSourceTest::testArchiveManifestValidation with data set #0 ('empty')\nFatal error: Uncaught ErrorException: unpack(): Type V: not enough input, need 4, have 0 in <ROOT>/low_list/low_list.phar:215\nStack trace:\n#0 [internal function]: {closure}(2, 'unpack(): Type ...', '<OWNED_PATH_PREVIEW>', 215)\n#1 <ROOT>/low_list/low_list.phar(215): unpack('V', '')\n#2 <ROOT>/tests/Support/native-probe.php(113): Extract_low_list::_unpack('')\n#3 {main}\n  thrown in <ROOT>/low_list/low_list.phar on line 215\n\nFailed asserting that 255 is identical to 0.\n\n<ROOT>/tests/tests/Unit/NativeSourceTest.php:162"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\NativeSourceTest",
+          "case": "testArchiveManifestValidation with data set #1",
+          "issues": [
+            {
+              "tag": "failure",
+              "attributes": {
+                "type": "PHPUnit\\Framework\\ExpectationFailedException"
+              },
+              "text": "LowListTests\\NativeSourceTest::testArchiveManifestValidation with data set #1 ('truncated')\nFatal error: Uncaught ErrorException: unpack(): Type V: not enough input, need 4, have 0 in <ROOT>/low_list/low_list.phar:218\nStack trace:\n#0 [internal function]: {closure}(2, 'unpack(): Type ...', '<OWNED_PATH_PREVIEW>', 218)\n#1 <ROOT>/low_list/low_list.phar(218): unpack('V', '')\n#2 <ROOT>/tests/Support/native-probe.php(113): Extract_low_list::_unpack('')\n#3 {main}\n  thrown in <ROOT>/low_list/low_list.phar on line 218\n\nFailed asserting that 255 is identical to 0.\n\n<ROOT>/tests/tests/Unit/NativeSourceTest.php:162"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\NavigationTest",
+          "case": "testInternalHttpNamedRouteGetsModuleUrl",
+          "issues": [
+            {
+              "tag": "failure",
+              "attributes": {
+                "type": "PHPUnit\\Framework\\ExpectationFailedException"
+              },
+              "text": "LowListTests\\NavigationTest::testInternalHttpNamedRouteGetsModuleUrl\nFailed asserting that two arrays are identical.\n--- Expected\n+++ Actual\n@@ @@\n Array &0 (\n-    'url' => '/cp/addons/settings/low_list/http_logs'\n+    'url' => 'http_logs'\n )\n\n<ROOT>/tests/tests/Unit/NavigationTest.php:84"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\PersistentCacheTest",
+          "case": "testStoredValueSurvivesDiskRemovalWithinRequest",
+          "issues": [
+            {
+              "tag": "failure",
+              "attributes": {
+                "type": "PHPUnit\\Framework\\ExpectationFailedException"
+              },
+              "text": "LowListTests\\PersistentCacheTest::testStoredValueSurvivesDiskRemovalWithinRequest\nFailed asserting that false is identical to Array &0 (\n    'id' => 1\n).\n\n<ROOT>/tests/tests/Unit/PersistentCacheTest.php:58"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\PersistentCacheTest",
+          "case": "testDiskReadWarmsDecodedRequestCache",
+          "issues": [
+            {
+              "tag": "failure",
+              "attributes": {
+                "type": "PHPUnit\\Framework\\ExpectationFailedException"
+              },
+              "text": "LowListTests\\PersistentCacheTest::testDiskReadWarmsDecodedRequestCache\nFailed asserting that false is identical to Array &0 (\n    'id' => 1\n).\n\n<ROOT>/tests/tests/Unit/PersistentCacheTest.php:73"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\PersistentCacheTest",
+          "case": "testDigestNamedKeyDoesNotReadAnotherEntriesRequestValue",
+          "issues": [
+            {
+              "tag": "failure",
+              "attributes": {
+                "type": "PHPUnit\\Framework\\ExpectationFailedException"
+              },
+              "text": "LowListTests\\PersistentCacheTest::testDigestNamedKeyDoesNotReadAnotherEntriesRequestValue\nFailed asserting that two strings are identical.\n--- Expected\n+++ Actual\n@@ @@\n-'digest-key-value'\n+'article-value'\n\n<ROOT>/tests/tests/Unit/PersistentCacheTest.php:117"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\PersistentCacheTest",
+          "case": "testProcessedExistenceKey",
+          "issues": [
+            {
+              "tag": "failure",
+              "attributes": {
+                "type": "PHPUnit\\Framework\\ExpectationFailedException"
+              },
+              "text": "LowListTests\\PersistentCacheTest::testProcessedExistenceKey\nFailed asserting that false is true.\n\n<ROOT>/tests/tests/Unit/PersistentCacheTest.php:129"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\PersistentCacheTest",
+          "case": "testZeroKeyComponentIsDistinct with data set #0",
+          "issues": [
+            {
+              "tag": "failure",
+              "attributes": {
+                "type": "PHPUnit\\Framework\\ExpectationFailedException"
+              },
+              "text": "LowListTests\\PersistentCacheTest::testZeroKeyComponentIsDistinct with data set #0 (0)\nFailed asserting that false is true.\n\n<ROOT>/tests/tests/Unit/PersistentCacheTest.php:147"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\PersistentCacheTest",
+          "case": "testZeroKeyComponentIsDistinct with data set #1",
+          "issues": [
+            {
+              "tag": "failure",
+              "attributes": {
+                "type": "PHPUnit\\Framework\\ExpectationFailedException"
+              },
+              "text": "LowListTests\\PersistentCacheTest::testZeroKeyComponentIsDistinct with data set #1 ('0')\nFailed asserting that false is true.\n\n<ROOT>/tests/tests/Unit/PersistentCacheTest.php:147"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\PersistentCacheTest",
+          "case": "testMalformedDiskPayloadIsRejectedWithoutDiagnostics",
+          "issues": [
+            {
+              "tag": "error",
+              "attributes": {
+                "type": "ErrorException"
+              },
+              "text": "LowListTests\\PersistentCacheTest::testMalformedDiskPayloadIsRejectedWithoutDiagnostics\nErrorException: unserialize(): Error at offset 0 of 19 bytes\n\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:181\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:45\n<ROOT>/tests/tests/Unit/PersistentCacheTest.php:222"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\PersistentCacheTest",
+          "case": "testBlockingDirectoryFileIsRejectedWithoutDiagnostics with data set \"generic\"",
+          "issues": [
+            {
+              "tag": "error",
+              "attributes": {
+                "type": "ErrorException"
+              },
+              "text": "LowListTests\\PersistentCacheTest::testBlockingDirectoryFileIsRejectedWithoutDiagnostics with data set \"generic\" (false)\nErrorException: mkdir(): Not a directory\n\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:196\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:57\n<ROOT>/tests/tests/Unit/PersistentCacheTest.php:241"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\PersistentCacheTest",
+          "case": "testBlockingDirectoryFileIsRejectedWithoutDiagnostics with data set \"module\"",
+          "issues": [
+            {
+              "tag": "error",
+              "attributes": {
+                "type": "ErrorException"
+              },
+              "text": "LowListTests\\PersistentCacheTest::testBlockingDirectoryFileIsRejectedWithoutDiagnostics with data set \"module\" (true)\nErrorException: mkdir(): Not a directory\n\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:215\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:57\n<ROOT>/tests/tests/Unit/PersistentCacheTest.php:241"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\PersistentCacheTest",
+          "case": "testCompoundKeyRoundTrip",
+          "issues": [
+            {
+              "tag": "error",
+              "attributes": {
+                "type": "TypeError"
+              },
+              "text": "LowListTests\\PersistentCacheTest::testCompoundKeyRoundTrip\nTypeError: Illegal offset type in isset or empty\n\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Conduit/StaticCache.php:18\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:21\n<ROOT>/tests/tests/Unit/PersistentCacheTest.php:269"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\PersistentCacheTest",
+          "case": "testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #0",
+          "issues": [
+            {
+              "tag": "error",
+              "attributes": {
+                "type": "ErrorException"
+              },
+              "text": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #0 ('get')\nErrorException: file_get_contents(): Read of 8256 bytes failed with errno=21 Is a directory\n\n<ROOT>/tests/Support/Environment.php:548\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:35\n<ROOT>/tests/tests/Unit/PersistentCacheTest.php:306"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\PersistentCacheTest",
+          "case": "testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1",
+          "issues": [
+            {
+              "tag": "error",
+              "attributes": {
+                "type": "ErrorException"
+              },
+              "text": "LowListTests\\PersistentCacheTest::testDirectoryAtCacheFileIsRejectedWithoutDiagnostics with data set #1 ('set')\nErrorException: fopen(<OWNED_CACHE>/low_list/df88b84d816d3358b3793a61b73d80e93913e627): Failed to open stream: Is a directory\n\n<ROOT>/tests/Support/Environment.php:561\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php:66\n<ROOT>/tests/tests/Unit/PersistentCacheTest.php:306"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\PharSessionTest",
+          "case": "testNativeSessionFallback with data set #0",
+          "issues": [
+            {
+              "tag": "failure",
+              "attributes": {
+                "type": "PHPUnit\\Framework\\ExpectationFailedException"
+              },
+              "text": "LowListTests\\PharSessionTest::testNativeSessionFallback with data set #0 ('writable')\nFatal error: Uncaught ErrorException: mkdir(): File exists in <ROOT>/low_list/low_list.phar:177\nStack trace:\n#0 [internal function]: {closure}(2, 'mkdir(): File e...', '<OWNED_PATH_PREVIEW>', 177)\n#1 <ROOT>/low_list/low_list.phar(177): mkdir('<OWNED_PATH_PREVIEW>', 511, true)\n#2 <ROOT>/low_list/low_list.phar(291): Extract_low_list::go()\n#3 <ROOT>/tests/Support/phar-session-probe.php(129): require('<OWNED_PATH_PREVIEW>')\n#4 <ROOT>/tests/Support/native-probe.php(28): LowListTests\\PharSessionProbe::run('<OWNED_PATH_PREVIEW>', 'writable')\n#5 {main}\n  thrown in <ROOT>/low_list/low_list.phar on line 177\n\nFailed asserting that 255 is identical to 0.\n\n<ROOT>/tests/tests/Unit/PharSessionTest.php:26"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\PharSessionTest",
+          "case": "testNativeSessionFallback with data set #1",
+          "issues": [
+            {
+              "tag": "failure",
+              "attributes": {
+                "type": "PHPUnit\\Framework\\ExpectationFailedException"
+              },
+              "text": "LowListTests\\PharSessionTest::testNativeSessionFallback with data set #1 ('depth')\nFatal error: Uncaught ErrorException: mkdir(): File exists in <ROOT>/low_list/low_list.phar:177\nStack trace:\n#0 [internal function]: {closure}(2, 'mkdir(): File e...', '<OWNED_PATH_PREVIEW>', 177)\n#1 <ROOT>/low_list/low_list.phar(177): mkdir('<OWNED_PATH_PREVIEW>', 511, true)\n#2 <ROOT>/low_list/low_list.phar(291): Extract_low_list::go()\n#3 <ROOT>/tests/Support/phar-session-probe.php(129): require('<OWNED_PATH_PREVIEW>')\n#4 <ROOT>/tests/Support/native-probe.php(28): LowListTests\\PharSessionProbe::run('<OWNED_PATH_PREVIEW>', 'depth')\n#5 {main}\n  thrown in <ROOT>/low_list/low_list.phar on line 177\n\nFailed asserting that 255 is identical to 0.\n\n<ROOT>/tests/tests/Unit/PharSessionTest.php:26"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\PharSessionTest",
+          "case": "testNativeSessionFallback with data set #2",
+          "issues": [
+            {
+              "tag": "failure",
+              "attributes": {
+                "type": "PHPUnit\\Framework\\ExpectationFailedException"
+              },
+              "text": "LowListTests\\PharSessionTest::testNativeSessionFallback with data set #2 ('mode')\nFailed asserting that two strings are identical.\n--- Expected\n+++ Actual\n@@ @@\n-''\n+'Could not locate temporary directory to extract phar'\n\n<ROOT>/tests/tests/Unit/PharSessionTest.php:28"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\PharSessionTest",
+          "case": "testNativeSessionFallback with data set #3",
+          "issues": [
+            {
+              "tag": "failure",
+              "attributes": {
+                "type": "PHPUnit\\Framework\\ExpectationFailedException"
+              },
+              "text": "LowListTests\\PharSessionTest::testNativeSessionFallback with data set #3 ('empty')\nFailed asserting that two strings are identical.\n--- Expected\n+++ Actual\n@@ @@\n-''\n+'Could not locate temporary directory to extract phar'\n\n<ROOT>/tests/tests/Unit/PharSessionTest.php:28"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\PharSessionTest",
+          "case": "testNativeSessionFallback with data set #4",
+          "issues": [
+            {
+              "tag": "failure",
+              "attributes": {
+                "type": "PHPUnit\\Framework\\ExpectationFailedException"
+              },
+              "text": "LowListTests\\PharSessionTest::testNativeSessionFallback with data set #4 ('readonly')\nFatal error: Uncaught ErrorException: mkdir(): File exists in <ROOT>/low_list/low_list.phar:177\nStack trace:\n#0 [internal function]: {closure}(2, 'mkdir(): File e...', '<OWNED_PATH_PREVIEW>', 177)\n#1 <ROOT>/low_list/low_list.phar(177): mkdir('<OWNED_PATH_PREVIEW>', 511, true)\n#2 <ROOT>/low_list/low_list.phar(291): Extract_low_list::go()\n#3 <ROOT>/tests/Support/phar-session-probe.php(129): require('<OWNED_PATH_PREVIEW>')\n#4 <ROOT>/tests/Support/native-probe.php(28): LowListTests\\PharSessionProbe::run('<OWNED_PATH_PREVIEW>', 'readonly')\n#5 {main}\n  thrown in <ROOT>/low_list/low_list.phar on line 177\n\nFailed asserting that 255 is identical to 0.\n\n<ROOT>/tests/tests/Unit/PharSessionTest.php:26"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\PharSessionTest",
+          "case": "testNativeSessionFallback with data set #5",
+          "issues": [
+            {
+              "tag": "failure",
+              "attributes": {
+                "type": "PHPUnit\\Framework\\ExpectationFailedException"
+              },
+              "text": "LowListTests\\PharSessionTest::testNativeSessionFallback with data set #5 ('file-temp')\nFatal error: Uncaught ErrorException: mkdir(): Not a directory in <ROOT>/low_list/low_list.phar:167\nStack trace:\n#0 [internal function]: {closure}(2, 'mkdir(): Not a ...', '<OWNED_PATH_PREVIEW>', 167)\n#1 <ROOT>/low_list/low_list.phar(167): mkdir('<OWNED_PATH_PREVIEW>', 511, true)\n#2 <ROOT>/low_list/low_list.phar(291): Extract_low_list::go()\n#3 <ROOT>/tests/Support/phar-session-probe.php(129): require('<OWNED_PATH_PREVIEW>')\n#4 <ROOT>/tests/Support/native-probe.php(28): LowListTests\\PharSessionProbe::run('<OWNED_PATH_PREVIEW>', 'file-temp')\n#5 {main}\n  thrown in <ROOT>/low_list/low_list.phar on line 167\n\nFailed asserting that 255 is identical to 0.\n\n<ROOT>/tests/tests/Unit/PharSessionTest.php:26"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\PharStubTest",
+          "case": "testTemporaryTreeCleanup with data set #2",
+          "issues": [
+            {
+              "tag": "error",
+              "attributes": {
+                "type": "ErrorException"
+              },
+              "text": "LowListTests\\PharStubTest::testTemporaryTreeCleanup with data set #2 ('nested')\nErrorException: rmdir(nested): Directory not empty\n\n<ROOT>/low_list/low_list.phar:278\n<ROOT>/tests/tests/Unit/PharStubTest.php:197"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\PharStubTest",
+          "case": "testTemporaryTreeCleanup with data set #3",
+          "issues": [
+            {
+              "tag": "error",
+              "attributes": {
+                "type": "ErrorException"
+              },
+              "text": "LowListTests\\PharStubTest::testTemporaryTreeCleanup with data set #3 ('hidden')\nErrorException: rmdir(<OWNED_CACHE>/extraction): Directory not empty\n\n<ROOT>/low_list/low_list.phar:285\n<ROOT>/tests/tests/Unit/PharStubTest.php:197"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\PharStubTest",
+          "case": "testTemporaryTreeCleanup with data set #4",
+          "issues": [
+            {
+              "tag": "error",
+              "attributes": {
+                "type": "ErrorException"
+              },
+              "text": "LowListTests\\PharStubTest::testTemporaryTreeCleanup with data set #4 ('dangling-link')\nErrorException: rmdir(<OWNED_CACHE>/extraction): Directory not empty\n\n<ROOT>/low_list/low_list.phar:285\n<ROOT>/tests/tests/Unit/PharStubTest.php:197"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\PharStubTest",
+          "case": "testCleanupPreservesSymlinkTarget",
+          "issues": [
+            {
+              "tag": "error",
+              "attributes": {
+                "type": "ErrorException"
+              },
+              "text": "LowListTests\\PharStubTest::testCleanupPreservesSymlinkTarget\nErrorException: rmdir(linked-directory): Not a directory\n\n<ROOT>/low_list/low_list.phar:278\n<ROOT>/tests/tests/Unit/PharStubTest.php:233"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\PharStubTest",
+          "case": "testLooseAutoloadNamespaceBoundary with data set #2",
+          "issues": [
+            {
+              "tag": "error",
+              "attributes": {
+                "type": "Exception"
+              },
+              "text": "LowListTests\\PharStubTest::testLooseAutoloadNamespaceBoundary with data set #2 ('LowList\\FluxCapacitorOther\\Missing')\nException: Class at location phar://<ROOT>/low_list/low_list.phar/FluxCapacitorOther/Missing.php not found.\n\n<ROOT>/low_list/autoload.php:87\n<ROOT>/tests/tests/Unit/PharStubTest.php:305"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\SettingsInputTest",
+          "case": "testFieldtypeSettingsCellIsSafe with data set \"EE2-sql-null\"",
+          "issues": [
+            {
+              "tag": "error",
+              "attributes": {
+                "type": "ErrorException"
+              },
+              "text": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE2-sql-null\" ('LowList\\FluxCapacitor\\Bridge\\EE2', null)\nErrorException: base64_decode(): Passing null to parameter #1 ($string) of type string is deprecated\n\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:458\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:205\n<ROOT>/tests/tests/Unit/SettingsInputTest.php:103"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\SettingsInputTest",
+          "case": "testFieldtypeSettingsCellIsSafe with data set \"EE2-malformed-serialized-text\"",
+          "issues": [
+            {
+              "tag": "error",
+              "attributes": {
+                "type": "ErrorException"
+              },
+              "text": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE2-malformed-serialized-text\" ('LowList\\FluxCapacitor\\Bridge\\EE2', 'bm90IHNlcmlhbGl6ZWQ=')\nErrorException: unserialize(): Error at offset 0 of 14 bytes\n\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:458\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:205\n<ROOT>/tests/tests/Unit/SettingsInputTest.php:103"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\SettingsInputTest",
+          "case": "testFieldtypeSettingsCellIsSafe with data set \"EE2-serialized-nonempty-string\"",
+          "issues": [
+            {
+              "tag": "error",
+              "attributes": {
+                "type": "TypeError"
+              },
+              "text": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE2-serialized-nonempty-string\" ('LowList\\FluxCapacitor\\Bridge\\EE2', 'czoxMToid3Jvbmcgc2hhcGUiOw==')\nTypeError: array_merge(): Argument #1 must be of type array, string given\n\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:470\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Bridge/EE2.php:205\n<ROOT>/tests/tests/Unit/SettingsInputTest.php:103"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\SettingsInputTest",
+          "case": "testFieldtypeSettingsCellIsSafe with data set \"EE3-sql-null\"",
+          "issues": [
+            {
+              "tag": "error",
+              "attributes": {
+                "type": "ErrorException"
+              },
+              "text": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE3-sql-null\" ('LowList\\FluxCapacitor\\Bridge\\EE3', null)\nErrorException: base64_decode(): Passing null to parameter #1 ($string) of type string is deprecated\n\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:495\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:205\n<ROOT>/tests/tests/Unit/SettingsInputTest.php:103"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\SettingsInputTest",
+          "case": "testFieldtypeSettingsCellIsSafe with data set \"EE3-malformed-serialized-text\"",
+          "issues": [
+            {
+              "tag": "error",
+              "attributes": {
+                "type": "ErrorException"
+              },
+              "text": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE3-malformed-serialized-text\" ('LowList\\FluxCapacitor\\Bridge\\EE3', 'bm90IHNlcmlhbGl6ZWQ=')\nErrorException: unserialize(): Error at offset 0 of 14 bytes\n\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:495\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:205\n<ROOT>/tests/tests/Unit/SettingsInputTest.php:103"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\SettingsInputTest",
+          "case": "testFieldtypeSettingsCellIsSafe with data set \"EE3-serialized-nonempty-string\"",
+          "issues": [
+            {
+              "tag": "error",
+              "attributes": {
+                "type": "TypeError"
+              },
+              "text": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE3-serialized-nonempty-string\" ('LowList\\FluxCapacitor\\Bridge\\EE3', 'czoxMToid3Jvbmcgc2hhcGUiOw==')\nTypeError: array_merge(): Argument #1 must be of type array, string given\n\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:507\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Bridge/EE3.php:205\n<ROOT>/tests/tests/Unit/SettingsInputTest.php:103"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\SettingsInputTest",
+          "case": "testFieldtypeSettingsCellIsSafe with data set \"EE4-sql-null\"",
+          "issues": [
+            {
+              "tag": "error",
+              "attributes": {
+                "type": "ErrorException"
+              },
+              "text": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE4-sql-null\" ('LowList\\FluxCapacitor\\Bridge\\EE4', null)\nErrorException: base64_decode(): Passing null to parameter #1 ($string) of type string is deprecated\n\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:495\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:205\n<ROOT>/tests/tests/Unit/SettingsInputTest.php:103"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\SettingsInputTest",
+          "case": "testFieldtypeSettingsCellIsSafe with data set \"EE4-malformed-serialized-text\"",
+          "issues": [
+            {
+              "tag": "error",
+              "attributes": {
+                "type": "ErrorException"
+              },
+              "text": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE4-malformed-serialized-text\" ('LowList\\FluxCapacitor\\Bridge\\EE4', 'bm90IHNlcmlhbGl6ZWQ=')\nErrorException: unserialize(): Error at offset 0 of 14 bytes\n\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:495\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:205\n<ROOT>/tests/tests/Unit/SettingsInputTest.php:103"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\SettingsInputTest",
+          "case": "testFieldtypeSettingsCellIsSafe with data set \"EE4-serialized-nonempty-string\"",
+          "issues": [
+            {
+              "tag": "error",
+              "attributes": {
+                "type": "TypeError"
+              },
+              "text": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE4-serialized-nonempty-string\" ('LowList\\FluxCapacitor\\Bridge\\EE4', 'czoxMToid3Jvbmcgc2hhcGUiOw==')\nTypeError: array_merge(): Argument #1 must be of type array, string given\n\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:507\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Bridge/EE4.php:205\n<ROOT>/tests/tests/Unit/SettingsInputTest.php:103"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\SettingsInputTest",
+          "case": "testFieldtypeSettingsCellIsSafe with data set \"EE5-sql-null\"",
+          "issues": [
+            {
+              "tag": "error",
+              "attributes": {
+                "type": "ErrorException"
+              },
+              "text": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE5-sql-null\" ('LowList\\FluxCapacitor\\Bridge\\EE5', null)\nErrorException: base64_decode(): Passing null to parameter #1 ($string) of type string is deprecated\n\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:504\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:205\n<ROOT>/tests/tests/Unit/SettingsInputTest.php:103"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\SettingsInputTest",
+          "case": "testFieldtypeSettingsCellIsSafe with data set \"EE5-malformed-serialized-text\"",
+          "issues": [
+            {
+              "tag": "error",
+              "attributes": {
+                "type": "ErrorException"
+              },
+              "text": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE5-malformed-serialized-text\" ('LowList\\FluxCapacitor\\Bridge\\EE5', 'bm90IHNlcmlhbGl6ZWQ=')\nErrorException: unserialize(): Error at offset 0 of 14 bytes\n\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:504\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:205\n<ROOT>/tests/tests/Unit/SettingsInputTest.php:103"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\SettingsInputTest",
+          "case": "testFieldtypeSettingsCellIsSafe with data set \"EE5-serialized-nonempty-string\"",
+          "issues": [
+            {
+              "tag": "error",
+              "attributes": {
+                "type": "TypeError"
+              },
+              "text": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE5-serialized-nonempty-string\" ('LowList\\FluxCapacitor\\Bridge\\EE5', 'czoxMToid3Jvbmcgc2hhcGUiOw==')\nTypeError: array_merge(): Argument #1 must be of type array, string given\n\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:516\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:205\n<ROOT>/tests/tests/Unit/SettingsInputTest.php:103"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\SettingsInputTest",
+          "case": "testFieldtypeSettingsCellIsSafe with data set \"EE6-sql-null\"",
+          "issues": [
+            {
+              "tag": "error",
+              "attributes": {
+                "type": "ErrorException"
+              },
+              "text": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE6-sql-null\" ('LowList\\FluxCapacitor\\Bridge\\EE6', null)\nErrorException: base64_decode(): Passing null to parameter #1 ($string) of type string is deprecated\n\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:504\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:205\n<ROOT>/tests/tests/Unit/SettingsInputTest.php:103"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\SettingsInputTest",
+          "case": "testFieldtypeSettingsCellIsSafe with data set \"EE6-malformed-serialized-text\"",
+          "issues": [
+            {
+              "tag": "error",
+              "attributes": {
+                "type": "ErrorException"
+              },
+              "text": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE6-malformed-serialized-text\" ('LowList\\FluxCapacitor\\Bridge\\EE6', 'bm90IHNlcmlhbGl6ZWQ=')\nErrorException: unserialize(): Error at offset 0 of 14 bytes\n\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:504\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:205\n<ROOT>/tests/tests/Unit/SettingsInputTest.php:103"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\SettingsInputTest",
+          "case": "testFieldtypeSettingsCellIsSafe with data set \"EE6-serialized-nonempty-string\"",
+          "issues": [
+            {
+              "tag": "error",
+              "attributes": {
+                "type": "TypeError"
+              },
+              "text": "LowListTests\\SettingsInputTest::testFieldtypeSettingsCellIsSafe with data set \"EE6-serialized-nonempty-string\" ('LowList\\FluxCapacitor\\Bridge\\EE6', 'czoxMToid3Jvbmcgc2hhcGUiOw==')\nTypeError: array_merge(): Argument #1 must be of type array, string given\n\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:516\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Bridge/EE5.php:205\n<ROOT>/tests/tests/Unit/SettingsInputTest.php:103"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\StaticCacheTest",
+          "case": "testFalseLikeValuesRoundTrip with data set #1",
+          "issues": [
+            {
+              "tag": "failure",
+              "attributes": {
+                "type": "PHPUnit\\Framework\\ExpectationFailedException"
+              },
+              "text": "LowListTests\\StaticCacheTest::testFalseLikeValuesRoundTrip with data set #1 (0)\nFailed asserting that false is identical to 0.\n\n<ROOT>/tests/tests/Unit/StaticCacheTest.php:58"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\StaticCacheTest",
+          "case": "testFalseLikeValuesRoundTrip with data set #2",
+          "issues": [
+            {
+              "tag": "failure",
+              "attributes": {
+                "type": "PHPUnit\\Framework\\ExpectationFailedException"
+              },
+              "text": "LowListTests\\StaticCacheTest::testFalseLikeValuesRoundTrip with data set #2 ('0')\nFailed asserting that false is identical to '0'.\n\n<ROOT>/tests/tests/Unit/StaticCacheTest.php:58"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\StaticCacheTest",
+          "case": "testFalseLikeValuesRoundTrip with data set #3",
+          "issues": [
+            {
+              "tag": "failure",
+              "attributes": {
+                "type": "PHPUnit\\Framework\\ExpectationFailedException"
+              },
+              "text": "LowListTests\\StaticCacheTest::testFalseLikeValuesRoundTrip with data set #3 ('')\nFailed asserting that false is identical to ''.\n\n<ROOT>/tests/tests/Unit/StaticCacheTest.php:58"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\StaticCacheTest",
+          "case": "testFalseLikeValuesRoundTrip with data set #4",
+          "issues": [
+            {
+              "tag": "failure",
+              "attributes": {
+                "type": "PHPUnit\\Framework\\ExpectationFailedException"
+              },
+              "text": "LowListTests\\StaticCacheTest::testFalseLikeValuesRoundTrip with data set #4 (array())\nFailed asserting that false is identical to Array &0 ().\n\n<ROOT>/tests/tests/Unit/StaticCacheTest.php:58"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\StaticCacheTest",
+          "case": "testFalseLikeValuesRoundTrip with data set #5",
+          "issues": [
+            {
+              "tag": "failure",
+              "attributes": {
+                "type": "PHPUnit\\Framework\\ExpectationFailedException"
+              },
+              "text": "LowListTests\\StaticCacheTest::testFalseLikeValuesRoundTrip with data set #5 (null)\nFailed asserting that false is identical to null.\n\n<ROOT>/tests/tests/Unit/StaticCacheTest.php:58"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\StaticCacheTest",
+          "case": "testZeroComponentsDoNotCollide",
+          "issues": [
+            {
+              "tag": "failure",
+              "attributes": {
+                "type": "PHPUnit\\Framework\\ExpectationFailedException"
+              },
+              "text": "LowListTests\\StaticCacheTest::testZeroComponentsDoNotCollide\nFailed asserting that two strings are identical.\n--- Expected\n+++ Actual\n@@ @@\n-'zero site'\n+'other site'\n\n<ROOT>/tests/tests/Unit/StaticCacheTest.php:81"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\VersionPayloadTest",
+          "case": "testInstalledProVersionIsIncluded",
+          "issues": [
+            {
+              "tag": "failure",
+              "attributes": {
+                "type": "PHPUnit\\Framework\\ExpectationFailedException"
+              },
+              "text": "LowListTests\\VersionPayloadTest::testInstalledProVersionIsIncluded\nFailed asserting that 0 is identical to '2.3.0'.\n\n<ROOT>/tests/tests/Unit/VersionPayloadTest.php:60"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\VersionPayloadTest",
+          "case": "testCachedValidityIsIncludedInEveryPayload",
+          "issues": [
+            {
+              "tag": "failure",
+              "attributes": {
+                "type": "PHPUnit\\Framework\\ExpectationFailedException"
+              },
+              "text": "LowListTests\\VersionPayloadTest::testCachedValidityIsIncludedInEveryPayload\nFailed asserting that true is false.\n\n<ROOT>/tests/tests/Unit/VersionPayloadTest.php:77"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\VersionPayloadTest",
+          "case": "testOversizedPayloadDoesNotPublishEmptyCiphertext",
+          "issues": [
+            {
+              "tag": "error",
+              "attributes": {
+                "type": "ErrorException"
+              },
+              "text": "LowListTests\\VersionPayloadTest::testOversizedPayloadDoesNotPublishEmptyCiphertext\nErrorException: bin2hex(): Passing null to parameter #1 ($string) of type string is deprecated\n\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Conduit/Version.php:167\n<ROOT>/tests/tests/Unit/VersionPayloadTest.php:89"
+            }
+          ]
+        },
+        {
+          "class": "LowListTests\\VersionTest",
+          "case": "testNullLicenseIsSafe",
+          "issues": [
+            {
+              "tag": "error",
+              "attributes": {
+                "type": "ErrorException"
+              },
+              "text": "LowListTests\\VersionTest::testNullLicenseIsSafe\nErrorException: preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated\n\nphar://<ROOT>/low_list/low_list.phar/FluxCapacitor/Conduit/Version.php:200\n<ROOT>/tests/tests/Unit/VersionTest.php:110"
+            }
+          ]
+        }
+      ],
+      "new_cases_normalized": [
+        {
+          "class": "LowListTests\\ThemeDirectoryTest",
+          "name": "testConfiguredThemeDirectory with data set \"EE2\"",
+          "attributes": {
+            "name": "testConfiguredThemeDirectory with data set \"EE2\"",
+            "class": "LowListTests\\ThemeDirectoryTest",
+            "classname": "LowListTests.ThemeDirectoryTest",
+            "file": "<ROOT>/tests/tests/Unit/ThemeDirectoryTest.php",
+            "line": "20",
+            "assertions": "5"
+          },
+          "issues": []
+        },
+        {
+          "class": "LowListTests\\ThemeDirectoryTest",
+          "name": "testConfiguredThemeDirectory with data set \"EE3\"",
+          "attributes": {
+            "name": "testConfiguredThemeDirectory with data set \"EE3\"",
+            "class": "LowListTests\\ThemeDirectoryTest",
+            "classname": "LowListTests.ThemeDirectoryTest",
+            "file": "<ROOT>/tests/tests/Unit/ThemeDirectoryTest.php",
+            "line": "20",
+            "assertions": "5"
+          },
+          "issues": []
+        },
+        {
+          "class": "LowListTests\\ThemeDirectoryTest",
+          "name": "testConfiguredThemeDirectory with data set \"EE4\"",
+          "attributes": {
+            "name": "testConfiguredThemeDirectory with data set \"EE4\"",
+            "class": "LowListTests\\ThemeDirectoryTest",
+            "classname": "LowListTests.ThemeDirectoryTest",
+            "file": "<ROOT>/tests/tests/Unit/ThemeDirectoryTest.php",
+            "line": "20",
+            "assertions": "5"
+          },
+          "issues": []
+        },
+        {
+          "class": "LowListTests\\ThemeDirectoryTest",
+          "name": "testConfiguredThemeDirectory with data set \"EE5\"",
+          "attributes": {
+            "name": "testConfiguredThemeDirectory with data set \"EE5\"",
+            "class": "LowListTests\\ThemeDirectoryTest",
+            "classname": "LowListTests.ThemeDirectoryTest",
+            "file": "<ROOT>/tests/tests/Unit/ThemeDirectoryTest.php",
+            "line": "20",
+            "assertions": "5"
+          },
+          "issues": []
+        },
+        {
+          "class": "LowListTests\\ThemeDirectoryTest",
+          "name": "testConfiguredThemeDirectory with data set \"current EE6 bridge\"",
+          "attributes": {
+            "name": "testConfiguredThemeDirectory with data set \"current EE6 bridge\"",
+            "class": "LowListTests\\ThemeDirectoryTest",
+            "classname": "LowListTests.ThemeDirectoryTest",
+            "file": "<ROOT>/tests/tests/Unit/ThemeDirectoryTest.php",
+            "line": "20",
+            "assertions": "5"
+          },
+          "issues": []
+        }
+      ],
+      "current_measurement_or_coverage_credit": false
+    }
+  },
+  "execution": {
+    "driver": {
+      "path": "/private/tmp/low-list-theme-branch-twwdu1xa/run_ordinary.py",
+      "sha256": "cbb0a6639232683226231af5876d3d7e403390cb9ab25f0f9d0d8711166227b6",
+      "bytes": 9959,
+      "mode": 420
+    },
+    "closed_receipt": {
+      "path": "/private/tmp/low-list-theme-branch-twwdu1xa/ORDINARY_CLOSED.json",
+      "sha256": "0d189778b2e2944b5ce630028774cd40e0401b1073608163c552e50f4263c6b0",
+      "bytes": 19432,
+      "mode": 420
+    },
+    "input_seal": {
+      "path": "/private/tmp/low-list-theme-branch-twwdu1xa/ORDINARY_INPUTS.json",
+      "sha256": "98ba9b6e4b8ff237bfc2debc7edd4e398d51a0bf01cd3649416e57034eccf9d4",
+      "bytes": 50130,
+      "mode": 420
+    },
+    "inputs": 228,
+    "enclosing_held_receipts": 14,
+    "signals_sent": [],
+    "post_reap_group_operations": 0,
+    "actual_tool_session": 49080,
+    "observed_tool_exit": 0,
+    "elapsed_seconds": 11.036554041,
+    "all_actor_records": [
+      {
+        "label": "lint74-0",
+        "argv": [
+          "/Users/tomjaeger/Library/Application Support/Herd/bin/php74",
+          "-d",
+          "error_reporting=-1",
+          "-d",
+          "display_errors=stderr",
+          "-l",
+          "/private/tmp/low-list-theme-branch-twwdu1xa/snapshot/tests/Support/legacy-bridge-probe.php"
+        ],
+        "actual_status": 0,
+        "pid": 61912,
+        "elapsed_seconds": 0.03693629199999998,
+        "stdout": {
+          "sha256": "94f69e55614ce6c0ec6fdd427a10ab321ae0f5dcc91742e439316fc8fd8dd704",
+          "bytes": 120,
+          "mode": 420
+        },
+        "stderr": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "mode": 420
+        },
+        "ownership": {
+          "held_leader": 61912,
+          "members_before_final_reap": [
+            61912
+          ],
+          "exited_before_final_reap": true,
+          "leader_reaped": true,
+          "observed_members": [
+            61912
+          ],
+          "signals_sent": [],
+          "post_reap_group_operations": 0
+        },
+        "invalid": [],
+        "source_measurement": false
+      },
+      {
+        "label": "lint74-1",
+        "argv": [
+          "/Users/tomjaeger/Library/Application Support/Herd/bin/php74",
+          "-d",
+          "error_reporting=-1",
+          "-d",
+          "display_errors=stderr",
+          "-l",
+          "/private/tmp/low-list-theme-branch-twwdu1xa/snapshot/tests/tests/Unit/ThemeDirectoryTest.php"
+        ],
+        "actual_status": 0,
+        "pid": 61917,
+        "elapsed_seconds": 0.03518591700000001,
+        "stdout": {
+          "sha256": "61d6dec1595fdc41801dfd8b93b3dcf55710ef11fb7085984dbd97d483a9208e",
+          "bytes": 122,
+          "mode": 420
+        },
+        "stderr": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "mode": 420
+        },
+        "ownership": {
+          "held_leader": 61917,
+          "members_before_final_reap": [
+            61917
+          ],
+          "exited_before_final_reap": true,
+          "leader_reaped": true,
+          "observed_members": [
+            61917
+          ],
+          "signals_sent": [],
+          "post_reap_group_operations": 0
+        },
+        "invalid": [],
+        "source_measurement": false
+      },
+      {
+        "label": "lint85-0",
+        "argv": [
+          "/Users/tomjaeger/Library/Application Support/Herd/bin/php85",
+          "-d",
+          "error_reporting=-1",
+          "-d",
+          "display_errors=stderr",
+          "-l",
+          "/private/tmp/low-list-theme-branch-twwdu1xa/snapshot/tests/Support/legacy-bridge-probe.php"
+        ],
+        "actual_status": 0,
+        "pid": 61919,
+        "elapsed_seconds": 0.037819292000000004,
+        "stdout": {
+          "sha256": "94f69e55614ce6c0ec6fdd427a10ab321ae0f5dcc91742e439316fc8fd8dd704",
+          "bytes": 120,
+          "mode": 420
+        },
+        "stderr": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "mode": 420
+        },
+        "ownership": {
+          "held_leader": 61919,
+          "members_before_final_reap": [
+            61919
+          ],
+          "exited_before_final_reap": true,
+          "leader_reaped": true,
+          "observed_members": [
+            61919
+          ],
+          "signals_sent": [],
+          "post_reap_group_operations": 0
+        },
+        "invalid": [],
+        "source_measurement": false
+      },
+      {
+        "label": "lint85-1",
+        "argv": [
+          "/Users/tomjaeger/Library/Application Support/Herd/bin/php85",
+          "-d",
+          "error_reporting=-1",
+          "-d",
+          "display_errors=stderr",
+          "-l",
+          "/private/tmp/low-list-theme-branch-twwdu1xa/snapshot/tests/tests/Unit/ThemeDirectoryTest.php"
+        ],
+        "actual_status": 0,
+        "pid": 61924,
+        "elapsed_seconds": 0.037802791999999974,
+        "stdout": {
+          "sha256": "61d6dec1595fdc41801dfd8b93b3dcf55710ef11fb7085984dbd97d483a9208e",
+          "bytes": 122,
+          "mode": 420
+        },
+        "stderr": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "mode": 420
+        },
+        "ownership": {
+          "held_leader": 61924,
+          "members_before_final_reap": [
+            61924
+          ],
+          "exited_before_final_reap": true,
+          "leader_reaped": true,
+          "observed_members": [
+            61924
+          ],
+          "signals_sent": [],
+          "post_reap_group_operations": 0
+        },
+        "invalid": [],
+        "source_measurement": false
+      },
+      {
+        "label": "focus74",
+        "argv": [
+          "/private/tmp/low-list-theme-branch-twwdu1xa/snapshot/tests/.phpunit/run-phpunit.sh",
+          "-c",
+          "/private/tmp/low-list-theme-branch-twwdu1xa/snapshot/phpunit.xml",
+          "--do-not-cache-result",
+          "--colors=never",
+          "--log-junit",
+          "/private/tmp/low-list-theme-branch-twwdu1xa/reports/focus74.xml",
+          "--filter",
+          "ThemeDirectoryTest"
+        ],
+        "actual_status": 0,
+        "pid": 61927,
+        "elapsed_seconds": 0.476965667,
+        "stdout": {
+          "sha256": "3c885fd173ca7da229cec9c6aa60cd8628aad12eb63ce436609232d40d5d7755",
+          "bytes": 201,
+          "mode": 420
+        },
+        "stderr": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "mode": 420
+        },
+        "ownership": {
+          "held_leader": 61927,
+          "members_before_final_reap": [
+            61927
+          ],
+          "exited_before_final_reap": true,
+          "leader_reaped": true,
+          "observed_members": [
+            61927
+          ],
+          "signals_sent": [],
+          "post_reap_group_operations": 0
+        },
+        "invalid": [],
+        "source_measurement": false,
+        "junit": {
+          "sha256": "46ca5588eedd11f5317a971660b3f7088fae899271c663cec8fd332b0bc5460c",
+          "bytes": 2384,
+          "mode": 420
+        },
+        "cases": 5,
+        "assertions": 25
+      },
+      {
+        "label": "focus80",
+        "argv": [
+          "/private/tmp/low-list-theme-branch-twwdu1xa/snapshot/tests/.phpunit/run-phpunit.sh",
+          "-c",
+          "/private/tmp/low-list-theme-branch-twwdu1xa/snapshot/phpunit.xml",
+          "--do-not-cache-result",
+          "--colors=never",
+          "--log-junit",
+          "/private/tmp/low-list-theme-branch-twwdu1xa/reports/focus80.xml",
+          "--filter",
+          "ThemeDirectoryTest"
+        ],
+        "actual_status": 0,
+        "pid": 61992,
+        "elapsed_seconds": 0.37756437500000006,
+        "stdout": {
+          "sha256": "fc9734cd5fc2638d26afc5a49e33b7e9205774aeae5063e0d2978254dcf5dd9c",
+          "bytes": 201,
+          "mode": 420
+        },
+        "stderr": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "mode": 420
+        },
+        "ownership": {
+          "held_leader": 61992,
+          "members_before_final_reap": [
+            61992
+          ],
+          "exited_before_final_reap": true,
+          "leader_reaped": true,
+          "observed_members": [
+            61992
+          ],
+          "signals_sent": [],
+          "post_reap_group_operations": 0
+        },
+        "invalid": [],
+        "source_measurement": false,
+        "junit": {
+          "sha256": "e77699162c1f7307a9302517558b7056498c7203ae247680ef5c1cc6c2f23cf4",
+          "bytes": 2384,
+          "mode": 420
+        },
+        "cases": 5,
+        "assertions": 25
+      },
+      {
+        "label": "focus81",
+        "argv": [
+          "/private/tmp/low-list-theme-branch-twwdu1xa/snapshot/tests/.phpunit/run-phpunit.sh",
+          "-c",
+          "/private/tmp/low-list-theme-branch-twwdu1xa/snapshot/phpunit.xml",
+          "--do-not-cache-result",
+          "--colors=never",
+          "--log-junit",
+          "/private/tmp/low-list-theme-branch-twwdu1xa/reports/focus81.xml",
+          "--filter",
+          "ThemeDirectoryTest"
+        ],
+        "actual_status": 0,
+        "pid": 62068,
+        "elapsed_seconds": 0.37965904100000003,
+        "stdout": {
+          "sha256": "e0d61d733f4a387b201b496ad176bddef1dc36d8fca666a0de4ec93f71371a1a",
+          "bytes": 201,
+          "mode": 420
+        },
+        "stderr": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "mode": 420
+        },
+        "ownership": {
+          "held_leader": 62068,
+          "members_before_final_reap": [
+            62068
+          ],
+          "exited_before_final_reap": true,
+          "leader_reaped": true,
+          "observed_members": [
+            62068
+          ],
+          "signals_sent": [],
+          "post_reap_group_operations": 0
+        },
+        "invalid": [],
+        "source_measurement": false,
+        "junit": {
+          "sha256": "9a5a702a8b6360e95bbb29c6c9a5410ad3cab3427d8b00fbe096397bb43cc1db",
+          "bytes": 2384,
+          "mode": 420
+        },
+        "cases": 5,
+        "assertions": 25
+      },
+      {
+        "label": "focus82",
+        "argv": [
+          "/private/tmp/low-list-theme-branch-twwdu1xa/snapshot/tests/.phpunit/run-phpunit.sh",
+          "-c",
+          "/private/tmp/low-list-theme-branch-twwdu1xa/snapshot/phpunit.xml",
+          "--do-not-cache-result",
+          "--colors=never",
+          "--log-junit",
+          "/private/tmp/low-list-theme-branch-twwdu1xa/reports/focus82.xml",
+          "--filter",
+          "ThemeDirectoryTest"
+        ],
+        "actual_status": 0,
+        "pid": 62101,
+        "elapsed_seconds": 0.3766907920000002,
+        "stdout": {
+          "sha256": "7379131a89f8e588ffccb81772b9ee9ba63b92d7ef5121464e1a1e8d66dae11e",
+          "bytes": 201,
+          "mode": 420
+        },
+        "stderr": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "mode": 420
+        },
+        "ownership": {
+          "held_leader": 62101,
+          "members_before_final_reap": [
+            62101
+          ],
+          "exited_before_final_reap": true,
+          "leader_reaped": true,
+          "observed_members": [
+            62101
+          ],
+          "signals_sent": [],
+          "post_reap_group_operations": 0
+        },
+        "invalid": [],
+        "source_measurement": false,
+        "junit": {
+          "sha256": "2b0bfaa8e8ca2a3629b41306da23343fb8718c2243d517e6b74bb08a7d7e7a15",
+          "bytes": 2384,
+          "mode": 420
+        },
+        "cases": 5,
+        "assertions": 25
+      },
+      {
+        "label": "focus83",
+        "argv": [
+          "/private/tmp/low-list-theme-branch-twwdu1xa/snapshot/tests/.phpunit/run-phpunit.sh",
+          "-c",
+          "/private/tmp/low-list-theme-branch-twwdu1xa/snapshot/phpunit.xml",
+          "--do-not-cache-result",
+          "--colors=never",
+          "--log-junit",
+          "/private/tmp/low-list-theme-branch-twwdu1xa/reports/focus83.xml",
+          "--filter",
+          "ThemeDirectoryTest"
+        ],
+        "actual_status": 0,
+        "pid": 62144,
+        "elapsed_seconds": 0.3787547080000002,
+        "stdout": {
+          "sha256": "685b9836239a786fd36b4bc9fe4bad96522f0e17db87745af0b816700d13b178",
+          "bytes": 201,
+          "mode": 420
+        },
+        "stderr": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "mode": 420
+        },
+        "ownership": {
+          "held_leader": 62144,
+          "members_before_final_reap": [
+            62144
+          ],
+          "exited_before_final_reap": true,
+          "leader_reaped": true,
+          "observed_members": [
+            62144
+          ],
+          "signals_sent": [],
+          "post_reap_group_operations": 0
+        },
+        "invalid": [],
+        "source_measurement": false,
+        "junit": {
+          "sha256": "d45c9dd7825912dfc4c7480df38cdda0b183ffee1ec03eb31b1f61af123e1c70",
+          "bytes": 2384,
+          "mode": 420
+        },
+        "cases": 5,
+        "assertions": 25
+      },
+      {
+        "label": "focus84",
+        "argv": [
+          "/private/tmp/low-list-theme-branch-twwdu1xa/snapshot/tests/.phpunit/run-phpunit.sh",
+          "-c",
+          "/private/tmp/low-list-theme-branch-twwdu1xa/snapshot/phpunit.xml",
+          "--do-not-cache-result",
+          "--colors=never",
+          "--log-junit",
+          "/private/tmp/low-list-theme-branch-twwdu1xa/reports/focus84.xml",
+          "--filter",
+          "ThemeDirectoryTest"
+        ],
+        "actual_status": 0,
+        "pid": 62206,
+        "elapsed_seconds": 0.4112021669999999,
+        "stdout": {
+          "sha256": "d4ba427ce61081c62c27697607d0cc1bc15704bb6a62c856bba0af09a06562d8",
+          "bytes": 201,
+          "mode": 420
+        },
+        "stderr": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "mode": 420
+        },
+        "ownership": {
+          "held_leader": 62206,
+          "members_before_final_reap": [
+            62206
+          ],
+          "exited_before_final_reap": true,
+          "leader_reaped": true,
+          "observed_members": [
+            62206
+          ],
+          "signals_sent": [],
+          "post_reap_group_operations": 0
+        },
+        "invalid": [],
+        "source_measurement": false,
+        "junit": {
+          "sha256": "185956cb73e25f519996d980d262e748cc69554d0e322b8aaa03bb763a5f28f3",
+          "bytes": 2384,
+          "mode": 420
+        },
+        "cases": 5,
+        "assertions": 25
+      },
+      {
+        "label": "focus85",
+        "argv": [
+          "/private/tmp/low-list-theme-branch-twwdu1xa/snapshot/tests/.phpunit/run-phpunit.sh",
+          "-c",
+          "/private/tmp/low-list-theme-branch-twwdu1xa/snapshot/phpunit.xml",
+          "--do-not-cache-result",
+          "--colors=never",
+          "--log-junit",
+          "/private/tmp/low-list-theme-branch-twwdu1xa/reports/focus85.xml",
+          "--filter",
+          "ThemeDirectoryTest"
+        ],
+        "actual_status": 0,
+        "pid": 62256,
+        "elapsed_seconds": 0.45395783300000003,
+        "stdout": {
+          "sha256": "0b3263d2a573f02ff8a8ec4ee65ebe3aba61c40823a2006e1a71f0f062d3f89c",
+          "bytes": 201,
+          "mode": 420
+        },
+        "stderr": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "mode": 420
+        },
+        "ownership": {
+          "held_leader": 62256,
+          "members_before_final_reap": [
+            62256
+          ],
+          "exited_before_final_reap": true,
+          "leader_reaped": true,
+          "observed_members": [
+            62256
+          ],
+          "signals_sent": [],
+          "post_reap_group_operations": 0
+        },
+        "invalid": [],
+        "source_measurement": false,
+        "junit": {
+          "sha256": "c4dd0b54c7dc4ae0384455846ab5d7c563502689845f2e822a829e04d7d6621f",
+          "bytes": 2384,
+          "mode": 420
+        },
+        "cases": 5,
+        "assertions": 25
+      },
+      {
+        "label": "full82",
+        "argv": [
+          "/private/tmp/low-list-theme-branch-twwdu1xa/snapshot/tests/.phpunit/run-phpunit.sh",
+          "-c",
+          "/private/tmp/low-list-theme-branch-twwdu1xa/snapshot/phpunit.xml",
+          "--do-not-cache-result",
+          "--colors=never",
+          "--log-junit",
+          "/private/tmp/low-list-theme-branch-twwdu1xa/reports/full82.xml"
+        ],
+        "actual_status": 2,
+        "pid": 62319,
+        "elapsed_seconds": 6.559951874999999,
+        "stdout": {
+          "sha256": "875a2b532477327582bf55f31a146092b7d9165ad3f0f0f5623742efe19bd280",
+          "bytes": 43730,
+          "mode": 420
+        },
+        "stderr": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "mode": 420
+        },
+        "ownership": {
+          "held_leader": 62319,
+          "members_before_final_reap": [
+            62319
+          ],
+          "exited_before_final_reap": true,
+          "leader_reaped": true,
+          "observed_members": [
+            62319
+          ],
+          "signals_sent": [],
+          "post_reap_group_operations": 0
+        },
+        "invalid": [],
+        "source_measurement": false,
+        "junit": {
+          "sha256": "1d69abe25a5123898808ad1fb9987ff4de7cbfede1cf540da0d58dbbe0931fa3",
+          "bytes": 239173,
+          "mode": 420
+        },
+        "cases": 547,
+        "assertions": 2928
+      },
+      {
+        "label": "reverse74",
+        "argv": [
+          "/private/tmp/low-list-theme-branch-twwdu1xa/snapshot/tests/.phpunit/run-phpunit.sh",
+          "-c",
+          "/private/tmp/low-list-theme-branch-twwdu1xa/snapshot/phpunit.xml",
+          "--do-not-cache-result",
+          "--colors=never",
+          "--log-junit",
+          "/private/tmp/low-list-theme-branch-twwdu1xa/reports/reverse74.xml",
+          "--filter",
+          "ThemeDirectoryTest",
+          "--order-by=reverse"
+        ],
+        "actual_status": 0,
+        "pid": 63130,
+        "elapsed_seconds": 0.37637191700000017,
+        "stdout": {
+          "sha256": "40ef8ecb4e27abbec0b34243063f7547e2f9b9bfbae79d670a6cc986315d4270",
+          "bytes": 201,
+          "mode": 420
+        },
+        "stderr": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "mode": 420
+        },
+        "ownership": {
+          "held_leader": 63130,
+          "members_before_final_reap": [
+            63130
+          ],
+          "exited_before_final_reap": true,
+          "leader_reaped": true,
+          "observed_members": [
+            63130
+          ],
+          "signals_sent": [],
+          "post_reap_group_operations": 0
+        },
+        "invalid": [],
+        "source_measurement": false,
+        "junit": {
+          "sha256": "433530553b7fbd25d57117228d6ee52541386d1463d00146509c8a6ac43c095c",
+          "bytes": 2384,
+          "mode": 420
+        },
+        "cases": 5,
+        "assertions": 25
+      },
+      {
+        "label": "random85",
+        "argv": [
+          "/private/tmp/low-list-theme-branch-twwdu1xa/snapshot/tests/.phpunit/run-phpunit.sh",
+          "-c",
+          "/private/tmp/low-list-theme-branch-twwdu1xa/snapshot/phpunit.xml",
+          "--do-not-cache-result",
+          "--colors=never",
+          "--log-junit",
+          "/private/tmp/low-list-theme-branch-twwdu1xa/reports/random85.xml",
+          "--filter",
+          "ThemeDirectoryTest",
+          "--order-by=random",
+          "--random-order-seed=547"
+        ],
+        "actual_status": 0,
+        "pid": 63189,
+        "elapsed_seconds": 0.40192162499999995,
+        "stdout": {
+          "sha256": "b3c6e8f1ab134061b565a7185d5ba4d832738d859664567cfd35aedd57aefe66",
+          "bytes": 221,
+          "mode": 420
+        },
+        "stderr": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "mode": 420
+        },
+        "ownership": {
+          "held_leader": 63189,
+          "members_before_final_reap": [
+            63189
+          ],
+          "exited_before_final_reap": true,
+          "leader_reaped": true,
+          "observed_members": [
+            63189
+          ],
+          "signals_sent": [],
+          "post_reap_group_operations": 0
+        },
+        "invalid": [],
+        "source_measurement": false,
+        "junit": {
+          "sha256": "9240f480d25c5870ba5bbbc2412459d40cf695255b7ddc14d1729f018d255657",
+          "bytes": 2384,
+          "mode": 420
+        },
+        "cases": 5,
+        "assertions": 25
+      }
+    ],
+    "final_nonexecuted_metadata_delta": {
+      "changed_prior_seal_file": "/private/tmp/low-list-theme-branch-twwdu1xa/snapshot/tests/STATUS.md",
+      "new_final_results_file": "/private/tmp/low-list-theme-branch-twwdu1xa/snapshot/tests/results/theme-directory547.json",
+      "boundary": "Status/results were assembled after ordinary closure; all executed PHP, source, configuration, tool and external caller inputs remain exact. The original sealed status is preserved by the clean base Git blob."
+    }
+  },
+  "resource": {
+    "precopy_forecast": 33554432,
+    "hard": 67108864,
+    "pre_free": 2147483648,
+    "shared_floor": 536870912,
+    "sampled_peak": {
+      "logical": 10174163,
+      "allocated": 10571776
+    },
+    "minimum_sampled_free": 18296684544,
+    "new_area_only": true,
+    "old_histories_protected_separately": true,
+    "RAM_RSS": "UNMEASURED"
+  },
+  "no_new_instrumentation": true,
+  "historical_measurements_unchanged": [
+    "tests/results/coverage.json",
+    "all historical raw/native contexts",
+    "all historical method/Clover summaries"
+  ],
+  "limits": [
+    "No current branch/line measurement, historical graph union or coverage/whole-source completion claim. All27 source units and original procedural/archive/constructor scope remain.",
+    "Current core defines the theme constant; legacy values are normal bounded host configuration, not execution of a complete historical ExpressionEngine application.",
+    "Original version selector and all four declaring implementations execute through the unchanged PHAR; EE6 inherits EE5. No source override, fake builtin, service/backend replacement or new native collector/filter.",
+    "All existing source failures stay red. Only full82 was refreshed; the other current547 full suites were not run. Their old542 matrices are retained as historical evidence.",
+    "Existing NativeProbe synchronous resource handling and strict diagnostic boundaries remain unchanged; no new startup/output/restored-handler, cancellation/flood/escaped-descendant, installed application/SQL/HTTP/permissions or RSS certification.",
+    "Read-only preseal metadata reader initially treated BASE_FILES list as a dict; correction before any PHP is retained. No source actor retry or hidden runtime error."
+  ]
+}

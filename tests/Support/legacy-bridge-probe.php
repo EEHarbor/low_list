@@ -5,7 +5,7 @@ namespace LowListTests;
 final class LegacyBridgeProbe
 {
     /**
-     * Run the original EE2 bridge in a disposable installation and request.
+     * Run the selected original bridge in a disposable installation and request.
      *
      * @param string $root
      * @param string $mode
@@ -24,12 +24,26 @@ final class LegacyBridgeProbe
             }
             define('BASEPATH', __DIR__);
             define('PATH_THIRD', $installation . '/');
-            $versions = array('slashes' => '2.5.4', 'slashes-helper' => '2.10.1');
+            $themeVersions = array(
+                'themes-ee2' => '2.10.1',
+                'themes-ee3' => '3.5.11',
+                'themes-ee4' => '4.3.8',
+                'themes-ee5' => '5.4.3',
+                'themes-current' => '7.5.0',
+            );
+            $versions = array('slashes' => '2.5.4', 'slashes-helper' => '2.10.1') + $themeVersions;
             define('APP_VER', isset($versions[$mode]) ? $versions[$mode] : '2.5.5');
             define('REQ', 'CP');
             define('BASE', 'https://admin.example.test/index.php?');
             define('AMP', '&amp;');
+            if (isset($themeVersions[$mode])) {
+                $folder = $mode === 'themes-ee2' ? 'third_party' : 'user';
+                define('URL_THIRD_THEMES', 'https://assets.example.test/themes/' . $folder . '/');
+            }
             require $root . '/low_list/autoload.php';
+            if (isset($themeVersions[$mode])) {
+                return self::themeDirectory();
+            }
             if ($mode === 'slashes' || $mode === 'slashes-helper') {
                 return self::slashes();
             }
@@ -53,6 +67,31 @@ final class LegacyBridgeProbe
             rmdir($installation . '/low_list');
             rmdir($installation);
         }
+    }
+
+    /**
+     * Keep the host theme constant authoritative across fallback config changes.
+     *
+     * @return array
+     */
+    private static function themeDirectory(): array
+    {
+        $GLOBALS['low_list_ee'] = new Environment();
+        ee()->config->items['theme_folder_url'] = 'https://fallback.example.test/first/';
+        $bridge = new \LowList\FluxCapacitor\Bridge\EE(array('module' => 'low_list', 'module_name' => 'Low List'));
+        $first = $bridge->getAddonThemesDir();
+        ee()->config->items['theme_folder_url'] = 'https://fallback.example.test/second/';
+        $second = $bridge->getAddonThemesDir();
+
+        return array(
+            'version' => APP_VER,
+            'bridge_parent' => get_parent_class($bridge),
+            'theme_constant' => URL_THIRD_THEMES,
+            'urls' => array($first, $second),
+            'fallback_after' => ee()->config->item('theme_folder_url'),
+            'database_calls' => ee()->db->calls,
+            'service_calls' => ee()->serviceCalls,
+        );
     }
 
     /**
