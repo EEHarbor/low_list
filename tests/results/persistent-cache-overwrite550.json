@@ -1,0 +1,695 @@
+{
+  "state": "SOURCE_ORDINARY_CHECKPOINT_FULL550_PHP82_ONLY_SOURCE_RED_INCOMPLETE",
+  "base": "c3b07250e8551f5dfb2b23141ec681b780de9fec",
+  "source_baseline": "86e4da6b2e585467b9c068e55f0190e69107fe4f",
+  "scope_units": 27,
+  "archive_sha256": "32a3538131e73a067d439d9d078f7b6a6abb5d576a01cbbd60c0deb7ec48144c",
+  "new_test": {
+    "path": "tests/tests/Unit/PersistentCacheOverwriteTest.php",
+    "sha256": "a9206f774bf120ccc71c67ecfd3f419ae98b855fea668d8121d880b2dae39d1d",
+    "bytes": 4102,
+    "cases": 3,
+    "direct_public_API": "Original PHAR PersistentCache::set/get; no installedEE/plugin caller equivalence",
+    "support_changes": false
+  },
+  "source_contract": {
+    "target": "low_list/low_list.phar/FluxCapacitor/Conduit/PersistentCache.php",
+    "target_sha256": "0a24047edd675a26584a99a9a8c0288fec2d420aa4752213e1c499ffc8e04ff7",
+    "target_bytes": 7978,
+    "set_lines": [
+      55,
+      82
+    ],
+    "get_lines": [
+      18,
+      48
+    ],
+    "helper": "Existing source-faithful global write_file using real fopen(wb)/flock/fwrite/fclose; original PHAR target never replaced",
+    "normal": "Committed key shorter overwrite truncates disk bytes and replaces request/disk result; unrelated state preserved",
+    "boundary": "Committed false is b:0; and remains an existing disk/request value",
+    "failure": "Existing own regular file0400, both parents writable; strict @fopen source warning before false/log arm, remains ordinary ErrorException RED",
+    "warning_origin": {
+      "helper": "tests/Support/Environment.php:561",
+      "archive": "FluxCapacitor/Conduit/PersistentCache.php:66",
+      "test": "PersistentCacheOverwriteTest.php:91",
+      "message": "Permission denied",
+      "false_return_log_branch": "UNHIT"
+    },
+    "cleanup": "finally restores file mode first, then original disk/request state; no catch, expected-error green, skip, source helper false or diagnostic suppression"
+  },
+  "ordinary": {
+    "full_current": {
+      "PHP": "82",
+      "cases": 550,
+      "assertions": 2956,
+      "errors": 41,
+      "failures": 42,
+      "status": 2
+    },
+    "other_full550_runtimes": "74/80/81/83/84/85 UNRUN",
+    "focus_all7": {
+      "cases": 3,
+      "assertions": 28,
+      "errors": 1,
+      "failures": 0,
+      "status": 2,
+      "mixed_generation": "74/80/81/82/83 initial;84 native retained/producerRefused then saved interpretation;85 new remaining phase. No full550x7 claim."
+    },
+    "orders": [
+      "reverse74 focus",
+      "random85 focus seed550"
+    ],
+    "lints": [
+      "74",
+      "85"
+    ],
+    "prior547": {
+      "assertions": 2928,
+      "errors": 40,
+      "failures": 42,
+      "all_non_time_case_attributes_text_tails_recursive_issues_equal": true,
+      "full_current_issue_nodes": 83,
+      "old_baseline_raw_sha256": "1d69abe25a5123898808ad1fb9987ff4de7cbfede1cf540da0d58dbbe0931fa3",
+      "old_baseline_raw_bytes": 239173,
+      "published_old_issue_metadata": {
+        "commit": "c3b07250e8551f5dfb2b23141ec681b780de9fec",
+        "path": "tests/results/theme-directory547.json",
+        "json_pointer": "/ordinary/whole_case_comparison/full_current_issues",
+        "count": 82
+      },
+      "old_full_raw_retained_in_place_not_copied": true
+    }
+  },
+  "normalization": {
+    "consumer_sha256": "7c075eae13455e6671fb76995557efe78aa3ae8f7c62bb810aff29d2c0b9ebfa",
+    "OLD": "/private/tmp/low-list-theme-branch-twwdu1xa",
+    "NEW": "/private/tmp/low-list-cache-overwrite-ordinary-u112957w",
+    "normalize_function_source": "def normalize(value):\n    \"\"\"Only the prior policy's exact owned roots and incidental tokens vary.\"\"\"\n    # Only the observed current readonly fopen role gains a nineteen-character suffix.\n    readonly_key = hashlib.sha1(b'overwrite-read-only').hexdigest()\n    value = re.sub(re.escape(NEW + '/tmp')\n                   + r'/low-list-tests-[a-zA-Z0-9]{19}(?=/low_list/' + readonly_key + r'\\))',\n                   '<OWNED_CACHE>', value)\n    for root in (OLD, NEW):\n        for prefix in (root + '/snapshot', 'phar://' + root + '/snapshot',\n                       'include_once(' + root + '/snapshot', root + '/tmp'):\n            value = value.replace(prefix[:15] + '...', '<OWNED_PATH_PREVIEW>')\n        value = value.replace(root + '/snapshot', '<ROOT>')\n        value = re.sub(re.escape(root + '/tmp') + r'/low-list-tests-[a-zA-Z0-9]{6}',\n                       '<OWNED_CACHE>', value)\n    value = re.sub(r'(?<=/low-list-updater-)[a-f0-9]{16}(?=/)', '<UPDATER_NONCE>', value)\n    return re.sub(r'(?<=Object &)[0-9a-f]{32}\\b', '<INCIDENTAL_OBJECT_ID>', value)",
+    "recursive_policy": "Only testcase time excluded. Every other attribute/tag/text/tail/nested child exact after literal normalization. Named reverse/random additionally ignore only proven whitespace-only structural testcase tail, never any issue tail.",
+    "new_role": "Exactly current NEW/tmp/low-list-tests-19 ASCII alphanumeric followed by /low_list/sha1(overwrite-read-only)) only; historical6 unchanged. Wrong source/line/class/message/foreign paths do not match."
+  },
+  "contexts": [
+    {
+      "role": "lint74",
+      "status": 0,
+      "pid": 98691,
+      "elapsed_seconds": 0.036200290999999885,
+      "owner_member": "owners/lint74.json",
+      "stdout": {
+        "sha256": "a86602a33bc5bdce7e7dd048d6c6c979573573fd04a54ddc22fbc35f2f73e953",
+        "bytes": 144,
+        "mode": 420
+      },
+      "stderr": {
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0,
+        "mode": 420
+      },
+      "leader_reaped_LAST": true,
+      "signals_sent": [],
+      "post_reap_group_operations": 0,
+      "kind": "new_test_lint",
+      "cases": 0,
+      "source_body_execution": false,
+      "generation": "initial_producer_loop_verified"
+    },
+    {
+      "role": "lint85",
+      "status": 0,
+      "pid": 98694,
+      "elapsed_seconds": 0.06094270799999979,
+      "owner_member": "owners/lint85.json",
+      "stdout": {
+        "sha256": "a86602a33bc5bdce7e7dd048d6c6c979573573fd04a54ddc22fbc35f2f73e953",
+        "bytes": 144,
+        "mode": 420
+      },
+      "stderr": {
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0,
+        "mode": 420
+      },
+      "leader_reaped_LAST": true,
+      "signals_sent": [],
+      "post_reap_group_operations": 0,
+      "kind": "new_test_lint",
+      "cases": 0,
+      "source_body_execution": false,
+      "generation": "initial_producer_loop_verified"
+    },
+    {
+      "role": "focus74",
+      "status": 2,
+      "pid": 98697,
+      "elapsed_seconds": 0.276289083,
+      "owner_member": "owners/focus74.json",
+      "stdout": {
+        "sha256": "fbf2b7c0c4155fa71219a84b9503fdacf40797901fcac88bc7cc6e981ddd0208",
+        "bytes": 880,
+        "mode": 420
+      },
+      "stderr": {
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0,
+        "mode": 420
+      },
+      "leader_reaped_LAST": true,
+      "signals_sent": [],
+      "post_reap_group_operations": 0,
+      "kind": "new3_focus",
+      "cases": 3,
+      "assertions": 28,
+      "errors": 1,
+      "failures": 0,
+      "junit_member": "ordinary/focus74.xml",
+      "generation": "initial_producer_loop_verified"
+    },
+    {
+      "role": "focus80",
+      "status": 2,
+      "pid": 98729,
+      "elapsed_seconds": 0.1552647079999998,
+      "owner_member": "owners/focus80.json",
+      "stdout": {
+        "sha256": "04813357169971bec1d6ddc12d2db000e1ed8eaeb36e091332248d9b07f61a75",
+        "bytes": 880,
+        "mode": 420
+      },
+      "stderr": {
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0,
+        "mode": 420
+      },
+      "leader_reaped_LAST": true,
+      "signals_sent": [],
+      "post_reap_group_operations": 0,
+      "kind": "new3_focus",
+      "cases": 3,
+      "assertions": 28,
+      "errors": 1,
+      "failures": 0,
+      "junit_member": "ordinary/focus80.xml",
+      "generation": "initial_producer_loop_verified"
+    },
+    {
+      "role": "focus81",
+      "status": 2,
+      "pid": 98808,
+      "elapsed_seconds": 0.164970791,
+      "owner_member": "owners/focus81.json",
+      "stdout": {
+        "sha256": "a57359372bd64918740756905cb90192a42e7130225a7b2d63894b0ce26bfad8",
+        "bytes": 880,
+        "mode": 420
+      },
+      "stderr": {
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0,
+        "mode": 420
+      },
+      "leader_reaped_LAST": true,
+      "signals_sent": [],
+      "post_reap_group_operations": 0,
+      "kind": "new3_focus",
+      "cases": 3,
+      "assertions": 28,
+      "errors": 1,
+      "failures": 0,
+      "junit_member": "ordinary/focus81.xml",
+      "generation": "initial_producer_loop_verified"
+    },
+    {
+      "role": "focus82",
+      "status": 2,
+      "pid": 98832,
+      "elapsed_seconds": 0.15971495900000043,
+      "owner_member": "owners/focus82.json",
+      "stdout": {
+        "sha256": "918762dd656e958c2e50b8ee468cc1561cf62fb130231413dd5b3b3adea02dec",
+        "bytes": 880,
+        "mode": 420
+      },
+      "stderr": {
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0,
+        "mode": 420
+      },
+      "leader_reaped_LAST": true,
+      "signals_sent": [],
+      "post_reap_group_operations": 0,
+      "kind": "new3_focus",
+      "cases": 3,
+      "assertions": 28,
+      "errors": 1,
+      "failures": 0,
+      "junit_member": "ordinary/focus82.xml",
+      "generation": "initial_producer_loop_verified"
+    },
+    {
+      "role": "focus83",
+      "status": 2,
+      "pid": 98854,
+      "elapsed_seconds": 0.15859095799999956,
+      "owner_member": "owners/focus83.json",
+      "stdout": {
+        "sha256": "76f34f2f1ec852d11a2649d26be83b495b41c765be5ebbe616eb483315b9272b",
+        "bytes": 880,
+        "mode": 420
+      },
+      "stderr": {
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0,
+        "mode": 420
+      },
+      "leader_reaped_LAST": true,
+      "signals_sent": [],
+      "post_reap_group_operations": 0,
+      "kind": "new3_focus",
+      "cases": 3,
+      "assertions": 28,
+      "errors": 1,
+      "failures": 0,
+      "junit_member": "ordinary/focus83.xml",
+      "generation": "initial_producer_loop_verified"
+    },
+    {
+      "role": "focus84",
+      "status": 2,
+      "pid": 98865,
+      "elapsed_seconds": 0.17957808400000008,
+      "owner_member": "owners/focus84.json",
+      "stdout": {
+        "sha256": "ec50b55d92a6179377826e8ab05f491893dc06f65827c96b0436151ea2cbc3f2",
+        "bytes": 893,
+        "mode": 420
+      },
+      "stderr": {
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0,
+        "mode": 420
+      },
+      "leader_reaped_LAST": true,
+      "signals_sent": [],
+      "post_reap_group_operations": 0,
+      "kind": "new3_focus",
+      "cases": 3,
+      "assertions": 28,
+      "errors": 1,
+      "failures": 0,
+      "junit_member": "ordinary/focus84.xml",
+      "generation": "initial_producer_refused_then_separate_saved_interpretation"
+    },
+    {
+      "role": "focus85",
+      "status": 2,
+      "pid": 55648,
+      "elapsed_seconds": 0.18309533300000003,
+      "owner_member": "owners/focus85.json",
+      "stdout": {
+        "sha256": "5ef0456fd13fd4911236b4d95212f331ffc0c8db7f4b534b91e322d15a587fee",
+        "bytes": 893,
+        "mode": 420
+      },
+      "stderr": {
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0,
+        "mode": 420
+      },
+      "leader_reaped_LAST": true,
+      "signals_sent": [],
+      "post_reap_group_operations": 0,
+      "kind": "new3_focus",
+      "cases": 3,
+      "assertions": 28,
+      "errors": 1,
+      "failures": 0,
+      "junit_member": "ordinary/focus85.xml",
+      "generation": "remaining4"
+    },
+    {
+      "role": "full82",
+      "status": 2,
+      "pid": 55658,
+      "elapsed_seconds": 6.892951457999999,
+      "owner_member": "owners/full82.json",
+      "stdout": {
+        "sha256": "d2ab10c6b7bd4d9b07c8fc651becacb50eff5271a088be84bec76b1961724699",
+        "bytes": 47061,
+        "mode": 420
+      },
+      "stderr": {
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0,
+        "mode": 420
+      },
+      "leader_reaped_LAST": true,
+      "signals_sent": [],
+      "post_reap_group_operations": 0,
+      "kind": "full",
+      "cases": 550,
+      "assertions": 2956,
+      "errors": 41,
+      "failures": 42,
+      "junit_member": "ordinary/full82.xml",
+      "generation": "remaining4"
+    },
+    {
+      "role": "reverse74",
+      "status": 2,
+      "pid": 55986,
+      "elapsed_seconds": 0.15620637499999823,
+      "owner_member": "owners/reverse74.json",
+      "stdout": {
+        "sha256": "96531b40d6a0cef228217ca961a71c0a5abaa2f6c97b30884ac28ed17d6f0ac6",
+        "bytes": 880,
+        "mode": 420
+      },
+      "stderr": {
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0,
+        "mode": 420
+      },
+      "leader_reaped_LAST": true,
+      "signals_sent": [],
+      "post_reap_group_operations": 0,
+      "kind": "new3_focus",
+      "cases": 3,
+      "assertions": 28,
+      "errors": 1,
+      "failures": 0,
+      "junit_member": "ordinary/reverse74.xml",
+      "generation": "remaining4"
+    },
+    {
+      "role": "random85",
+      "status": 2,
+      "pid": 55997,
+      "elapsed_seconds": 0.19011295900000036,
+      "owner_member": "owners/random85.json",
+      "stdout": {
+        "sha256": "ec14c60e4dac94295cb4aa0554ef64a1e5a7572235de2b3e599cfd9b42e34ca2",
+        "bytes": 913,
+        "mode": 420
+      },
+      "stderr": {
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0,
+        "mode": 420
+      },
+      "leader_reaped_LAST": true,
+      "signals_sent": [],
+      "post_reap_group_operations": 0,
+      "kind": "new3_focus",
+      "cases": 3,
+      "assertions": 28,
+      "errors": 1,
+      "failures": 0,
+      "junit_member": "ordinary/random85.xml",
+      "generation": "remaining4"
+    }
+  ],
+  "chronology": {
+    "initial_owner_outer_exit": 1,
+    "initial_loop_verified": [
+      "lint74",
+      "lint85",
+      "focus74",
+      "focus80",
+      "focus81",
+      "focus82",
+      "focus83"
+    ],
+    "initial_refused": "focus84 native3/28/E1 but6-character normalizer leaves13 of its19 suffix; source warning unchanged. No API cause inference.",
+    "observer_correction": "Initial wrong74 shorthand was immediately corrected from exact receipt to84; both retained.",
+    "saved84": "One file-only policy interpretation after CODE gate/root release; original producerRefused/nonhealthy stays literal; no PHP replay.",
+    "remaining4": [
+      "focus85",
+      "full82",
+      "reverse74",
+      "random85"
+    ],
+    "continuation_outer_exit": 0,
+    "no_recopy_or_accepted7_replay": true,
+    "no_original_all12_pass_relabel": true
+  },
+  "portable_evidence": {
+    "path": "tests/evidence/persistent-cache-overwrite550.tar.gz",
+    "sha256": "939ab4adf8d89810bf8a249cab780daacd46a03dd504d490fc3eef0a1ad60938",
+    "bytes": 20871,
+    "format": "deterministic gzip/USTAR regular members only",
+    "member_fields": [
+      "name",
+      "bytes",
+      "sha256",
+      "mode"
+    ],
+    "members": [
+      [
+        "ordinary/focus74.xml",
+        2343,
+        "60dcd0010b3fe24f9bde7df4898d295b7623c02d0ad37349b8b15b66f9d7d5f7",
+        420
+      ],
+      [
+        "ordinary/focus80.xml",
+        2343,
+        "5132d4941846e55f7acac8e7b42b0cc395669c945d9ecd3cc58e28e4e410094e",
+        420
+      ],
+      [
+        "ordinary/focus81.xml",
+        2343,
+        "4292ad392bd5b053feb726e1b27b31ee916aef1f3be9406254034151d1324c1b",
+        420
+      ],
+      [
+        "ordinary/focus82.xml",
+        2343,
+        "4c5888b24a8e255ce62ec3ca3ca186196200f03e8540dc0db70b24a0bd10e279",
+        420
+      ],
+      [
+        "ordinary/focus83.xml",
+        2343,
+        "99074c78e616db7a9e5a0a7bd2d395d1f60fb20da434c9eb8c2380c8000c277a",
+        420
+      ],
+      [
+        "ordinary/focus84.xml",
+        2356,
+        "b6306707b8287282e8c5864b8d1391e057611374ce29ed544f1657da027f6c59",
+        420
+      ],
+      [
+        "ordinary/focus85.xml",
+        2356,
+        "790e7b54f7050417c51b8643e0dd6e04c4a5a275f4c12b6a05c823a69c2a0822",
+        420
+      ],
+      [
+        "ordinary/full82.xml",
+        250888,
+        "32c2cc47f26a835dad4c8135bc31ef25abebb9d65c05b998404fe0c55c194070",
+        420
+      ],
+      [
+        "ordinary/reverse74.xml",
+        2343,
+        "7f5697ed24ec6b871a210e6e14b13054c2e011bcbfee6e3e77424abd459c0553",
+        420
+      ],
+      [
+        "ordinary/random85.xml",
+        2356,
+        "ac89d04c1434707352005e41bb93e00d8af2ee9e9e26e06ac6459c607a20232a",
+        420
+      ],
+      [
+        "owners/lint74.json",
+        983,
+        "d784e676d70336f1ad87e5fbfeadc19fc4f1e1c7b78a09b2950a92dfd961cfb5",
+        420
+      ],
+      [
+        "owners/lint85.json",
+        982,
+        "ec9f8b9da1e30383be3868085df88bd21372a29cd215a5db632410fe7987fd41",
+        420
+      ],
+      [
+        "owners/focus74.json",
+        1102,
+        "83f73b273230245d9ab9aafaf258f49748359b2ccd70bdc007c373800f3ee886",
+        420
+      ],
+      [
+        "owners/focus80.json",
+        1109,
+        "d31aa066f5ed4272cece984c7fc464fa79bc302f9f368f00b35fb35755753a95",
+        420
+      ],
+      [
+        "owners/focus81.json",
+        1102,
+        "2708ae927e1ed7aa41dc38f5028f90165b42043348e38e191f6036ef9936f5d7",
+        420
+      ],
+      [
+        "owners/focus82.json",
+        1110,
+        "61b7192ec9686286a3e3ff2c563556ba8f46dfac51827acba1e930fceac83c03",
+        420
+      ],
+      [
+        "owners/focus83.json",
+        1110,
+        "589ab0f37fc471c7624f436beab8d844a93b7ddcb1b2ffa53b21ebcbfd075796",
+        420
+      ],
+      [
+        "owners/focus84.json",
+        1110,
+        "e44ce0edcec45b0c18fe513e2a4b00194c941ccf2e412fc3527539b3efd016d4",
+        420
+      ],
+      [
+        "owners/focus85.json",
+        1110,
+        "f3d4d793777fb7fd9d285985b83a3936ce23e9722047fbbb04f3680812ad533e",
+        420
+      ],
+      [
+        "owners/full82.json",
+        1056,
+        "ddc23f9341ce7692fd7af3c12bf5355356856c36ea941c94e1644af5157b7c68",
+        420
+      ],
+      [
+        "owners/reverse74.json",
+        1140,
+        "7928f3d31ba937c6d8e6924dac62080fb998e99b2e753cd32ebd4af5fa27f55f",
+        420
+      ],
+      [
+        "owners/random85.json",
+        1168,
+        "d71e4a11298e65f4f99a9fb0ec3b02fe65004e2e2df8d9d18c22aa96953a7be5",
+        420
+      ],
+      [
+        "initial/FAILURE.json",
+        409,
+        "c432dfafce8a2ac60e48125e2101678ae4fcc8c2d800810cbd48ebc40999a410",
+        420
+      ],
+      [
+        "interpretation/saved84.json",
+        2358,
+        "0daeecfd47fac2833437643e8a33ffcadba3e92955886ccc8645145fdebcfa36",
+        420
+      ],
+      [
+        "remaining/CLOSED.json",
+        1347,
+        "764fa6e3b55491da1d3abf94994768278a03db5ec24bede27f244c36a0a97182",
+        420
+      ]
+    ],
+    "member_count": 25,
+    "uncompressed_selected_bytes": 289210,
+    "old_metadata_refs": [
+      {
+        "commit": "c3b07250e8551f5dfb2b23141ec681b780de9fec",
+        "path": "tests/STATUS.md",
+        "mode": "100644",
+        "oid": "a44a5c98b9b987bbdffd7fc9bea3b87ca28fd59e",
+        "sha256": "d11d4b10499ef8e40a6bd95d6863d5af8e9b2dc833b41bebb5647e563e8601dd",
+        "bytes": 131111
+      },
+      {
+        "commit": "c3b07250e8551f5dfb2b23141ec681b780de9fec",
+        "path": "tests/results/theme-directory547.json",
+        "mode": "100644",
+        "oid": "371bea44a0183fa0bdc1e1e3bc1dcc7a3d3d8633",
+        "sha256": "e534d00ce1e78b4eadd3568f96b3571a6b4f8aa4d78ddca71d0e3ebd58577c9b",
+        "bytes": 98810
+      },
+      {
+        "commit": "c3b07250e8551f5dfb2b23141ec681b780de9fec",
+        "path": "tests/source-inventory.json",
+        "mode": "100644",
+        "oid": "c487f0ed96246d1f3e6054a75c9a1820fa3c625c",
+        "sha256": "4e3872b44ccff9767e6ec931e3db5a7f736a798cbfb7793ce3091467ce4509b9",
+        "bytes": 44430
+      }
+    ],
+    "limits": "All selected current ordinary raw/owner/refusal/saved/closed bytes retained losslessly. Old full547 raw, input/profile/history/tool/source copies are not embedded; old issue metadata stays retrievable via ancestorGit and original baseline is protected in place. Without that older raw, a later reader cannot repeat every old normal-case comparison from this bundle alone; exact independent source/DATA approval remains the historical fact."
+  },
+  "reviews": [
+    {
+      "role": "source_CODE",
+      "sha256": "4d346f7096de4aa821a5aa7670d9bf9b8be6991809c38a9cb6bae604e63ae20b",
+      "bytes": 3228
+    },
+    {
+      "role": "cache_role_CODE",
+      "sha256": "504eadda6b4ee03cd38a03d7be87ae0c7b57c806505ec4151fa22ce1bf584ca5",
+      "bytes": 2230
+    },
+    {
+      "role": "continuation_CODE",
+      "sha256": "da3a20d160d6c500457730ba884dd55b8c4cbc6a6dcfe3925008e583f7d54eea",
+      "bytes": 2974
+    },
+    {
+      "role": "original_STOP_DATA",
+      "sha256": "bb9b61c96761f19289ae7d4323374f6ee3890f6f3cd8693e2ba9f1111a92f9b4",
+      "bytes": 4017
+    },
+    {
+      "role": "saved84_DATA",
+      "sha256": "7761da74b5f78e87d312800feed9f500342b310ac4d27eb68e9b808f9252b17c",
+      "bytes": 1854
+    },
+    {
+      "role": "remaining4_SOURCE_DATA",
+      "sha256": "e777525505871abddd2ad25bde86b70d4e9b05ea95fa5fe7627cf3634fd04a3d",
+      "bytes": 3958
+    }
+  ],
+  "execution_contract": {
+    "source_test_bytes_unchanged_after_runtime": true,
+    "original_source_archive_immutable": true,
+    "current_inputs": 129,
+    "original_snapshot_regular_files": 109,
+    "runtime_seal_rows": 253,
+    "original_outputs": 40,
+    "remaining_outputs": 23,
+    "enclosing_PHP_parent_receipts": 12,
+    "all_held_sole_reaped_LAST_no_signals_postops0": true,
+    "inner_native_probe": "Unchanged inherited inner supervision; no general descendants/cancel/flood assurance",
+    "event_journal": "Absent inherited policy; complete recursive issue records retained, none invented",
+    "effective_runtime_INI_RSS": "No new standalone version/INI/heap/module probe; binaries/profile inputs pinned. Historical version labels are not fresh ABI receipts."
+  },
+  "resource": {
+    "phase_forecast": 33554432,
+    "phase_hard": 67108864,
+    "final_phase_point": 10764288,
+    "sample_before_final_receipt": {
+      "logical": 10381332,
+      "allocated": 10760192
+    },
+    "minimum_sampled_free": 3908014080,
+    "old_active_seconds_charged": 6.568931583,
+    "cumulative_active_before_final_write": 18.52432525,
+    "author_hard": 1048576,
+    "peer_hard": 262144,
+    "fixed_refs_PATHsum": 609656832,
+    "allparts_bound": 678125568,
+    "historic367_PATHsum": 16013815808,
+    "PATHsums_not_physical_dedup_reclaim_or_RSS": true
+  },
+  "no_new_measurement": true,
+  "all27_units": "INCOMPLETE; historical graph/context/synthetic/NULL gaps not recertified or merged",
+  "no_production_fix_or_publication_success_assertion": true
+}

@@ -1,0 +1,1268 @@
+{
+    "baseline": "86e4da6b2e585467b9c068e55f0190e69107fe4f",
+    "archive_sha256": "32a3538131e73a067d439d9d078f7b6a6abb5d576a01cbbd60c0deb7ec48144c",
+    "source": "low_list/low_list.phar/FluxCapacitor/Base/Upd.php",
+    "source_sha256": "1194b40a356352c01d0bdbe86eb93144f2a6c8cb7ea44623c3f11e0ab1dd73d7",
+    "runtime": "8.3.28",
+    "xdebug": "3.5.3",
+    "metrics": "Independent native contexts; raw basic blocks and out/out_hit exits are preserved without graph merging.",
+    "contexts": {
+        "updater-empty": {
+            "capture": "native-control-panel-c843375f380770f7.json",
+            "context": {
+                "APP_VER": "7.5.0",
+                "REQ": "CP",
+                "native_mode": "control-panel",
+                "native_case": "updater-empty"
+            },
+            "lines_hit": 13,
+            "lines": 44,
+            "methods": {
+                "LowList\\FluxCapacitor\\Base\\Upd->__construct": {
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php",
+                            "line_start": 26,
+                            "line_end": 34
+                        }
+                    },
+                    "lines_hit": 6,
+                    "lines": 6,
+                    "basic_blocks_hit": 1,
+                    "basic_blocks": 1
+                },
+                "LowList\\FluxCapacitor\\Base\\Upd->install": {
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php",
+                            "line_start": 36,
+                            "line_end": 54
+                        }
+                    },
+                    "lines_hit": 0,
+                    "lines": 10,
+                    "basic_blocks_hit": 0,
+                    "basic_blocks": 3
+                },
+                "LowList\\FluxCapacitor\\Base\\Upd->uninstall": {
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php",
+                            "line_start": 78,
+                            "line_end": 127
+                        }
+                    },
+                    "lines_hit": 0,
+                    "lines": 18,
+                    "basic_blocks_hit": 0,
+                    "basic_blocks": 6
+                },
+                "{main}": {
+                    "attribution": {
+                        "status": "unknown",
+                        "reason": "no_matching_runtime_declaration",
+                        "declaration": null
+                    },
+                    "lines_hit": null,
+                    "lines": null,
+                    "basic_blocks_hit": 0,
+                    "basic_blocks": 1
+                },
+                "LowList\\FluxCapacitor\\Base\\Upd->update": {
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php",
+                            "line_start": 56,
+                            "line_end": 76
+                        }
+                    },
+                    "lines_hit": 6,
+                    "lines": 9,
+                    "basic_blocks_hit": 6,
+                    "basic_blocks": 9
+                }
+            },
+            "source_data": {
+                "lines": {
+                    "28": 1,
+                    "29": 1,
+                    "30": 1,
+                    "32": 1,
+                    "33": 1,
+                    "34": 1,
+                    "39": -1,
+                    "40": -1,
+                    "43": -1,
+                    "44": -1,
+                    "45": -1,
+                    "46": -1,
+                    "47": -1,
+                    "50": -1,
+                    "51": -1,
+                    "53": -1,
+                    "54": -2,
+                    "58": 1,
+                    "59": -1,
+                    "64": 1,
+                    "66": 1,
+                    "68": 1,
+                    "69": -1,
+                    "70": 1,
+                    "72": -1,
+                    "75": 1,
+                    "76": -2,
+                    "80": -1,
+                    "86": -1,
+                    "87": -1,
+                    "88": -1,
+                    "89": -1,
+                    "95": -1,
+                    "96": -1,
+                    "97": -1,
+                    "103": -1,
+                    "104": -1,
+                    "110": -1,
+                    "111": -1,
+                    "117": -1,
+                    "118": -1,
+                    "121": -1,
+                    "122": -1,
+                    "123": -1,
+                    "126": -1,
+                    "127": -2,
+                    "129": 1
+                },
+                "functions": {
+                    "LowList\\FluxCapacitor\\Base\\Upd->__construct": {
+                        "branches": [
+                            {
+                                "op_start": 0,
+                                "op_end": 32,
+                                "line_start": 28,
+                                "line_end": 34,
+                                "hit": 1,
+                                "out": [
+                                    2147483645
+                                ],
+                                "out_hit": [
+                                    0
+                                ]
+                            }
+                        ]
+                    },
+                    "LowList\\FluxCapacitor\\Base\\Upd->install": {
+                        "branches": {
+                            "0": {
+                                "op_start": 0,
+                                "op_end": 3,
+                                "line_start": 39,
+                                "line_end": 39,
+                                "hit": 0,
+                                "out": [
+                                    4,
+                                    6
+                                ],
+                                "out_hit": [
+                                    0,
+                                    0
+                                ]
+                            },
+                            "4": {
+                                "op_start": 4,
+                                "op_end": 5,
+                                "line_start": 40,
+                                "line_end": 40,
+                                "hit": 0,
+                                "out": [
+                                    2147483645
+                                ],
+                                "out_hit": [
+                                    0
+                                ]
+                            },
+                            "6": {
+                                "op_start": 6,
+                                "op_end": 34,
+                                "line_start": 44,
+                                "line_end": 54,
+                                "hit": 0,
+                                "out": [],
+                                "out_hit": []
+                            }
+                        }
+                    },
+                    "LowList\\FluxCapacitor\\Base\\Upd->uninstall": {
+                        "branches": {
+                            "0": {
+                                "op_start": 0,
+                                "op_end": 41,
+                                "line_start": 80,
+                                "line_end": 95,
+                                "hit": 0,
+                                "out": [
+                                    42,
+                                    44
+                                ],
+                                "out_hit": [
+                                    0,
+                                    0
+                                ]
+                            },
+                            "42": {
+                                "op_start": 42,
+                                "op_end": 43,
+                                "line_start": 95,
+                                "line_end": 95,
+                                "hit": 0,
+                                "out": [
+                                    45
+                                ],
+                                "out_hit": [
+                                    0
+                                ]
+                            },
+                            "44": {
+                                "op_start": 44,
+                                "op_end": 44,
+                                "line_start": 95,
+                                "line_end": 95,
+                                "hit": 0,
+                                "out": [
+                                    45
+                                ],
+                                "out_hit": [
+                                    0
+                                ]
+                            },
+                            "45": {
+                                "op_start": 45,
+                                "op_end": 117,
+                                "line_start": 95,
+                                "line_end": 121,
+                                "hit": 0,
+                                "out": [
+                                    118,
+                                    135
+                                ],
+                                "out_hit": [
+                                    0,
+                                    0
+                                ]
+                            },
+                            "118": {
+                                "op_start": 118,
+                                "op_end": 134,
+                                "line_start": 122,
+                                "line_end": 126,
+                                "hit": 0,
+                                "out": [
+                                    135
+                                ],
+                                "out_hit": [
+                                    0
+                                ]
+                            },
+                            "135": {
+                                "op_start": 135,
+                                "op_end": 138,
+                                "line_start": 126,
+                                "line_end": 127,
+                                "hit": 0,
+                                "out": [],
+                                "out_hit": []
+                            }
+                        }
+                    },
+                    "{main}": {
+                        "branches": [
+                            {
+                                "op_start": 0,
+                                "op_end": 9,
+                                "line_start": 2,
+                                "line_end": 129,
+                                "hit": 0,
+                                "out": [
+                                    2147483645
+                                ],
+                                "out_hit": [
+                                    0
+                                ]
+                            }
+                        ]
+                    },
+                    "LowList\\FluxCapacitor\\Base\\Upd->update": {
+                        "branches": {
+                            "0": {
+                                "op_start": 0,
+                                "op_end": 3,
+                                "line_start": 56,
+                                "line_end": 58,
+                                "hit": 1,
+                                "out": [
+                                    4,
+                                    12
+                                ],
+                                "out_hit": [
+                                    1,
+                                    0
+                                ]
+                            },
+                            "4": {
+                                "op_start": 4,
+                                "op_end": 11,
+                                "line_start": 58,
+                                "line_end": 58,
+                                "hit": 1,
+                                "out": [
+                                    12
+                                ],
+                                "out_hit": [
+                                    1
+                                ]
+                            },
+                            "12": {
+                                "op_start": 12,
+                                "op_end": 12,
+                                "line_start": 58,
+                                "line_end": 58,
+                                "hit": 1,
+                                "out": [
+                                    13,
+                                    15
+                                ],
+                                "out_hit": [
+                                    0,
+                                    1
+                                ]
+                            },
+                            "13": {
+                                "op_start": 13,
+                                "op_end": 14,
+                                "line_start": 59,
+                                "line_end": 59,
+                                "hit": 0,
+                                "out": [
+                                    2147483645
+                                ],
+                                "out_hit": [
+                                    0
+                                ]
+                            },
+                            "15": {
+                                "op_start": 15,
+                                "op_end": 31,
+                                "line_start": 63,
+                                "line_end": 68,
+                                "hit": 1,
+                                "out": [
+                                    32,
+                                    41
+                                ],
+                                "out_hit": [
+                                    0,
+                                    1
+                                ]
+                            },
+                            "32": {
+                                "op_start": 32,
+                                "op_end": 40,
+                                "line_start": 69,
+                                "line_end": 70,
+                                "hit": 0,
+                                "out": [
+                                    41
+                                ],
+                                "out_hit": [
+                                    0
+                                ]
+                            },
+                            "41": {
+                                "op_start": 41,
+                                "op_end": 41,
+                                "line_start": 70,
+                                "line_end": 70,
+                                "hit": 1,
+                                "out": [
+                                    43
+                                ],
+                                "out_hit": [
+                                    1
+                                ]
+                            },
+                            "42": {
+                                "op_start": 42,
+                                "op_end": 42,
+                                "line_start": 72,
+                                "line_end": 72,
+                                "hit": 0,
+                                "out": [
+                                    43,
+                                    2147483645
+                                ],
+                                "out_hit": [
+                                    0,
+                                    0
+                                ]
+                            },
+                            "43": {
+                                "op_start": 43,
+                                "op_end": 46,
+                                "line_start": 75,
+                                "line_end": 76,
+                                "hit": 1,
+                                "out": [],
+                                "out_hit": []
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "updater-missing": {
+            "capture": "native-control-panel-1bcfe619527a0e21.json",
+            "context": {
+                "APP_VER": "7.5.0",
+                "REQ": "CP",
+                "native_mode": "control-panel",
+                "native_case": "updater-missing"
+            },
+            "lines_hit": 10,
+            "lines": 44,
+            "methods": {
+                "LowList\\FluxCapacitor\\Base\\Upd->__construct": {
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php",
+                            "line_start": 26,
+                            "line_end": 34
+                        }
+                    },
+                    "lines_hit": 6,
+                    "lines": 6,
+                    "basic_blocks_hit": 1,
+                    "basic_blocks": 1
+                },
+                "LowList\\FluxCapacitor\\Base\\Upd->install": {
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php",
+                            "line_start": 36,
+                            "line_end": 54
+                        }
+                    },
+                    "lines_hit": 0,
+                    "lines": 10,
+                    "basic_blocks_hit": 0,
+                    "basic_blocks": 3
+                },
+                "LowList\\FluxCapacitor\\Base\\Upd->uninstall": {
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php",
+                            "line_start": 78,
+                            "line_end": 127
+                        }
+                    },
+                    "lines_hit": 0,
+                    "lines": 18,
+                    "basic_blocks_hit": 0,
+                    "basic_blocks": 6
+                },
+                "{main}": {
+                    "attribution": {
+                        "status": "unknown",
+                        "reason": "no_matching_runtime_declaration",
+                        "declaration": null
+                    },
+                    "lines_hit": null,
+                    "lines": null,
+                    "basic_blocks_hit": 0,
+                    "basic_blocks": 1
+                },
+                "LowList\\FluxCapacitor\\Base\\Upd->update": {
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php",
+                            "line_start": 56,
+                            "line_end": 76
+                        }
+                    },
+                    "lines_hit": 3,
+                    "lines": 9,
+                    "basic_blocks_hit": 5,
+                    "basic_blocks": 9
+                }
+            },
+            "source_data": {
+                "lines": {
+                    "28": 1,
+                    "29": 1,
+                    "30": 1,
+                    "32": 1,
+                    "33": 1,
+                    "34": 1,
+                    "39": -1,
+                    "40": -1,
+                    "43": -1,
+                    "44": -1,
+                    "45": -1,
+                    "46": -1,
+                    "47": -1,
+                    "50": -1,
+                    "51": -1,
+                    "53": -1,
+                    "54": -2,
+                    "58": 1,
+                    "59": -1,
+                    "64": 1,
+                    "66": -1,
+                    "68": -1,
+                    "69": -1,
+                    "70": -1,
+                    "72": 1,
+                    "75": -1,
+                    "76": -2,
+                    "80": -1,
+                    "86": -1,
+                    "87": -1,
+                    "88": -1,
+                    "89": -1,
+                    "95": -1,
+                    "96": -1,
+                    "97": -1,
+                    "103": -1,
+                    "104": -1,
+                    "110": -1,
+                    "111": -1,
+                    "117": -1,
+                    "118": -1,
+                    "121": -1,
+                    "122": -1,
+                    "123": -1,
+                    "126": -1,
+                    "127": -2,
+                    "129": 1
+                },
+                "functions": {
+                    "LowList\\FluxCapacitor\\Base\\Upd->__construct": {
+                        "branches": [
+                            {
+                                "op_start": 0,
+                                "op_end": 32,
+                                "line_start": 28,
+                                "line_end": 34,
+                                "hit": 1,
+                                "out": [
+                                    2147483645
+                                ],
+                                "out_hit": [
+                                    0
+                                ]
+                            }
+                        ]
+                    },
+                    "LowList\\FluxCapacitor\\Base\\Upd->install": {
+                        "branches": {
+                            "0": {
+                                "op_start": 0,
+                                "op_end": 3,
+                                "line_start": 39,
+                                "line_end": 39,
+                                "hit": 0,
+                                "out": [
+                                    4,
+                                    6
+                                ],
+                                "out_hit": [
+                                    0,
+                                    0
+                                ]
+                            },
+                            "4": {
+                                "op_start": 4,
+                                "op_end": 5,
+                                "line_start": 40,
+                                "line_end": 40,
+                                "hit": 0,
+                                "out": [
+                                    2147483645
+                                ],
+                                "out_hit": [
+                                    0
+                                ]
+                            },
+                            "6": {
+                                "op_start": 6,
+                                "op_end": 34,
+                                "line_start": 44,
+                                "line_end": 54,
+                                "hit": 0,
+                                "out": [],
+                                "out_hit": []
+                            }
+                        }
+                    },
+                    "LowList\\FluxCapacitor\\Base\\Upd->uninstall": {
+                        "branches": {
+                            "0": {
+                                "op_start": 0,
+                                "op_end": 41,
+                                "line_start": 80,
+                                "line_end": 95,
+                                "hit": 0,
+                                "out": [
+                                    42,
+                                    44
+                                ],
+                                "out_hit": [
+                                    0,
+                                    0
+                                ]
+                            },
+                            "42": {
+                                "op_start": 42,
+                                "op_end": 43,
+                                "line_start": 95,
+                                "line_end": 95,
+                                "hit": 0,
+                                "out": [
+                                    45
+                                ],
+                                "out_hit": [
+                                    0
+                                ]
+                            },
+                            "44": {
+                                "op_start": 44,
+                                "op_end": 44,
+                                "line_start": 95,
+                                "line_end": 95,
+                                "hit": 0,
+                                "out": [
+                                    45
+                                ],
+                                "out_hit": [
+                                    0
+                                ]
+                            },
+                            "45": {
+                                "op_start": 45,
+                                "op_end": 117,
+                                "line_start": 95,
+                                "line_end": 121,
+                                "hit": 0,
+                                "out": [
+                                    118,
+                                    135
+                                ],
+                                "out_hit": [
+                                    0,
+                                    0
+                                ]
+                            },
+                            "118": {
+                                "op_start": 118,
+                                "op_end": 134,
+                                "line_start": 122,
+                                "line_end": 126,
+                                "hit": 0,
+                                "out": [
+                                    135
+                                ],
+                                "out_hit": [
+                                    0
+                                ]
+                            },
+                            "135": {
+                                "op_start": 135,
+                                "op_end": 138,
+                                "line_start": 126,
+                                "line_end": 127,
+                                "hit": 0,
+                                "out": [],
+                                "out_hit": []
+                            }
+                        }
+                    },
+                    "{main}": {
+                        "branches": [
+                            {
+                                "op_start": 0,
+                                "op_end": 9,
+                                "line_start": 2,
+                                "line_end": 129,
+                                "hit": 0,
+                                "out": [
+                                    2147483645
+                                ],
+                                "out_hit": [
+                                    0
+                                ]
+                            }
+                        ]
+                    },
+                    "LowList\\FluxCapacitor\\Base\\Upd->update": {
+                        "branches": {
+                            "0": {
+                                "op_start": 0,
+                                "op_end": 3,
+                                "line_start": 56,
+                                "line_end": 58,
+                                "hit": 1,
+                                "out": [
+                                    4,
+                                    12
+                                ],
+                                "out_hit": [
+                                    1,
+                                    0
+                                ]
+                            },
+                            "4": {
+                                "op_start": 4,
+                                "op_end": 11,
+                                "line_start": 58,
+                                "line_end": 58,
+                                "hit": 1,
+                                "out": [
+                                    12
+                                ],
+                                "out_hit": [
+                                    1
+                                ]
+                            },
+                            "12": {
+                                "op_start": 12,
+                                "op_end": 12,
+                                "line_start": 58,
+                                "line_end": 58,
+                                "hit": 1,
+                                "out": [
+                                    13,
+                                    15
+                                ],
+                                "out_hit": [
+                                    0,
+                                    1
+                                ]
+                            },
+                            "13": {
+                                "op_start": 13,
+                                "op_end": 14,
+                                "line_start": 59,
+                                "line_end": 59,
+                                "hit": 0,
+                                "out": [
+                                    2147483645
+                                ],
+                                "out_hit": [
+                                    0
+                                ]
+                            },
+                            "15": {
+                                "op_start": 15,
+                                "op_end": 31,
+                                "line_start": 63,
+                                "line_end": 68,
+                                "hit": 1,
+                                "out": [
+                                    32,
+                                    41
+                                ],
+                                "out_hit": [
+                                    0,
+                                    0
+                                ]
+                            },
+                            "32": {
+                                "op_start": 32,
+                                "op_end": 40,
+                                "line_start": 69,
+                                "line_end": 70,
+                                "hit": 0,
+                                "out": [
+                                    41
+                                ],
+                                "out_hit": [
+                                    0
+                                ]
+                            },
+                            "41": {
+                                "op_start": 41,
+                                "op_end": 41,
+                                "line_start": 70,
+                                "line_end": 70,
+                                "hit": 0,
+                                "out": [
+                                    43
+                                ],
+                                "out_hit": [
+                                    0
+                                ]
+                            },
+                            "42": {
+                                "op_start": 42,
+                                "op_end": 42,
+                                "line_start": 72,
+                                "line_end": 72,
+                                "hit": 1,
+                                "out": [
+                                    43,
+                                    2147483645
+                                ],
+                                "out_hit": [
+                                    0,
+                                    0
+                                ]
+                            },
+                            "43": {
+                                "op_start": 43,
+                                "op_end": 46,
+                                "line_start": 75,
+                                "line_end": 76,
+                                "hit": 0,
+                                "out": [],
+                                "out_hit": []
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "updater-present": {
+            "capture": "native-control-panel-554c514dc48910dd.json",
+            "context": {
+                "APP_VER": "7.5.0",
+                "REQ": "CP",
+                "native_mode": "control-panel",
+                "native_case": "updater-present"
+            },
+            "lines_hit": 14,
+            "lines": 44,
+            "methods": {
+                "LowList\\FluxCapacitor\\Base\\Upd->__construct": {
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php",
+                            "line_start": 26,
+                            "line_end": 34
+                        }
+                    },
+                    "lines_hit": 6,
+                    "lines": 6,
+                    "basic_blocks_hit": 1,
+                    "basic_blocks": 1
+                },
+                "LowList\\FluxCapacitor\\Base\\Upd->install": {
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php",
+                            "line_start": 36,
+                            "line_end": 54
+                        }
+                    },
+                    "lines_hit": 0,
+                    "lines": 10,
+                    "basic_blocks_hit": 0,
+                    "basic_blocks": 3
+                },
+                "LowList\\FluxCapacitor\\Base\\Upd->uninstall": {
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php",
+                            "line_start": 78,
+                            "line_end": 127
+                        }
+                    },
+                    "lines_hit": 0,
+                    "lines": 18,
+                    "basic_blocks_hit": 0,
+                    "basic_blocks": 6
+                },
+                "{main}": {
+                    "attribution": {
+                        "status": "unknown",
+                        "reason": "no_matching_runtime_declaration",
+                        "declaration": null
+                    },
+                    "lines_hit": null,
+                    "lines": null,
+                    "basic_blocks_hit": 0,
+                    "basic_blocks": 1
+                },
+                "LowList\\FluxCapacitor\\Base\\Upd->update": {
+                    "attribution": {
+                        "status": "matched",
+                        "reason": null,
+                        "declaration": {
+                            "file": "phar:///Users/tomjaeger/Sites/add-ons/low_list/low_list/low_list.phar/FluxCapacitor/Base/Upd.php",
+                            "line_start": 56,
+                            "line_end": 76
+                        }
+                    },
+                    "lines_hit": 7,
+                    "lines": 9,
+                    "basic_blocks_hit": 7,
+                    "basic_blocks": 9
+                }
+            },
+            "source_data": {
+                "lines": {
+                    "28": 1,
+                    "29": 1,
+                    "30": 1,
+                    "32": 1,
+                    "33": 1,
+                    "34": 1,
+                    "39": -1,
+                    "40": -1,
+                    "43": -1,
+                    "44": -1,
+                    "45": -1,
+                    "46": -1,
+                    "47": -1,
+                    "50": -1,
+                    "51": -1,
+                    "53": -1,
+                    "54": -2,
+                    "58": 1,
+                    "59": -1,
+                    "64": 1,
+                    "66": 1,
+                    "68": 1,
+                    "69": 1,
+                    "70": 1,
+                    "72": -1,
+                    "75": 1,
+                    "76": -2,
+                    "80": -1,
+                    "86": -1,
+                    "87": -1,
+                    "88": -1,
+                    "89": -1,
+                    "95": -1,
+                    "96": -1,
+                    "97": -1,
+                    "103": -1,
+                    "104": -1,
+                    "110": -1,
+                    "111": -1,
+                    "117": -1,
+                    "118": -1,
+                    "121": -1,
+                    "122": -1,
+                    "123": -1,
+                    "126": -1,
+                    "127": -2,
+                    "129": 1
+                },
+                "functions": {
+                    "LowList\\FluxCapacitor\\Base\\Upd->__construct": {
+                        "branches": [
+                            {
+                                "op_start": 0,
+                                "op_end": 32,
+                                "line_start": 28,
+                                "line_end": 34,
+                                "hit": 1,
+                                "out": [
+                                    2147483645
+                                ],
+                                "out_hit": [
+                                    0
+                                ]
+                            }
+                        ]
+                    },
+                    "LowList\\FluxCapacitor\\Base\\Upd->install": {
+                        "branches": {
+                            "0": {
+                                "op_start": 0,
+                                "op_end": 3,
+                                "line_start": 39,
+                                "line_end": 39,
+                                "hit": 0,
+                                "out": [
+                                    4,
+                                    6
+                                ],
+                                "out_hit": [
+                                    0,
+                                    0
+                                ]
+                            },
+                            "4": {
+                                "op_start": 4,
+                                "op_end": 5,
+                                "line_start": 40,
+                                "line_end": 40,
+                                "hit": 0,
+                                "out": [
+                                    2147483645
+                                ],
+                                "out_hit": [
+                                    0
+                                ]
+                            },
+                            "6": {
+                                "op_start": 6,
+                                "op_end": 34,
+                                "line_start": 44,
+                                "line_end": 54,
+                                "hit": 0,
+                                "out": [],
+                                "out_hit": []
+                            }
+                        }
+                    },
+                    "LowList\\FluxCapacitor\\Base\\Upd->uninstall": {
+                        "branches": {
+                            "0": {
+                                "op_start": 0,
+                                "op_end": 41,
+                                "line_start": 80,
+                                "line_end": 95,
+                                "hit": 0,
+                                "out": [
+                                    42,
+                                    44
+                                ],
+                                "out_hit": [
+                                    0,
+                                    0
+                                ]
+                            },
+                            "42": {
+                                "op_start": 42,
+                                "op_end": 43,
+                                "line_start": 95,
+                                "line_end": 95,
+                                "hit": 0,
+                                "out": [
+                                    45
+                                ],
+                                "out_hit": [
+                                    0
+                                ]
+                            },
+                            "44": {
+                                "op_start": 44,
+                                "op_end": 44,
+                                "line_start": 95,
+                                "line_end": 95,
+                                "hit": 0,
+                                "out": [
+                                    45
+                                ],
+                                "out_hit": [
+                                    0
+                                ]
+                            },
+                            "45": {
+                                "op_start": 45,
+                                "op_end": 117,
+                                "line_start": 95,
+                                "line_end": 121,
+                                "hit": 0,
+                                "out": [
+                                    118,
+                                    135
+                                ],
+                                "out_hit": [
+                                    0,
+                                    0
+                                ]
+                            },
+                            "118": {
+                                "op_start": 118,
+                                "op_end": 134,
+                                "line_start": 122,
+                                "line_end": 126,
+                                "hit": 0,
+                                "out": [
+                                    135
+                                ],
+                                "out_hit": [
+                                    0
+                                ]
+                            },
+                            "135": {
+                                "op_start": 135,
+                                "op_end": 138,
+                                "line_start": 126,
+                                "line_end": 127,
+                                "hit": 0,
+                                "out": [],
+                                "out_hit": []
+                            }
+                        }
+                    },
+                    "{main}": {
+                        "branches": [
+                            {
+                                "op_start": 0,
+                                "op_end": 9,
+                                "line_start": 2,
+                                "line_end": 129,
+                                "hit": 0,
+                                "out": [
+                                    2147483645
+                                ],
+                                "out_hit": [
+                                    0
+                                ]
+                            }
+                        ]
+                    },
+                    "LowList\\FluxCapacitor\\Base\\Upd->update": {
+                        "branches": {
+                            "0": {
+                                "op_start": 0,
+                                "op_end": 3,
+                                "line_start": 56,
+                                "line_end": 58,
+                                "hit": 1,
+                                "out": [
+                                    4,
+                                    12
+                                ],
+                                "out_hit": [
+                                    1,
+                                    0
+                                ]
+                            },
+                            "4": {
+                                "op_start": 4,
+                                "op_end": 11,
+                                "line_start": 58,
+                                "line_end": 58,
+                                "hit": 1,
+                                "out": [
+                                    12
+                                ],
+                                "out_hit": [
+                                    1
+                                ]
+                            },
+                            "12": {
+                                "op_start": 12,
+                                "op_end": 12,
+                                "line_start": 58,
+                                "line_end": 58,
+                                "hit": 1,
+                                "out": [
+                                    13,
+                                    15
+                                ],
+                                "out_hit": [
+                                    0,
+                                    1
+                                ]
+                            },
+                            "13": {
+                                "op_start": 13,
+                                "op_end": 14,
+                                "line_start": 59,
+                                "line_end": 59,
+                                "hit": 0,
+                                "out": [
+                                    2147483645
+                                ],
+                                "out_hit": [
+                                    0
+                                ]
+                            },
+                            "15": {
+                                "op_start": 15,
+                                "op_end": 31,
+                                "line_start": 63,
+                                "line_end": 68,
+                                "hit": 1,
+                                "out": [
+                                    32,
+                                    41
+                                ],
+                                "out_hit": [
+                                    1,
+                                    0
+                                ]
+                            },
+                            "32": {
+                                "op_start": 32,
+                                "op_end": 40,
+                                "line_start": 69,
+                                "line_end": 70,
+                                "hit": 1,
+                                "out": [
+                                    41
+                                ],
+                                "out_hit": [
+                                    1
+                                ]
+                            },
+                            "41": {
+                                "op_start": 41,
+                                "op_end": 41,
+                                "line_start": 70,
+                                "line_end": 70,
+                                "hit": 1,
+                                "out": [
+                                    43
+                                ],
+                                "out_hit": [
+                                    1
+                                ]
+                            },
+                            "42": {
+                                "op_start": 42,
+                                "op_end": 42,
+                                "line_start": 72,
+                                "line_end": 72,
+                                "hit": 0,
+                                "out": [
+                                    43,
+                                    2147483645
+                                ],
+                                "out_hit": [
+                                    0,
+                                    0
+                                ]
+                            },
+                            "43": {
+                                "op_start": 43,
+                                "op_end": 46,
+                                "line_start": 75,
+                                "line_end": 76,
+                                "hit": 1,
+                                "out": [],
+                                "out_hit": []
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

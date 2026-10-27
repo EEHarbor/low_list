@@ -1,0 +1,676 @@
+<?php
+
+namespace LowListTests {
+
+/** Test template boundary matching Template::fetch_param's defaults and aliases. */
+class Template
+{
+    public $tagparams = array();
+    public $tagdata = '';
+    public $parsed = array();
+
+    /**
+     * Fetch a template parameter using the native EE normalization rules.
+     *
+     * @param string $name
+     * @param mixed $default
+     * @return mixed
+     */
+    public function fetch_param($name, $default = false)
+    {
+        if (!isset($this->tagparams[$name])) {
+            return $default;
+        }
+
+        $value = $this->tagparams[$name];
+        if ($value === 'y' || $value === 'on') {
+            return 'yes';
+        }
+        if ($value === 'n' || $value === 'off') {
+            return 'no';
+        }
+
+        return $value;
+    }
+
+    /**
+     * Capture the renderer arguments and return its observable output.
+     *
+     * @param string $tagdata
+     * @param array $variables
+     * @return string
+     */
+    public function parse_variables($tagdata, $variables)
+    {
+        $this->parsed[] = array($tagdata, $variables);
+        $output = '';
+        foreach ($variables as $row) {
+            $rendered = $tagdata;
+            foreach ($row as $key => $value) {
+                $rendered = str_replace('{' . $key . '}', (string) $value, $rendered);
+            }
+            $output .= $rendered;
+        }
+
+        return $output;
+    }
+}
+
+/** Query result boundary for the legacy Active Record methods used here. */
+class Result
+{
+    public $num_rows;
+    private $rows;
+    private $currentRow = 0;
+    private $rowData;
+
+    /**
+     * Store database rows without coercing null or scalar column values.
+     *
+     * @param array $rows
+     * @return void
+     */
+    public function __construct(array $rows)
+    {
+        $this->rows = array_map(static function ($row) {
+            return is_object($row) ? $row : (object) $row;
+        }, $rows);
+        $this->num_rows = count($rows);
+    }
+
+    /**
+     * Return the number of result rows.
+     *
+     * @return int
+     */
+    public function num_rows()
+    {
+        return $this->num_rows;
+    }
+
+    /**
+     * Return retained row objects or the native non-object array representation.
+     *
+     * @param string $type
+     * @return array
+     */
+    public function result($type = 'object')
+    {
+        return $type == 'object' ? $this->rows : $this->result_array();
+    }
+
+    /**
+     * Copy rows as arrays without moving the selected row or replacing objects.
+     *
+     * @return array
+     */
+    public function result_array()
+    {
+        return array_map(static function ($row) {
+            return (array) $row;
+        }, $this->rows);
+    }
+
+    /**
+     * Match EE's named-column, numeric-index and current-row fallback behavior.
+     *
+     * @param int|string $index
+     * @param string $type
+     * @return mixed
+     */
+    public function row($index = 0, $type = 'object')
+    {
+        if (!is_numeric($index)) {
+            if (!is_array($this->rowData)) {
+                $this->rowData = $this->row_array(0);
+            }
+            if (array_key_exists($index, $this->rowData)) {
+                return $this->rowData[$index];
+            }
+            $index = 0;
+        }
+
+        return $type == 'object' ? $this->rowObject($index) : $this->row_array($index);
+    }
+
+    /**
+     * Return the selected result as an array, retaining EE's current-row fallback.
+     *
+     * @param int|string $index
+     * @return array
+     */
+    public function row_array($index = 0)
+    {
+        return (array) $this->rowObject($index);
+    }
+
+    /**
+     * Return the native empty array or the selected row object.
+     *
+     * @param int|string $index
+     * @return object|array
+     */
+    private function rowObject($index)
+    {
+        if (!$this->rows) {
+            return array();
+        }
+        if ($index != $this->currentRow && isset($this->rows[$index])) {
+            $this->currentRow = $index;
+        }
+
+        return $this->rows[$this->currentRow];
+    }
+}
+
+/** Explicit Active Record recorder; unexpected calls fail immediately. */
+class Database
+{
+    public $calls = array();
+    public $rows = array();
+    public $data_cache = array();
+    public $tables = array();
+    public $dbprefix = 'exp_';
+    public $fields = array('eeharbor_licenses' => array('site_id', 'addon', 'license_key', 'ignore_site'));
+    public $count = 0;
+    public $results = array();
+    public $resultQueues = array();
+    private $recorder;
+
+    /**
+     * Share connection operations and schema across independently cached builders.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->recorder = (object) array(
+            'calls' => array(), 'tables' => $this->tables, 'fields' => $this->fields,
+            'results' => $this->results, 'rows' => $this->rows, 'resultQueues' => $this->resultQueues,
+        );
+        $this->calls = &$this->recorder->calls;
+        $this->tables = &$this->recorder->tables;
+        $this->fields = &$this->recorder->fields;
+        $this->results = &$this->recorder->results;
+        $this->rows = &$this->recorder->rows;
+        $this->resultQueues = &$this->recorder->resultQueues;
+    }
+
+    /**
+     * Record a supported query-builder operation.
+     *
+     * @param string $name
+     * @param array $arguments
+     * @return mixed
+     * @throws \LogicException
+     */
+    public function __call($name, $arguments)
+    {
+        $this->calls[] = array($name, $arguments);
+        if ($name === 'get' || $name === 'get_where' || $name === 'query') {
+            if (isset($arguments[0]) && !empty($this->resultQueues[$arguments[0]])) {
+                return new Result(array_shift($this->resultQueues[$arguments[0]]));
+            }
+            if (isset($arguments[0]) && array_key_exists($arguments[0], $this->results)) {
+                return new Result($this->results[$arguments[0]]);
+            }
+            return new Result($this->rows);
+        }
+        if ($name === 'table_exists') {
+            if (!isset($this->data_cache['table_names'])) {
+                $prefix = $this->dbprefix;
+                $this->data_cache['table_names'] = array_map(static function ($table) use ($prefix) {
+                    return $prefix . $table;
+                }, $this->tables);
+            }
+
+            return in_array($this->dbprefix . $arguments[0], $this->data_cache['table_names'], true);
+        }
+        if ($name === 'field_exists') {
+            $table = $arguments[1];
+            if (!isset($this->data_cache['field_names'][$table])) {
+                $this->data_cache['field_names'][$table] = isset($this->fields[$table]) ? $this->fields[$table] : array();
+            }
+
+            return in_array($arguments[0], $this->data_cache['field_names'][$table], true);
+        }
+        if ($name === 'count_all_results') {
+            return $this->count;
+        }
+        if (in_array($name, array('select', 'from', 'where', 'insert', 'update', 'delete'), true)) {
+            return $this;
+        }
+
+        throw new \LogicException('Unexpected database operation: ' . $name);
+    }
+}
+
+/** Isolated service registry, with no production I/O. */
+class Environment
+{
+    public $TMPL;
+    public $db;
+    public $config;
+    public $load;
+    public $logger;
+    public $functions;
+    public $input;
+    public $uri;
+    public $cp;
+    public $view;
+    public $session;
+    public $cache;
+    public $dbforge;
+    public $api;
+    public $legacy_api;
+    public $security;
+    public $addons_model;
+    public $pagination;
+    public $table;
+    public $services = array();
+    public $serviceCalls = array();
+    private $loaded = array();
+    private $databasePrototype;
+    private $databaseMetadata;
+
+    /**
+     * Create collaborators with optional connection-configured query metadata.
+     *
+     * @param array $databaseMetadata
+     * @return void
+     */
+    public function __construct(array $databaseMetadata = array())
+    {
+        $this->TMPL = new Template();
+        $this->db = new Database();
+        $this->databaseMetadata = $databaseMetadata;
+        $this->db->data_cache = $databaseMetadata;
+        $this->databasePrototype = $this->db;
+        $this->config = new Config();
+        $this->load = new Loader();
+        $this->logger = new Logger();
+    }
+
+    /**
+     * Create an independent query using its connection's configured metadata.
+     *
+     * @return Database
+     */
+    public function newDatabaseQuery()
+    {
+        $query = clone $this->databasePrototype;
+        $query->data_cache = $this->databaseMetadata;
+
+        return $query;
+    }
+
+    /**
+     * Load a facade object without replacing an existing native object.
+     *
+     * @param string $name
+     * @param mixed $value
+     * @return void
+     * @throws \RuntimeException
+     */
+    public function set($name, $value)
+    {
+        if ($this->has($name)) {
+            throw new \RuntimeException('Cannot overwrite ' . $name . ' on the loader.');
+        }
+        $this->loaded[$name] = $value;
+        if (array_key_exists($name, (array) $this)) {
+            unset($this->$name);
+        }
+        if ($name === 'session') {
+            $value->setSessionCookies();
+        }
+    }
+
+    /**
+     * Determine whether the facade already contains an object, including null.
+     *
+     * @param string $name
+     * @return bool
+     */
+    public function has($name)
+    {
+        $properties = (array) $this;
+
+        return array_key_exists($name, $this->loaded)
+            || (array_key_exists($name, $properties) && $properties[$name] !== null);
+    }
+
+    /**
+     * Read a facade object independently of the named dependency factories.
+     *
+     * @param string $name
+     * @return mixed
+     * @throws \InvalidArgumentException
+     */
+    public function get($name)
+    {
+        if (array_key_exists($name, $this->loaded)) {
+            return $this->loaded[$name];
+        }
+        $properties = (array) $this;
+        if (array_key_exists($name, $properties) && $properties[$name] !== null) {
+            return $properties[$name];
+        }
+
+        throw new \InvalidArgumentException("No such property: '" . $name . "' on " . get_called_class());
+    }
+
+    /**
+     * Expose installed objects through EE's native property-access boundary.
+     *
+     * @param string $name
+     * @return mixed
+     * @throws \InvalidArgumentException
+     */
+    public function __get($name)
+    {
+        return $this->get($name);
+    }
+
+    /**
+     * Preserve the facade's presence check for installed null values.
+     *
+     * @param string $name
+     * @return bool
+     */
+    public function __isset($name)
+    {
+        return $this->has($name);
+    }
+
+    /**
+     * Remove a named replacement through the facade boundary.
+     *
+     * @param string $name
+     * @return void
+     */
+    public function remove($name)
+    {
+        unset($this->loaded[$name]);
+        if (array_key_exists($name, (array) $this)) {
+            unset($this->$name);
+        }
+    }
+}
+
+class Config
+{
+    public $items = array('site_id' => 1, 'base_url' => 'https://example.test', 'theme_folder_url' => '/themes/');
+
+    /**
+     * Retrieve a configuration value, preserving absent-value false.
+     *
+     * @param string $name
+     * @return mixed
+     */
+    public function item($name)
+    {
+        return isset($this->items[$name]) ? $this->items[$name] : false;
+    }
+
+    /**
+     * Return a configuration path with one trailing slash.
+     *
+     * @param string $name
+     * @return string
+     */
+    public function slash_item($name)
+    {
+        return rtrim($this->item($name), '/') . '/';
+    }
+}
+
+class Loader
+{
+    public $calls = array();
+    public $viewOutput = '';
+
+    /**
+     * Record the helper request; test helpers are already loaded.
+     *
+     * @param string $name
+     * @return void
+     */
+    public function helper($name)
+    {
+        $this->calls[] = array('helper', $name);
+    }
+
+    /**
+     * Record the library request.
+     *
+     * @param string $name
+     * @return void
+     */
+    public function library($name)
+    {
+        $this->calls[] = array('library', $name);
+    }
+
+    /**
+     * Install the schema builder only when the facade has not already loaded it.
+     *
+     * @return void
+     */
+    public function dbforge()
+    {
+        $this->calls[] = array('dbforge');
+        if (ee()->has('dbforge')) {
+            return;
+        }
+
+        ee()->set('dbforge', new SchemaForge(ee('db')));
+    }
+
+    /**
+     * Record the legacy view boundary and preserve its strict return-output flag.
+     *
+     * @param string $name
+     * @param array $variables
+     * @param bool $return
+     * @return string|null
+     */
+    public function view($name, $variables, $return)
+    {
+        $this->calls[] = array('view', $name, $variables, $return);
+
+        if ($return === true) {
+            return 'rendered-legacy-view';
+        }
+
+        $this->viewOutput .= 'rendered-legacy-view';
+
+        return null;
+    }
+}
+
+class Logger
+{
+    public $messages = array();
+
+    /**
+     * Record developer diagnostics.
+     *
+     * @param string $message
+     * @return void
+     */
+    public function developer($message)
+    {
+        $this->messages[] = $message;
+    }
+}
+
+}
+
+namespace {
+    /**
+     * Resolve the explicitly supplied EE collaborator.
+     *
+     * @param string|null $service
+     * @return mixed
+     * @throws \LogicException
+     */
+    function ee($service = null)
+    {
+        if ($service === null) {
+            return $GLOBALS['low_list_ee'];
+        }
+        $GLOBALS['low_list_ee']->serviceCalls[] = func_get_args();
+        if ($service === 'db') {
+            return $GLOBALS['low_list_ee']->newDatabaseQuery();
+        }
+        if (!isset($GLOBALS['low_list_ee']->services[$service])) {
+            throw new \LogicException('Unexpected EE service: ' . $service);
+        }
+
+        if ($service === 'CP/URL' && func_num_args() > 1) {
+            $arguments = func_get_args();
+
+            return $GLOBALS['low_list_ee']->services[$service]->make($arguments[1]);
+        }
+
+        return $GLOBALS['low_list_ee']->services[$service];
+    }
+
+    /**
+     * Read a cache file using the native helper's missing-file contract.
+     *
+     * @param string $path
+     * @return string|false
+     */
+    function read_file($path)
+    {
+        return file_exists($path) ? file_get_contents($path) : false;
+    }
+
+    /**
+     * Write a cache file using the native helper's boolean contract.
+     *
+     * @param string $path
+     * @param string $data
+     * @param string $mode
+     * @return bool
+     */
+    function write_file($path, $data, $mode = 'wb')
+    {
+        if (!$file = @fopen($path, $mode)) {
+            return false;
+        }
+        try {
+            flock($file, LOCK_EX);
+            fwrite($file, $data);
+            flock($file, LOCK_UN);
+        } finally {
+            fclose($file);
+        }
+
+        return true;
+    }
+
+    /**
+     * Read the native URI service's canonical request string.
+     *
+     * @return string
+     */
+    function uri_string()
+    {
+        return ee()->uri->uri_string();
+    }
+
+    /**
+     * Record an opening form helper call.
+     *
+     * @param string $action
+     * @param array $attributes
+     * @return string
+     */
+    function form_open($action, $attributes)
+    {
+        $GLOBALS['low_list_forms'][] = array('open', $action, $attributes);
+
+        return '<form>';
+    }
+
+    /**
+     * Record an input helper call.
+     *
+     * @param string $name
+     * @param mixed $value
+     * @return string
+     */
+    function form_input($name, $value)
+    {
+        $GLOBALS['low_list_forms'][] = array('input', $name, $value);
+
+        return '<input>';
+    }
+
+    /**
+     * Record a checkbox helper call.
+     *
+     * @param string $name
+     * @param string $value
+     * @param mixed $checked
+     * @return string
+     */
+    function form_checkbox($name, $value, $checked)
+    {
+        $GLOBALS['low_list_forms'][] = array('checkbox', $name, $value, $checked);
+
+        return '<input type="checkbox">';
+    }
+
+    /**
+     * Return the closing form tag.
+     *
+     * @return string
+     */
+    function form_close()
+    {
+        return '</form>';
+    }
+
+    /**
+     * Record the legacy URL-title helper boundary without reimplementing EE.
+     *
+     * @param string $text
+     * @return string
+     */
+    function url_title($text)
+    {
+        $GLOBALS['low_list_helpers'][] = array('url_title', $text);
+
+        return 'slug-result';
+    }
+
+    /**
+     * Record the legacy URL preparation boundary.
+     *
+     * @param string $text
+     * @return string
+     */
+    function prep_url($text)
+    {
+        $GLOBALS['low_list_helpers'][] = array('prep_url', $text);
+
+        return 'prepared-result';
+    }
+
+    /**
+     * Preserve the EE2.6+ string helper result and record its delegated input.
+     *
+     * @param string $text
+     * @return string
+     */
+    function reduce_double_slashes($text)
+    {
+        $GLOBALS['low_list_helpers'][] = array('reduce_double_slashes', $text);
+
+        return preg_replace('#([^/:])/+#', '\\1/', $text);
+    }
+}
