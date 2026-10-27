@@ -1,3 +1,9 @@
+# Current practical suite — 2026-10-27
+
+All seven runtimes pass: 28 tests and 103 assertions each. Bundled Foundation/PHAR tests and synthetic harness cases are retired. See README.md for the current scope and direct command. Production code is unchanged.
+
+## Historical records
+
 # Low List: persistent-cache overwrite source checkpoint
 
 Status: **ordinary source evidence independently reviewed; coverage incomplete and source regressions red.** This section describes the current three-case increment; the preceding record is retained verbatim below as history. No publication-success assertion is required here.

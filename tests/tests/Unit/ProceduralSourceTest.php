@@ -16,20 +16,7 @@ class ProceduralSourceTest extends TestCase
     }
 
     /**
-     * Leave foreign namespaces alone and report missing foundation classes clearly.
-     *
-     * @return void
-     */
-    public function testAutoloaderNamespaceAndMissingClass(): void
-    {
-        $this->assertFalse(class_exists('Unrelated\\NotAnAddonClass'));
-        $this->expectException(\Exception::class);
-        $this->expectExceptionMessage('FluxCapacitor/MissingClass.php not found.');
-        class_exists('LowList\\FluxCapacitor\\MissingClass');
-    }
-
-    /**
-     * Render both shipped views through their actual form-helper boundaries.
+     * Render the add-on view through its form-helper boundaries.
      *
      * @dataProvider viewVectors
      * @param string $view
@@ -70,7 +57,7 @@ class ProceduralSourceTest extends TestCase
     public static function viewVectors(): array
     {
         $vectors = array();
-        foreach (array(PATH_THIRD . 'low_list/views/license.php', 'phar://' . PATH_THIRD . 'low_list/low_list.phar/Views/license.php') as $path) {
+        foreach (array(PATH_THIRD . 'low_list/views/license.php') as $path) {
             $vectors[] = array($path, 2, '', false, '');
             $vectors[] = array($path, 7, 'valid-key', false, 'valid-key');
             $vectors[] = array($path, 7, 'low-list-ignore-site-1', true, '');

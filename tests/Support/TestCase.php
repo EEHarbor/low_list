@@ -2,8 +2,6 @@
 
 namespace LowListTests;
 
-use LowList\FluxCapacitor\Conduit\StaticCache;
-
 abstract class TestCase extends \PHPUnit\Framework\TestCase
 {
     private $includePath;
@@ -26,7 +24,6 @@ abstract class TestCase extends \PHPUnit\Framework\TestCase
         set_error_handler(static function ($severity, $message, $file, $line) {
             throw new \ErrorException($message, 0, $severity, $file, $line);
         }, E_ALL);
-        StaticCache::clear();
     }
 
     /**
@@ -36,7 +33,6 @@ abstract class TestCase extends \PHPUnit\Framework\TestCase
      */
     protected function tearDown(): void
     {
-        StaticCache::clear();
         restore_error_handler();
         set_include_path($this->includePath);
         chdir($this->workingDirectory);
@@ -70,32 +66,4 @@ abstract class TestCase extends \PHPUnit\Framework\TestCase
         rmdir($path);
     }
 
-    /**
-     * Instantiate a library unit without unrelated constructor effects.
-     *
-     * @param string $class
-     * @return object
-     */
-    protected function withoutConstructor($class)
-    {
-        return (new \ReflectionClass($class))->newInstanceWithoutConstructor();
-    }
-
-    /**
-     * Invoke a protected compatibility method with its original arguments.
-     *
-     * @param object $object
-     * @param string $method
-     * @param array $arguments
-     * @return mixed
-     */
-    protected function invoke($object, $method, array $arguments = array())
-    {
-        $reflection = new \ReflectionMethod($object, $method);
-        if (PHP_VERSION_ID < 80100) {
-            $reflection->setAccessible(true);
-        }
-
-        return $reflection->invokeArgs($object, $arguments);
-    }
 }

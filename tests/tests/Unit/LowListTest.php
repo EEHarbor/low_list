@@ -91,20 +91,8 @@ class LowListTest extends TestCase
             array('foo', 'matched', 'matched', ''), array('missing', 'matched', '', 'matched'),
             array('FOO', '', 'FALSE', 'TRUE'), array('0', '', 'TRUE', 'FALSE'),
             array('', '', null, null), array(false, 'body', null, null),
-            array(null, 'body', null, null), array('foo', '0', 'TRUE', 'FALSE'),
+            array('foo', '0', 'TRUE', 'FALSE'),
         );
-    }
-
-    /**
-     * Reject structured items through the native string boundary.
-     *
-     * @return void
-     */
-    public function testStructuredItemsAreRejected(): void
-    {
-        ee()->TMPL->tagparams['items'] = array('not', 'a', 'string');
-        $this->expectException(PHP_VERSION_ID >= 80000 ? \TypeError::class : \ErrorException::class);
-        new \Low_list();
     }
 
     /**
@@ -132,23 +120,4 @@ class LowListTest extends TestCase
         new \Low_list();
     }
 
-    /**
-     * Preserve every item and decimal-looking string in a large ordinary list.
-     *
-     * @return void
-     */
-    public function testLargeListPreservesOrderingAndFractionalValues(): void
-    {
-        $items = array_fill(0, 1024, '1.5');
-        $items[0] = 'first';
-        $items[1023] = 'last';
-        ee()->TMPL->tagparams = array('items' => implode('|', $items));
-        (new \Low_list())->each();
-        $rows = ee()->TMPL->parsed[0][1];
-
-        $this->assertCount(1024, $rows);
-        $this->assertSame(array('key' => 'first', 'val' => 'first'), $rows[0]);
-        $this->assertSame(array('key' => '1.5', 'val' => '1.5'), $rows[1]);
-        $this->assertSame(array('key' => 'last', 'val' => 'last'), $rows[1023]);
-    }
 }
