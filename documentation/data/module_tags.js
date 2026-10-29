@@ -1,224 +1,147 @@
 window.doc_page = {
-    addon: 'Low List',
-    title: 'Tags',
-    sections: [
+    "addon": "Low List",
+    "title": "Tag Reference",
+    "desc": "<p>Loop over a separated list, or conditionally return content when it contains a value. All examples below are literal template code. See <a href=\"/low-list/documentation/installation\">Installation</a> for setup.</p>",
+    "terms": [
         {
-            title: '',
-            type: 'tagtoc',
-            desc: 'Low List has the following front-end tags: ',
-        },
-        {
-            title: '',
-            type: 'tags',
-            desc: ''
-        },
+            "label": "required",
+            "description": "Supply a non-empty value for this parameter."
+        }
     ],
-    tags: [
+    "sections": [
         {
-            tag: '{exp:low_list:each}',
-            shortname: 'exp_low_list_each',
-            summary: "",
-            desc: "Use the Each tag to loop through a list to character-separated items.",
-            sections: [
+            "type": "tagtoc"
+        },
+        {
+            "type": "tags"
+        }
+    ],
+    "tags": [
+        {
+            "tag": "{exp:low_list:each}",
+            "shortname": "exp_low_list_each",
+            "desc": "Loop through character-separated items and return the contents of the tag pair once for each item.",
+            "sections": [
                 {
-                    type: 'params',
-                    title: 'Tag Parameters',
-                    desc: '',
-                    items: [
+                    "type": "params",
+                    "title": "Parameters",
+                    "items": [
                         {
-                            item: 'items',
-                            desc: 'the items you want to loop through, separated by the character given in the sep parameter. Use a colon : to separate keys and values.',
-                            type: '',
-                            accepts: '',
-                            default: '',
-                            required: false,
-                            added: '',
-                            examples: [
+                            "item": "items",
+                            "type": "string",
+                            "desc": "The list to loop through, separated by `sep`. Use a colon (`:`) within an item to separate its key and value.",
+                            "default": "",
+                            "examples": [
                                 {
-                                    tag_example: `
-                                    {exp:low_list:each items="north|east|south|west" as="direction"}
-                                        You can go {direction}.
-                                    {/exp:low_list:each}                
-                                    `,
-                                    outputs: ``
-                                 }
-                             ]
+                                    "tag_example": "{exp:low_list:each items=\"north|east|south|west\" as=\"direction\"}\n    You can go {direction}.\n{/exp:low_list:each}"
+                                }
+                            ]
                         },
                         {
-                            item: 'as',
-                            desc: 'variables to use in the template. Defaults to key:val.',
-                            type: '',
-                            accepts: '',
-                            default: '',
-                            required: false,
-                            added: '',
-                            examples: [
+                            "item": "as",
+                            "type": "string",
+                            "desc": "Name the variables available inside the pair. The default `key:val` provides `{key}` and `{val}`. Supply two names separated by a colon for key/value pairs, or one name when you only need the value.",
+                            "default": "key:val",
+                            "examples": [
                                 {
-                                    tag_example: `
-                                    {exp:low_list:each items="asc:Ascending|desc:Descending" as="value:label"}
-                                    <label>
-                                        <input type="radio" name="sort" value="{value}">
-                                        {label}
-                                    </label>
-                                    {exp:low_list:each}`,
-                                    outputs: ``
-                                 }
-                             ]
+                                    "tag_example": "{exp:low_list:each items=\"asc:Ascending|desc:Descending\" as=\"value:label\"}\n    <label>\n        <input type=\"radio\" name=\"sort\" value=\"{value}\">\n        {label}\n    </label>\n{/exp:low_list:each}"
+                                }
+                            ]
                         },
                         {
-                            item: 'sep',
-                            desc: 'character that separates each item. Defaults to |.  The example shows Using key/value pairs and a custom separator:',
-                            type: '',
-                            accepts: '',
-                            default: '|',
-                            required: false,
-                            added: '',
-                            examples: [
+                            "item": "sep",
+                            "type": "string",
+                            "desc": "The string that separates the items. Supply a non-empty separator; colons still separate keys and values within each item.",
+                            "default": "|",
+                            "examples": [
                                 {
-                                    tag_example: `
-                                    <select name="orderby_sort">
-                                    {exp:low_list:each items=":Relevance;date|asc:Publish date;title|asc:Title" sep=";"}
-                                        <option value="{key}">{val}</option>
-                                    {/exp:low_list:each}
-                                    </select>`,
-                                    outputs: ``
-                                 }
-                             ]
+                                    "tag_example": "<label for=\"orderby_sort\">Sort by</label>\n<select id=\"orderby_sort\" name=\"orderby_sort\">\n    {exp:low_list:each items=\":Relevance;date|asc:Publish date;title|asc:Title\" sep=\";\"}\n        <option value=\"{key}\">{val}</option>\n    {/exp:low_list:each}\n</select>"
+                                }
+                            ]
                         },
                         {
-                            item: 'range',
-                            desc: 'set to yes to treat the items as the start and end values of a range.',
-                            type: '',
-                            accepts: '',
-                            default: '',
-                            required: false,
-                            added: '',
-                            examples: [
+                            "item": "range",
+                            "type": "string",
+                            "desc": "Set to `yes` to treat exactly two items as the start and end of a range. The example counts down from 99 to 0.",
+                            "default": "no",
+                            "accepts": "yes, no",
+                            "examples": [
                                 {
-                                    tag_example: `
-                                    {exp:low_list:each items="99|0" range="yes"}
-                                        {val} bottle{if val != 1}s{/if} of beer on the wall.
-                                    {/exp:low_list:each}`,
-                                    outputs: ``
-                                 }
-                             ]
-                        },
-                        
-                      
+                                    "tag_example": "{exp:low_list:each items=\"99|0\" range=\"yes\"}\n    {val} bottle{if val != 1}s{/if} of beer on the wall.\n{/exp:low_list:each}"
+                                }
+                            ]
+                        }
                     ]
                 }
             ]
         },
         {
-            tag: '{exp:low_list:has}',
-            shortname: 'exp:low_list:has',
-            summary: "",
-            desc: "",
-            sections: [
+            "tag": "{exp:low_list:has}",
+            "shortname": "exp:low_list:has",
+            "desc": "Return the contents of the tag pair when the value is present in the list. Otherwise, return an empty string.",
+            "sections": [
                 {
-                    type: 'params',
-                    title: 'Tag Parameters',
-                    desc: '',
-                    items: [
+                    "type": "params",
+                    "title": "Parameters",
+                    "items": [
                         {
-                            item: 'value',
-                            desc: 'the value to search for (needle).',
-                            type: '',
-                            accepts: '',
-                            default: '',
-                            required: false,
-                            added: '',
-                            examples: [
+                            "item": "value",
+                            "type": "string",
+                            "desc": "The non-empty value to search for in the list.",
+                            "required": true,
+                            "examples": [
                                 {
-                                    tag_example: `
-                                    {exp:low_list:has value="spork" items="knife|fork|spoon|spork"}
-                                        We have a spork!
-                                    {/exp:low_list:has}`,
-                                    outputs: ``
-                                 }
-                             ]
+                                    "tag_example": "{exp:low_list:has value=\"spork\" items=\"knife|fork|spoon|spork\"}\n    We have a spork!\n{/exp:low_list:has}"
+                                }
+                            ]
                         },
                         {
-                            item: 'items',
-                            desc: 'the items you want to search through, separated by the character given in the sep parameter (haystack).',
-                            type: '',
-                            accepts: '',
-                            default: '',
-                            required: false,
-                            added: '',
-                            examples: [
+                            "item": "items",
+                            "type": "string",
+                            "desc": "The list to search, separated by `sep`.",
+                            "default": "",
+                            "examples": [
                                 {
-                                    tag_example: `
-                                    {exp:channel:categories style="linear"}
-                                        <option value="{category_id}"{exp:low_list:has value="{category_id}" items="1|2|3"} selected{/exp:low_list:has}>
-                                            {category_name}
-                                        </option>
-                                    {/exp:channel:categories}`,
-                                    outputs: ``
-                                 }
-                             ]
+                                    "tag_example": "<label for=\"category\">Categories</label>\n<select id=\"category\" name=\"category[]\" multiple>\n    {exp:channel:categories style=\"linear\"}\n        <option value=\"{category_id}\"{exp:low_list:has value=\"{category_id}\" items=\"1|2|3\"} selected{/exp:low_list:has}>\n            {category_name}\n        </option>\n    {/exp:channel:categories}\n</select>"
+                                }
+                            ]
                         },
                         {
-                            item: 'sep',
-                            desc: 'character that separates each item. Defaults to |.',
-                            type: '',
-                            accepts: '',
-                            default: '|',
-                            required: false,
-                            added: '',
-                            examples: [
+                            "item": "sep",
+                            "type": "string",
+                            "desc": "The non-empty string separating each item.",
+                            "default": "|",
+                            "examples": [
                                 {
-                                    tag_example: `
-                                    {exp:low_list:has value="spork" sep="," items="knife,fork,spoon,spork"}
-                                        We have a spork!
-                                    {/exp:low_list:has}`,
-                                    outputs: ``
-                                 }
-                             ]
-                        },
-                        
-                      
+                                    "tag_example": "{exp:low_list:has value=\"spork\" sep=\",\" items=\"knife,fork,spoon,spork\"}\n    We have a spork!\n{/exp:low_list:has}"
+                                }
+                            ]
+                        }
                     ]
                 }
             ]
         },
         {
-            tag: '{exp:low_list:has_not}',
-            shortname: 'exp_low_list_has_not',
-            summary: "",
-            desc: "Use the Has Not tag to see if a given value is not present in a given charachter-separated list. Works identically to the Has tag:",
-            sections: [
+            "tag": "{exp:low_list:has_not}",
+            "shortname": "exp_low_list_has_not",
+            "desc": "Return the contents of the tag pair when the value is absent from the list. It accepts the same value, items and sep parameters as Has; supply a non-empty value.",
+            "sections": [
                 {
-                    type: 'params',
-                    title: 'Tag Parameters',
-                    desc: '',
-                    items: [
+                    "type": "examples",
+                    "title": "Example",
+                    "items": [
                         {
-                            item: 'Example Useage See has for all params',
-                            desc: '',
-                            type: '',
-                            accepts: '',
-                            default: '',
-                            required: false,
-                            added: '',
-                            examples: [
+                            "item": "Value absent from a list",
+                            "desc": "The enclosed message is returned because the list does not contain spork.",
+                            "examples": [
                                 {
-                                    tag_example: `
-                                    {exp:low_list:has_not value="spork" items="knife|fork|spoon"}
-                                        We don't have a spork!
-                                    {/exp:low_list:has_not}`,
-                                    outputs: ``
-                                 }
-                             ]
-                        },
-                        
-                      
+                                    "tag_example": "{exp:low_list:has_not value=\"spork\" items=\"knife|fork|spoon\"}\n    We don’t have a spork!\n{/exp:low_list:has_not}"
+                                }
+                            ]
+                        }
                     ]
                 }
             ]
-        },
-        
-
-
+        }
     ]
 };
